@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="namespacesimgrid_1_1vm" kind="namespace" language="C++">
+    <compoundname>simgrid::vm</compoundname>
+    <innerclass refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext" prot="public">simgrid::vm::DirtyPageTrackingExt</innerclass>
+    <innerclass refid="classsimgrid_1_1vm_1_1_migration_rx" prot="public">simgrid::vm::MigrationRx</innerclass>
+    <innerclass refid="classsimgrid_1_1vm_1_1_migration_tx" prot="public">simgrid::vm::MigrationTx</innerclass>
+    <innerclass refid="classsimgrid_1_1vm_1_1_virtual_machine_impl" prot="public">simgrid::vm::VirtualMachineImpl</innerclass>
+    <innerclass refid="classsimgrid_1_1vm_1_1_vm_host_ext" prot="public">simgrid::vm::VmHostExt</innerclass>
+    <innerclass refid="classsimgrid_1_1vm_1_1_vm_migration_ext" prot="public">simgrid::vm::VmMigrationExt</innerclass>
+    <innerclass refid="classsimgrid_1_1vm_1_1_v_m_model" prot="public">simgrid::vm::VMModel</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_virtual_machine_impl_8cpp_1a60ff3d56772cdc4a540820217e91870d" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double simgrid::vm::virt_overhead</definition>
+        <argsstring></argsstring>
+        <name>virt_overhead</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.cpp" line="43" column="14" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.cpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_virtual_machine_impl_8cpp_1a20fcc786e08e1d05d8fce8b38b361580" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void simgrid::vm::host_state_change</definition>
+        <argsstring>(s4u::Host const &amp;host)</argsstring>
+        <name>host_state_change</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">s4u::Host</ref> const &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.cpp" line="45" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.cpp" bodystart="45" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="_virtual_machine_impl_8cpp_1a7fb65ad7c0650aac82b1ce0debb376f4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void simgrid::vm::add_active_exec</definition>
+        <argsstring>(s4u::Actor const &amp;, s4u::Exec const &amp;task)</argsstring>
+        <name>add_active_exec</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">s4u::Actor</ref> const &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_exec" kindref="compound">s4u::Exec</ref> const &amp;</type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.cpp" line="58" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.cpp" bodystart="58" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="_virtual_machine_impl_8cpp_1afeb482aa817b34c0b0f4c727f4de1642" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void simgrid::vm::remove_active_exec</definition>
+        <argsstring>(s4u::Actor const &amp;, s4u::Exec const &amp;task)</argsstring>
+        <name>remove_active_exec</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">s4u::Actor</ref> const &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_exec" kindref="compound">s4u::Exec</ref> const &amp;</type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.cpp" line="68" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.cpp" bodystart="68" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="_virtual_machine_impl_8cpp_1ab08e6960dbd354fd4b42aca989258f33" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">s4u::VirtualMachine</ref> *</type>
+        <definition>static s4u::VirtualMachine* simgrid::vm::get_vm_from_activity</definition>
+        <argsstring>(kernel::activity::ActivityImpl const &amp;act)</argsstring>
+        <name>get_vm_from_activity</name>
+        <param>
+          <type>kernel::activity::ActivityImpl const &amp;</type>
+          <declname>act</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.cpp" line="78" column="28" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.cpp" bodystart="78" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="_virtual_machine_impl_8cpp_1ae3a3f5f4c0d13fea6b60fa7cdd271dd7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void simgrid::vm::add_active_activity</definition>
+        <argsstring>(kernel::activity::ActivityImpl const &amp;act)</argsstring>
+        <name>add_active_activity</name>
+        <param>
+          <type>kernel::activity::ActivityImpl const &amp;</type>
+          <declname>act</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.cpp" line="84" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.cpp" bodystart="84" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="_virtual_machine_impl_8cpp_1a5cceb683c4fbf91c0417481ef3ccd1a8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void simgrid::vm::remove_active_activity</definition>
+        <argsstring>(kernel::activity::ActivityImpl const &amp;act)</argsstring>
+        <name>remove_active_activity</name>
+        <param>
+          <type>kernel::activity::ActivityImpl const &amp;</type>
+          <declname>act</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.cpp" line="94" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.cpp" bodystart="94" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="_vm_live_migration_8cpp_1a1384c48b229828e2dc25f8e9c89d7435" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sg_size_t</type>
+        <definition>static sg_size_t simgrid::vm::get_updated_size</definition>
+        <argsstring>(double computed, double dp_rate, sg_size_t dp_cap)</argsstring>
+        <name>get_updated_size</name>
+        <param>
+          <type>double</type>
+          <declname>computed</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dp_rate</declname>
+        </param>
+        <param>
+          <type>sg_size_t</type>
+          <declname>dp_cap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.cpp" line="84" column="18" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.cpp" bodystart="84" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="187" column="1"/>
+  </compounddef>
+</doxygen>

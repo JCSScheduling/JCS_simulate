@@ -1,0 +1,1796 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="msg__task_8cpp" kind="file" language="C++">
+    <compoundname>msg_task.cpp</compoundname>
+    <includes refid="msg__private_8hpp" local="yes">msg_private.hpp</includes>
+    <includes local="yes">src/instr/instr_private.hpp</includes>
+    <includes refid="_comm_8hpp" local="no">simgrid/s4u/Comm.hpp</includes>
+    <includes refid="_exec_8hpp" local="no">simgrid/s4u/Exec.hpp</includes>
+    <includes refid="_host_8hpp" local="no">simgrid/s4u/Host.hpp</includes>
+    <includes refid="_mailbox_8hpp" local="no">simgrid/s4u/Mailbox.hpp</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">vector</includes>
+    <incdepgraph>
+      <node id="34">
+        <label>atomic</label>
+      </node>
+      <node id="16">
+        <label>simgrid/mutex.h</label>
+        <link refid="mutex_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>xbt/dict.h</label>
+      </node>
+      <node id="20">
+        <label>simgrid/version.h</label>
+      </node>
+      <node id="44">
+        <label>functional</label>
+      </node>
+      <node id="8">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="25">
+        <label>simgrid/simix.h</label>
+      </node>
+      <node id="42">
+        <label>xbt/functional.hpp</label>
+      </node>
+      <node id="10">
+        <label>simgrid/barrier.h</label>
+        <link refid="barrier_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="1">
+        <label>msg_task.cpp</label>
+        <link refid="msg__task_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>simgrid/zone.h</label>
+        <link refid="zone_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>cmath</label>
+      </node>
+      <node id="23">
+        <label>xbt.h</label>
+      </node>
+      <node id="17">
+        <label>simgrid/plugins/live_migration.h</label>
+      </node>
+      <node id="36">
+        <label>string</label>
+      </node>
+      <node id="26">
+        <label>src/kernel/activity/CommImpl.hpp</label>
+      </node>
+      <node id="3">
+        <label>simgrid/Exception.hpp</label>
+      </node>
+      <node id="4">
+        <label>simgrid/msg.h</label>
+        <link refid="msg_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>map</label>
+      </node>
+      <node id="15">
+        <label>simgrid/mailbox.h</label>
+        <link refid="mailbox_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>simgrid/chrono.hpp</label>
+      </node>
+      <node id="6">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>xbt/string.hpp</label>
+      </node>
+      <node id="14">
+        <label>simgrid/instr.h</label>
+      </node>
+      <node id="48">
+        <label>simgrid/s4u/Mailbox.hpp</label>
+        <link refid="_mailbox_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>xbt/signal.hpp</label>
+      </node>
+      <node id="31">
+        <label>simgrid/s4u/Comm.hpp</label>
+        <link refid="_comm_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>simgrid/s4u/Host.hpp</label>
+        <link refid="_host_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>vector</label>
+      </node>
+      <node id="2">
+        <label>msg_private.hpp</label>
+        <link refid="msg__private_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>simgrid/semaphore.h</label>
+        <link refid="semaphore_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>simgrid/s4u/Exec.hpp</label>
+        <link refid="_exec_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>simgrid/engine.h</label>
+        <link refid="engine_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>simgrid/host.h</label>
+        <link refid="host_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>simgrid/s4u/Activity.hpp</label>
+        <link refid="_activity_8hpp_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>unordered_map</label>
+      </node>
+      <node id="28">
+        <label>xbt/Extendable.hpp</label>
+      </node>
+      <node id="49">
+        <label>smpi/forward.hpp</label>
+      </node>
+      <node id="40">
+        <label>simgrid/s4u/Actor.hpp</label>
+        <link refid="_actor_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>simgrid/modelchecker.h</label>
+      </node>
+      <node id="46">
+        <label>xbt/ex.h</label>
+      </node>
+      <node id="13">
+        <label>xbt/dynar.h</label>
+      </node>
+      <node id="35">
+        <label>set</label>
+      </node>
+      <node id="5">
+        <label>simgrid/actor.h</label>
+        <link refid="actor_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>algorithm</label>
+      </node>
+      <node id="30">
+        <label>src/instr/instr_private.hpp</label>
+      </node>
+      <node id="33">
+        <label>xbt/asserts.h</label>
+      </node>
+      <node id="21">
+        <label>simgrid/vm.h</label>
+        <link refid="vm_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>simgrid/storage.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacesimgrid">simgrid</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1msg">simgrid::msg</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="msg__task_8cpp_1a1e3334364e2995b53dd59c27f9d4c033" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+        <definition>msg_task_t MSG_task_create</definition>
+        <argsstring>(const char *name, double flop_amount, double message_size, void *data)</argsstring>
+        <name>MSG_task_create</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>flop_amount</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>message_size</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new task. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A constructor for msg_task_t taking four arguments.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a name for the object. It is for user-level information and can be nullptr. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flop_amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a value of the processing amount (in flop) needed to process this new task. If 0, then it cannot be executed with MSG_task_execute(). This value has to be &gt;=0. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>message_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a value of the amount of data (in bytes) needed to transfer this new task. If 0, then it cannot be transferred with MSG_task_send() and MSG_task_recv(). This value has to be &gt;=0. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to any data may want to attach to the new object. It is for user-level information and can be nullptr. It can be retrieved with the function MSG_task_get_data(). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new corresponding object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="214" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="214" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a54b55568daac3d72dabb06ce9faf68f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+        <definition>msg_task_t MSG_parallel_task_create</definition>
+        <argsstring>(const char *name, int host_nb, const msg_host_t *host_list, double *flops_amount, double *bytes_amount, void *data)</argsstring>
+        <name>MSG_parallel_task_create</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>host_nb</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">msg_host_t</ref> *</type>
+          <declname>host_list</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>flops_amount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>bytes_amount</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new parallel task. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A constructor for msg_task_t taking six arguments.</para>
+<para><verbatim>* See :cpp:func:`void simgrid::s4u::this_actor::parallel_execute(int, s4u::Host**, double*, double*)` for
+* the exact semantic of the parameters.
+* </verbatim></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a name for the object. It is for user-level information and can be nullptr. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>host_nb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of hosts implied in the parallel task. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>host_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an array of <computeroutput>host_nb</computeroutput> msg_host_t. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flops_amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an array of <computeroutput>host_nb</computeroutput> doubles. flops_amount[i] is the total number of operations that have to be performed on host_list[i]. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bytes_amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an array of <computeroutput>host_nb*</computeroutput> <computeroutput>host_nb</computeroutput> doubles. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to any data may want to attach to the new object. It is for user-level information and can be nullptr. It can be retrieved with the function MSG_task_get_data(). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="238" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="238" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a719d2cc403b117340117682dc069b563" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* MSG_task_get_data</definition>
+        <argsstring>(const_msg_task_t task)</argsstring>
+        <name>MSG_task_get_data</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">const_msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+<para>Return the user data of the given task. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="247" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="247" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a5a2984b6a34bb725b52ee31cdece56a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MSG_task_set_data</definition>
+        <argsstring>(msg_task_t task, void *data)</argsstring>
+        <name>MSG_task_set_data</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Sets the user data of a given task. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="253" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="253" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a450ce59418b95d22d0fd5fcb77ed5cff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">msg_process_t</ref></type>
+        <definition>msg_process_t MSG_task_get_sender</definition>
+        <argsstring>(const_msg_task_t task)</argsstring>
+        <name>MSG_task_get_sender</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">const_msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+<para>Returns the sender of the given task. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="259" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="259" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a9bd2d063a8667c5e7f6e80c3732e0cfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">msg_host_t</ref></type>
+        <definition>msg_host_t MSG_task_get_source</definition>
+        <argsstring>(const_msg_task_t task)</argsstring>
+        <name>MSG_task_get_source</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">const_msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+<para>Returns the source (the sender&apos;s host) of the given task. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="265" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="265" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1af3c1d19bef7e0a2450af529cef6cf5ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* MSG_task_get_name</definition>
+        <argsstring>(const_msg_task_t task)</argsstring>
+        <name>MSG_task_get_name</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">const_msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+<para>Returns the name of the given task. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="271" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="271" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1aa97b99e0176424e3f0afdf239e2f3f32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MSG_task_set_name</definition>
+        <argsstring>(msg_task_t task, const char *name)</argsstring>
+        <name>MSG_task_set_name</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Sets the name of the given task. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="277" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="277" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a6ebbb75fe9ff779eac6ca57c5ad5bfe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>msg_error_t</type>
+        <definition>msg_error_t MSG_task_execute</definition>
+        <argsstring>(msg_task_t task)</argsstring>
+        <name>MSG_task_execute</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+<para>Executes a task and waits for its termination. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used for describing the behavior of a process. It takes only one parameter. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a msg_task_t to execute on the location on which the process is running. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>MSG_OK if the task was successfully completed, MSG_TASK_CANCELED or MSG_HOST_FAILURE otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="289" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="289" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a97bd13baa799b73b12599b3d6f7b849f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>msg_error_t</type>
+        <definition>msg_error_t MSG_parallel_task_execute</definition>
+        <argsstring>(msg_task_t task)</argsstring>
+        <name>MSG_parallel_task_execute</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+<para>Executes a parallel task and waits for its termination. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a msg_task_t to execute on the location on which the process is running.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>MSG_OK if the task was successfully completed, MSG_TASK_CANCELED or MSG_HOST_FAILURE otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="301" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="301" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a45b5ebc2a48f9b4e3490200db4efc632" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>msg_error_t</type>
+        <definition>msg_error_t MSG_parallel_task_execute_with_timeout</definition>
+        <argsstring>(msg_task_t task, double timeout)</argsstring>
+        <name>MSG_parallel_task_execute_with_timeout</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="306" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="306" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1aa280111a523d70bb36061e6e52ca1b42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1msg_1_1_comm" kindref="compound">msg_comm_t</ref></type>
+        <definition>msg_comm_t MSG_task_isend</definition>
+        <argsstring>(msg_task_t task, const char *alias)</argsstring>
+        <name>MSG_task_isend</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>alias</declname>
+        </param>
+        <briefdescription>
+<para>Sends a task on a mailbox. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a non blocking function: use MSG_comm_wait() or MSG_comm_test() to end the communication.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a msg_task_t to send on another location. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the mailbox to sent the task to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the msg_comm_t communication created </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="321" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="321" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1afb8d945da3bf7c7e54d8db238d5f5508" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1msg_1_1_comm" kindref="compound">msg_comm_t</ref></type>
+        <definition>msg_comm_t MSG_task_isend_bounded</definition>
+        <argsstring>(msg_task_t task, const char *alias, double maxrate)</argsstring>
+        <name>MSG_task_isend_bounded</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>alias</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>maxrate</declname>
+        </param>
+        <briefdescription>
+<para>Sends a task on a mailbox with a maximum rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a non blocking function: use MSG_comm_wait() or MSG_comm_test() to end the communication. The maxrate parameter allows the application to limit the bandwidth utilization of network links when sending the task.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a msg_task_t to send on another location. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the mailbox to sent the task to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxrate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum communication rate for sending this task (byte/sec). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the msg_comm_t communication created </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="337" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="337" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a7e292abd2fac532430ecb51a170a004a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MSG_task_dsend</definition>
+        <argsstring>(msg_task_t task, const char *alias, void_f_pvoid_t cleanup)</argsstring>
+        <name>MSG_task_dsend</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>alias</declname>
+        </param>
+        <param>
+          <type>void_f_pvoid_t</type>
+          <declname>cleanup</declname>
+        </param>
+        <briefdescription>
+<para>Sends a task on a mailbox. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a non blocking detached send function. Think of it as a best effort send. Keep in mind that the third parameter is only called if the communication fails. If the communication does work, it is responsibility of the receiver code to free anything related to the task, as usual. More details on this can be obtained on <ulink url="http://lists.gforge.inria.fr/pipermail/simgrid-user/2011-November/002649.html">this thread</ulink> in the SimGrid-user mailing list archive.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a msg_task_t to send on another location. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the mailbox to sent the task to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cleanup</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a function to destroy the task if the communication fails, e.g. MSG_task_destroy (if nullptr, no function will be called) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="358" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="358" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a361a85b101d3de18e8b7ed0a101d2af3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MSG_task_dsend_bounded</definition>
+        <argsstring>(msg_task_t task, const char *alias, void_f_pvoid_t cleanup, double maxrate)</argsstring>
+        <name>MSG_task_dsend_bounded</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>alias</declname>
+        </param>
+        <param>
+          <type>void_f_pvoid_t</type>
+          <declname>cleanup</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>maxrate</declname>
+        </param>
+        <briefdescription>
+<para>Sends a task on a mailbox with a maximal rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a non blocking detached send function. Think of it as a best effort send. Keep in mind that the third parameter is only called if the communication fails. If the communication does work, it is responsibility of the receiver code to free anything related to the task, as usual. More details on this can be obtained on <ulink url="http://lists.gforge.inria.fr/pipermail/simgrid-user/2011-November/002649.html">this thread</ulink> in the SimGrid-user mailing list archive.</para>
+<para>The rate parameter can be used to send a task with a limited bandwidth (smaller than the physical available value). Use MSG_task_dsend() if you don&apos;t limit the rate (or pass -1 as a rate value do disable this feature).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a msg_task_t to send on another location. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the mailbox to sent the task to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cleanup</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a function to destroy the task if the communication fails, e.g. MSG_task_destroy (if nullptr, no function will be called) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxrate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum communication rate for sending this task (byte/sec) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="383" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="383" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a33c924177135850888f25378b8e0b3cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>msg_error_t</type>
+        <definition>msg_error_t MSG_task_send</definition>
+        <argsstring>(msg_task_t task, const char *alias)</argsstring>
+        <name>MSG_task_send</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>alias</declname>
+        </param>
+        <briefdescription>
+<para>Sends a task to a mailbox. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a blocking function, the execution flow will be blocked until the task is sent (and received on the other side if MSG_task_receive is used). See MSG_task_isend for sending tasks asynchronously.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the task to be sent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the mailbox name to where the task is sent</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns MSG_OK if the task was successfully sent, MSG_HOST_FAILURE, or MSG_TRANSFER_FAILURE otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="401" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="401" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a77f5e9bbbdb4a478cd3479d86678b7ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>msg_error_t</type>
+        <definition>msg_error_t MSG_task_send_bounded</definition>
+        <argsstring>(msg_task_t task, const char *alias, double maxrate)</argsstring>
+        <name>MSG_task_send_bounded</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>alias</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>maxrate</declname>
+        </param>
+        <briefdescription>
+<para>Sends a task to a mailbox with a maximum rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a blocking function, the execution flow will be blocked until the task is sent. The maxrate parameter allows the application to limit the bandwidth utilization of network links when sending the task.</para>
+<para>The maxrate parameter can be used to send a task with a limited bandwidth (smaller than the physical available value). Use MSG_task_send() if you don&apos;t limit the rate (or pass -1 as a rate value do disable this feature).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the task to be sent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the mailbox name to where the task is sent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxrate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum communication rate for sending this task (byte/sec)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns MSG_OK if the task was successfully sent, MSG_HOST_FAILURE, or MSG_TRANSFER_FAILURE otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="423" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="423" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1ae1fb84e33c47ad59862188845ececdf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>msg_error_t</type>
+        <definition>msg_error_t MSG_task_send_with_timeout</definition>
+        <argsstring>(msg_task_t task, const char *alias, double timeout)</argsstring>
+        <name>MSG_task_send_with_timeout</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>alias</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+<para>Sends a task to a mailbox with a timeout. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a blocking function, the execution flow will be blocked until the task is sent or the timeout is achieved.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the task to be sent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the mailbox name to where the task is sent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the maximum wait time for completion (if -1, this call is the same as MSG_task_send)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns MSG_OK if the task was successfully sent, MSG_HOST_FAILURE, or MSG_TRANSFER_FAILURE, or MSG_TIMEOUT otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="441" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="441" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a67d9306a7940e2b32a57d4c4d2ce8523" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>msg_error_t</type>
+        <definition>msg_error_t MSG_task_send_with_timeout_bounded</definition>
+        <argsstring>(msg_task_t task, const char *alias, double timeout, double maxrate)</argsstring>
+        <name>MSG_task_send_with_timeout_bounded</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>alias</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>timeout</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>maxrate</declname>
+        </param>
+        <briefdescription>
+<para>Sends a task to a mailbox with a timeout and with a maximum rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a blocking function, the execution flow will be blocked until the task is sent or the timeout is achieved.</para>
+<para>The maxrate parameter can be used to send a task with a limited bandwidth (smaller than the physical available value). Use MSG_task_send_with_timeout() if you don&apos;t limit the rate (or pass -1 as a rate value do disable this feature).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the task to be sent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the mailbox name to where the task is sent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the maximum wait time for completion (if -1, this call is the same as MSG_task_send) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxrate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the maximum communication rate for sending this task (byte/sec)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns MSG_OK if the task was successfully sent, MSG_HOST_FAILURE, or MSG_TRANSFER_FAILURE, or MSG_TIMEOUT otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="463" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="463" bodyend="467"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a710ee9d4ea587ab6ae66014913ac91e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>msg_error_t</type>
+        <definition>msg_error_t MSG_task_receive</definition>
+        <argsstring>(msg_task_t *task, const char *alias)</argsstring>
+        <name>MSG_task_receive</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>alias</declname>
+        </param>
+        <briefdescription>
+<para>Receives a task from a mailbox. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a blocking function, the execution flow will be blocked until the task is received. See MSG_task_irecv for receiving tasks asynchronously.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a memory location for storing a msg_task_t. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the mailbox to receive the task from</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns MSG_OK if the task was successfully received, MSG_HOST_FAILURE, or MSG_TRANSFER_FAILURE otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="482" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="482" bodyend="485"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1ad147ccce869d2be6888e123063430dd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>msg_error_t</type>
+        <definition>msg_error_t MSG_task_receive_bounded</definition>
+        <argsstring>(msg_task_t *task, const char *alias, double rate)</argsstring>
+        <name>MSG_task_receive_bounded</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>alias</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+<para>Receives a task from a mailbox at a given rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a memory location for storing a msg_task_t. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the mailbox to receive the task from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>limit the reception to rate bandwidth (byte/sec)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+The rate parameter can be used to receive a task with a limited bandwidth (smaller than the physical available value). Use MSG_task_receive() if you don&apos;t limit the rate (or pass -1 as a rate value do disable this feature).</para>
+<para><simplesect kind="return"><para>Returns MSG_OK if the task was successfully received, MSG_HOST_FAILURE, or MSG_TRANSFER_FAILURE otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="501" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="501" bodyend="504"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a19687ebde0e9a07cb99fc73e7dfa7a03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>msg_error_t</type>
+        <definition>msg_error_t MSG_task_receive_with_timeout</definition>
+        <argsstring>(msg_task_t *task, const char *alias, double timeout)</argsstring>
+        <name>MSG_task_receive_with_timeout</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>alias</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+<para>Receives a task from a mailbox with a given timeout. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a blocking function with a timeout, the execution flow will be blocked until the task is received or the timeout is achieved. See MSG_task_irecv for receiving tasks asynchronously. You can provide a -1 timeout to obtain an infinite timeout.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a memory location for storing a msg_task_t. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the mailbox to receive the task from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the maximum wait time for completion (if -1, this call is the same as MSG_task_receive)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns MSG_OK if the task was successfully received, MSG_HOST_FAILURE, or MSG_TRANSFER_FAILURE, or MSG_TIMEOUT otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="521" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="521" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a4a29ded2ab96b5632e2f70dfd684783d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>msg_error_t</type>
+        <definition>msg_error_t MSG_task_receive_with_timeout_bounded</definition>
+        <argsstring>(msg_task_t *task, const char *alias, double timeout, double rate)</argsstring>
+        <name>MSG_task_receive_with_timeout_bounded</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>alias</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>timeout</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+<para>Receives a task from a mailbox with a given timeout and at a given rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a memory location for storing a msg_task_t. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the mailbox to receive the task from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the maximum wait time for completion (if -1, this call is the same as MSG_task_receive) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>limit the reception to rate bandwidth (byte/sec)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+The rate parameter can be used to send a task with a limited bandwidth (smaller than the physical available value). Use MSG_task_receive() if you don&apos;t limit the rate (or pass -1 as a rate value do disable this feature).</para>
+<para><simplesect kind="return"><para>Returns MSG_OK if the task was successfully received, MSG_HOST_FAILURE, or MSG_TRANSFER_FAILURE, or MSG_TIMEOUT otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="543" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="543" bodyend="582"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1adb4623d587d75ad3b078928f0f1b27a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1msg_1_1_comm" kindref="compound">msg_comm_t</ref></type>
+        <definition>msg_comm_t MSG_task_irecv</definition>
+        <argsstring>(msg_task_t *task, const char *name)</argsstring>
+        <name>MSG_task_irecv</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Starts listening for receiving a task from an asynchronous communication. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a non blocking function: use MSG_comm_wait() or MSG_comm_test() to end the communication.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a memory location for storing a msg_task_t. has to be valid until the end of the communication. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the mailbox to receive the task on </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the msg_comm_t communication created </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="593" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="593" bodyend="596"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1abc1b32d1baa16ae2dea503be7b74893f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1msg_1_1_comm" kindref="compound">msg_comm_t</ref></type>
+        <definition>msg_comm_t MSG_task_irecv_bounded</definition>
+        <argsstring>(msg_task_t *task, const char *name, double rate)</argsstring>
+        <name>MSG_task_irecv_bounded</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref> *</type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+<para>Starts listening for receiving a task from an asynchronous communication at a given rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The rate parameter can be used to receive a task with a limited bandwidth (smaller than the physical available value). Use MSG_task_irecv() if you don&apos;t limit the rate (or pass -1 as a rate value do disable this feature).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a memory location for storing a msg_task_t. has to be valid until the end of the communication. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the mailbox to receive the task on </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>limit the bandwidth to the given rate (byte/sec) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the msg_comm_t communication created </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="611" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="611" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a7646951835a1ac861b6a35b41741a268" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MSG_task_listen_from</definition>
+        <argsstring>(const char *alias)</argsstring>
+        <name>MSG_task_listen_from</name>
+        <param>
+          <type>const char *</type>
+          <declname>alias</declname>
+        </param>
+        <briefdescription>
+<para>Look if there is a communication on a mailbox and return the PID of the sender process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the mailbox to be considered</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the PID of sender process (or -1 if there is no communication in the mailbox) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="638" column="5" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="638" bodyend="647"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1af6369e840095c428218e494bf8b6dee6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>msg_error_t</type>
+        <definition>msg_error_t MSG_task_destroy</definition>
+        <argsstring>(msg_task_t task)</argsstring>
+        <name>MSG_task_destroy</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+<para>Destroys the given task. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>You should free user data, if any, <bold>before</bold> calling this destructor.</para>
+<para>Only the process that owns the task can destroy it. The owner changes after a successful send. If a task is successfully sent, the receiver becomes the owner and is supposed to destroy it. The sender should not use it anymore. If the task failed to be sent, the sender remains the owner of the task. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="659" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="659" bodyend="670"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a32b22934d1c7618a1066054ccb94a60e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>msg_error_t</type>
+        <definition>msg_error_t MSG_task_cancel</definition>
+        <argsstring>(msg_task_t task)</argsstring>
+        <name>MSG_task_cancel</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+<para>Cancel the given task. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If it was currently executed or transferred, the working process is stopped. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="676" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="676" bodyend="681"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a6bf0cd6b8656600fe7889903cb4d9635" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double MSG_task_get_remaining_work_ratio</definition>
+        <argsstring>(const_msg_task_t task)</argsstring>
+        <name>MSG_task_get_remaining_work_ratio</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">const_msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+<para>Returns a value in ]0,1[ that represent the task remaining work to do: starts at 1 and goes to 0. Returns 0 if not started or finished. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It works for either parallel or sequential tasks. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="688" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="688" bodyend="698"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a843715b41b0565bd25861dfcee43b8b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double MSG_task_get_flops_amount</definition>
+        <argsstring>(const_msg_task_t task)</argsstring>
+        <name>MSG_task_get_flops_amount</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">const_msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+<para>Returns the amount of flops that remain to be computed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned value is initially the cost that you defined for the task, then it decreases until it reaches 0</para>
+<para>It works for sequential tasks, but the remaining amount of work is not a scalar value for parallel tasks. So you will get an exception if you call this function on parallel tasks. Just don&apos;t do it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="707" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="707" bodyend="717"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a9eda5e1015cb89fcae6284352456efb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MSG_task_set_flops_amount</definition>
+        <argsstring>(msg_task_t task, double flops_amount)</argsstring>
+        <name>MSG_task_set_flops_amount</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>flops_amount</declname>
+        </param>
+        <briefdescription>
+<para>set the computation amount needed to process the given task. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>If the computation is ongoing (already started and not finished), it is not modified by this call. Moreover, after its completion, the ongoing execution with set the flops_amount to zero, overriding any value set during the execution. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="725" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="725" bodyend="728"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1ab568f71ec961d4c80b1c542db3a3c232" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MSG_task_set_bytes_amount</definition>
+        <argsstring>(msg_task_t task, double data_size)</argsstring>
+        <name>MSG_task_set_bytes_amount</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>data_size</declname>
+        </param>
+        <briefdescription>
+<para>set the amount data attached with the given task. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>If the transfer is ongoing (already started and not finished), it is not modified by this call. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="734" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="734" bodyend="737"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a2e1dba6c6c1a6eb7b05fcbb1f0acf8a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double MSG_task_get_remaining_communication</definition>
+        <argsstring>(const_msg_task_t task)</argsstring>
+        <name>MSG_task_get_remaining_communication</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">const_msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+<para>Returns the total amount received by the given task. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the communication does not exist it will return 0. So, if the communication has FINISHED or FAILED it returns zero. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="744" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="744" bodyend="748"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1aba49fde27570984e226fe555e8819835" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double MSG_task_get_bytes_amount</definition>
+        <argsstring>(const_msg_task_t task)</argsstring>
+        <name>MSG_task_get_bytes_amount</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">const_msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+<para>Returns the size of the data attached to the given task. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="751" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="751" bodyend="755"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a22cf2562fbb9cad8c5860914c0d8d6dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MSG_task_set_priority</definition>
+        <argsstring>(msg_task_t task, double priority)</argsstring>
+        <name>MSG_task_set_priority</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+<para>Changes the priority of a computation task. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This priority doesn&apos;t affect the transfer rate. A priority of 2 will make a task receive two times more cpu power than regular tasks. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="762" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="762" bodyend="765"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1a87b297371654cd28eace12a22e52c44d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MSG_task_set_bound</definition>
+        <argsstring>(msg_task_t task, double bound)</argsstring>
+        <name>MSG_task_set_bound</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bound</declname>
+        </param>
+        <briefdescription>
+<para>Changes the maximum CPU utilization of a computation task (in flops/s). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For VMs, there is a pitfall. Please see MSG_vm_set_bound(). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="771" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="771" bodyend="776"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1aff6a660d1f3a37ff7ee3daee0e3ae3b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MSG_task_set_category</definition>
+        <argsstring>(msg_task_t task, const char *category)</argsstring>
+        <name>MSG_task_set_category</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>category</declname>
+        </param>
+        <briefdescription>
+<para>Sets the tracing category of a task. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function should be called after the creation of a MSG task, to define the category of that task. The first parameter task must contain a task that was =created with the function MSG_task_create(). The second parameter category must contain a category that was previously declared with the function TRACE_category (or with TRACE_category_with_color).</para>
+<para><verbatim>embed:rst:leading-asterisk
+* See :ref:`outcomes_vizu` for details on how to trace the (categorized) resource utilization.
+* </verbatim></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the task that is going to be categorized </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>category</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the category to be associated to the task</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>MSG_task_get_category, TRACE_category, TRACE_category_with_color </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="795" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="795" bodyend="809"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__task_8cpp_1acdf6885dfe9aba73cde9741bf77089c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* MSG_task_get_category</definition>
+        <argsstring>(const_msg_task_t task)</argsstring>
+        <name>MSG_task_get_category</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">const_msg_task_t</ref></type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+<para>Gets the current tracing category of a task. (. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>MSG_task_set_category) </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>task</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the task to be considered </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the name of the tracing category of the given task, &quot;&quot; otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" line="816" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="816" bodyend="819"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp"/>
+  </compounddef>
+</doxygen>

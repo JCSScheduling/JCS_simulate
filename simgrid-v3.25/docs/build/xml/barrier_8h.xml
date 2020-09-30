@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="barrier_8h" kind="file" language="C++">
+    <compoundname>barrier.h</compoundname>
+    <includes refid="forward_8h" local="no">simgrid/forward.h</includes>
+    <includedby refid="_barrier_8hpp" local="no">Barrier.hpp</includedby>
+    <includedby refid="msg_8h" local="no">msg.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="1">
+        <label>barrier.h</label>
+        <link refid="barrier_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="2">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>barrier.h</label>
+        <link refid="barrier_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>msg.h</label>
+        <link refid="msg_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Barrier.hpp</label>
+        <link refid="_barrier_8hpp_source"/>
+      </node>
+      <node id="4">
+        <label>msg_private.hpp</label>
+        <link refid="msg__private_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="barrier_8h_1aa52fced6e9e102912fc37faac17f4fff" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int SG_BARRIER_SERIAL_THREAD</definition>
+        <argsstring></argsstring>
+        <name>SG_BARRIER_SERIAL_THREAD</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/barrier.h" line="14" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/barrier.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="barrier_8h_1a9f6dd165408fd7839a66befd3d3d41c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_barrier" kindref="compound">sg_bar_t</ref></type>
+        <definition>sg_bar_t sg_barrier_init</definition>
+        <argsstring>(unsigned int count)</argsstring>
+        <name>sg_barrier_init</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/barrier.h" line="22" column="11" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/barrier.h" declline="22" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="barrier_8h_1aef7fb657be0627332b441dbf248c5397" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_barrier_destroy</definition>
+        <argsstring>(const_sg_bar_t bar)</argsstring>
+        <name>sg_barrier_destroy</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_barrier" kindref="compound">const_sg_bar_t</ref></type>
+          <declname>bar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/barrier.h" line="23" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/barrier.h" declline="23" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="barrier_8h_1af128e36d36b4e2070b70e2af64b9759c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sg_barrier_wait</definition>
+        <argsstring>(sg_bar_t bar)</argsstring>
+        <name>sg_barrier_wait</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_barrier" kindref="compound">sg_bar_t</ref></type>
+          <declname>bar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/barrier.h" line="24" column="6" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/barrier.h" declline="24" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/barrier.h"/>
+  </compounddef>
+</doxygen>

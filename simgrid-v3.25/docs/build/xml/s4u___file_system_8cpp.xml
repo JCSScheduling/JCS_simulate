@@ -1,0 +1,846 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="s4u___file_system_8cpp" kind="file" language="C++">
+    <compoundname>s4u_FileSystem.cpp</compoundname>
+    <includes local="yes">simgrid/plugins/file_system.h</includes>
+    <includes refid="_actor_8hpp" local="yes">simgrid/s4u/Actor.hpp</includes>
+    <includes refid="_engine_8hpp" local="yes">simgrid/s4u/Engine.hpp</includes>
+    <includes local="yes">src/surf/HostImpl.hpp</includes>
+    <includes local="yes">src/surf/xml/platf_private.hpp</includes>
+    <includes local="yes">xbt/config.hpp</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">boost/algorithm/string.hpp</includes>
+    <includes local="no">boost/algorithm/string/join.hpp</includes>
+    <includes local="no">boost/algorithm/string/split.hpp</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">numeric</includes>
+    <incdepgraph>
+      <node id="25">
+        <label>boost/algorithm/string.hpp</label>
+      </node>
+      <node id="12">
+        <label>functional</label>
+      </node>
+      <node id="23">
+        <label>xbt/config.hpp</label>
+      </node>
+      <node id="6">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="9">
+        <label>xbt/functional.hpp</label>
+      </node>
+      <node id="5">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="15">
+        <label>simgrid/s4u/Engine.hpp</label>
+        <link refid="_engine_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>numeric</label>
+      </node>
+      <node id="18">
+        <label>string</label>
+      </node>
+      <node id="13">
+        <label>map</label>
+      </node>
+      <node id="22">
+        <label>src/surf/xml/platf_private.hpp</label>
+      </node>
+      <node id="1">
+        <label>s4u_FileSystem.cpp</label>
+        <link refid="s4u___file_system_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>fstream</label>
+      </node>
+      <node id="7">
+        <label>simgrid/chrono.hpp</label>
+      </node>
+      <node id="21">
+        <label>src/surf/HostImpl.hpp</label>
+      </node>
+      <node id="4">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>xbt/string.hpp</label>
+      </node>
+      <node id="27">
+        <label>boost/algorithm/string/split.hpp</label>
+      </node>
+      <node id="10">
+        <label>xbt/signal.hpp</label>
+      </node>
+      <node id="20">
+        <label>vector</label>
+      </node>
+      <node id="19">
+        <label>utility</label>
+      </node>
+      <node id="16">
+        <label>simgrid/simix.hpp</label>
+      </node>
+      <node id="26">
+        <label>boost/algorithm/string/join.hpp</label>
+      </node>
+      <node id="14">
+        <label>unordered_map</label>
+      </node>
+      <node id="8">
+        <label>xbt/Extendable.hpp</label>
+      </node>
+      <node id="3">
+        <label>simgrid/s4u/Actor.hpp</label>
+        <link refid="_actor_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>algorithm</label>
+      </node>
+      <node id="2">
+        <label>simgrid/plugins/file_system.h</label>
+      </node>
+      <node id="17">
+        <label>simgrid/s4u/NetZone.hpp</label>
+        <link refid="_net_zone_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacesimgrid">simgrid</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1s4u">simgrid::s4u</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="s4u___file_system_8cpp_1a7a4be655108b880ac7c3dac527d07bd0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sg_storage_max_file_descriptors</definition>
+        <argsstring></argsstring>
+        <name>sg_storage_max_file_descriptors</name>
+        <initializer>= 1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="21" column="5" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="s4u___file_system_8cpp_1aa681f468a87478f08e4a12fbccbc98f5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void on_disk_creation</definition>
+        <argsstring>(simgrid::s4u::Disk &amp;d)</argsstring>
+        <name>on_disk_creation</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_disk" kindref="compound">simgrid::s4u::Disk</ref> &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="557" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="557" bodyend="560"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___file_system_8cpp_1a0b8154eb0b9470b0c6625e76bef96cf5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void on_storage_creation</definition>
+        <argsstring>(simgrid::s4u::Storage &amp;st)</argsstring>
+        <name>on_storage_creation</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_storage" kindref="compound">simgrid::s4u::Storage</ref> &amp;</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="561" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="561" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___file_system_8cpp_1aa86ae9f40d627f829ac9e25b9fc9c56f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void on_host_creation</definition>
+        <argsstring>(simgrid::s4u::Host &amp;host)</argsstring>
+        <name>on_host_creation</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">simgrid::s4u::Host</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="566" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="566" bodyend="569"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___file_system_8cpp_1a5256be9825b0e3b77cbba04f73de2c92" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void on_platform_created</definition>
+        <argsstring>()</argsstring>
+        <name>on_platform_created</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="571" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="571" bodyend="598"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___file_system_8cpp_1ac5db9c5a131ceafa5842b7efc0b49fba" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void on_simulation_end</definition>
+        <argsstring>()</argsstring>
+        <name>on_simulation_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="600" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="600" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__filesystem_1ga0a66e3b831ce6cd80a5b9ca12170c00d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_storage_file_system_init</definition>
+        <argsstring>()</argsstring>
+        <name>sg_storage_file_system_init</name>
+        <briefdescription>
+<para>Initialize the file system plugin. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>embed:rst:leading-asterisk
+See the examples in :ref:`s4u_ex_disk_io`.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="624" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="624" bodyend="646"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___file_system_8cpp_1ad10cf0fcc7d315acde37e66196f2ba04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sg_file_t</type>
+        <definition>sg_file_t sg_file_open</definition>
+        <argsstring>(const char *fullpath, void *data)</argsstring>
+        <name>sg_file_open</name>
+        <param>
+          <type>const char *</type>
+          <declname>fullpath</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="648" column="11" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="648" bodyend="651"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___file_system_8cpp_1a6ae76f9424fe05b8d1ad19477e676dbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sg_size_t</type>
+        <definition>sg_size_t sg_file_read</definition>
+        <argsstring>(sg_file_t fd, sg_size_t size)</argsstring>
+        <name>sg_file_read</name>
+        <param>
+          <type>sg_file_t</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>sg_size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="653" column="11" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="653" bodyend="656"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___file_system_8cpp_1a87c9a13fc69f67ddb1add9fdd38e25f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sg_size_t</type>
+        <definition>sg_size_t sg_file_write</definition>
+        <argsstring>(sg_file_t fd, sg_size_t size)</argsstring>
+        <name>sg_file_write</name>
+        <param>
+          <type>sg_file_t</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>sg_size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="658" column="11" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="658" bodyend="661"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___file_system_8cpp_1a38c43c0df85c04ce2042d8bd8bcc6011" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_file_close</definition>
+        <argsstring>(const_sg_file_t fd)</argsstring>
+        <name>sg_file_close</name>
+        <param>
+          <type>const_sg_file_t</type>
+          <declname>fd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="663" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="663" bodyend="666"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__filesystem_1ga0db6da8a44a18a203ad7e437ddeef5e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* sg_file_get_name</definition>
+        <argsstring>(sg_file_t fd)</argsstring>
+        <name>sg_file_get_name</name>
+        <param>
+          <type>sg_file_t</type>
+          <declname>fd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the path to the file </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="671" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="671" bodyend="675"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__filesystem_1ga919c5fb908efe638809553239402796f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sg_size_t</type>
+        <definition>sg_size_t sg_file_get_size</definition>
+        <argsstring>(sg_file_t fd)</argsstring>
+        <name>sg_file_get_size</name>
+        <param>
+          <type>sg_file_t</type>
+          <declname>fd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the size of the file </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="680" column="11" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="680" bodyend="683"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___file_system_8cpp_1af6a01956cc5898dd6618e2ed62e15dbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_file_dump</definition>
+        <argsstring>(sg_file_t fd)</argsstring>
+        <name>sg_file_dump</name>
+        <param>
+          <type>sg_file_t</type>
+          <declname>fd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="685" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="685" bodyend="688"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__filesystem_1gaef9ad59d9e6a52d92e46c1426c2b8951" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* sg_file_get_data</definition>
+        <argsstring>(const_sg_file_t fd)</argsstring>
+        <name>sg_file_get_data</name>
+        <param>
+          <type>const_sg_file_t</type>
+          <declname>fd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the user data associated with the file </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="693" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="693" bodyend="696"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__filesystem_1ga1632068579a5b131014067ad6fadf55e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_file_set_data</definition>
+        <argsstring>(sg_file_t fd, void *data)</argsstring>
+        <name>sg_file_set_data</name>
+        <param>
+          <type>sg_file_t</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Changes the user data associated with the file </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="701" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="701" bodyend="704"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__filesystem_1ga5c978b09c3e901b604095ac21fcc0a47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_file_seek</definition>
+        <argsstring>(sg_file_t fd, sg_offset_t offset, int origin)</argsstring>
+        <name>sg_file_seek</name>
+        <param>
+          <type>sg_file_t</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>sg_offset_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>origin</declname>
+        </param>
+        <briefdescription>
+<para>Set the file position indicator in the sg_file_t by adding offset bytes to the position specified by origin (either SEEK_SET, SEEK_CUR, or SEEK_END). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: file object that identifies the stream </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: number of bytes to offset from origin </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Position used as reference for the offset. It is specified by one of the following constants defined in &lt;stdio.h&gt; exclusively to be used as arguments for this function (SEEK_SET = beginning of file, SEEK_CUR = current position of the file pointer, SEEK_END = end of file) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="716" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="716" bodyend="719"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___file_system_8cpp_1a0f94c2ff972db2cda5bdd2fc21b3eab9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sg_size_t</type>
+        <definition>sg_size_t sg_file_tell</definition>
+        <argsstring>(sg_file_t fd)</argsstring>
+        <name>sg_file_tell</name>
+        <param>
+          <type>sg_file_t</type>
+          <declname>fd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="721" column="11" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="721" bodyend="724"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___file_system_8cpp_1acaa91b575c9426f49ef04f2bcbc4a68f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_file_move</definition>
+        <argsstring>(sg_file_t fd, const char *fullpath)</argsstring>
+        <name>sg_file_move</name>
+        <param>
+          <type>sg_file_t</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fullpath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="726" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="726" bodyend="729"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___file_system_8cpp_1aace59a23049b7c8c52765dbfa4600cf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_file_unlink</definition>
+        <argsstring>(sg_file_t fd)</argsstring>
+        <name>sg_file_unlink</name>
+        <param>
+          <type>sg_file_t</type>
+          <declname>fd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="731" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="731" bodyend="735"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__filesystem_1ga7eb26b34eec3e19f5673118bec4b5a03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sg_file_rcopy</definition>
+        <argsstring>(sg_file_t file, sg_host_t host, const char *fullpath)</argsstring>
+        <name>sg_file_rcopy</name>
+        <param>
+          <type>sg_file_t</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fullpath</declname>
+        </param>
+        <briefdescription>
+<para>Copy a file to another location on a remote host. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the file to move </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the remote host where the file has to be copied </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fullpath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the complete path destination on the remote host </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If successful, the function returns 0. Otherwise, it returns -1. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="746" column="5" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="746" bodyend="749"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__filesystem_1ga5f4bdf4a1d5abd7dff4d59f07cf171c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sg_file_rmove</definition>
+        <argsstring>(sg_file_t file, sg_host_t host, const char *fullpath)</argsstring>
+        <name>sg_file_rmove</name>
+        <param>
+          <type>sg_file_t</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fullpath</declname>
+        </param>
+        <briefdescription>
+<para>Move a file to another location on a remote host. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the file to move </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the remote host where the file has to be moved </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fullpath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: the complete path destination on the remote host </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If successful, the function returns 0. Otherwise, it returns -1. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="760" column="5" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="760" bodyend="763"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___file_system_8cpp_1aea18ac3a8c18e5f35f44604fcaeed258" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sg_size_t</type>
+        <definition>sg_size_t sg_disk_get_size_free</definition>
+        <argsstring>(const_sg_disk_t d)</argsstring>
+        <name>sg_disk_get_size_free</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_disk" kindref="compound">const_sg_disk_t</ref></type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="765" column="11" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="765" bodyend="768"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___file_system_8cpp_1a4ce4c22eb38e4c9c3ae3e37010e38d6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sg_size_t</type>
+        <definition>sg_size_t sg_disk_get_size_used</definition>
+        <argsstring>(const_sg_disk_t d)</argsstring>
+        <name>sg_disk_get_size_used</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_disk" kindref="compound">const_sg_disk_t</ref></type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="770" column="11" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="770" bodyend="773"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___file_system_8cpp_1a94b898089125044a8db5892bced4781a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sg_size_t</type>
+        <definition>sg_size_t sg_disk_get_size</definition>
+        <argsstring>(const_sg_disk_t d)</argsstring>
+        <name>sg_disk_get_size</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_disk" kindref="compound">const_sg_disk_t</ref></type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="775" column="11" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="775" bodyend="778"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___file_system_8cpp_1a1c0ed56ec464787cf7fc8e5c99926100" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* sg_disk_get_mount_point</definition>
+        <argsstring>(const_sg_disk_t d)</argsstring>
+        <name>sg_disk_get_mount_point</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_disk" kindref="compound">const_sg_disk_t</ref></type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="780" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="780" bodyend="783"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___file_system_8cpp_1abd6c147d1ab6af98ab084710ad1b28fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sg_size_t</type>
+        <definition>sg_size_t sg_storage_get_size_free</definition>
+        <argsstring>(const_sg_storage_t st)</argsstring>
+        <name>sg_storage_get_size_free</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_storage" kindref="compound">const_sg_storage_t</ref></type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="785" column="11" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="785" bodyend="788"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___file_system_8cpp_1ab6d27f8c197caf98b9a7824f1a823ac1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sg_size_t</type>
+        <definition>sg_size_t sg_storage_get_size_used</definition>
+        <argsstring>(const_sg_storage_t st)</argsstring>
+        <name>sg_storage_get_size_used</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_storage" kindref="compound">const_sg_storage_t</ref></type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="790" column="11" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="790" bodyend="793"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___file_system_8cpp_1a9e762844b94dec8b5ffcd0c6f04e24d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sg_size_t</type>
+        <definition>sg_size_t sg_storage_get_size</definition>
+        <argsstring>(const_sg_storage_t st)</argsstring>
+        <name>sg_storage_get_size</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_storage" kindref="compound">const_sg_storage_t</ref></type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="795" column="11" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="795" bodyend="798"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___file_system_8cpp_1aecb8193ad9a12cbaf1bd7246d84a87f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>xbt_dict_t</type>
+        <definition>xbt_dict_t sg_storage_get_content</definition>
+        <argsstring>(const_sg_storage_t storage)</argsstring>
+        <name>sg_storage_get_content</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_storage" kindref="compound">const_sg_storage_t</ref></type>
+          <declname>storage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="800" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="800" bodyend="813"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___file_system_8cpp_1ab1ae0c8801931d1a78153679aab05afc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>xbt_dict_t</type>
+        <definition>xbt_dict_t sg_host_get_storage_content</definition>
+        <argsstring>(sg_host_t host)</argsstring>
+        <name>sg_host_get_storage_content</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" line="815" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp" bodystart="815" bodyend="823"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/s4u_FileSystem.cpp"/>
+  </compounddef>
+</doxygen>

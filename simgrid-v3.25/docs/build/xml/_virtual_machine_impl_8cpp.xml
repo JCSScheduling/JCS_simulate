@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="_virtual_machine_impl_8cpp" kind="file" language="C++">
+    <compoundname>VirtualMachineImpl.cpp</compoundname>
+    <includes refid="_virtual_machine_impl_8hpp" local="yes">src/plugins/vm/VirtualMachineImpl.hpp</includes>
+    <includes local="yes">simgrid/Exception.hpp</includes>
+    <includes refid="_exec_8hpp" local="yes">simgrid/s4u/Exec.hpp</includes>
+    <includes local="yes">src/include/surf/surf.hpp</includes>
+    <includes local="yes">src/kernel/activity/ExecImpl.hpp</includes>
+    <incdepgraph>
+      <node id="21">
+        <label>atomic</label>
+      </node>
+      <node id="28">
+        <label>functional</label>
+      </node>
+      <node id="6">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="3">
+        <label>simgrid/s4u/VirtualMachine.hpp</label>
+        <link refid="_virtual_machine_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>xbt/functional.hpp</label>
+      </node>
+      <node id="13">
+        <label>src/kernel/actor/ActorImpl.hpp</label>
+      </node>
+      <node id="5">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="30">
+        <label>src/include/surf/surf.hpp</label>
+      </node>
+      <node id="23">
+        <label>string</label>
+      </node>
+      <node id="17">
+        <label>simgrid/Exception.hpp</label>
+      </node>
+      <node id="11">
+        <label>map</label>
+      </node>
+      <node id="1">
+        <label>VirtualMachineImpl.cpp</label>
+        <link refid="_virtual_machine_impl_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>simgrid/chrono.hpp</label>
+      </node>
+      <node id="14">
+        <label>src/surf/HostImpl.hpp</label>
+      </node>
+      <node id="4">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>xbt/string.hpp</label>
+      </node>
+      <node id="9">
+        <label>xbt/signal.hpp</label>
+      </node>
+      <node id="7">
+        <label>simgrid/s4u/Host.hpp</label>
+        <link refid="_host_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/plugins/vm/VirtualMachineImpl.hpp</label>
+        <link refid="_virtual_machine_impl_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vector</label>
+      </node>
+      <node id="18">
+        <label>simgrid/s4u/Exec.hpp</label>
+        <link refid="_exec_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>deque</label>
+      </node>
+      <node id="19">
+        <label>simgrid/s4u/Activity.hpp</label>
+        <link refid="_activity_8hpp_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>unordered_map</label>
+      </node>
+      <node id="8">
+        <label>xbt/Extendable.hpp</label>
+      </node>
+      <node id="25">
+        <label>simgrid/s4u/Actor.hpp</label>
+        <link refid="_actor_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>src/kernel/activity/ExecImpl.hpp</label>
+      </node>
+      <node id="29">
+        <label>xbt/ex.h</label>
+      </node>
+      <node id="22">
+        <label>set</label>
+      </node>
+      <node id="15">
+        <label>algorithm</label>
+      </node>
+      <node id="20">
+        <label>xbt/asserts.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacesimgrid">simgrid</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1vm">simgrid::vm</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_virtual_machine_impl_8cpp_1a9ab81ba88121cfe389bb4776d6057a31" prot="public" static="no" mutable="no">
+        <type><ref refid="classsimgrid_1_1vm_1_1_v_m_model" kindref="compound">simgrid::vm::VMModel</ref> *</type>
+        <definition>simgrid::vm::VMModel* surf_vm_model</definition>
+        <argsstring></argsstring>
+        <name>surf_vm_model</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.cpp" line="14" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_virtual_machine_impl_8cpp_1a510dc9a3a3608d3a84112926cc7be89c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void surf_vm_model_init_HL13</definition>
+        <argsstring>()</argsstring>
+        <name>surf_vm_model_init_HL13</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.cpp" line="16" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.cpp" bodystart="16" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.cpp"/>
+  </compounddef>
+</doxygen>

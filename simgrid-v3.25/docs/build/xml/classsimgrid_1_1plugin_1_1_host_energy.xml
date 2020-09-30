@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1plugin_1_1_host_energy" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::plugin::HostEnergy</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1_host_energy_1a92dce07db8ea994bb0bfa880adb8f76e" prot="private" static="no" mutable="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">simgrid::s4u::Host</ref> *</type>
+        <definition>simgrid::s4u::Host* simgrid::plugin::HostEnergy::host_</definition>
+        <argsstring></argsstring>
+        <name>host_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="131" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1_host_energy_1aedddbc94ccbfa136048a78758e762886" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classsimgrid_1_1plugin_1_1_power_range" kindref="compound">PowerRange</ref> &gt;</type>
+        <definition>std::vector&lt;PowerRange&gt; simgrid::plugin::HostEnergy::power_range_watts_list_</definition>
+        <argsstring></argsstring>
+        <name>power_range_watts_list_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="133" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1_host_energy_1a23b848ebfb23e8f33e7a83d3cbd37c32" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int simgrid::plugin::HostEnergy::pstate_</definition>
+        <argsstring></argsstring>
+        <name>pstate_</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="138" column="7" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1_host_energy_1a96cfae45b8417c91888fff09f4163b60" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int simgrid::plugin::HostEnergy::pstate_off_</definition>
+        <argsstring></argsstring>
+        <name>pstate_off_</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="139" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1_host_energy_1a35a4e954360423b603fcabf75259f441" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::plugin::HostEnergy::watts_off_</definition>
+        <argsstring></argsstring>
+        <name>watts_off_</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="140" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1_host_energy_1a4d6d5925d89ab8a4a1e4855e87ff8fd3" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::plugin::HostEnergy::total_energy_</definition>
+        <argsstring></argsstring>
+        <name>total_energy_</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="141" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1_host_energy_1a68de555c9606ace2c5f0c19e35f35aad" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::plugin::HostEnergy::last_updated_</definition>
+        <argsstring></argsstring>
+        <name>last_updated_</name>
+        <initializer>= surf_get_clock()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="142" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1_host_energy_1a6a064b2b5bf50c3438052b29e8905a7a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool simgrid::plugin::HostEnergy::host_was_used_</definition>
+        <argsstring></argsstring>
+        <name>host_was_used_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="147" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1_host_energy_1a7cb3e290fce55c0a4d4935dece1ef90f" prot="public" static="yes" mutable="no">
+        <type>simgrid::xbt::Extension&lt; <ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">simgrid::s4u::Host</ref>, <ref refid="classsimgrid_1_1plugin_1_1_host_energy" kindref="compound">HostEnergy</ref> &gt;</type>
+        <definition>simgrid::xbt::Extension&lt; simgrid::s4u::Host, HostEnergy &gt; simgrid::plugin::HostEnergy::EXTENSION_ID</definition>
+        <argsstring></argsstring>
+        <name>EXTENSION_ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="153" column="34" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1_host_energy_1a5c8cf146c24af3cccb186d9ea76ede84" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::plugin::HostEnergy::init_watts_range_list</definition>
+        <argsstring>()</argsstring>
+        <name>init_watts_range_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="149" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="341" bodyend="455"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1_host_energy_1a9a7f499d3a6de9f615a98845a080a4d4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend</type>
+        <definition>simgrid::plugin::HostEnergy::void ::on_simulation_end</definition>
+        <argsstring>()</argsstring>
+        <name>void ::on_simulation_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="150" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1_host_energy_1a358273fd3c73f2b69e82078bcc1dfaf4" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::plugin::HostEnergy::HostEnergy</definition>
+        <argsstring>(simgrid::s4u::Host *ptr)</argsstring>
+        <name>HostEnergy</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">simgrid::s4u::Host</ref> *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="155" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="204" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1_host_energy_1afd1a0fd00c8e46abc82240a088fa0533" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::plugin::HostEnergy::~HostEnergy</definition>
+        <argsstring>()</argsstring>
+        <name>~HostEnergy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="156" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1_host_energy_1a9e61fc4891c158b0a986e3921326d04a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::plugin::HostEnergy::get_current_watts_value</definition>
+        <argsstring>()</argsstring>
+        <name>get_current_watts_value</name>
+        <briefdescription>
+<para>Computes the power consumed by the host according to the current situation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>If the host is off, that&apos;s the watts_off value</para>
+</listitem><listitem><para>if it&apos;s on, take the current pstate and the current processor load into account </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="158" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="263" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1_host_energy_1a7e8adc32ac23a2bae886d83dcdab071e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::plugin::HostEnergy::get_current_watts_value</definition>
+        <argsstring>(double cpu_load)</argsstring>
+        <name>get_current_watts_value</name>
+        <param>
+          <type>double</type>
+          <declname>cpu_load</declname>
+        </param>
+        <briefdescription>
+<para>Computes the power that the host would consume at the provided processor load. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether the host is ON or OFF is not taken into account. </para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Something is going on, the host is not idle.</para>
+<para>The power consumption follows the regular model: P(cpu_load) = Pstatic + Pdynamic * cpu_load where Pstatic = power_range.epsilon_ and Pdynamic = power_range.slope_ and the cpu_load is a value between 0 and 1.</para>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="159" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="295" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1_host_energy_1a5f4f0b7531ec9f0776d1e77ba87cc8ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::plugin::HostEnergy::get_consumed_energy</definition>
+        <argsstring>()</argsstring>
+        <name>get_consumed_energy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="160" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="333" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1_host_energy_1a8f0dd57636dd43ab5a0c095344d7803a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::plugin::HostEnergy::get_watt_idle_at</definition>
+        <argsstring>(int pstate)</argsstring>
+        <name>get_watt_idle_at</name>
+        <param>
+          <type>int</type>
+          <declname>pstate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="161" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="231" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1_host_energy_1a56161197a6c31e4c5e08b02a8e7b76a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::plugin::HostEnergy::get_watt_min_at</definition>
+        <argsstring>(int pstate)</argsstring>
+        <name>get_watt_min_at</name>
+        <param>
+          <type>int</type>
+          <declname>pstate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="162" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="238" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1_host_energy_1ae33c30e652b2dec74237a239970b1fa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::plugin::HostEnergy::get_watt_max_at</definition>
+        <argsstring>(int pstate)</argsstring>
+        <name>get_watt_max_at</name>
+        <param>
+          <type>int</type>
+          <declname>pstate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="163" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="245" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1_host_energy_1ad4e59445d1477876856e9bf27f4ceb5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::plugin::HostEnergy::get_power_range_slope_at</definition>
+        <argsstring>(int pstate)</argsstring>
+        <name>get_power_range_slope_at</name>
+        <param>
+          <type>int</type>
+          <declname>pstate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="164" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="252" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1_host_energy_1a23d3080edd4270d915ca7b6a200f4632" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::plugin::HostEnergy::get_last_update_time</definition>
+        <argsstring>()</argsstring>
+        <name>get_last_update_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="165" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="165" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1_host_energy_1a0b0fc3029322de759bdf64816e4a76f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::plugin::HostEnergy::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="166" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="172" bodyend="202"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="130" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="130" bodyend="167"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1a7cb3e290fce55c0a4d4935dece1ef90f" prot="public" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>EXTENSION_ID</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1a5f4f0b7531ec9f0776d1e77ba87cc8ab" prot="public" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>get_consumed_energy</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1a9e61fc4891c158b0a986e3921326d04a" prot="public" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>get_current_watts_value</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1a7e8adc32ac23a2bae886d83dcdab071e" prot="public" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>get_current_watts_value</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1a23d3080edd4270d915ca7b6a200f4632" prot="public" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>get_last_update_time</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1ad4e59445d1477876856e9bf27f4ceb5e" prot="public" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>get_power_range_slope_at</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1a8f0dd57636dd43ab5a0c095344d7803a" prot="public" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>get_watt_idle_at</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1ae33c30e652b2dec74237a239970b1fa6" prot="public" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>get_watt_max_at</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1a56161197a6c31e4c5e08b02a8e7b76a1" prot="public" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>get_watt_min_at</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1a92dce07db8ea994bb0bfa880adb8f76e" prot="private" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>host_</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1a6a064b2b5bf50c3438052b29e8905a7a" prot="private" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>host_was_used_</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1a358273fd3c73f2b69e82078bcc1dfaf4" prot="public" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>HostEnergy</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1a5c8cf146c24af3cccb186d9ea76ede84" prot="private" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>init_watts_range_list</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1a68de555c9606ace2c5f0c19e35f35aad" prot="private" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>last_updated_</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1aedddbc94ccbfa136048a78758e762886" prot="private" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>power_range_watts_list_</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1a23b848ebfb23e8f33e7a83d3cbd37c32" prot="private" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>pstate_</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1a96cfae45b8417c91888fff09f4163b60" prot="private" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>pstate_off_</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1a4d6d5925d89ab8a4a1e4855e87ff8fd3" prot="private" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>total_energy_</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1a0b0fc3029322de759bdf64816e4a76f7" prot="public" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>update</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1a9a7f499d3a6de9f615a98845a080a4d4" prot="private" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>void ::on_simulation_end</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1a35a4e954360423b603fcabf75259f441" prot="private" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>watts_off_</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_host_energy_1afd1a0fd00c8e46abc82240a088fa0533" prot="public" virt="non-virtual"><scope>simgrid::plugin::HostEnergy</scope><name>~HostEnergy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,381 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="_vm_live_migration_8cpp" kind="file" language="C++">
+    <compoundname>VmLiveMigration.cpp</compoundname>
+    <includes refid="_vm_live_migration_8hpp" local="yes">src/plugins/vm/VmLiveMigration.hpp</includes>
+    <includes local="yes">simgrid/Exception.hpp</includes>
+    <includes local="yes">src/instr/instr_private.hpp</includes>
+    <includes refid="_virtual_machine_impl_8hpp" local="yes">src/plugins/vm/VirtualMachineImpl.hpp</includes>
+    <includes refid="_vm_host_ext_8hpp" local="yes">src/plugins/vm/VmHostExt.hpp</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>atomic</label>
+      </node>
+      <node id="25">
+        <label>functional</label>
+      </node>
+      <node id="28">
+        <label>simgrid/s4u/VirtualMachine.hpp</label>
+        <link refid="_virtual_machine_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="15">
+        <label>xbt/functional.hpp</label>
+      </node>
+      <node id="33">
+        <label>src/kernel/actor/ActorImpl.hpp</label>
+      </node>
+      <node id="5">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="2">
+        <label>src/plugins/vm/VmLiveMigration.hpp</label>
+        <link refid="_vm_live_migration_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>simgrid/s4u/Engine.hpp</label>
+        <link refid="_engine_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>string</label>
+      </node>
+      <node id="30">
+        <label>simgrid/Exception.hpp</label>
+      </node>
+      <node id="26">
+        <label>map</label>
+      </node>
+      <node id="22">
+        <label>simgrid/chrono.hpp</label>
+      </node>
+      <node id="34">
+        <label>src/surf/HostImpl.hpp</label>
+      </node>
+      <node id="4">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>xbt/string.hpp</label>
+      </node>
+      <node id="20">
+        <label>simgrid/s4u/Mailbox.hpp</label>
+        <link refid="_mailbox_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>src/plugins/vm/VmHostExt.hpp</label>
+        <link refid="_vm_host_ext_8hpp_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>VmLiveMigration.cpp</label>
+        <link refid="_vm_live_migration_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>xbt/signal.hpp</label>
+      </node>
+      <node id="3">
+        <label>simgrid/s4u/Comm.hpp</label>
+        <link refid="_comm_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>simgrid/s4u/Host.hpp</label>
+        <link refid="_host_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>src/plugins/vm/VirtualMachineImpl.hpp</label>
+        <link refid="_virtual_machine_impl_8hpp_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>vector</label>
+      </node>
+      <node id="19">
+        <label>utility</label>
+      </node>
+      <node id="16">
+        <label>simgrid/simix.hpp</label>
+      </node>
+      <node id="36">
+        <label>deque</label>
+      </node>
+      <node id="7">
+        <label>simgrid/s4u/Activity.hpp</label>
+        <link refid="_activity_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>unordered_map</label>
+      </node>
+      <node id="23">
+        <label>xbt/Extendable.hpp</label>
+      </node>
+      <node id="27">
+        <label>smpi/forward.hpp</label>
+      </node>
+      <node id="21">
+        <label>simgrid/s4u/Actor.hpp</label>
+        <link refid="_actor_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>set</label>
+      </node>
+      <node id="35">
+        <label>algorithm</label>
+      </node>
+      <node id="31">
+        <label>src/instr/instr_private.hpp</label>
+      </node>
+      <node id="8">
+        <label>xbt/asserts.h</label>
+      </node>
+      <node id="17">
+        <label>simgrid/s4u/NetZone.hpp</label>
+        <link refid="_net_zone_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacesimgrid">simgrid</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1vm">simgrid::vm</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_vm_live_migration_8cpp_1ac6425e81e85667deb14ae7abc1d527e8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void onVirtualMachineShutdown</definition>
+        <argsstring>(simgrid::s4u::VirtualMachine const &amp;vm)</argsstring>
+        <name>onVirtualMachineShutdown</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">simgrid::s4u::VirtualMachine</ref> const &amp;</type>
+          <declname>vm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.cpp" line="280" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.cpp" bodystart="280" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="_vm_live_migration_8cpp_1a44a2c8d2671a8d47a857ae892cf9f7d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_vm_live_migration_plugin_init</definition>
+        <argsstring>()</argsstring>
+        <name>sg_vm_live_migration_plugin_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.cpp" line="290" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.cpp" bodystart="290" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="_vm_live_migration_8cpp_1afa8d14939b4b591d6dd2f6fdf6c28840" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">simgrid::s4u::VirtualMachine</ref> *</type>
+        <definition>simgrid::s4u::VirtualMachine* sg_vm_create_migratable</definition>
+        <argsstring>(simgrid::s4u::Host *pm, const char *name, int coreAmount, int ramsize, int mig_netspeed, int dp_intensity)</argsstring>
+        <name>sg_vm_create_migratable</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">simgrid::s4u::Host</ref> *</type>
+          <declname>pm</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>coreAmount</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ramsize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mig_netspeed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dp_intensity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.cpp" line="297" column="30" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.cpp" bodystart="297" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="_vm_live_migration_8cpp_1a250af2cf29117bb33410058e36b7d524" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sg_vm_is_migrating</definition>
+        <argsstring>(const simgrid::s4u::VirtualMachine *vm)</argsstring>
+        <name>sg_vm_is_migrating</name>
+        <param>
+          <type>const <ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">simgrid::s4u::VirtualMachine</ref> *</type>
+          <declname>vm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.cpp" line="314" column="5" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.cpp" bodystart="314" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="_vm_live_migration_8cpp_1ac127e67c82954d68ec2de72c614db2f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_vm_migrate</definition>
+        <argsstring>(simgrid::s4u::VirtualMachine *vm, simgrid::s4u::Host *dst_pm)</argsstring>
+        <name>sg_vm_migrate</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">simgrid::s4u::VirtualMachine</ref> *</type>
+          <declname>vm</declname>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">simgrid::s4u::Host</ref> *</type>
+          <declname>dst_pm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.cpp" line="319" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.cpp" bodystart="319" bodyend="365"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.cpp"/>
+  </compounddef>
+</doxygen>

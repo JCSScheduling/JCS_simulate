@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="_comm_8hpp" kind="file" language="C++">
+    <compoundname>Comm.hpp</compoundname>
+    <includes refid="forward_8h" local="no">simgrid/forward.h</includes>
+    <includes refid="_activity_8hpp" local="no">simgrid/s4u/Activity.hpp</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="msg__comm_8cpp" local="yes">msg_comm.cpp</includedby>
+    <includedby refid="msg__task_8cpp" local="no">msg_task.cpp</includedby>
+    <includedby refid="_vm_live_migration_8hpp" local="yes">VmLiveMigration.hpp</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>atomic</label>
+      </node>
+      <node id="4">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="3">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>xbt/signal.hpp</label>
+      </node>
+      <node id="1">
+        <label>Comm.hpp</label>
+        <link refid="_comm_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+      <node id="5">
+        <label>simgrid/s4u/Activity.hpp</label>
+        <link refid="_activity_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>set</label>
+      </node>
+      <node id="6">
+        <label>xbt/asserts.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>VmLiveMigration.hpp</label>
+        <link refid="_vm_live_migration_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>Comm.hpp</label>
+        <link refid="_comm_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsimgrid_1_1s4u_1_1_comm" prot="public">simgrid::s4u::Comm</innerclass>
+    <innernamespace refid="namespacesimgrid">simgrid</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1s4u">simgrid::s4u</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp"/>
+  </compounddef>
+</doxygen>

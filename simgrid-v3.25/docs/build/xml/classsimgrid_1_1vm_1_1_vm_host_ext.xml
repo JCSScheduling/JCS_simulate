@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1vm_1_1_vm_host_ext" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::vm::VmHostExt</compoundname>
+    <includes refid="_vm_host_ext_8hpp" local="no">VmHostExt.hpp</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1vm_1_1_vm_host_ext_1acf07ee3eb8cc4a6f3938e852c2b457e3" prot="public" static="yes" mutable="no">
+        <type>simgrid::xbt::Extension&lt; <ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">simgrid::s4u::Host</ref>, <ref refid="classsimgrid_1_1vm_1_1_vm_host_ext" kindref="compound">VmHostExt</ref> &gt;</type>
+        <definition>simgrid::xbt::Extension&lt; s4u::Host, VmHostExt &gt; simgrid::vm::VmHostExt::EXTENSION_ID</definition>
+        <argsstring></argsstring>
+        <name>EXTENSION_ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmHostExt.hpp" line="16" column="34" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmHostExt.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1vm_1_1_vm_host_ext_1a8766f799d7f44830533a2257acfc73e6" prot="public" static="no" mutable="no">
+        <type>sg_size_t</type>
+        <definition>sg_size_t simgrid::vm::VmHostExt::ramsize</definition>
+        <argsstring></argsstring>
+        <name>ramsize</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmHostExt.hpp" line="19" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmHostExt.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1vm_1_1_vm_host_ext_1ab8984abbb959d0bbec6cce47ec9e0471" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool simgrid::vm::VmHostExt::overcommit</definition>
+        <argsstring></argsstring>
+        <name>overcommit</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmHostExt.hpp" line="20" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmHostExt.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_vm_host_ext_1a5ef3a26fe032b2ba11329000b2674b43" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual simgrid::vm::VmHostExt::~VmHostExt</definition>
+        <argsstring>()=default</argsstring>
+        <name>~VmHostExt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmHostExt.hpp" line="17" column="11"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_vm_host_ext_1aeac6069cb8f85e9cc0bf3e74c2df7157" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::vm::VmHostExt::ensureVmExtInstalled</definition>
+        <argsstring>()</argsstring>
+        <name>ensureVmExtInstalled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmHostExt.hpp" line="22" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmHostExt.cpp" bodystart="14" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Host extension for the VMs. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmHostExt.hpp" line="14" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmHostExt.hpp" bodystart="14" bodyend="23"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1vm_1_1_vm_host_ext_1aeac6069cb8f85e9cc0bf3e74c2df7157" prot="public" virt="non-virtual"><scope>simgrid::vm::VmHostExt</scope><name>ensureVmExtInstalled</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_vm_host_ext_1acf07ee3eb8cc4a6f3938e852c2b457e3" prot="public" virt="non-virtual"><scope>simgrid::vm::VmHostExt</scope><name>EXTENSION_ID</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_vm_host_ext_1ab8984abbb959d0bbec6cce47ec9e0471" prot="public" virt="non-virtual"><scope>simgrid::vm::VmHostExt</scope><name>overcommit</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_vm_host_ext_1a8766f799d7f44830533a2257acfc73e6" prot="public" virt="non-virtual"><scope>simgrid::vm::VmHostExt</scope><name>ramsize</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_vm_host_ext_1a5ef3a26fe032b2ba11329000b2674b43" prot="public" virt="virtual"><scope>simgrid::vm::VmHostExt</scope><name>~VmHostExt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

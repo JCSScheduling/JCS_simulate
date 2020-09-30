@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="_vm_host_ext_8hpp" kind="file" language="C++">
+    <compoundname>VmHostExt.hpp</compoundname>
+    <includes local="yes">src/surf/HostImpl.hpp</includes>
+    <includedby refid="s4u___virtual_machine_8cpp" local="yes">s4u_VirtualMachine.cpp</includedby>
+    <includedby refid="_vm_host_ext_8cpp" local="yes">VmHostExt.cpp</includedby>
+    <includedby refid="_vm_live_migration_8cpp" local="yes">VmLiveMigration.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>src/surf/HostImpl.hpp</label>
+      </node>
+      <node id="1">
+        <label>VmHostExt.hpp</label>
+        <link refid="_vm_host_ext_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classsimgrid_1_1vm_1_1_vm_host_ext" prot="public">simgrid::vm::VmHostExt</innerclass>
+    <innernamespace refid="namespacesimgrid">simgrid</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1vm">simgrid::vm</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmHostExt.hpp"/>
+  </compounddef>
+</doxygen>

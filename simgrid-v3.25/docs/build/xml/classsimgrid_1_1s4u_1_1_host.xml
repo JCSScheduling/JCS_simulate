@@ -1,0 +1,826 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1s4u_1_1_host" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::s4u::Host</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">simgrid::xbt::Extendable&lt; Host &gt;</basecompoundref>
+    <derivedcompoundref refid="classsimgrid_1_1s4u_1_1_virtual_machine" prot="public" virt="non-virtual">simgrid::s4u::VirtualMachine</derivedcompoundref>
+    <includes refid="_host_8hpp" local="no">Host.hpp</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_host_1ad268215318281bbafe907fe6f8f814c5" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> &amp;)&gt;</type>
+        <definition>xbt::signal&lt;void(Host&amp;)&gt; simgrid::s4u::Host::on_creation</definition>
+        <argsstring></argsstring>
+        <name>on_creation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called on each newly created host </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="57" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_host_1a70439d109fec042ca5c7197e07683087" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> const  &amp;)&gt;</type>
+        <definition>xbt::signal&lt;void(Host const&amp;)&gt; simgrid::s4u::Host::on_destruction</definition>
+        <argsstring></argsstring>
+        <name>on_destruction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called just before destructing a host </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="59" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_host_1aa2063e4d21e70723a391b8e001dc7762" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> const  &amp;)&gt;</type>
+        <definition>xbt::signal&lt;void(Host const&amp;)&gt; simgrid::s4u::Host::on_state_change</definition>
+        <argsstring></argsstring>
+        <name>on_state_change</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when the machine is turned on or off (called AFTER the change) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="61" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_host_1a0219136a9d605cd6671c7c7578ef799a" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> const  &amp;)&gt;</type>
+        <definition>xbt::signal&lt;void(Host const&amp;)&gt; simgrid::s4u::Host::on_speed_change</definition>
+        <argsstring></argsstring>
+        <name>on_speed_change</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when the speed of the machine is changed (called AFTER the change) (either because of a pstate switch or because of an external load event coming from the profile) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="64" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_host_1ac1b13ffec51fea5de16a501811a599e6" prot="private" static="no" mutable="no">
+        <type>xbt::string</type>
+        <definition>xbt::string simgrid::s4u::Host::name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <initializer>{&quot;noname&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="178" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_host_1a1a4f0d1d6a105fa94da37922039868ec" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="classsimgrid_1_1s4u_1_1_storage" kindref="compound">Storage</ref> * &gt; *</type>
+        <definition>std::unordered_map&lt;std::string, Storage*&gt;* simgrid::s4u::Host::mounts_</definition>
+        <argsstring></argsstring>
+        <name>mounts_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="179" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_host_1add5e916ed44879b532487959087a7fe4" prot="private" static="no" mutable="no">
+        <type>kernel::routing::NetPoint *</type>
+        <definition>kernel::routing::NetPoint* simgrid::s4u::Host::pimpl_netpoint_</definition>
+        <argsstring></argsstring>
+        <name>pimpl_netpoint_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="180" column="29" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a286cf4498a98bd240bd78e685127f7aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void simgrid::s4u::Host::destroy</definition>
+        <argsstring>()</argsstring>
+        <name>destroy</name>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_virtual_machine_1afd744e3d1bd7729d1d8b24a59a2635e2">destroy</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="66" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1ae41cf8b5030183545152142388226c13" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>xbt::string const  &amp;</type>
+        <definition>xbt::string const&amp; simgrid::s4u::Host::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the name of that host as a C++ string </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="81" column="21" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1acab01d42b674b968b79f21e7834175f8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* simgrid::s4u::Host::get_cname</definition>
+        <argsstring>() const</argsstring>
+        <name>get_cname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the name of that host as a C string </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="83" column="14" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a3a560508d3a287e440d1774b50bb88b9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>kernel::routing::NetPoint *</type>
+        <definition>kernel::routing::NetPoint* simgrid::s4u::Host::get_netpoint</definition>
+        <argsstring>() const</argsstring>
+        <name>get_netpoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="85" column="29" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a98a8ee417c9057181323a75da8bd91b3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int simgrid::s4u::Host::get_actor_count</definition>
+        <argsstring>() const</argsstring>
+        <name>get_actor_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="87" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a4875359ef58816bd29b3dacf07f04da3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; ActorPtr &gt;</type>
+        <definition>std::vector&lt;ActorPtr&gt; simgrid::s4u::Host::get_all_actors</definition>
+        <argsstring>() const</argsstring>
+        <name>get_all_actors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="88" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a22408918d79156e96eed03dcfd3d381a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Host::turn_on</definition>
+        <argsstring>()</argsstring>
+        <name>turn_on</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Turns that host on if it was previously off</para>
+<para>This call does nothing if the host is already on. If it was off, all actors which were marked &apos;autorestart&apos; on that host will be restarted automatically (note that this may differ from the actors that were initially running on the host).</para>
+<para>All other Host&apos;s properties are left unchanged; in particular, the pstate is left unchanged and not reset to its initial value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="99" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a95a3efa4abe152248b2d5678b6f24fbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Host::turn_off</definition>
+        <argsstring>()</argsstring>
+        <name>turn_off</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Turns that host off. All actors are forcefully stopped. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="101" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1aebdf2c2d8d03ec208326cd9d6847c68e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool simgrid::s4u::Host::is_on</definition>
+        <argsstring>() const</argsstring>
+        <name>is_on</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns if that host is currently up and running </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="103" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a0b0a26c1866b200e63c775818f25c592" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* simgrid::s4u::Host::get_property</definition>
+        <argsstring>(const std::string &amp;key) const</argsstring>
+        <name>get_property</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="105" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a0e292ce84997a0a765e042e1cfb9fad4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Host::set_property</definition>
+        <argsstring>(const std::string &amp;key, const std::string &amp;value)</argsstring>
+        <name>set_property</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="106" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a3faf866ed7a5a708a736c5d8d2eb9726" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::unordered_map&lt; std::string, std::string &gt; *</type>
+        <definition>const std::unordered_map&lt;std::string, std::string&gt;* simgrid::s4u::Host::get_properties</definition>
+        <argsstring>() const</argsstring>
+        <name>get_properties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="107" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a060148a5023ef96473f52a7f6a024918" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Host::set_properties</definition>
+        <argsstring>(const std::map&lt; std::string, std::string &gt; &amp;properties)</argsstring>
+        <name>set_properties</name>
+        <param>
+          <type>const std::map&lt; std::string, std::string &gt; &amp;</type>
+          <declname>properties</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="108" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a9c3673aee47a472d78f04848b1613807" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Host::set_state_profile</definition>
+        <argsstring>(kernel::profile::Profile *p)</argsstring>
+        <name>set_state_profile</name>
+        <param>
+          <type>kernel::profile::Profile *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="110" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a1018e57167fce958897156afe0d22805" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Host::set_speed_profile</definition>
+        <argsstring>(kernel::profile::Profile *p)</argsstring>
+        <name>set_speed_profile</name>
+        <param>
+          <type>kernel::profile::Profile *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="111" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a2a538a19f5dbcb7b187bf41029ad2fc0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::s4u::Host::get_speed</definition>
+        <argsstring>() const</argsstring>
+        <name>get_speed</name>
+        <briefdescription>
+<para>Get the peak computing speed in flops/s at the current pstate, NOT taking the external load into account. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The amount of flops per second available for computing depends on several things:<itemizedlist>
+<listitem><para>The current pstate determines the maximal peak computing speed (use get_pstate_speed() to retrieve the computing speed you would get at another pstate)</para>
+</listitem><listitem><para>If you declared an external load (with simgrid::surf::Cpu::set_speed_profile()), you must multiply the result of get_speed() by get_available_speed() to retrieve what a new computation would get.</para>
+</listitem></itemizedlist>
+</para>
+<para>The remaining speed is then shared between the executions located on this host. You can retrieve the amount of tasks currently running on this host with <ref refid="classsimgrid_1_1s4u_1_1_host_1a14522ef4f318053342c3a395fe536b08" kindref="member">get_load()</ref>.</para>
+<para>The host may have multiple cores, and your executions may be able to use more than a single core.</para>
+<para>Finally, executions of priority 2 get twice the amount of flops than executions of priority 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="128" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1ab3e2c13042d23edd14ab382ad3c8b2c8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::s4u::Host::get_available_speed</definition>
+        <argsstring>() const</argsstring>
+        <name>get_available_speed</name>
+        <briefdescription>
+<para>Get the available speed ratio, between 0 and 1. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This accounts for external load (see simgrid::surf::Cpu::set_speed_profile()). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="133" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1ab526bd7c7e179add334c3c719e34182b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int simgrid::s4u::Host::get_core_count</definition>
+        <argsstring>() const</argsstring>
+        <name>get_core_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the number of core of the processor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="135" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a14522ef4f318053342c3a395fe536b08" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::s4u::Host::get_load</definition>
+        <argsstring>() const</argsstring>
+        <name>get_load</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the current computation load (in flops per second)</para>
+<para>The external load (coming from an availability trace) is not taken in account. You may also be interested in the load plugin. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="141" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a9fb7e31517ed9ea856dd25721cd1c2d1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::s4u::Host::get_pstate_speed</definition>
+        <argsstring>(int pstate_index) const</argsstring>
+        <name>get_pstate_speed</name>
+        <param>
+          <type>int</type>
+          <declname>pstate_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="143" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a09a0ae735c07c1206a86a1c1eab11285" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int simgrid::s4u::Host::get_pstate_count</definition>
+        <argsstring>() const</argsstring>
+        <name>get_pstate_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="144" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a2aece4a9600c171d4e1a4266b0b5c877" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Host::set_pstate</definition>
+        <argsstring>(int pstate_index)</argsstring>
+        <name>set_pstate</name>
+        <param>
+          <type>int</type>
+          <declname>pstate_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="145" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a77e9e523dd5bb71ec24ee10ccb03a830" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int simgrid::s4u::Host::get_pstate</definition>
+        <argsstring>() const</argsstring>
+        <name>get_pstate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="146" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1aacd1d82f9af7e0dd7a6c95dbd4300264" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classsimgrid_1_1s4u_1_1_disk" kindref="compound">Disk</ref> * &gt;</type>
+        <definition>std::vector&lt;Disk*&gt; simgrid::s4u::Host::get_disks</definition>
+        <argsstring>() const</argsstring>
+        <name>get_disks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="148" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a4623239398debf7afab68f3943c8b6d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Host::add_disk</definition>
+        <argsstring>(Disk *disk)</argsstring>
+        <name>add_disk</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_disk" kindref="compound">Disk</ref> *</type>
+          <declname>disk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="149" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a4215e36f66d9b2332d81d73c5aae6c96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Host::remove_disk</definition>
+        <argsstring>(const std::string &amp;disk_name)</argsstring>
+        <name>remove_disk</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>disk_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="150" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a79d1c7ad8eb1362c13291720117fb880" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; const char * &gt;</type>
+        <definition>std::vector&lt;const char*&gt; simgrid::s4u::Host::get_attached_storages</definition>
+        <argsstring>() const</argsstring>
+        <name>get_attached_storages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="152" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a16975d22c83cd20749ceebf6cbef1021" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::unordered_map&lt; std::string, <ref refid="classsimgrid_1_1s4u_1_1_storage" kindref="compound">Storage</ref> * &gt; const  &amp;</type>
+        <definition>std::unordered_map&lt;std::string, Storage*&gt; const&amp; simgrid::s4u::Host::get_mounted_storages</definition>
+        <argsstring>()</argsstring>
+        <name>get_mounted_storages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get an associative list [mount point]-&gt;[Storage] of all local mount points.</para>
+<para>This is defined in the platform file, and cannot be modified programmatically (yet). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="158" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a88d64f322c059e6385d9abaee8d60a82" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Host::route_to</definition>
+        <argsstring>(const Host *dest, std::vector&lt; Link * &gt; &amp;links, double *latency) const</argsstring>
+        <name>route_to</name>
+        <param>
+          <type>const <ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">Link</ref> * &gt; &amp;</type>
+          <declname>links</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>latency</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="160" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1abf8a9df2a49f3f9641d3e3aa9e3cff50" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Host::route_to</definition>
+        <argsstring>(const Host *dest, std::vector&lt; kernel::resource::LinkImpl * &gt; &amp;links, double *latency) const</argsstring>
+        <name>route_to</name>
+        <param>
+          <type>const <ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; kernel::resource::LinkImpl * &gt; &amp;</type>
+          <declname>links</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>latency</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="161" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a492ddcf3813beb59a6f5ee8d61549931" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Host::send_to</definition>
+        <argsstring>(Host *dest, double byte_amount)</argsstring>
+        <name>send_to</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>byte_amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="162" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1af72499b20211d8b0f79a7cc8549b95e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_net_zone" kindref="compound">NetZone</ref> *</type>
+        <definition>NetZone* simgrid::s4u::Host::get_englobing_zone</definition>
+        <argsstring>()</argsstring>
+        <name>get_englobing_zone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="164" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a5afeb5a797c324f633938f37644b95ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Host::execute</definition>
+        <argsstring>(double flops)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>double</type>
+          <declname>flops</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Block the calling actor on an execution located on the called host</para>
+<para>It is not a problem if the actor is not located on the called host. The actor will not be migrated in this case. Such remote execution are easy in simulation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="170" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a32d25d1d4f211590c8f97d71dc1a28a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ExecPtr</type>
+        <definition>ExecPtr simgrid::s4u::Host::exec_async</definition>
+        <argsstring>(double flops_amounts)</argsstring>
+        <name>exec_async</name>
+        <param>
+          <type>double</type>
+          <declname>flops_amounts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start an asynchronous computation on that host (possibly remote) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="172" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1ae1d74fc65a6a213b2d70acb2413fa032" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Host::execute</definition>
+        <argsstring>(double flops, double priority)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>double</type>
+          <declname>flops</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Block the calling actor on an execution located on the called host (with explicit priority) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="175" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1aac2aab076432e55c3457e9b1c9d8342c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> *</type>
+        <definition>static Host* simgrid::s4u::Host::by_name_or_null</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>by_name_or_null</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve a host from its name, or return nullptr </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="74" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a59a11b97b4c994957dc43c74cdce53b5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> *</type>
+        <definition>static Host* simgrid::s4u::Host::by_name</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>by_name</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve a host from its name, or die </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="76" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_host_1a11f0d94753e2c094d92b0b96f4384fb7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> *</type>
+        <definition>static Host* simgrid::s4u::Host::current</definition>
+        <argsstring>()</argsstring>
+        <name>current</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the host on which the running actor is located </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="78" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Some physical resource with computing and networking capabilities on which Actors execute.</para>
+<para><verbatim>embed:rst:leading-asterisk
+* All hosts are automatically created during the call of the method
+* :cpp:func:`simgrid::s4u::Engine::load_platform()`.
+* You cannot create a host yourself.
+*
+* You can retrieve a particular host using :cpp:func:`simgrid::s4u::Host::by_name()`
+* and actors can retrieve the host on which they run using :cpp:func:`simgrid::s4u::Host::current()` or
+* :cpp:func:`simgrid::s4u::this_actor::get_host()`
+* </verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>simgrid::xbt::Extendable&lt; Host &gt;</label>
+      </node>
+      <node id="3">
+        <label>simgrid::s4u::VirtualMachine</label>
+        <link refid="classsimgrid_1_1s4u_1_1_virtual_machine"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>simgrid::s4u::Host</label>
+        <link refid="classsimgrid_1_1s4u_1_1_host"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>simgrid::xbt::Extendable&lt; Host &gt;</label>
+      </node>
+      <node id="1">
+        <label>simgrid::s4u::Host</label>
+        <link refid="classsimgrid_1_1s4u_1_1_host"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" line="38" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Host.hpp" bodystart="38" bodyend="189"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a4623239398debf7afab68f3943c8b6d7" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>add_disk</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a59a11b97b4c994957dc43c74cdce53b5" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>by_name</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1aac2aab076432e55c3457e9b1c9d8342c" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>by_name_or_null</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a11f0d94753e2c094d92b0b96f4384fb7" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>current</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a286cf4498a98bd240bd78e685127f7aa" prot="public" virt="virtual"><scope>simgrid::s4u::Host</scope><name>destroy</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a32d25d1d4f211590c8f97d71dc1a28a1" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>exec_async</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a5afeb5a797c324f633938f37644b95ed" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>execute</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1ae1d74fc65a6a213b2d70acb2413fa032" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>execute</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a98a8ee417c9057181323a75da8bd91b3" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>get_actor_count</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a4875359ef58816bd29b3dacf07f04da3" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>get_all_actors</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a79d1c7ad8eb1362c13291720117fb880" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>get_attached_storages</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1ab3e2c13042d23edd14ab382ad3c8b2c8" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>get_available_speed</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1acab01d42b674b968b79f21e7834175f8" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>get_cname</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1ab526bd7c7e179add334c3c719e34182b" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>get_core_count</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1aacd1d82f9af7e0dd7a6c95dbd4300264" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>get_disks</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1af72499b20211d8b0f79a7cc8549b95e7" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>get_englobing_zone</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a14522ef4f318053342c3a395fe536b08" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>get_load</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a16975d22c83cd20749ceebf6cbef1021" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>get_mounted_storages</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1ae41cf8b5030183545152142388226c13" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>get_name</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a3a560508d3a287e440d1774b50bb88b9" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>get_netpoint</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a3faf866ed7a5a708a736c5d8d2eb9726" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>get_properties</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a0b0a26c1866b200e63c775818f25c592" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>get_property</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a77e9e523dd5bb71ec24ee10ccb03a830" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>get_pstate</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a09a0ae735c07c1206a86a1c1eab11285" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>get_pstate_count</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a9fb7e31517ed9ea856dd25721cd1c2d1" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>get_pstate_speed</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a2a538a19f5dbcb7b187bf41029ad2fc0" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>get_speed</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1aebdf2c2d8d03ec208326cd9d6847c68e" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>is_on</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a1a4f0d1d6a105fa94da37922039868ec" prot="private" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>mounts_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1ac1b13ffec51fea5de16a501811a599e6" prot="private" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>name_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1ad268215318281bbafe907fe6f8f814c5" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>on_creation</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a70439d109fec042ca5c7197e07683087" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>on_destruction</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a0219136a9d605cd6671c7c7578ef799a" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>on_speed_change</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1aa2063e4d21e70723a391b8e001dc7762" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>on_state_change</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1add5e916ed44879b532487959087a7fe4" prot="private" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>pimpl_netpoint_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a4215e36f66d9b2332d81d73c5aae6c96" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>remove_disk</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a88d64f322c059e6385d9abaee8d60a82" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>route_to</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1abf8a9df2a49f3f9641d3e3aa9e3cff50" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>route_to</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a492ddcf3813beb59a6f5ee8d61549931" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>send_to</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a060148a5023ef96473f52a7f6a024918" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>set_properties</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a0e292ce84997a0a765e042e1cfb9fad4" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>set_property</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a2aece4a9600c171d4e1a4266b0b5c877" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>set_pstate</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a1018e57167fce958897156afe0d22805" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>set_speed_profile</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a9c3673aee47a472d78f04848b1613807" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>set_state_profile</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a95a3efa4abe152248b2d5678b6f24fbe" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>turn_off</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a22408918d79156e96eed03dcfd3d381a" prot="public" virt="non-virtual"><scope>simgrid::s4u::Host</scope><name>turn_on</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

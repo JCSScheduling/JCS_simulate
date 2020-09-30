@@ -1,0 +1,684 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="actor_8h" kind="file" language="C++">
+    <compoundname>actor.h</compoundname>
+    <includes refid="forward_8h" local="no">simgrid/forward.h</includes>
+    <includes local="no">xbt/base.h</includes>
+    <includes local="no">xbt/dict.h</includes>
+    <includedby refid="msg_8h" local="no">msg.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>xbt/dict.h</label>
+      </node>
+      <node id="4">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="3">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="2">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>actor.h</label>
+        <link refid="actor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>msg.h</label>
+        <link refid="msg_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>msg_private.hpp</label>
+        <link refid="msg__private_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>actor.h</label>
+        <link refid="actor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="actor_8h_1ad83d4fa2b5bfaf48e1febe69dc00fcb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">sg_actor_t</ref></type>
+        <definition>sg_actor_t sg_actor_init</definition>
+        <argsstring>(const char *name, sg_host_t host)</argsstring>
+        <name>sg_actor_init</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Actor datatype. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>An actor may be defined as a <emphasis>code</emphasis>, with some <emphasis>private data</emphasis>, executing in a <emphasis>location</emphasis>.</para>
+<para>You should not access directly to the fields of the pointed structure, but always use the provided API to interact with actors. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="23" column="13" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="23" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1af805dbccbfe981a7bc0f658d6f6f199c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_actor_start</definition>
+        <argsstring>(sg_actor_t actor, xbt_main_func_t code, int argc, char **argv)</argsstring>
+        <name>sg_actor_start</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">sg_actor_t</ref></type>
+          <declname>actor</declname>
+        </param>
+        <param>
+          <type>xbt_main_func_t</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start the previously initialized actor.</para>
+<para>Note that argv is copied over, so you should free your own copy once the actor is started. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="27" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="27" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a6a072a34253e9a93024fe2cba65685e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>aid_t</type>
+        <definition>aid_t sg_actor_get_PID</definition>
+        <argsstring>(const_sg_actor_t actor)</argsstring>
+        <name>sg_actor_get_PID</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">const_sg_actor_t</ref></type>
+          <declname>actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="28" column="8" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="28" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a33ab704c5e2b883af41362a4e8c4c527" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>aid_t</type>
+        <definition>aid_t sg_actor_get_PPID</definition>
+        <argsstring>(const_sg_actor_t actor)</argsstring>
+        <name>sg_actor_get_PPID</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">const_sg_actor_t</ref></type>
+          <declname>actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="29" column="8" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="29" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a495b297ad88493d1105db2b49fc0a4c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">sg_actor_t</ref></type>
+        <definition>sg_actor_t sg_actor_by_PID</definition>
+        <argsstring>(aid_t pid)</argsstring>
+        <name>sg_actor_by_PID</name>
+        <param>
+          <type>aid_t</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="30" column="13" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="30" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a469c590433db77489c3dfdba60ed34d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* sg_actor_get_name</definition>
+        <argsstring>(const_sg_actor_t actor)</argsstring>
+        <name>sg_actor_get_name</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">const_sg_actor_t</ref></type>
+          <declname>actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="31" column="13" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="31" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a941b735cf77057ae4bb1109b173a1df8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">sg_host_t</ref></type>
+        <definition>sg_host_t sg_actor_get_host</definition>
+        <argsstring>(const_sg_actor_t actor)</argsstring>
+        <name>sg_actor_get_host</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">const_sg_actor_t</ref></type>
+          <declname>actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="32" column="12" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="32" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1afcd7858f00807d1619d3d61114fcbd0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* sg_actor_get_property_value</definition>
+        <argsstring>(const_sg_actor_t actor, const char *name)</argsstring>
+        <name>sg_actor_get_property_value</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">const_sg_actor_t</ref></type>
+          <declname>actor</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="33" column="13" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="33" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a4eb5c49d050c841b0212748aeb54b044" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>xbt_dict_t</type>
+        <definition>xbt_dict_t sg_actor_get_properties</definition>
+        <argsstring>(const_sg_actor_t actor)</argsstring>
+        <name>sg_actor_get_properties</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">const_sg_actor_t</ref></type>
+          <declname>actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="34" column="13" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="34" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1acaf376482c754c24673224c45db4b9a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_actor_suspend</definition>
+        <argsstring>(sg_actor_t actor)</argsstring>
+        <name>sg_actor_suspend</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">sg_actor_t</ref></type>
+          <declname>actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="35" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="35" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1aaf6cf1106469879793bc22ef7bf9a58c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_actor_resume</definition>
+        <argsstring>(sg_actor_t actor)</argsstring>
+        <name>sg_actor_resume</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">sg_actor_t</ref></type>
+          <declname>actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="36" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="36" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a1f8281d3119e97efa113121d2de638ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sg_actor_is_suspended</definition>
+        <argsstring>(sg_actor_t actor)</argsstring>
+        <name>sg_actor_is_suspended</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">sg_actor_t</ref></type>
+          <declname>actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="37" column="6" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="37" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a43c5a2c582561a9298da6692dbd54011" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">sg_actor_t</ref></type>
+        <definition>sg_actor_t sg_actor_restart</definition>
+        <argsstring>(sg_actor_t actor)</argsstring>
+        <name>sg_actor_restart</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">sg_actor_t</ref></type>
+          <declname>actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="38" column="13" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="38" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a3ad0e48e20032bed283a86ca7b7f2f57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_actor_set_auto_restart</definition>
+        <argsstring>(sg_actor_t actor, int auto_restart)</argsstring>
+        <name>sg_actor_set_auto_restart</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">sg_actor_t</ref></type>
+          <declname>actor</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>auto_restart</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="39" column="6" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="39" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1ac2eca0170e2fa3eb8afe71e956b4d8ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_actor_daemonize</definition>
+        <argsstring>(sg_actor_t actor)</argsstring>
+        <name>sg_actor_daemonize</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">sg_actor_t</ref></type>
+          <declname>actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="40" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="40" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a4fd62ab86c7442d936f3109009c2f42b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_actor_set_host</definition>
+        <argsstring>(sg_actor_t actor, sg_host_t host)</argsstring>
+        <name>sg_actor_set_host</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">sg_actor_t</ref></type>
+          <declname>actor</declname>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="47" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="47" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1ae95f0ef0e4e9168ef671bf69e1cafb62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_actor_join</definition>
+        <argsstring>(sg_actor_t actor, double timeout)</argsstring>
+        <name>sg_actor_join</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">sg_actor_t</ref></type>
+          <declname>actor</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="48" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="48" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1ab0114f5ae48ab28576b3362e59959d2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_actor_kill</definition>
+        <argsstring>(sg_actor_t actor)</argsstring>
+        <name>sg_actor_kill</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">sg_actor_t</ref></type>
+          <declname>actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="49" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="49" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a0beeee79654c2cc104c1d574fefaa5bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_actor_kill_all</definition>
+        <argsstring>()</argsstring>
+        <name>sg_actor_kill_all</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="50" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="50" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a55a59292bca9e48604ff702af4819b31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_actor_set_kill_time</definition>
+        <argsstring>(sg_actor_t actor, double kill_time)</argsstring>
+        <name>sg_actor_set_kill_time</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">sg_actor_t</ref></type>
+          <declname>actor</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>kill_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="51" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="51" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1acc91982109c87fb207ff657df56e28d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_actor_yield</definition>
+        <argsstring>()</argsstring>
+        <name>sg_actor_yield</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="52" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="52" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1adbe6eb399888be7cd8e089b053593752" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_actor_sleep_for</definition>
+        <argsstring>(double duration)</argsstring>
+        <name>sg_actor_sleep_for</name>
+        <param>
+          <type>double</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="53" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="53" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a06dd2ee5455783697418e814a156079e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">sg_actor_t</ref></type>
+        <definition>sg_actor_t sg_actor_attach</definition>
+        <argsstring>(const char *name, void *data, sg_host_t host, xbt_dict_t properties)</argsstring>
+        <name>sg_actor_attach</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>xbt_dict_t</type>
+          <declname>properties</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="54" column="13" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="54" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1abe1b146b997b87a78dfbc0764bc916fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_actor_detach</definition>
+        <argsstring>()</argsstring>
+        <name>sg_actor_detach</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="55" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="55" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a4f807ef886ae239750b332fcf6122ab9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">sg_actor_t</ref></type>
+        <definition>sg_actor_t sg_actor_self</definition>
+        <argsstring>()</argsstring>
+        <name>sg_actor_self</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="56" column="13" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="56" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a080494ac9043b463a9e9ec3f3470656b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>aid_t</type>
+        <definition>aid_t sg_actor_self_get_pid</definition>
+        <argsstring>()</argsstring>
+        <name>sg_actor_self_get_pid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="57" column="8" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="57" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a6b68f4c55d9679e7984aafced8defa74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>aid_t</type>
+        <definition>aid_t sg_actor_self_get_ppid</definition>
+        <argsstring>()</argsstring>
+        <name>sg_actor_self_get_ppid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="58" column="8" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="58" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1af8606af6d7cb12da144eb265e9987f9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* sg_actor_self_get_name</definition>
+        <argsstring>()</argsstring>
+        <name>sg_actor_self_get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="59" column="13" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="59" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a106b8b6798feec7675e200a5abfcc603" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* sg_actor_self_data</definition>
+        <argsstring>()</argsstring>
+        <name>sg_actor_self_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="60" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="60" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a6305271ba3984682eae590c8615f8301" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_actor_self_data_set</definition>
+        <argsstring>(void *data)</argsstring>
+        <name>sg_actor_self_data_set</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="61" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="61" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a066c5358a6702752fa82a9c206382255" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_actor_self_execute</definition>
+        <argsstring>(double flops)</argsstring>
+        <name>sg_actor_self_execute</name>
+        <param>
+          <type>double</type>
+          <declname>flops</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="62" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="62" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a81aeaaec59f29785085c7765fb9de48f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_actor_ref</definition>
+        <argsstring>(const_sg_actor_t actor)</argsstring>
+        <name>sg_actor_ref</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">const_sg_actor_t</ref></type>
+          <declname>actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="63" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="63" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a983e520c37808122570fffb5e0333382" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_actor_unref</definition>
+        <argsstring>(const_sg_actor_t actor)</argsstring>
+        <name>sg_actor_unref</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">const_sg_actor_t</ref></type>
+          <declname>actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="64" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="64" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a62d7af7a3c4a65243da17aabe2e2da15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* sg_actor_data</definition>
+        <argsstring>(const_sg_actor_t actor)</argsstring>
+        <name>sg_actor_data</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">const_sg_actor_t</ref></type>
+          <declname>actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="65" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="65" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="actor_8h_1a30f55c13e38a3e73a9dab147f22565dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_actor_data_set</definition>
+        <argsstring>(sg_actor_t actor, void *userdata)</argsstring>
+        <name>sg_actor_data_set</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">sg_actor_t</ref></type>
+          <declname>actor</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>userdata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" line="66" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h" declline="66" declcolumn="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/actor.h"/>
+  </compounddef>
+</doxygen>

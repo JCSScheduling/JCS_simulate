@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1plugin_1_1_power_range" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::plugin::PowerRange</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1_power_range_1a867815405018a27a086c7ee4266a737a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::plugin::PowerRange::idle_</definition>
+        <argsstring></argsstring>
+        <name>idle_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="122" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1_power_range_1ae84ff12a4787dbf57bb49b446646cb02" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::plugin::PowerRange::epsilon_</definition>
+        <argsstring></argsstring>
+        <name>epsilon_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="123" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1_power_range_1ae43049db6a841382be582e18f26aca08" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::plugin::PowerRange::max_</definition>
+        <argsstring></argsstring>
+        <name>max_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="124" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1_power_range_1ab02026babfacc1e96d74ef56bbab16dc" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::plugin::PowerRange::slope_</definition>
+        <argsstring></argsstring>
+        <name>slope_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="125" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1_power_range_1a369680b639dbf4ba8057c51590f89d07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::plugin::PowerRange::PowerRange</definition>
+        <argsstring>(double idle, double epsilon, double max)</argsstring>
+        <name>PowerRange</name>
+        <param>
+          <type>double</type>
+          <declname>idle</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>epsilon</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="127" column="3" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="127" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="120" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="120" bodyend="128"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1plugin_1_1_power_range_1ae84ff12a4787dbf57bb49b446646cb02" prot="public" virt="non-virtual"><scope>simgrid::plugin::PowerRange</scope><name>epsilon_</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_power_range_1a867815405018a27a086c7ee4266a737a" prot="public" virt="non-virtual"><scope>simgrid::plugin::PowerRange</scope><name>idle_</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_power_range_1ae43049db6a841382be582e18f26aca08" prot="public" virt="non-virtual"><scope>simgrid::plugin::PowerRange</scope><name>max_</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_power_range_1a369680b639dbf4ba8057c51590f89d07" prot="public" virt="non-virtual"><scope>simgrid::plugin::PowerRange</scope><name>PowerRange</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_power_range_1ab02026babfacc1e96d74ef56bbab16dc" prot="public" virt="non-virtual"><scope>simgrid::plugin::PowerRange</scope><name>slope_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

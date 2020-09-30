@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_92db932c96b71876a62b1386c1d468d9" kind="dir">
+    <compoundname>msg</compoundname>
+    <innerfile refid="msg__comm_8cpp">msg_comm.cpp</innerfile>
+    <innerfile refid="msg__global_8cpp">msg_global.cpp</innerfile>
+    <innerfile refid="msg__legacy_8cpp">msg_legacy.cpp</innerfile>
+    <innerfile refid="msg__private_8hpp">msg_private.hpp</innerfile>
+    <innerfile refid="msg__process_8cpp">msg_process.cpp</innerfile>
+    <innerfile refid="msg__task_8cpp">msg_task.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/"/>
+  </compounddef>
+</doxygen>

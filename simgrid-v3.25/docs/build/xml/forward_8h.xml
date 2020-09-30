@@ -1,0 +1,955 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="forward_8h" kind="file" language="C++">
+    <compoundname>forward.h</compoundname>
+    <includes local="no">xbt/base.h</includes>
+    <includes local="no">boost/intrusive_ptr.hpp</includes>
+    <includedby refid="_activity_8hpp" local="no">Activity.hpp</includedby>
+    <includedby refid="_actor_8hpp" local="no">Actor.hpp</includedby>
+    <includedby refid="_barrier_8hpp" local="no">Barrier.hpp</includedby>
+    <includedby refid="_comm_8hpp" local="no">Comm.hpp</includedby>
+    <includedby refid="_condition_variable_8hpp" local="no">ConditionVariable.hpp</includedby>
+    <includedby refid="_disk_8hpp" local="no">Disk.hpp</includedby>
+    <includedby refid="_engine_8hpp" local="no">Engine.hpp</includedby>
+    <includedby refid="_exec_8hpp" local="no">Exec.hpp</includedby>
+    <includedby refid="_host_8hpp" local="no">Host.hpp</includedby>
+    <includedby refid="_io_8hpp" local="no">Io.hpp</includedby>
+    <includedby refid="_link_8hpp" local="no">Link.hpp</includedby>
+    <includedby refid="_mailbox_8hpp" local="no">Mailbox.hpp</includedby>
+    <includedby refid="_mutex_8hpp" local="no">Mutex.hpp</includedby>
+    <includedby refid="_net_zone_8hpp" local="no">NetZone.hpp</includedby>
+    <includedby refid="_semaphore_8hpp" local="no">Semaphore.hpp</includedby>
+    <includedby refid="_storage_8hpp" local="no">Storage.hpp</includedby>
+    <includedby refid="_virtual_machine_8hpp" local="no">VirtualMachine.hpp</includedby>
+    <includedby refid="msg_8h" local="no">msg.h</includedby>
+    <includedby refid="actor_8h" local="no">actor.h</includedby>
+    <includedby refid="barrier_8h" local="no">barrier.h</includedby>
+    <includedby refid="cond_8h" local="no">cond.h</includedby>
+    <includedby refid="engine_8h" local="no">engine.h</includedby>
+    <includedby refid="host_8h" local="no">host.h</includedby>
+    <includedby refid="link_8h" local="no">link.h</includedby>
+    <includedby refid="mailbox_8h" local="no">mailbox.h</includedby>
+    <includedby refid="mutex_8h" local="no">mutex.h</includedby>
+    <includedby refid="semaphore_8h" local="no">semaphore.h</includedby>
+    <includedby refid="vm_8h" local="no">vm.h</includedby>
+    <includedby refid="zone_8h" local="no">zone.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="2">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="1">
+        <label>forward.h</label>
+        <link refid="forward_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="30">
+        <label>mutex.h</label>
+        <link refid="mutex_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Io.hpp</label>
+        <link refid="_io_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Semaphore.hpp</label>
+        <link refid="_semaphore_8hpp_source"/>
+      </node>
+      <node id="15">
+        <label>VirtualMachine.hpp</label>
+        <link refid="_virtual_machine_8hpp_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>barrier.h</label>
+        <link refid="barrier_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Link.hpp</label>
+        <link refid="_link_8hpp_source"/>
+      </node>
+      <node id="25">
+        <label>cond.h</label>
+        <link refid="cond_8h_source"/>
+      </node>
+      <node id="33">
+        <label>zone.h</label>
+        <link refid="zone_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>VmLiveMigration.hpp</label>
+        <link refid="_vm_live_migration_8hpp_source"/>
+      </node>
+      <node id="13">
+        <label>Engine.hpp</label>
+        <link refid="_engine_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>msg.h</label>
+        <link refid="msg_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>mailbox.h</label>
+        <link refid="mailbox_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Barrier.hpp</label>
+        <link refid="_barrier_8hpp_source"/>
+      </node>
+      <node id="8">
+        <label>Storage.hpp</label>
+        <link refid="_storage_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>forward.h</label>
+        <link refid="forward_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Mailbox.hpp</label>
+        <link refid="_mailbox_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Comm.hpp</label>
+        <link refid="_comm_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Host.hpp</label>
+        <link refid="_host_8hpp_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>VirtualMachineImpl.hpp</label>
+        <link refid="_virtual_machine_impl_8hpp_source"/>
+      </node>
+      <node id="22">
+        <label>msg_private.hpp</label>
+        <link refid="msg__private_8hpp_source"/>
+      </node>
+      <node id="12">
+        <label>ConditionVariable.hpp</label>
+        <link refid="_condition_variable_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>semaphore.h</label>
+        <link refid="semaphore_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Exec.hpp</label>
+        <link refid="_exec_8hpp_source"/>
+      </node>
+      <node id="28">
+        <label>link.h</label>
+        <link refid="link_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>engine.h</label>
+        <link refid="engine_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>host.h</label>
+        <link refid="host_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Activity.hpp</label>
+        <link refid="_activity_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Actor.hpp</label>
+        <link refid="_actor_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Disk.hpp</label>
+        <link refid="_disk_8hpp_source"/>
+      </node>
+      <node id="23">
+        <label>actor.h</label>
+        <link refid="actor_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>vm.h</label>
+        <link refid="vm_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>NetZone.hpp</label>
+        <link refid="_net_zone_8hpp_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Mutex.hpp</label>
+        <link refid="_mutex_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsimgrid_1_1config_1_1_flag" prot="public">simgrid::config::Flag</innerclass>
+    <innernamespace refid="namespacesimgrid">simgrid</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1s4u">simgrid::s4u</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1config">simgrid::config</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1kernel">simgrid::kernel</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1kernel_1_1actor">simgrid::kernel::actor</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1kernel_1_1activity">simgrid::kernel::activity</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1kernel_1_1context">simgrid::kernel::context</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1kernel_1_1lmm">simgrid::kernel::lmm</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1kernel_1_1resource">simgrid::kernel::resource</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1kernel_1_1routing">simgrid::kernel::routing</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1kernel_1_1profile">simgrid::kernel::profile</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1simix">simgrid::simix</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1surf">simgrid::surf</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1mc">simgrid::mc</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1vm">simgrid::vm</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="forward_8h_1ac1d2238fb3df0d60058754a216be8aa7" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">simgrid::s4u::Actor</ref></type>
+        <definition>typedef simgrid::s4u::Actor s4u_Actor</definition>
+        <argsstring></argsstring>
+        <name>s4u_Actor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="193" column="29" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a04225686e583a5ff538d797e94d057e8" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_barrier" kindref="compound">simgrid::s4u::Barrier</ref></type>
+        <definition>typedef simgrid::s4u::Barrier s4u_Barrier</definition>
+        <argsstring></argsstring>
+        <name>s4u_Barrier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="194" column="31" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a8288b6f1d29e02868e6b8c0ebd5ebe2d" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">simgrid::s4u::Host</ref></type>
+        <definition>typedef simgrid::s4u::Host s4u_Host</definition>
+        <argsstring></argsstring>
+        <name>s4u_Host</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="195" column="28" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1af4ef7e12ff71a4c645ac63fb5d1caf5d" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">simgrid::s4u::Link</ref></type>
+        <definition>typedef simgrid::s4u::Link s4u_Link</definition>
+        <argsstring></argsstring>
+        <name>s4u_Link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="196" column="28" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1adec6dbff54303fdb5cd24626797184fb" prot="public" static="no">
+        <type>simgrid::s4u::File</type>
+        <definition>typedef simgrid::s4u::File s4u_File</definition>
+        <argsstring></argsstring>
+        <name>s4u_File</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="197" column="28" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a42bc1d709a5e5037069378be9135328b" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_condition_variable" kindref="compound">simgrid::s4u::ConditionVariable</ref></type>
+        <definition>typedef simgrid::s4u::ConditionVariable s4u_ConditionVariable</definition>
+        <argsstring></argsstring>
+        <name>s4u_ConditionVariable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="198" column="41" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a7d122e620522b39e737db50da68243d9" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">simgrid::s4u::Mutex</ref></type>
+        <definition>typedef simgrid::s4u::Mutex s4u_Mutex</definition>
+        <argsstring></argsstring>
+        <name>s4u_Mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="199" column="29" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1aaf79756d4d90f995b5c2c13784a8e263" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_semaphore" kindref="compound">simgrid::s4u::Semaphore</ref></type>
+        <definition>typedef simgrid::s4u::Semaphore s4u_Semaphore</definition>
+        <argsstring></argsstring>
+        <name>s4u_Semaphore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="200" column="33" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a75fe01d880fc3d84c24dfcb67f6400b3" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_disk" kindref="compound">simgrid::s4u::Disk</ref></type>
+        <definition>typedef simgrid::s4u::Disk s4u_Disk</definition>
+        <argsstring></argsstring>
+        <name>s4u_Disk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="201" column="28" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a9de82acbb88beeeb7e495316e6fa6541" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_storage" kindref="compound">simgrid::s4u::Storage</ref></type>
+        <definition>typedef simgrid::s4u::Storage s4u_Storage</definition>
+        <argsstring></argsstring>
+        <name>s4u_Storage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="202" column="31" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a5c9669cb9f199ed256266a290b72c839" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_net_zone" kindref="compound">simgrid::s4u::NetZone</ref></type>
+        <definition>typedef simgrid::s4u::NetZone s4u_NetZone</definition>
+        <argsstring></argsstring>
+        <name>s4u_NetZone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="203" column="31" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a63872401994e14c2216272fed32a19f3" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">simgrid::s4u::VirtualMachine</ref></type>
+        <definition>typedef simgrid::s4u::VirtualMachine s4u_VM</definition>
+        <argsstring></argsstring>
+        <name>s4u_VM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="204" column="38" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a3ba5820ebb62edcfa8f2770b2bafdf27" prot="public" static="no">
+        <type>boost::intrusive_ptr&lt; simgrid::kernel::activity::ActivityImpl &gt;</type>
+        <definition>typedef boost::intrusive_ptr&lt;simgrid::kernel::activity::ActivityImpl&gt; smx_activity_t</definition>
+        <argsstring></argsstring>
+        <name>smx_activity_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="205" column="30" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a1182e0c7e64d4eba0fc8a9a0fcec3e7a" prot="public" static="no">
+        <type>simgrid::simix::Timer *</type>
+        <definition>typedef simgrid::simix::Timer* smx_timer_t</definition>
+        <argsstring></argsstring>
+        <name>smx_timer_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="207" column="31" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1ac4b891faab0997b2619e2f94f82a4eaf" prot="public" static="no">
+        <type>simgrid::kernel::actor::ActorImpl *</type>
+        <definition>typedef simgrid::kernel::actor::ActorImpl* smx_actor_t</definition>
+        <argsstring></argsstring>
+        <name>smx_actor_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="208" column="43" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a99211b4ee1f633e527ca3cc885ce24d8" prot="public" static="no">
+        <type>simgrid::kernel::activity::ConditionVariableImpl *</type>
+        <definition>typedef simgrid::kernel::activity::ConditionVariableImpl* smx_cond_t</definition>
+        <argsstring></argsstring>
+        <name>smx_cond_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="209" column="58" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a5e0d5d0087cb22d48b5b047b629b6726" prot="public" static="no">
+        <type>simgrid::kernel::activity::MailboxImpl *</type>
+        <definition>typedef simgrid::kernel::activity::MailboxImpl* smx_mailbox_t</definition>
+        <argsstring></argsstring>
+        <name>smx_mailbox_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="210" column="48" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a02b1788b43ac1d9c3b2c66e4757796c3" prot="public" static="no">
+        <type>simgrid::kernel::activity::MutexImpl *</type>
+        <definition>typedef simgrid::kernel::activity::MutexImpl* smx_mutex_t</definition>
+        <argsstring></argsstring>
+        <name>smx_mutex_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="211" column="46" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a0941065b77aac0bd2e4b7aefca6aeafb" prot="public" static="no">
+        <type>simgrid::kernel::activity::SemaphoreImpl *</type>
+        <definition>typedef simgrid::kernel::activity::SemaphoreImpl* smx_sem_t</definition>
+        <argsstring></argsstring>
+        <name>smx_sem_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="212" column="50" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1ad5ae6841fff9784daf744409089ec265" prot="public" static="no">
+        <type>simgrid::kernel::activity::State</type>
+        <definition>typedef simgrid::kernel::activity::State e_smx_state_t</definition>
+        <argsstring></argsstring>
+        <name>e_smx_state_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="213" column="42" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a2a1b6c4fbc4b27426c3871632950547d" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_barrier" kindref="compound">s4u_Barrier</ref> *</type>
+        <definition>typedef s4u_Barrier* sg_bar_t</definition>
+        <argsstring></argsstring>
+        <name>sg_bar_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to a SimGrid barrier object </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="241" column="21" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1ac4549f098ab17704b2d7eb25acfb7723" prot="public" static="no">
+        <type>const <ref refid="classsimgrid_1_1s4u_1_1_barrier" kindref="compound">s4u_Barrier</ref> *</type>
+        <definition>typedef const s4u_Barrier* const_sg_bar_t</definition>
+        <argsstring></argsstring>
+        <name>const_sg_bar_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constant pointer to a SimGrid barrier object </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="243" column="27" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1aacb8b9fe67a8f7c528eb889404c9b942" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_condition_variable" kindref="compound">s4u_ConditionVariable</ref> *</type>
+        <definition>typedef s4u_ConditionVariable* sg_cond_t</definition>
+        <argsstring></argsstring>
+        <name>sg_cond_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="244" column="31" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a0f7bf7f03526bf7a42f3306012158eab" prot="public" static="no">
+        <type>const <ref refid="classsimgrid_1_1s4u_1_1_condition_variable" kindref="compound">s4u_ConditionVariable</ref> *</type>
+        <definition>typedef const s4u_ConditionVariable* const_sg_cond_t</definition>
+        <argsstring></argsstring>
+        <name>const_sg_cond_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="245" column="37" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a4dd24d08a6976408e46e4ae137d794a0" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">s4u_Mutex</ref> *</type>
+        <definition>typedef s4u_Mutex* sg_mutex_t</definition>
+        <argsstring></argsstring>
+        <name>sg_mutex_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="246" column="19" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a575cf6f2e5863d3bd4d8f67eaea6d737" prot="public" static="no">
+        <type>const <ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">s4u_Mutex</ref> *</type>
+        <definition>typedef const s4u_Mutex* const_sg_mutex_t</definition>
+        <argsstring></argsstring>
+        <name>const_sg_mutex_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="247" column="25" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a0daa370007c95bc109961468726202b4" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_semaphore" kindref="compound">s4u_Semaphore</ref> *</type>
+        <definition>typedef s4u_Semaphore* sg_sem_t</definition>
+        <argsstring></argsstring>
+        <name>sg_sem_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="248" column="23" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a3022af52117320dff976f28a6590a975" prot="public" static="no">
+        <type>const <ref refid="classsimgrid_1_1s4u_1_1_semaphore" kindref="compound">s4u_Semaphore</ref> *</type>
+        <definition>typedef const s4u_Semaphore* const_sg_sem_t</definition>
+        <argsstring></argsstring>
+        <name>const_sg_sem_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="249" column="29" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a4fb0a2cd5d10901f0a4861252f7b3596" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_net_zone" kindref="compound">s4u_NetZone</ref> *</type>
+        <definition>typedef s4u_NetZone* sg_netzone_t</definition>
+        <argsstring></argsstring>
+        <name>sg_netzone_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="250" column="21" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a95a8b9a0d6c490420e3512526f8216f9" prot="public" static="no">
+        <type>const <ref refid="classsimgrid_1_1s4u_1_1_net_zone" kindref="compound">s4u_NetZone</ref> *</type>
+        <definition>typedef const s4u_NetZone* const_sg_netzone_t</definition>
+        <argsstring></argsstring>
+        <name>const_sg_netzone_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="251" column="27" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a8cc6ef91ffa7fbe476c5bb43c4bb0f5d" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">s4u_Host</ref> *</type>
+        <definition>typedef s4u_Host* sg_host_t</definition>
+        <argsstring></argsstring>
+        <name>sg_host_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="252" column="18" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a3160d2f065eaab8a1c5150f5880c40a1" prot="public" static="no">
+        <type>const <ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">s4u_Host</ref> *</type>
+        <definition>typedef const s4u_Host* const_sg_host_t</definition>
+        <argsstring></argsstring>
+        <name>const_sg_host_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="253" column="24" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a94fe4842fdf9495a628f3134aff93e7c" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">s4u_Link</ref> *</type>
+        <definition>typedef s4u_Link* sg_link_t</definition>
+        <argsstring></argsstring>
+        <name>sg_link_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="254" column="18" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a6639bdd7e60b881c7e613798c0ce2c3c" prot="public" static="no">
+        <type>const <ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">s4u_Link</ref> *</type>
+        <definition>typedef const s4u_Link* const_sg_link_t</definition>
+        <argsstring></argsstring>
+        <name>const_sg_link_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="255" column="24" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a934432c5901533dd17ecebd0ebcf38b1" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_disk" kindref="compound">s4u_Disk</ref> *</type>
+        <definition>typedef s4u_Disk* sg_disk_t</definition>
+        <argsstring></argsstring>
+        <name>sg_disk_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="256" column="18" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a3750c6e000cddcc9b46f70c60daa1d47" prot="public" static="no">
+        <type>const <ref refid="classsimgrid_1_1s4u_1_1_disk" kindref="compound">s4u_Disk</ref> *</type>
+        <definition>typedef const s4u_Disk* const_sg_disk_t</definition>
+        <argsstring></argsstring>
+        <name>const_sg_disk_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="257" column="24" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1aa424357ea2b18677e0eb61a0edf6b48f" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_storage" kindref="compound">s4u_Storage</ref> *</type>
+        <definition>typedef s4u_Storage* sg_storage_t</definition>
+        <argsstring></argsstring>
+        <name>sg_storage_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="258" column="21" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1aaefa27b5150ee22db2107f67cbfb9ec0" prot="public" static="no">
+        <type>const <ref refid="classsimgrid_1_1s4u_1_1_storage" kindref="compound">s4u_Storage</ref> *</type>
+        <definition>typedef const s4u_Storage* const_sg_storage_t</definition>
+        <argsstring></argsstring>
+        <name>const_sg_storage_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="259" column="27" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a761ada56d185b27c9f36fb7635bc81bc" prot="public" static="no">
+        <type>s4u_File *</type>
+        <definition>typedef s4u_File* sg_file_t</definition>
+        <argsstring></argsstring>
+        <name>sg_file_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="260" column="18" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a8292802c5535f9116a42a1fbe663b8bb" prot="public" static="no">
+        <type>const s4u_File *</type>
+        <definition>typedef const s4u_File* const_sg_file_t</definition>
+        <argsstring></argsstring>
+        <name>const_sg_file_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="261" column="24" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a3901b6e6ef774eecf8b48b281e014453" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">s4u_VM</ref> *</type>
+        <definition>typedef s4u_VM* sg_vm_t</definition>
+        <argsstring></argsstring>
+        <name>sg_vm_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="262" column="16" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1af6a529fd4028303869c71678fda45bd6" prot="public" static="no">
+        <type>const <ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">s4u_VM</ref> *</type>
+        <definition>typedef const s4u_VM* const_sg_vm_t</definition>
+        <argsstring></argsstring>
+        <name>const_sg_vm_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="263" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a79e24fe16d81d6efc00c86b518d23f20" prot="public" static="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">s4u_Actor</ref> *</type>
+        <definition>typedef s4u_Actor* sg_actor_t</definition>
+        <argsstring></argsstring>
+        <name>sg_actor_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="264" column="19" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1aec26450bd251b6306e3874bf36b0f75a" prot="public" static="no">
+        <type>const <ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">s4u_Actor</ref> *</type>
+        <definition>typedef const s4u_Actor* const_sg_actor_t</definition>
+        <argsstring></argsstring>
+        <name>const_sg_actor_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="265" column="25" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a442da397639f3fe59eadfe6212e0d190" prot="public" static="no">
+        <type>struct s_smx_simcall *</type>
+        <definition>typedef struct s_smx_simcall* smx_simcall_t</definition>
+        <argsstring></argsstring>
+        <name>smx_simcall_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="267" column="29" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a0d397fefbdbc1f390ca93789e6438362" prot="public" static="no">
+        <type>unsigned long long</type>
+        <definition>typedef unsigned long long sg_size_t</definition>
+        <argsstring></argsstring>
+        <name>sg_size_t</name>
+        <briefdescription>
+<para>Type for any simgrid size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="272" column="28" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a7dd03426429cbb8f42d96fe326910a90" prot="public" static="no">
+        <type>long long</type>
+        <definition>typedef long long sg_offset_t</definition>
+        <argsstring></argsstring>
+        <name>sg_offset_t</name>
+        <briefdescription>
+<para>Type for any simgrid offset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="277" column="19" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1ac4e013e30134522f1bb795b2aa7bf893" prot="public" static="no">
+        <type>long</type>
+        <definition>typedef long aid_t</definition>
+        <argsstring></argsstring>
+        <name>aid_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Actor&apos;s ID, just like the classical processes&apos; have PID in UNIX </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="280" column="14" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h"/>
+  </compounddef>
+</doxygen>

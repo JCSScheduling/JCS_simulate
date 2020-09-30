@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1vm_1_1_migration_rx" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::vm::MigrationRx</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1vm_1_1_migration_rx_1ab462097e471db6995b65b83f5011c37d" prot="private" static="no" mutable="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_mailbox" kindref="compound">s4u::Mailbox</ref> *</type>
+        <definition>s4u::Mailbox* simgrid::vm::MigrationRx::mbox_ctl</definition>
+        <argsstring></argsstring>
+        <name>mbox_ctl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.hpp" line="32" column="16" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1vm_1_1_migration_rx_1ac8b65aac558b96841e8c49675c57148d" prot="private" static="no" mutable="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_mailbox" kindref="compound">s4u::Mailbox</ref> *</type>
+        <definition>s4u::Mailbox* simgrid::vm::MigrationRx::mbox</definition>
+        <argsstring></argsstring>
+        <name>mbox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.hpp" line="34" column="16" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1vm_1_1_migration_rx_1a92dac0ceefc6c6993843e0fd6db4c20a" prot="private" static="no" mutable="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">s4u::VirtualMachine</ref> *</type>
+        <definition>s4u::VirtualMachine* simgrid::vm::MigrationRx::vm_</definition>
+        <argsstring></argsstring>
+        <name>vm_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.hpp" line="35" column="23" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1vm_1_1_migration_rx_1ab16aee29203fd2ef7c084666aa73a350" prot="private" static="no" mutable="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">s4u::Host</ref> *</type>
+        <definition>s4u::Host* simgrid::vm::MigrationRx::src_pm_</definition>
+        <argsstring></argsstring>
+        <name>src_pm_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.hpp" line="36" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1vm_1_1_migration_rx_1afa3b2381615efead0db04f6ef8f0bae1" prot="private" static="no" mutable="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">s4u::Host</ref> *</type>
+        <definition>s4u::Host* simgrid::vm::MigrationRx::dst_pm_</definition>
+        <argsstring></argsstring>
+        <name>dst_pm_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.hpp" line="37" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_migration_rx_1ad1db08618147ffc66cc5bfea08d2bb66" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::vm::MigrationRx::MigrationRx</definition>
+        <argsstring>(s4u::VirtualMachine *vm, s4u::Host *dst_pm)</argsstring>
+        <name>MigrationRx</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">s4u::VirtualMachine</ref> *</type>
+          <declname>vm</declname>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">s4u::Host</ref> *</type>
+          <declname>dst_pm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.hpp" line="40" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.hpp" bodystart="40" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_migration_rx_1a027ed240881d07468b6a7c76b5a1ae63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::vm::MigrationRx::operator()</definition>
+        <argsstring>()</argsstring>
+        <name>operator()</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.hpp" line="49" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.cpp" bodystart="24" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.hpp" line="29" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.hpp" bodystart="29" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1vm_1_1_migration_rx_1afa3b2381615efead0db04f6ef8f0bae1" prot="private" virt="non-virtual"><scope>simgrid::vm::MigrationRx</scope><name>dst_pm_</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_migration_rx_1ac8b65aac558b96841e8c49675c57148d" prot="private" virt="non-virtual"><scope>simgrid::vm::MigrationRx</scope><name>mbox</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_migration_rx_1ab462097e471db6995b65b83f5011c37d" prot="private" virt="non-virtual"><scope>simgrid::vm::MigrationRx</scope><name>mbox_ctl</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_migration_rx_1ad1db08618147ffc66cc5bfea08d2bb66" prot="public" virt="non-virtual"><scope>simgrid::vm::MigrationRx</scope><name>MigrationRx</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_migration_rx_1a027ed240881d07468b6a7c76b5a1ae63" prot="public" virt="non-virtual"><scope>simgrid::vm::MigrationRx</scope><name>operator()</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_migration_rx_1ab16aee29203fd2ef7c084666aa73a350" prot="private" virt="non-virtual"><scope>simgrid::vm::MigrationRx</scope><name>src_pm_</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_migration_rx_1a92dac0ceefc6c6993843e0fd6db4c20a" prot="private" virt="non-virtual"><scope>simgrid::vm::MigrationRx</scope><name>vm_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

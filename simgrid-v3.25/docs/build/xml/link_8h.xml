@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="link_8h" kind="file" language="C++">
+    <compoundname>link.h</compoundname>
+    <includes refid="forward_8h" local="no">simgrid/forward.h</includes>
+    <includes local="no">xbt/base.h</includes>
+    <includedby refid="_link_8hpp" local="no">Link.hpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="3">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="2">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>link.h</label>
+        <link refid="link_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Link.hpp</label>
+        <link refid="_link_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>link.h</label>
+        <link refid="link_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="link_8h_1a45e820cf639c23c4297e96ca947abdda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* sg_link_name</definition>
+        <argsstring>(const_sg_link_t link)</argsstring>
+        <name>sg_link_name</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">const_sg_link_t</ref></type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/link.h" line="16" column="13" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/link.h" declline="16" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="link_8h_1a85a87bbd2930fb401ad77fc5d7d8fe7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">sg_link_t</ref></type>
+        <definition>sg_link_t sg_link_by_name</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>sg_link_by_name</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/link.h" line="17" column="12" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/link.h" declline="17" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="link_8h_1ab59a8334a2079375d01bba432029af5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sg_link_is_shared</definition>
+        <argsstring>(const_sg_link_t link)</argsstring>
+        <name>sg_link_is_shared</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">const_sg_link_t</ref></type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/link.h" line="18" column="6" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/link.h" declline="18" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="link_8h_1a3b8d6416d83cf2b2b91c02750f3cba1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_link_bandwidth</definition>
+        <argsstring>(const_sg_link_t link)</argsstring>
+        <name>sg_link_bandwidth</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">const_sg_link_t</ref></type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/link.h" line="19" column="9" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/link.h" declline="19" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="link_8h_1a2734f1a2ff152b0d39aa8b8e0af4b1ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_link_latency</definition>
+        <argsstring>(const_sg_link_t link)</argsstring>
+        <name>sg_link_latency</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">const_sg_link_t</ref></type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/link.h" line="20" column="9" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/link.h" declline="20" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="link_8h_1a1d975e6a7707a3c659eb79df87656c19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* sg_link_data</definition>
+        <argsstring>(const_sg_link_t link)</argsstring>
+        <name>sg_link_data</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">const_sg_link_t</ref></type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/link.h" line="21" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/link.h" declline="21" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="link_8h_1a927a529f6d84cd047f6122f8e579a00a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_link_data_set</definition>
+        <argsstring>(sg_link_t link, void *data)</argsstring>
+        <name>sg_link_data_set</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">sg_link_t</ref></type>
+          <declname>link</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/link.h" line="22" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/link.h" declline="22" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="link_8h_1a5e76e8d59a083e466583f877801f55d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sg_link_count</definition>
+        <argsstring>()</argsstring>
+        <name>sg_link_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/link.h" line="23" column="6" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/link.h" declline="23" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="link_8h_1a5db10e6e59e761219742869f4974ae86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">sg_link_t</ref> *</type>
+        <definition>sg_link_t* sg_link_list</definition>
+        <argsstring>()</argsstring>
+        <name>sg_link_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/link.h" line="24" column="12" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/link.h" declline="24" declcolumn="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/link.h"/>
+  </compounddef>
+</doxygen>

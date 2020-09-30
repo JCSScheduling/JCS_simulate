@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_10d7eaabf057d723f8e5433daaf68255" kind="dir">
+    <compoundname>s4u</compoundname>
+    <innerfile refid="_activity_8hpp">Activity.hpp</innerfile>
+    <innerfile refid="_actor_8hpp">Actor.hpp</innerfile>
+    <innerfile refid="_barrier_8hpp">Barrier.hpp</innerfile>
+    <innerfile refid="_comm_8hpp">Comm.hpp</innerfile>
+    <innerfile refid="_condition_variable_8hpp">ConditionVariable.hpp</innerfile>
+    <innerfile refid="_disk_8hpp">Disk.hpp</innerfile>
+    <innerfile refid="_engine_8hpp">Engine.hpp</innerfile>
+    <innerfile refid="_exec_8hpp">Exec.hpp</innerfile>
+    <innerfile refid="_host_8hpp">Host.hpp</innerfile>
+    <innerfile refid="_io_8hpp">Io.hpp</innerfile>
+    <innerfile refid="_link_8hpp">Link.hpp</innerfile>
+    <innerfile refid="_mailbox_8hpp">Mailbox.hpp</innerfile>
+    <innerfile refid="_mutex_8hpp">Mutex.hpp</innerfile>
+    <innerfile refid="_net_zone_8hpp">NetZone.hpp</innerfile>
+    <innerfile refid="_semaphore_8hpp">Semaphore.hpp</innerfile>
+    <innerfile refid="_storage_8hpp">Storage.hpp</innerfile>
+    <innerfile refid="_virtual_machine_8hpp">VirtualMachine.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/"/>
+  </compounddef>
+</doxygen>

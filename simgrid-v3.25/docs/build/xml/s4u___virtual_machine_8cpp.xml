@@ -1,0 +1,469 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="s4u___virtual_machine_8cpp" kind="file" language="C++">
+    <compoundname>s4u_VirtualMachine.cpp</compoundname>
+    <includes local="yes">simgrid/Exception.hpp</includes>
+    <includes refid="_actor_8hpp" local="yes">simgrid/s4u/Actor.hpp</includes>
+    <includes refid="vm_8h" local="yes">simgrid/vm.h</includes>
+    <includes local="yes">src/include/surf/surf.hpp</includes>
+    <includes refid="_virtual_machine_impl_8hpp" local="yes">src/plugins/vm/VirtualMachineImpl.hpp</includes>
+    <includes refid="_vm_host_ext_8hpp" local="yes">src/plugins/vm/VmHostExt.hpp</includes>
+    <includes local="yes">src/surf/cpu_cas01.hpp</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>functional</label>
+      </node>
+      <node id="18">
+        <label>simgrid/s4u/VirtualMachine.hpp</label>
+        <link refid="_virtual_machine_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="9">
+        <label>xbt/functional.hpp</label>
+      </node>
+      <node id="20">
+        <label>src/kernel/actor/ActorImpl.hpp</label>
+      </node>
+      <node id="5">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="16">
+        <label>src/include/surf/surf.hpp</label>
+      </node>
+      <node id="2">
+        <label>simgrid/Exception.hpp</label>
+      </node>
+      <node id="13">
+        <label>map</label>
+      </node>
+      <node id="7">
+        <label>simgrid/chrono.hpp</label>
+      </node>
+      <node id="21">
+        <label>src/surf/HostImpl.hpp</label>
+      </node>
+      <node id="4">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>xbt/string.hpp</label>
+      </node>
+      <node id="24">
+        <label>src/plugins/vm/VmHostExt.hpp</label>
+        <link refid="_vm_host_ext_8hpp_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>xbt/signal.hpp</label>
+      </node>
+      <node id="19">
+        <label>simgrid/s4u/Host.hpp</label>
+        <link refid="_host_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>src/plugins/vm/VirtualMachineImpl.hpp</label>
+        <link refid="_virtual_machine_impl_8hpp_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>deque</label>
+      </node>
+      <node id="14">
+        <label>unordered_map</label>
+      </node>
+      <node id="8">
+        <label>xbt/Extendable.hpp</label>
+      </node>
+      <node id="3">
+        <label>simgrid/s4u/Actor.hpp</label>
+        <link refid="_actor_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>src/surf/cpu_cas01.hpp</label>
+      </node>
+      <node id="1">
+        <label>s4u_VirtualMachine.cpp</label>
+        <link refid="s4u___virtual_machine_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>algorithm</label>
+      </node>
+      <node id="15">
+        <label>simgrid/vm.h</label>
+        <link refid="vm_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacesimgrid">simgrid</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1s4u">simgrid::s4u</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="s4u___virtual_machine_8cpp_1a845ca009c6775a23c1d9755893ddbe47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">sg_vm_t</ref></type>
+        <definition>sg_vm_t sg_vm_create_core</definition>
+        <argsstring>(sg_host_t pm, const char *name)</argsstring>
+        <name>sg_vm_create_core</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">sg_host_t</ref></type>
+          <declname>pm</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Create a new VM object with the default parameters A VM is treated as a host. The name of the VM must be unique among all hosts. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" line="188" column="9" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="188" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___virtual_machine_8cpp_1aafb0c1c7c96573cf6b2c4d8c4e1905fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">sg_vm_t</ref></type>
+        <definition>sg_vm_t sg_vm_create_multicore</definition>
+        <argsstring>(sg_host_t pm, const char *name, int coreAmount)</argsstring>
+        <name>sg_vm_create_multicore</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">sg_host_t</ref></type>
+          <declname>pm</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>coreAmount</declname>
+        </param>
+        <briefdescription>
+<para>Create a new VM object with the default parameters, but with a specified amount of cores A VM is treated as a host. The name of the VM must be unique among all hosts. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" line="195" column="9" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="195" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___virtual_machine_8cpp_1a3a54113d91636a1338d640f3d54f9fb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* sg_vm_get_name</definition>
+        <argsstring>(const_sg_vm_t vm)</argsstring>
+        <name>sg_vm_get_name</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">const_sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" line="200" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="200" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___virtual_machine_8cpp_1ac0a84602e0a5d5f449a97e29b24ec5a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">sg_host_t</ref></type>
+        <definition>sg_host_t sg_vm_get_pm</definition>
+        <argsstring>(const_sg_vm_t vm)</argsstring>
+        <name>sg_vm_get_pm</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">const_sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <briefdescription>
+<para>Get the physical host of a given VM. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" line="206" column="11" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="206" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___virtual_machine_8cpp_1a2b46ccf796ab21a20be6fc609c49a4c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_vm_set_ramsize</definition>
+        <argsstring>(sg_vm_t vm, size_t size)</argsstring>
+        <name>sg_vm_set_ramsize</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" line="211" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___virtual_machine_8cpp_1abc67b1e231a15e2dc0a1524b1748f508" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t sg_vm_get_ramsize</definition>
+        <argsstring>(const_sg_vm_t vm)</argsstring>
+        <name>sg_vm_get_ramsize</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">const_sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" line="216" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="216" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___virtual_machine_8cpp_1ab0914abfc167d53fb7a97118baf3c94f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_vm_set_bound</definition>
+        <argsstring>(sg_vm_t vm, double bound)</argsstring>
+        <name>sg_vm_set_bound</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bound</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" line="221" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="221" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___virtual_machine_8cpp_1a39bdee8d419495f05527390be1a401dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sg_vm_is_created</definition>
+        <argsstring>(sg_vm_t vm)</argsstring>
+        <name>sg_vm_is_created</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether the given VM has just created, not running. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" line="227" column="5" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="227" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___virtual_machine_8cpp_1a6868694596d5d4ec0ef9e70f2dbffc50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sg_vm_is_running</definition>
+        <argsstring>(sg_vm_t vm)</argsstring>
+        <name>sg_vm_is_running</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether the given VM is currently running. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" line="233" column="5" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="233" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___virtual_machine_8cpp_1ab03ef43a14597e5eae57389c5c607e21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sg_vm_is_suspended</definition>
+        <argsstring>(sg_vm_t vm)</argsstring>
+        <name>sg_vm_is_suspended</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether the given VM is currently suspended, not running. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" line="239" column="5" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="239" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___virtual_machine_8cpp_1a8eca656fe2a1c1ca932be6e4b7eb3b03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_vm_start</definition>
+        <argsstring>(sg_vm_t vm)</argsstring>
+        <name>sg_vm_start</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <briefdescription>
+<para>Start a vm (i.e., boot the guest operating system) If the VM cannot be started (because of memory over-provisioning), an exception is generated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" line="247" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="247" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___virtual_machine_8cpp_1a9e9a8a3d92195ea7ccd9399d7299f08f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_vm_suspend</definition>
+        <argsstring>(sg_vm_t vm)</argsstring>
+        <name>sg_vm_suspend</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <briefdescription>
+<para>Immediately suspend the execution of all processes within the given VM. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function stops the execution of the VM. All the processes on this VM will pause. The state of the VM is preserved. We can later resume it again.</para>
+<para>No suspension cost occurs. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" line="259" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="259" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___virtual_machine_8cpp_1ae8949fd44624f274a96f44e7741c10fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_vm_resume</definition>
+        <argsstring>(sg_vm_t vm)</argsstring>
+        <name>sg_vm_resume</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <briefdescription>
+<para>Resume the execution of the VM. All processes on the VM run again. No resume cost occurs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" line="267" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="267" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___virtual_machine_8cpp_1aa47d1b33cf86e50ccb20907a19c0e6de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_vm_shutdown</definition>
+        <argsstring>(sg_vm_t vm)</argsstring>
+        <name>sg_vm_shutdown</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <briefdescription>
+<para>Immediately kills all processes within the given VM. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>embed:rst:leading-asterisk
+
+The memory allocated by these actors is leaked, unless you used :cpp:func:`simgrid::s4u::Actor::on_exit`.</verbatim></para>
+<para>No extra delay occurs by default. You may let your actor sleep by a specific amount to simulate any extra delay that you want. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" line="282" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="282" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="s4u___virtual_machine_8cpp_1a5eb54048e688b022d4bd02729f579753" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_vm_destroy</definition>
+        <argsstring>(sg_vm_t vm)</argsstring>
+        <name>sg_vm_destroy</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <briefdescription>
+<para>Destroy a VM. Destroy the VM object from the simulation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" line="288" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="288" bodyend="291"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="msg__private_8hpp" kind="file" language="C++">
+    <compoundname>msg_private.hpp</compoundname>
+    <includes local="yes">simgrid/Exception.hpp</includes>
+    <includes refid="msg_8h" local="yes">simgrid/msg.h</includes>
+    <includes local="yes">src/kernel/activity/CommImpl.hpp</includes>
+    <includes local="no">simgrid/modelchecker.h</includes>
+    <includes local="no">xbt/Extendable.hpp</includes>
+    <includes local="no">cmath</includes>
+    <includedby refid="msg__comm_8cpp" local="yes">msg_comm.cpp</includedby>
+    <includedby refid="msg__global_8cpp" local="yes">msg_global.cpp</includedby>
+    <includedby refid="msg__legacy_8cpp" local="yes">msg_legacy.cpp</includedby>
+    <includedby refid="msg__process_8cpp" local="yes">msg_process.cpp</includedby>
+    <includedby refid="msg__task_8cpp" local="yes">msg_task.cpp</includedby>
+    <incdepgraph>
+      <node id="15">
+        <label>simgrid/mutex.h</label>
+        <link refid="mutex_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>xbt/dict.h</label>
+      </node>
+      <node id="19">
+        <label>simgrid/version.h</label>
+      </node>
+      <node id="7">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="24">
+        <label>simgrid/simix.h</label>
+      </node>
+      <node id="9">
+        <label>simgrid/barrier.h</label>
+        <link refid="barrier_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="21">
+        <label>simgrid/zone.h</label>
+        <link refid="zone_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>cmath</label>
+      </node>
+      <node id="22">
+        <label>xbt.h</label>
+      </node>
+      <node id="16">
+        <label>simgrid/plugins/live_migration.h</label>
+      </node>
+      <node id="25">
+        <label>src/kernel/activity/CommImpl.hpp</label>
+      </node>
+      <node id="2">
+        <label>simgrid/Exception.hpp</label>
+      </node>
+      <node id="3">
+        <label>simgrid/msg.h</label>
+        <link refid="msg_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>map</label>
+      </node>
+      <node id="14">
+        <label>simgrid/mailbox.h</label>
+        <link refid="mailbox_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>simgrid/instr.h</label>
+      </node>
+      <node id="1">
+        <label>msg_private.hpp</label>
+        <link refid="msg__private_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>simgrid/semaphore.h</label>
+        <link refid="semaphore_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>simgrid/engine.h</label>
+        <link refid="engine_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>simgrid/host.h</label>
+        <link refid="host_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>xbt/Extendable.hpp</label>
+      </node>
+      <node id="26">
+        <label>simgrid/modelchecker.h</label>
+      </node>
+      <node id="12">
+        <label>xbt/dynar.h</label>
+      </node>
+      <node id="4">
+        <label>simgrid/actor.h</label>
+        <link refid="actor_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>simgrid/vm.h</label>
+        <link refid="vm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>simgrid/storage.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classsimgrid_1_1msg_1_1_task" prot="public">simgrid::msg::Task</innerclass>
+    <innerclass refid="classsimgrid_1_1msg_1_1_comm" prot="public">simgrid::msg::Comm</innerclass>
+    <innerclass refid="struct_m_s_g___global__t" prot="public">MSG_Global_t</innerclass>
+    <innernamespace refid="namespacesimgrid">simgrid</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1msg">simgrid::msg</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="msg__private_8hpp_1a11c6a30f40fb5e3f5cf8ac06fa777785" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_m_s_g___global__t" kindref="compound">MSG_Global_t</ref> *</type>
+        <definition>MSG_Global_t* msg_global</definition>
+        <argsstring></argsstring>
+        <name>msg_global</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="118" column="21" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_global.cpp" bodystart="18" bodyend="-1" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" declline="118" declcolumn="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp"/>
+  </compounddef>
+</doxygen>

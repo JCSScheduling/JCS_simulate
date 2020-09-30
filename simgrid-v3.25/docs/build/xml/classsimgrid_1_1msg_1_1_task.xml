@@ -1,0 +1,888 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1msg_1_1_task" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::msg::Task</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">simgrid::xbt::Extendable&lt; Task &gt;</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1msg_1_1_task_1a19d63b47d7ac5c31d327b0dae42cb4e2" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string simgrid::msg::Task::name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="24" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1msg_1_1_task_1a1e1c299fe677fa3409ec68404dde4fb6" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string simgrid::msg::Task::tracing_category_</definition>
+        <argsstring></argsstring>
+        <name>tracing_category_</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="25" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1msg_1_1_task_1ae14afd434cf89ca6ebf97f666b02fe10" prot="private" static="no" mutable="no">
+        <type>long long int</type>
+        <definition>long long int simgrid::msg::Task::id_</definition>
+        <argsstring></argsstring>
+        <name>id_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="26" column="17" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1msg_1_1_task_1a4b13a81fefaeaabef33891b2e46a2a2d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::msg::Task::timeout_</definition>
+        <argsstring></argsstring>
+        <name>timeout_</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="28" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1msg_1_1_task_1adfdfe5ed4080140733732b4c8bd1fbf4" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::msg::Task::priority_</definition>
+        <argsstring></argsstring>
+        <name>priority_</name>
+        <initializer>= 1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="29" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1msg_1_1_task_1aa28abb655ae32ecbf26f938708bcdf24" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::msg::Task::bound_</definition>
+        <argsstring></argsstring>
+        <name>bound_</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="30" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1msg_1_1_task_1aeef91df57a0ccf02e610729a03d51a8c" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::msg::Task::rate_</definition>
+        <argsstring></argsstring>
+        <name>rate_</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="31" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1msg_1_1_task_1a07ac74f40ecf3b6a68d8bd63c15464f9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool simgrid::msg::Task::is_used_</definition>
+        <argsstring></argsstring>
+        <name>is_used_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="32" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1msg_1_1_task_1a0c74315b4a2ab31864006e4d3182d6e5" prot="public" static="no" mutable="no">
+        <type>s4u::ExecPtr</type>
+        <definition>s4u::ExecPtr simgrid::msg::Task::compute</definition>
+        <argsstring></argsstring>
+        <name>compute</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="79" column="16" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1msg_1_1_task_1a47ff81655329099c0207f86017904992" prot="public" static="no" mutable="no">
+        <type>s4u::CommPtr</type>
+        <definition>s4u::CommPtr simgrid::msg::Task::comm</definition>
+        <argsstring></argsstring>
+        <name>comm</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="80" column="16" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1msg_1_1_task_1adf3d36ce6550a48b663cf95905ca483f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::msg::Task::flops_amount</definition>
+        <argsstring></argsstring>
+        <name>flops_amount</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="81" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1msg_1_1_task_1a5c71f96d9a7b41fdd810c561af787fa5" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::msg::Task::bytes_amount</definition>
+        <argsstring></argsstring>
+        <name>bytes_amount</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="82" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1msg_1_1_task_1a40a5d834d1a2323cc8b0eb45e96aa61d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool simgrid::msg::Task::parallel_</definition>
+        <argsstring></argsstring>
+        <name>parallel_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="85" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1msg_1_1_task_1aeaba08ca1c8141ce0802ca594d317040" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">s4u::Host</ref> * &gt;</type>
+        <definition>std::vector&lt;s4u::Host*&gt; simgrid::msg::Task::hosts_</definition>
+        <argsstring></argsstring>
+        <name>hosts_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="86" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1msg_1_1_task_1af61f0848f4063cd07284f61ae2c17061" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; simgrid::msg::Task::flops_parallel_amount</definition>
+        <argsstring></argsstring>
+        <name>flops_parallel_amount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="87" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1msg_1_1_task_1ac8a287991460ff7b3ab2ad4cf2c7b759" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; simgrid::msg::Task::bytes_parallel_amount</definition>
+        <argsstring></argsstring>
+        <name>bytes_parallel_amount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="88" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1ad5b6b8bb390e017616a9be1d99c1b9ea" prot="private" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::msg::Task::Task</definition>
+        <argsstring>(const std::string &amp;name, double flops_amount, double bytes_amount, void *data)</argsstring>
+        <name>Task</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>flops_amount</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bytes_amount</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="34" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="24" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1a62843118afee1a67e6841e730877d371" prot="private" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::msg::Task::Task</definition>
+        <argsstring>(const std::string &amp;name, std::vector&lt; s4u::Host * &gt; &amp;&amp;hosts, std::vector&lt; double &gt; &amp;&amp;flops_amount, std::vector&lt; double &gt; &amp;&amp;bytes_amount, void *data)</argsstring>
+        <name>Task</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">s4u::Host</ref> * &gt; &amp;&amp;</type>
+          <declname>hosts</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;&amp;</type>
+          <declname>flops_amount</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;&amp;</type>
+          <declname>bytes_amount</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="35" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="34" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1a3e18cf1d5ff4b45677c2c89834d3dfa0" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::msg::Task::report_multiple_use</definition>
+        <argsstring>() const</argsstring>
+        <name>report_multiple_use</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="38" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="184" bodyend="196"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1aeaae427b2fedd427b0a336b00fa10058" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">Task</ref> *</type>
+        <definition>Task * simgrid::msg::Task::create</definition>
+        <argsstring>(const std::string &amp;name, double flops_amount, double bytes_amount, void *data)</argsstring>
+        <name>create</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>flops_amount</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bytes_amount</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="41" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1aed7a14570b9ebcb3e2ef58ea808f430d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">Task</ref> *</type>
+        <definition>Task * simgrid::msg::Task::create_parallel</definition>
+        <argsstring>(const std::string &amp;name, int host_nb, const msg_host_t *host_list, double *flops_amount, double *bytes_amount, void *data)</argsstring>
+        <name>create_parallel</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>host_nb</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">msg_host_t</ref> *</type>
+          <declname>host_list</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>flops_amount</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>bytes_amount</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="42" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="49" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1a79383a672f6c5f8c2594c214572854b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>msg_error_t</type>
+        <definition>msg_error_t simgrid::msg::Task::execute</definition>
+        <argsstring>()</argsstring>
+        <name>execute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="44" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="63" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1a6150d0801f6fe1ebc92cd5c31aed4e11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>msg_error_t</type>
+        <definition>msg_error_t simgrid::msg::Task::send</definition>
+        <argsstring>(const std::string &amp;alias, double timeout)</argsstring>
+        <name>send</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>alias</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="45" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="130" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1a17827281486e93e5c42b32a2ca17789e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>s4u::CommPtr</type>
+        <definition>s4u::CommPtr simgrid::msg::Task::send_async</definition>
+        <argsstring>(const std::string &amp;alias, void_f_pvoid_t cleanup, bool detached)</argsstring>
+        <name>send_async</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>alias</declname>
+        </param>
+        <param>
+          <type>void_f_pvoid_t</type>
+          <declname>cleanup</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>detached</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="46" column="16" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="103" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1a9bc58f019243ce62209835d46e27d3f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::msg::Task::cancel</definition>
+        <argsstring>()</argsstring>
+        <name>cancel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="48" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="151" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1ac6903fb0641fc8dc627273bbf1096c40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::msg::Task::Task</definition>
+        <argsstring>(const Task &amp;)=delete</argsstring>
+        <name>Task</name>
+        <param>
+          <type>const <ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">Task</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="50" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1a81e30a20c4df74d3a269dc44ca70cdec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">Task</ref> &amp;</type>
+        <definition>Task&amp; simgrid::msg::Task::operator=</definition>
+        <argsstring>(const Task &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">Task</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="51" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1ad054499bd90df34cbd2c1ec62df49d69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::msg::Task::~Task</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Task</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="52" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1a05bd61650e7a750065071895dd1bbf11" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool simgrid::msg::Task::is_used</definition>
+        <argsstring>() const</argsstring>
+        <name>is_used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="54" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1a515bd58cdce5a2bb7d12883f30b3ddec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool simgrid::msg::Task::is_parallel</definition>
+        <argsstring>() const</argsstring>
+        <name>is_parallel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="55" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1a7af91dc5a9e5c6314c8dbb4ed49f0b7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::msg::Task::set_used</definition>
+        <argsstring>()</argsstring>
+        <name>set_used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="57" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="177" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1a49e3dca93547b075fafc96e0d77ac3d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::msg::Task::set_not_used</definition>
+        <argsstring>()</argsstring>
+        <name>set_not_used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="58" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1a396765ec9a08f1cdd44857d53d3a5134" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; simgrid::msg::Task::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="59" column="21" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1a8966adcbaca79541b86ac7d008b9b58e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* simgrid::msg::Task::get_cname</definition>
+        <argsstring>() const</argsstring>
+        <name>get_cname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="60" column="14" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1a39e12c3bf3e379a9eef50aa38944d5cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::msg::Task::set_name</definition>
+        <argsstring>(const char *new_name)</argsstring>
+        <name>set_name</name>
+        <param>
+          <type>const char *</type>
+          <declname>new_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="61" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1ab40b3f7625dd795343d53e8bf0ed0532" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::msg::Task::set_tracing_category</definition>
+        <argsstring>(const char *category)</argsstring>
+        <name>set_tracing_category</name>
+        <param>
+          <type>const char *</type>
+          <declname>category</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="62" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1af29f31c31842cf652f7180f2ab26e918" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; simgrid::msg::Task::get_tracing_category</definition>
+        <argsstring>() const</argsstring>
+        <name>get_tracing_category</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="63" column="21" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1a320b49e997971cc8f7e0823513a3d797" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool simgrid::msg::Task::has_tracing_category</definition>
+        <argsstring>()</argsstring>
+        <name>has_tracing_category</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="64" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1a7c6407e8b87e2cbd4c95d0ec94afe8a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* simgrid::msg::Task::get_user_data</definition>
+        <argsstring>()</argsstring>
+        <name>get_user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="65" column="9" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1ab97e26b39e5b2f18136d5b65f8ab01d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::msg::Task::set_user_data</definition>
+        <argsstring>(void *data)</argsstring>
+        <name>set_user_data</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="66" column="9" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1a4a36296a12da65959069b0afba69930b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>long long int</type>
+        <definition>long long int simgrid::msg::Task::get_id</definition>
+        <argsstring>() const</argsstring>
+        <name>get_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="67" column="17" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1ad57c3fff1316aed8b389deb07938c000" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::msg::Task::get_priority</definition>
+        <argsstring>() const</argsstring>
+        <name>get_priority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="68" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1a32fa1fb5f1ec2cab6be8e444d8704a07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::msg::Task::set_priority</definition>
+        <argsstring>(double priority)</argsstring>
+        <name>set_priority</name>
+        <param>
+          <type>double</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="69" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="161" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1acbd69baa2987bc1ba503b73e94f61c34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::msg::Task::set_bound</definition>
+        <argsstring>(double bound)</argsstring>
+        <name>set_bound</name>
+        <param>
+          <type>double</type>
+          <declname>bound</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="70" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1a461f3ab4cb0e9c04ea4a350a88f74955" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::msg::Task::get_bound</definition>
+        <argsstring>() const</argsstring>
+        <name>get_bound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="71" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1a12dc81ff16bafe29827b55fd01827eb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::msg::Task::set_rate</definition>
+        <argsstring>(double rate)</argsstring>
+        <name>set_rate</name>
+        <param>
+          <type>double</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="72" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1af4ddd19f8bcd2065d1b6d360856bc592" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::msg::Task::get_rate</definition>
+        <argsstring>() const</argsstring>
+        <name>get_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="73" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1ac0fcf0f27787aa469330e8ba2eafa499" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::msg::Task::set_timeout</definition>
+        <argsstring>(double timeout)</argsstring>
+        <name>set_timeout</name>
+        <param>
+          <type>double</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="74" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1aa6145d2b384e479003ccacfdaf258bd1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">s4u::Actor</ref> *</type>
+        <definition>s4u::Actor * simgrid::msg::Task::get_sender</definition>
+        <argsstring>() const</argsstring>
+        <name>get_sender</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="76" column="14" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1msg_1_1_task_1a8d06d80ac6fe38a36925bc3d5320b951" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">s4u::Host</ref> *</type>
+        <definition>s4u::Host * simgrid::msg::Task::get_source</definition>
+        <argsstring>() const</argsstring>
+        <name>get_source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="77" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_task.cpp" bodystart="172" bodyend="175"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>simgrid::xbt::Extendable&lt; Task &gt;</label>
+      </node>
+      <node id="1">
+        <label>simgrid::msg::Task</label>
+        <link refid="classsimgrid_1_1msg_1_1_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>simgrid::xbt::Extendable&lt; Task &gt;</label>
+      </node>
+      <node id="1">
+        <label>simgrid::msg::Task</label>
+        <link refid="classsimgrid_1_1msg_1_1_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="23" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="23" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1msg_1_1_task_1aa28abb655ae32ecbf26f938708bcdf24" prot="private" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>bound_</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a5c71f96d9a7b41fdd810c561af787fa5" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>bytes_amount</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1ac8a287991460ff7b3ab2ad4cf2c7b759" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>bytes_parallel_amount</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a9bc58f019243ce62209835d46e27d3f7" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>cancel</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a47ff81655329099c0207f86017904992" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>comm</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a0c74315b4a2ab31864006e4d3182d6e5" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>compute</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1aeaae427b2fedd427b0a336b00fa10058" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>create</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1aed7a14570b9ebcb3e2ef58ea808f430d" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>create_parallel</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a79383a672f6c5f8c2594c214572854b2" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>execute</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1adf3d36ce6550a48b663cf95905ca483f" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>flops_amount</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1af61f0848f4063cd07284f61ae2c17061" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>flops_parallel_amount</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a461f3ab4cb0e9c04ea4a350a88f74955" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>get_bound</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a8966adcbaca79541b86ac7d008b9b58e" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>get_cname</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a4a36296a12da65959069b0afba69930b" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>get_id</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a396765ec9a08f1cdd44857d53d3a5134" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>get_name</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1ad57c3fff1316aed8b389deb07938c000" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>get_priority</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1af4ddd19f8bcd2065d1b6d360856bc592" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>get_rate</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1aa6145d2b384e479003ccacfdaf258bd1" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>get_sender</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a8d06d80ac6fe38a36925bc3d5320b951" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>get_source</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1af29f31c31842cf652f7180f2ab26e918" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>get_tracing_category</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a7c6407e8b87e2cbd4c95d0ec94afe8a2" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>get_user_data</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a320b49e997971cc8f7e0823513a3d797" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>has_tracing_category</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1aeaba08ca1c8141ce0802ca594d317040" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>hosts_</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1ae14afd434cf89ca6ebf97f666b02fe10" prot="private" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>id_</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a515bd58cdce5a2bb7d12883f30b3ddec" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>is_parallel</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a05bd61650e7a750065071895dd1bbf11" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>is_used</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a07ac74f40ecf3b6a68d8bd63c15464f9" prot="private" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>is_used_</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a19d63b47d7ac5c31d327b0dae42cb4e2" prot="private" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>name_</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a81e30a20c4df74d3a269dc44ca70cdec" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>operator=</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a40a5d834d1a2323cc8b0eb45e96aa61d" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>parallel_</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1adfdfe5ed4080140733732b4c8bd1fbf4" prot="private" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>priority_</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1aeef91df57a0ccf02e610729a03d51a8c" prot="private" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>rate_</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a3e18cf1d5ff4b45677c2c89834d3dfa0" prot="private" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>report_multiple_use</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a6150d0801f6fe1ebc92cd5c31aed4e11" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>send</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a17827281486e93e5c42b32a2ca17789e" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>send_async</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1acbd69baa2987bc1ba503b73e94f61c34" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>set_bound</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a39e12c3bf3e379a9eef50aa38944d5cd" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>set_name</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a49e3dca93547b075fafc96e0d77ac3d2" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>set_not_used</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a32fa1fb5f1ec2cab6be8e444d8704a07" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>set_priority</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a12dc81ff16bafe29827b55fd01827eb4" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>set_rate</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1ac0fcf0f27787aa469330e8ba2eafa499" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>set_timeout</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1ab40b3f7625dd795343d53e8bf0ed0532" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>set_tracing_category</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a7af91dc5a9e5c6314c8dbb4ed49f0b7d" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>set_used</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1ab97e26b39e5b2f18136d5b65f8ab01d0" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>set_user_data</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1ad5b6b8bb390e017616a9be1d99c1b9ea" prot="private" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>Task</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a62843118afee1a67e6841e730877d371" prot="private" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>Task</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1ac6903fb0641fc8dc627273bbf1096c40" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>Task</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a4b13a81fefaeaabef33891b2e46a2a2d" prot="private" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>timeout_</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1a1e1c299fe677fa3409ec68404dde4fb6" prot="private" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>tracing_category_</name></member>
+      <member refid="classsimgrid_1_1msg_1_1_task_1ad054499bd90df34cbd2c1ec62df49d69" prot="public" virt="non-virtual"><scope>simgrid::msg::Task</scope><name>~Task</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

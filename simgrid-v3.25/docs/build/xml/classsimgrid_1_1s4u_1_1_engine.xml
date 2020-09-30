@@ -1,0 +1,714 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1s4u_1_1_engine" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::s4u::Engine</compoundname>
+    <includes refid="_engine_8hpp" local="no">Engine.hpp</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_engine_1af45c346d76523c75af5b042d5d16a088" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void()&gt;</type>
+        <definition>xbt::signal&lt;void()&gt; simgrid::s4u::Engine::on_platform_created</definition>
+        <argsstring></argsstring>
+        <name>on_platform_created</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback fired when the platform is created (ie, the xml file parsed), right before the actual simulation starts. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="157" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_engine_1a26c5814f93a68481b67d241b15709099" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void()&gt;</type>
+        <definition>xbt::signal&lt;void()&gt; simgrid::s4u::Engine::on_platform_creation</definition>
+        <argsstring></argsstring>
+        <name>on_platform_creation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback fired when the platform is about to be created (ie, after any configuration change and just before the resource creation) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="161" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_engine_1a0cf36030a4bacceea279df6a4179ad79" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void()&gt;</type>
+        <definition>xbt::signal&lt;void()&gt; simgrid::s4u::Engine::on_simulation_end</definition>
+        <argsstring></argsstring>
+        <name>on_simulation_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback fired when the main simulation loop ends, just before the end of Engine::run() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="164" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_engine_1aa22ac341b19a9791f13d5f5c4ff6b537" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(double)&gt;</type>
+        <definition>xbt::signal&lt;void(double)&gt; simgrid::s4u::Engine::on_time_advance</definition>
+        <argsstring></argsstring>
+        <name>on_time_advance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback fired when the time jumps into the future </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="167" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_engine_1aa124f93c238bca810b5a1c1f0b9bf0b3" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(void)&gt;</type>
+        <definition>xbt::signal&lt;void(void)&gt; simgrid::s4u::Engine::on_deadlock</definition>
+        <argsstring></argsstring>
+        <name>on_deadlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback fired when the time cannot advance because of inter-actors deadlock </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="170" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_engine_1a517fe3c1099545182016f2705074825d" prot="private" static="no" mutable="no">
+        <type>kernel::EngineImpl *const</type>
+        <definition>kernel::EngineImpl* const simgrid::s4u::Engine::pimpl</definition>
+        <argsstring></argsstring>
+        <name>pimpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="173" column="28" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_engine_1af9b32a4cf42d89b0f282e89cd8899e21" prot="private" static="yes" mutable="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_engine" kindref="compound">Engine</ref> *</type>
+        <definition>Engine* simgrid::s4u::Engine::instance_</definition>
+        <argsstring></argsstring>
+        <name>instance_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="174" column="17" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a651ce97b66a35865438eeffffa2cac71" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::s4u::Engine::Engine</definition>
+        <argsstring>(int *argc, char **argv)</argsstring>
+        <name>Engine</name>
+        <param>
+          <type>int *</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor, taking the command line parameters of your main function </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="30" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a6c93d8ce931fe537badd5c543d236deb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Engine::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Run the simulation after initialization </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="42" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a42bd1a8ac4259f1394ce03a3f40c47e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Engine::load_platform</definition>
+        <argsstring>(const std::string &amp;platf)</argsstring>
+        <name>load_platform</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>platf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="49" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a9e1fc38c175f14fb3f24df554d99e05a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Engine::register_function</definition>
+        <argsstring>(const std::string &amp;name, int(*code)(int, char **))</argsstring>
+        <name>register_function</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int(*)(int, char **)</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="51" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1aa456b1a5247c2a844efaf26cd2990f64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Engine::register_function</definition>
+        <argsstring>(const std::string &amp;name, void(*code)(std::vector&lt; std::string &gt;))</argsstring>
+        <name>register_function</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>void(*)(std::vector&lt; std::string &gt;)</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="52" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1afdc1429aae92cdf7136dbd2911558149" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Engine::register_default</definition>
+        <argsstring>(int(*code)(int, char **))</argsstring>
+        <name>register_default</name>
+        <param>
+          <type>int(*)(int, char **)</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="53" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a34ac2cb968046f27cf55e46a40907d56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void simgrid::s4u::Engine::register_actor</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>register_actor</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="55" column="20" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" bodystart="55" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a0dd15aac57e7880cbb8da7ca4dad7bc9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void simgrid::s4u::Engine::register_actor</definition>
+        <argsstring>(const std::string &amp;name, F code)</argsstring>
+        <name>register_actor</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>F</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="65" column="20" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" bodystart="65" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a8d9a4e8a4f3659917f785d255eb56d20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Engine::load_deployment</definition>
+        <argsstring>(const std::string &amp;deploy)</argsstring>
+        <name>load_deployment</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>deploy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="72" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1af7f0c340feb40da875631a4b8a79456d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t simgrid::s4u::Engine::get_host_count</definition>
+        <argsstring>()</argsstring>
+        <name>get_host_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the amount of hosts existing in the platform. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="95" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a74dee5bae9ec1bbd6fd4f79a6217862c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> * &gt;</type>
+        <definition>std::vector&lt;Host*&gt; simgrid::s4u::Engine::get_all_hosts</definition>
+        <argsstring>()</argsstring>
+        <name>get_all_hosts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a vector of all hosts found in the platform.</para>
+<para>The order is generally different from the creation/declaration order in the XML platform because we use a hash table internally. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="101" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a7221ee0a230f20755ca7249763d3a1fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> * &gt;</type>
+        <definition>std::vector&lt;Host*&gt; simgrid::s4u::Engine::get_filtered_hosts</definition>
+        <argsstring>(const std::function&lt; bool(Host *)&gt; &amp;filter)</argsstring>
+        <name>get_filtered_hosts</name>
+        <param>
+          <type>const std::function&lt; bool(<ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> *)&gt; &amp;</type>
+          <declname>filter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="102" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a47294bc81aea8bc37ce2bf26cf923afc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> *</type>
+        <definition>Host* simgrid::s4u::Engine::host_by_name</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>host_by_name</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="103" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1add18d5bf894dfa2d8795d8fac0ccc752" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> *</type>
+        <definition>Host* simgrid::s4u::Engine::host_by_name_or_null</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>host_by_name_or_null</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="104" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a4824390f43191923b2a5af464c116311" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t simgrid::s4u::Engine::get_link_count</definition>
+        <argsstring>()</argsstring>
+        <name>get_link_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="106" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1abf541b30590dac6e500e2283c5e739a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">Link</ref> * &gt;</type>
+        <definition>std::vector&lt;Link*&gt; simgrid::s4u::Engine::get_all_links</definition>
+        <argsstring>()</argsstring>
+        <name>get_all_links</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="107" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a5bee713f68fa898b296ef8dd27147eb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">Link</ref> * &gt;</type>
+        <definition>std::vector&lt;Link*&gt; simgrid::s4u::Engine::get_filtered_links</definition>
+        <argsstring>(const std::function&lt; bool(Link *)&gt; &amp;filter)</argsstring>
+        <name>get_filtered_links</name>
+        <param>
+          <type>const std::function&lt; bool(<ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">Link</ref> *)&gt; &amp;</type>
+          <declname>filter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="108" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a3a2a3bddabbe2076f362f219416084dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">Link</ref> *</type>
+        <definition>Link* simgrid::s4u::Engine::link_by_name</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>link_by_name</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="109" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a53f83ce82d814be2f937e73a8c2f76a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">Link</ref> *</type>
+        <definition>Link* simgrid::s4u::Engine::link_by_name_or_null</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>link_by_name_or_null</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="110" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1abc6a8f40c8823f50e4e3e9e909dec5eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t simgrid::s4u::Engine::get_actor_count</definition>
+        <argsstring>()</argsstring>
+        <name>get_actor_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="112" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a54381022de90c91f1cbe2da70983fc91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; ActorPtr &gt;</type>
+        <definition>std::vector&lt;ActorPtr&gt; simgrid::s4u::Engine::get_all_actors</definition>
+        <argsstring>()</argsstring>
+        <name>get_all_actors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="113" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1ade475d718f49e61b0db245c4e57f7e11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; ActorPtr &gt;</type>
+        <definition>std::vector&lt;ActorPtr&gt; simgrid::s4u::Engine::get_filtered_actors</definition>
+        <argsstring>(const std::function&lt; bool(ActorPtr)&gt; &amp;filter)</argsstring>
+        <name>get_filtered_actors</name>
+        <param>
+          <type>const std::function&lt; bool(ActorPtr)&gt; &amp;</type>
+          <declname>filter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="114" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a70c4497c9a06652af557300f7e4c20d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; kernel::routing::NetPoint * &gt;</type>
+        <definition>std::vector&lt;kernel::routing::NetPoint*&gt; simgrid::s4u::Engine::get_all_netpoints</definition>
+        <argsstring>()</argsstring>
+        <name>get_all_netpoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="123" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a2a6c6a97a5b15904be2c544c73416c44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>kernel::routing::NetPoint *</type>
+        <definition>kernel::routing::NetPoint* simgrid::s4u::Engine::netpoint_by_name_or_null</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>netpoint_by_name_or_null</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="124" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a8e7bce71e153af81016b12119d49cf74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_net_zone" kindref="compound">NetZone</ref> *</type>
+        <definition>NetZone* simgrid::s4u::Engine::get_netzone_root</definition>
+        <argsstring>()</argsstring>
+        <name>get_netzone_root</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="126" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a2c2b021047fd02589ecf81e94e3ea5f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Engine::set_netzone_root</definition>
+        <argsstring>(const NetZone *netzone)</argsstring>
+        <name>set_netzone_root</name>
+        <param>
+          <type>const <ref refid="classsimgrid_1_1s4u_1_1_net_zone" kindref="compound">NetZone</ref> *</type>
+          <declname>netzone</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="127" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a8ba2216233c6077f24262ff54d9bc08a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_net_zone" kindref="compound">NetZone</ref> *</type>
+        <definition>NetZone* simgrid::s4u::Engine::netzone_by_name_or_null</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>netzone_by_name_or_null</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="129" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1adc75454c2807da497d0001531a89e575" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; T * &gt;</type>
+        <definition>std::vector&lt;T*&gt; simgrid::s4u::Engine::get_filtered_netzones</definition>
+        <argsstring>()</argsstring>
+        <name>get_filtered_netzones</name>
+        <briefdescription>
+<para>Retrieves all netzones of the type indicated by the template argument. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="132" column="27" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" bodystart="132" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a01a5cca424d3223d2c863ff0f786e154" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Engine::set_config</definition>
+        <argsstring>(const std::string &amp;str)</argsstring>
+        <name>set_config</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>set a configuration variable </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>embed:rst:leading-asterisk
+* Do --help on any simgrid binary to see the list of currently existing configuration variables
+* (see also :ref:`options`).
+* </verbatim></para>
+<para>Example: e-&gt;set_config(&quot;host/model:ptask_L07&quot;); </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="153" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1adbb7029ca644d3d4656c0244957e9c02" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void simgrid::s4u::Engine::shutdown</definition>
+        <argsstring>()</argsstring>
+        <name>shutdown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Finalize the default engine and all its dependencies </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="39" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1a1951c7ffbf23ee030408e560b1982a29" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double simgrid::s4u::Engine::get_clock</definition>
+        <argsstring>()</argsstring>
+        <name>get_clock</name>
+        <briefdescription>
+<para>Retrieve the simulation time (in seconds) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="45" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1af0312f8bfa015319a729b4e4456bab54" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_engine" kindref="compound">s4u::Engine</ref> *</type>
+        <definition>static s4u::Engine* simgrid::s4u::Engine::get_instance</definition>
+        <argsstring>()</argsstring>
+        <name>get_instance</name>
+        <briefdescription>
+<para>Retrieve the engine singleton. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="47" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_engine_1aa0d6c434013ea2692aed661d78011927" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool simgrid::s4u::Engine::is_initialized</definition>
+        <argsstring>()</argsstring>
+        <name>is_initialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns whether SimGrid was initialized yet <ndash/> mostly for internal use </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="142" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Simulation engine. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This is a singleton containing all the main functions of the simulation. </para>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" line="27" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Engine.hpp" bodystart="27" bodyend="175"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a651ce97b66a35865438eeffffa2cac71" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>Engine</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1abc6a8f40c8823f50e4e3e9e909dec5eb" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>get_actor_count</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a54381022de90c91f1cbe2da70983fc91" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>get_all_actors</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a74dee5bae9ec1bbd6fd4f79a6217862c" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>get_all_hosts</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1abf541b30590dac6e500e2283c5e739a9" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>get_all_links</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a70c4497c9a06652af557300f7e4c20d9" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>get_all_netpoints</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a1951c7ffbf23ee030408e560b1982a29" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>get_clock</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1ade475d718f49e61b0db245c4e57f7e11" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>get_filtered_actors</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a7221ee0a230f20755ca7249763d3a1fb" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>get_filtered_hosts</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a5bee713f68fa898b296ef8dd27147eb2" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>get_filtered_links</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1adc75454c2807da497d0001531a89e575" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>get_filtered_netzones</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1af7f0c340feb40da875631a4b8a79456d" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>get_host_count</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1af0312f8bfa015319a729b4e4456bab54" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>get_instance</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a4824390f43191923b2a5af464c116311" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>get_link_count</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a8e7bce71e153af81016b12119d49cf74" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>get_netzone_root</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a47294bc81aea8bc37ce2bf26cf923afc" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>host_by_name</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1add18d5bf894dfa2d8795d8fac0ccc752" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>host_by_name_or_null</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1af9b32a4cf42d89b0f282e89cd8899e21" prot="private" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>instance_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1aa0d6c434013ea2692aed661d78011927" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>is_initialized</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a3a2a3bddabbe2076f362f219416084dd" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>link_by_name</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a53f83ce82d814be2f937e73a8c2f76a8" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>link_by_name_or_null</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a8d9a4e8a4f3659917f785d255eb56d20" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>load_deployment</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a42bd1a8ac4259f1394ce03a3f40c47e0" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>load_platform</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a2a6c6a97a5b15904be2c544c73416c44" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>netpoint_by_name_or_null</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a8ba2216233c6077f24262ff54d9bc08a" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>netzone_by_name_or_null</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1aa124f93c238bca810b5a1c1f0b9bf0b3" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>on_deadlock</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1af45c346d76523c75af5b042d5d16a088" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>on_platform_created</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a26c5814f93a68481b67d241b15709099" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>on_platform_creation</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a0cf36030a4bacceea279df6a4179ad79" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>on_simulation_end</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1aa22ac341b19a9791f13d5f5c4ff6b537" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>on_time_advance</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a517fe3c1099545182016f2705074825d" prot="private" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>pimpl</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a34ac2cb968046f27cf55e46a40907d56" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>register_actor</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a0dd15aac57e7880cbb8da7ca4dad7bc9" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>register_actor</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1afdc1429aae92cdf7136dbd2911558149" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>register_default</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a9e1fc38c175f14fb3f24df554d99e05a" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>register_function</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1aa456b1a5247c2a844efaf26cd2990f64" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>register_function</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a6c93d8ce931fe537badd5c543d236deb" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>run</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a01a5cca424d3223d2c863ff0f786e154" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>set_config</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1a2c2b021047fd02589ecf81e94e3ea5f6" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>set_netzone_root</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_engine_1adbb7029ca644d3d4656c0244957e9c02" prot="public" virt="non-virtual"><scope>simgrid::s4u::Engine</scope><name>shutdown</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

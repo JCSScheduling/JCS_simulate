@@ -1,0 +1,452 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dirty__page__tracking_8cpp" kind="file" language="C++">
+    <compoundname>dirty_page_tracking.cpp</compoundname>
+    <includes local="yes">simgrid/plugins/live_migration.h</includes>
+    <includes refid="_exec_8hpp" local="yes">simgrid/s4u/Exec.hpp</includes>
+    <includes local="yes">src/kernel/activity/ExecImpl.hpp</includes>
+    <includes refid="_virtual_machine_impl_8hpp" local="yes">src/plugins/vm/VirtualMachineImpl.hpp</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>atomic</label>
+      </node>
+      <node id="19">
+        <label>functional</label>
+      </node>
+      <node id="25">
+        <label>simgrid/s4u/VirtualMachine.hpp</label>
+        <link refid="_virtual_machine_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="17">
+        <label>xbt/functional.hpp</label>
+      </node>
+      <node id="27">
+        <label>src/kernel/actor/ActorImpl.hpp</label>
+      </node>
+      <node id="5">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="2">
+        <label>simgrid/plugins/live_migration.h</label>
+      </node>
+      <node id="11">
+        <label>string</label>
+      </node>
+      <node id="20">
+        <label>map</label>
+      </node>
+      <node id="15">
+        <label>simgrid/chrono.hpp</label>
+      </node>
+      <node id="28">
+        <label>src/surf/HostImpl.hpp</label>
+      </node>
+      <node id="1">
+        <label>dirty_page_tracking.cpp</label>
+        <link refid="dirty__page__tracking_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>xbt/string.hpp</label>
+      </node>
+      <node id="13">
+        <label>xbt/signal.hpp</label>
+      </node>
+      <node id="26">
+        <label>simgrid/s4u/Host.hpp</label>
+        <link refid="_host_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>src/plugins/vm/VirtualMachineImpl.hpp</label>
+        <link refid="_virtual_machine_impl_8hpp_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>vector</label>
+      </node>
+      <node id="3">
+        <label>simgrid/s4u/Exec.hpp</label>
+        <link refid="_exec_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>deque</label>
+      </node>
+      <node id="7">
+        <label>simgrid/s4u/Activity.hpp</label>
+        <link refid="_activity_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>unordered_map</label>
+      </node>
+      <node id="16">
+        <label>xbt/Extendable.hpp</label>
+      </node>
+      <node id="14">
+        <label>simgrid/s4u/Actor.hpp</label>
+        <link refid="_actor_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>src/kernel/activity/ExecImpl.hpp</label>
+      </node>
+      <node id="22">
+        <label>xbt/ex.h</label>
+      </node>
+      <node id="10">
+        <label>set</label>
+      </node>
+      <node id="29">
+        <label>algorithm</label>
+      </node>
+      <node id="8">
+        <label>xbt/asserts.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext" prot="public">simgrid::vm::DirtyPageTrackingExt</innerclass>
+    <innernamespace refid="namespacesimgrid">simgrid</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1vm">simgrid::vm</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="dirty__page__tracking_8cpp_1af596c8e43e27d3aeff83a70a69430505" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void on_virtual_machine_creation</definition>
+        <argsstring>(simgrid::vm::VirtualMachineImpl &amp;vm)</argsstring>
+        <name>on_virtual_machine_creation</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1vm_1_1_virtual_machine_impl" kindref="compound">simgrid::vm::VirtualMachineImpl</ref> &amp;</type>
+          <declname>vm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="71" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="dirty__page__tracking_8cpp_1aeaa1c9257ca1be10cfb5fc40b094ffbe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void on_exec_creation</definition>
+        <argsstring>(simgrid::s4u::Actor const &amp;, simgrid::s4u::Exec const &amp;e)</argsstring>
+        <name>on_exec_creation</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">simgrid::s4u::Actor</ref> const &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_exec" kindref="compound">simgrid::s4u::Exec</ref> const &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="76" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="76" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="dirty__page__tracking_8cpp_1a05aee4ef2ce1752b5a2c39ec7320cce2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void on_exec_completion</definition>
+        <argsstring>(simgrid::s4u::Actor const &amp;, simgrid::s4u::Exec const &amp;e)</argsstring>
+        <name>on_exec_completion</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">simgrid::s4u::Actor</ref> const &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_exec" kindref="compound">simgrid::s4u::Exec</ref> const &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="90" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="90" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="dirty__page__tracking_8cpp_1a8a5c2c9a36a710cbc954b9029f19f5fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_vm_dirty_page_tracking_init</definition>
+        <argsstring>()</argsstring>
+        <name>sg_vm_dirty_page_tracking_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="106" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="106" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="dirty__page__tracking_8cpp_1a7a97f35a2bf657938f8dc64f3e72cc05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_vm_start_dirty_page_tracking</definition>
+        <argsstring>(const_sg_vm_t vm)</argsstring>
+        <name>sg_vm_start_dirty_page_tracking</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">const_sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="117" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="dirty__page__tracking_8cpp_1aebb07a63575be698c3320bb691f04da0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_vm_stop_dirty_page_tracking</definition>
+        <argsstring>(const_sg_vm_t vm)</argsstring>
+        <name>sg_vm_stop_dirty_page_tracking</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">const_sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="122" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="dirty__page__tracking_8cpp_1a80e07014782658f6014137a2cd39494d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_vm_lookup_computed_flops</definition>
+        <argsstring>(const_sg_vm_t vm)</argsstring>
+        <name>sg_vm_lookup_computed_flops</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">const_sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="127" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="dirty__page__tracking_8cpp_1a5c6ee00d7c26569498c8840218bd5feb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_vm_set_dirty_page_intensity</definition>
+        <argsstring>(const_sg_vm_t vm, double intensity)</argsstring>
+        <name>sg_vm_set_dirty_page_intensity</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">const_sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>intensity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="132" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="dirty__page__tracking_8cpp_1a7a5952ca90c69e8ba30ba511400eac10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_vm_get_dirty_page_intensity</definition>
+        <argsstring>(const_sg_vm_t vm)</argsstring>
+        <name>sg_vm_get_dirty_page_intensity</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">const_sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="137" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="137" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="dirty__page__tracking_8cpp_1a7422e2ae80f1b124fad2b988134fa2bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_vm_set_working_set_memory</definition>
+        <argsstring>(const_sg_vm_t vm, sg_size_t size)</argsstring>
+        <name>sg_vm_set_working_set_memory</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">const_sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <param>
+          <type>sg_size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="142" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="142" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="dirty__page__tracking_8cpp_1af6c706f97414fd34d16d2829d24d1e1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sg_size_t</type>
+        <definition>sg_size_t sg_vm_get_working_set_memory</definition>
+        <argsstring>(const_sg_vm_t vm)</argsstring>
+        <name>sg_vm_get_working_set_memory</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">const_sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="147" column="11" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="147" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="dirty__page__tracking_8cpp_1a11106833a2eedd0e4a3b1a58b7a169b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_vm_set_migration_speed</definition>
+        <argsstring>(const_sg_vm_t vm, double speed)</argsstring>
+        <name>sg_vm_set_migration_speed</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">const_sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="152" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="dirty__page__tracking_8cpp_1a6bb0c144cdc9920efc2584b72b5adeb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_vm_get_migration_speed</definition>
+        <argsstring>(const_sg_vm_t vm)</argsstring>
+        <name>sg_vm_get_migration_speed</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">const_sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="157" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="157" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="dirty__page__tracking_8cpp_1a783a049da0a669e0a4f54076bfb02820" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_vm_get_max_downtime</definition>
+        <argsstring>(const_sg_vm_t vm)</argsstring>
+        <name>sg_vm_get_max_downtime</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">const_sg_vm_t</ref></type>
+          <declname>vm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="162" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="162" bodyend="165"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp"/>
+  </compounddef>
+</doxygen>

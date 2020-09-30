@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1s4u_1_1_disk" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::s4u::Disk</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">simgrid::xbt::Extendable&lt; Disk &gt;</basecompoundref>
+    <includes refid="_disk_8hpp" local="no">Disk.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_disk_1ae5103cd369f612716c41b36ec3e94e0c" prot="private" static="no" mutable="no">
+        <type>kernel::resource::DiskImpl *const</type>
+        <definition>kernel::resource::DiskImpl* const simgrid::s4u::Disk::pimpl_</definition>
+        <argsstring></argsstring>
+        <name>pimpl_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" line="32" column="36" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_disk_1ae4384f965c20fc47a1bfdb8ca099518f" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string simgrid::s4u::Disk::name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" line="33" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_disk_1a512adbac508770d8032910f5315204b8" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend simgrid::s4u::Disk::Engine</definition>
+        <argsstring></argsstring>
+        <name>Engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" line="34" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_disk_1a0ef1a56fcfa7aef4e6ce85d4b349a24f" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend simgrid::s4u::Disk::Io</definition>
+        <argsstring></argsstring>
+        <name>Io</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" line="35" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_disk_1aa01308bf6cbb7b75101d2a1275a9252b" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_disk" kindref="compound">Disk</ref> &amp;)&gt;</type>
+        <definition>xbt::signal&lt;void(Disk&amp;)&gt; simgrid::s4u::Disk::on_creation</definition>
+        <argsstring></argsstring>
+        <name>on_creation</name>
+        <briefdescription>
+<para>Callback signal fired when a new Disk is created. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" line="49" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_disk_1afbc9284f98f6efaff91beca83d084f06" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_disk" kindref="compound">Disk</ref> const  &amp;)&gt;</type>
+        <definition>xbt::signal&lt;void(Disk const&amp;)&gt; simgrid::s4u::Disk::on_destruction</definition>
+        <argsstring></argsstring>
+        <name>on_destruction</name>
+        <briefdescription>
+<para>Callback signal fired when a Disk is destroyed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" line="51" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_disk_1a3f09a632fee125ae9c294c2560ac0efe" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_disk" kindref="compound">Disk</ref> const  &amp;)&gt;</type>
+        <definition>xbt::signal&lt;void(Disk const&amp;)&gt; simgrid::s4u::Disk::on_state_change</definition>
+        <argsstring></argsstring>
+        <name>on_state_change</name>
+        <briefdescription>
+<para>Callback signal fired when a Disk&apos;s state changes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" line="53" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_disk_1a937158c0350c5e9941ba17d592878051" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string const  &amp;</type>
+        <definition>std::string const&amp; simgrid::s4u::Disk::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+<para>Retrieves the name of that disk as a C++ string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" line="56" column="21" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_disk_1a754c071b40567f1da67aacd868849dde" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* simgrid::s4u::Disk::get_cname</definition>
+        <argsstring>() const</argsstring>
+        <name>get_cname</name>
+        <briefdescription>
+<para>Retrieves the name of that disk as a C string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" line="58" column="14" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_disk_1ad3f2ea278714017e436f807619e7cf5e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::s4u::Disk::get_read_bandwidth</definition>
+        <argsstring>() const</argsstring>
+        <name>get_read_bandwidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" line="59" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_disk_1a417e73edebdfe74c72186977832438f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::s4u::Disk::get_write_bandwidth</definition>
+        <argsstring>() const</argsstring>
+        <name>get_write_bandwidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" line="60" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_disk_1a2daabc9f30e79fc0b64e90fdc62e5acb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::unordered_map&lt; std::string, std::string &gt; *</type>
+        <definition>const std::unordered_map&lt;std::string, std::string&gt;* simgrid::s4u::Disk::get_properties</definition>
+        <argsstring>() const</argsstring>
+        <name>get_properties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" line="61" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_disk_1a198e1f18446590df99d0fb0a90cd0253" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* simgrid::s4u::Disk::get_property</definition>
+        <argsstring>(const std::string &amp;key) const</argsstring>
+        <name>get_property</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" line="62" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_disk_1ae8435802732f46925725354cc893d77e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Disk::set_property</definition>
+        <argsstring>(const std::string &amp;, const std::string &amp;value)</argsstring>
+        <name>set_property</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" line="63" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_disk_1a457860442d482f87c3f9071e54cdefe6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> *</type>
+        <definition>Host* simgrid::s4u::Disk::get_host</definition>
+        <argsstring>() const</argsstring>
+        <name>get_host</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" line="64" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_disk_1af9794d6629716f83c2ec09bceda177c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IoPtr</type>
+        <definition>IoPtr simgrid::s4u::Disk::io_init</definition>
+        <argsstring>(sg_size_t size, s4u::Io::OpType type)</argsstring>
+        <name>io_init</name>
+        <param>
+          <type>sg_size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>s4u::Io::OpType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" line="66" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_disk_1a78675c2c6aa9c8baca13a27fc8838fcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IoPtr</type>
+        <definition>IoPtr simgrid::s4u::Disk::read_async</definition>
+        <argsstring>(sg_size_t size)</argsstring>
+        <name>read_async</name>
+        <param>
+          <type>sg_size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" line="68" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_disk_1af69abb6ca74c25615945aa7e5ffa9e9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sg_size_t</type>
+        <definition>sg_size_t simgrid::s4u::Disk::read</definition>
+        <argsstring>(sg_size_t size)</argsstring>
+        <name>read</name>
+        <param>
+          <type>sg_size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" line="69" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_disk_1a40f27022a885d51c54763905d2a65be8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IoPtr</type>
+        <definition>IoPtr simgrid::s4u::Disk::write_async</definition>
+        <argsstring>(sg_size_t size)</argsstring>
+        <name>write_async</name>
+        <param>
+          <type>sg_size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" line="71" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_disk_1a831c5e0a6d34c5b2e6ebd293d78e7359" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sg_size_t</type>
+        <definition>sg_size_t simgrid::s4u::Disk::write</definition>
+        <argsstring>(sg_size_t size)</argsstring>
+        <name>write</name>
+        <param>
+          <type>sg_size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" line="72" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Disk represent the disk resources associated to a host</para>
+<para>By default, SimGrid does not keep track of the actual data being written but only computes the time taken by the corresponding data movement. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>simgrid::xbt::Extendable&lt; Disk &gt;</label>
+      </node>
+      <node id="1">
+        <label>simgrid::s4u::Disk</label>
+        <link refid="classsimgrid_1_1s4u_1_1_disk"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>simgrid::xbt::Extendable&lt; Disk &gt;</label>
+      </node>
+      <node id="1">
+        <label>simgrid::s4u::Disk</label>
+        <link refid="classsimgrid_1_1s4u_1_1_disk"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" line="31" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Disk.hpp" bodystart="31" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1s4u_1_1_disk_1a512adbac508770d8032910f5315204b8" prot="private" virt="non-virtual"><scope>simgrid::s4u::Disk</scope><name>Engine</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_disk_1a754c071b40567f1da67aacd868849dde" prot="public" virt="non-virtual"><scope>simgrid::s4u::Disk</scope><name>get_cname</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_disk_1a457860442d482f87c3f9071e54cdefe6" prot="public" virt="non-virtual"><scope>simgrid::s4u::Disk</scope><name>get_host</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_disk_1a937158c0350c5e9941ba17d592878051" prot="public" virt="non-virtual"><scope>simgrid::s4u::Disk</scope><name>get_name</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_disk_1a2daabc9f30e79fc0b64e90fdc62e5acb" prot="public" virt="non-virtual"><scope>simgrid::s4u::Disk</scope><name>get_properties</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_disk_1a198e1f18446590df99d0fb0a90cd0253" prot="public" virt="non-virtual"><scope>simgrid::s4u::Disk</scope><name>get_property</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_disk_1ad3f2ea278714017e436f807619e7cf5e" prot="public" virt="non-virtual"><scope>simgrid::s4u::Disk</scope><name>get_read_bandwidth</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_disk_1a417e73edebdfe74c72186977832438f1" prot="public" virt="non-virtual"><scope>simgrid::s4u::Disk</scope><name>get_write_bandwidth</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_disk_1a0ef1a56fcfa7aef4e6ce85d4b349a24f" prot="private" virt="non-virtual"><scope>simgrid::s4u::Disk</scope><name>Io</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_disk_1af9794d6629716f83c2ec09bceda177c9" prot="public" virt="non-virtual"><scope>simgrid::s4u::Disk</scope><name>io_init</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_disk_1ae4384f965c20fc47a1bfdb8ca099518f" prot="private" virt="non-virtual"><scope>simgrid::s4u::Disk</scope><name>name_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_disk_1aa01308bf6cbb7b75101d2a1275a9252b" prot="public" virt="non-virtual"><scope>simgrid::s4u::Disk</scope><name>on_creation</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_disk_1afbc9284f98f6efaff91beca83d084f06" prot="public" virt="non-virtual"><scope>simgrid::s4u::Disk</scope><name>on_destruction</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_disk_1a3f09a632fee125ae9c294c2560ac0efe" prot="public" virt="non-virtual"><scope>simgrid::s4u::Disk</scope><name>on_state_change</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_disk_1ae5103cd369f612716c41b36ec3e94e0c" prot="private" virt="non-virtual"><scope>simgrid::s4u::Disk</scope><name>pimpl_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_disk_1af69abb6ca74c25615945aa7e5ffa9e9b" prot="public" virt="non-virtual"><scope>simgrid::s4u::Disk</scope><name>read</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_disk_1a78675c2c6aa9c8baca13a27fc8838fcf" prot="public" virt="non-virtual"><scope>simgrid::s4u::Disk</scope><name>read_async</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_disk_1ae8435802732f46925725354cc893d77e" prot="public" virt="non-virtual"><scope>simgrid::s4u::Disk</scope><name>set_property</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_disk_1a831c5e0a6d34c5b2e6ebd293d78e7359" prot="public" virt="non-virtual"><scope>simgrid::s4u::Disk</scope><name>write</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_disk_1a40f27022a885d51c54763905d2a65be8" prot="public" virt="non-virtual"><scope>simgrid::s4u::Disk</scope><name>write_async</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

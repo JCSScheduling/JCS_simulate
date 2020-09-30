@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="mailbox_8h" kind="file" language="C++">
+    <compoundname>mailbox.h</compoundname>
+    <includes refid="forward_8h" local="no">simgrid/forward.h</includes>
+    <includes local="no">xbt/base.h</includes>
+    <includedby refid="msg_8h" local="no">msg.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="3">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="1">
+        <label>mailbox.h</label>
+        <link refid="mailbox_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>msg.h</label>
+        <link refid="msg_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mailbox.h</label>
+        <link refid="mailbox_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>msg_private.hpp</label>
+        <link refid="msg__private_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="mailbox_8h_1afb3ba866fb2176f6fbee2a679f48d545" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_mailbox_set_receiver</definition>
+        <argsstring>(const char *alias)</argsstring>
+        <name>sg_mailbox_set_receiver</name>
+        <param>
+          <type>const char *</type>
+          <declname>alias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/mailbox.h" line="15" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/mailbox.h" declline="15" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="mailbox_8h_1a25b3ebd7d3bd8619dfc6f19dca9c0813" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sg_mailbox_listen</definition>
+        <argsstring>(const char *alias)</argsstring>
+        <name>sg_mailbox_listen</name>
+        <param>
+          <type>const char *</type>
+          <declname>alias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/mailbox.h" line="16" column="6" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/mailbox.h" declline="16" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/mailbox.h"/>
+  </compounddef>
+</doxygen>

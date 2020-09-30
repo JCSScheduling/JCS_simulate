@@ -1,0 +1,526 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="msg__process_8cpp" kind="file" language="C++">
+    <compoundname>msg_process.cpp</compoundname>
+    <includes refid="msg__private_8hpp" local="yes">msg_private.hpp</includes>
+    <includes local="yes">simgrid/Exception.hpp</includes>
+    <includes refid="_host_8hpp" local="yes">simgrid/s4u/Host.hpp</includes>
+    <includes local="yes">src/simix/smx_private.hpp</includes>
+    <incdepgraph>
+      <node id="16">
+        <label>simgrid/mutex.h</label>
+        <link refid="mutex_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>xbt/dict.h</label>
+      </node>
+      <node id="20">
+        <label>simgrid/version.h</label>
+      </node>
+      <node id="8">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="25">
+        <label>simgrid/simix.h</label>
+      </node>
+      <node id="10">
+        <label>simgrid/barrier.h</label>
+        <link refid="barrier_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="22">
+        <label>simgrid/zone.h</label>
+        <link refid="zone_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>cmath</label>
+      </node>
+      <node id="23">
+        <label>xbt.h</label>
+      </node>
+      <node id="17">
+        <label>simgrid/plugins/live_migration.h</label>
+      </node>
+      <node id="26">
+        <label>src/kernel/activity/CommImpl.hpp</label>
+      </node>
+      <node id="3">
+        <label>simgrid/Exception.hpp</label>
+      </node>
+      <node id="4">
+        <label>simgrid/msg.h</label>
+        <link refid="msg_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>map</label>
+      </node>
+      <node id="15">
+        <label>simgrid/mailbox.h</label>
+        <link refid="mailbox_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>xbt/string.hpp</label>
+      </node>
+      <node id="14">
+        <label>simgrid/instr.h</label>
+      </node>
+      <node id="31">
+        <label>xbt/signal.hpp</label>
+      </node>
+      <node id="30">
+        <label>simgrid/s4u/Host.hpp</label>
+        <link refid="_host_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>msg_private.hpp</label>
+        <link refid="msg__private_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>src/simix/smx_private.hpp</label>
+      </node>
+      <node id="18">
+        <label>simgrid/semaphore.h</label>
+        <link refid="semaphore_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>simgrid/engine.h</label>
+        <link refid="engine_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>msg_process.cpp</label>
+        <link refid="msg__process_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>simgrid/host.h</label>
+        <link refid="host_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>unordered_map</label>
+      </node>
+      <node id="28">
+        <label>xbt/Extendable.hpp</label>
+      </node>
+      <node id="27">
+        <label>simgrid/modelchecker.h</label>
+      </node>
+      <node id="13">
+        <label>xbt/dynar.h</label>
+      </node>
+      <node id="5">
+        <label>simgrid/actor.h</label>
+        <link refid="actor_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>simgrid/vm.h</label>
+        <link refid="vm_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>simgrid/storage.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="msg__process_8cpp_1a943d27b38754b2af9f78e80cc29db306" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">msg_process_t</ref></type>
+        <definition>msg_process_t MSG_process_create</definition>
+        <argsstring>(const char *name, xbt_main_func_t code, void *data, msg_host_t host)</argsstring>
+        <name>MSG_process_create</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>xbt_main_func_t</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">msg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Creates and runs a new msg_process_t. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Does exactly the same as MSG_process_create_with_arguments but without providing standard arguments (<emphasis>argc</emphasis>, <emphasis>argv</emphasis>, <emphasis>start_time</emphasis>, <emphasis>kill_time</emphasis>). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_process.cpp" line="17" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_process.cpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__process_8cpp_1a1540ef18107c4d2387a937017dcf97c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">msg_process_t</ref></type>
+        <definition>msg_process_t MSG_process_create_with_arguments</definition>
+        <argsstring>(const char *name, xbt_main_func_t code, void *data, msg_host_t host, int argc, char **argv)</argsstring>
+        <name>MSG_process_create_with_arguments</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>xbt_main_func_t</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">msg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Creates and runs a new process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A constructor for msg_process_t taking four arguments and returning the corresponding object. The structure (and the corresponding thread) is created, and put in the list of ready process. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a name for the object. It is for user-level information and can be nullptr. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a function describing the behavior of the process. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to any data one may want to attach to the new object. It is for user-level information and can be nullptr. It can be retrieved with the function MSG_process_get_data(). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the location where the new process is executed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>first argument passed to <emphasis>code</emphasis> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second argument passed to <emphasis>code</emphasis> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_process.cpp" line="35" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_process.cpp" bodystart="35" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__process_8cpp_1a640b4cc9200796bc211e6d8b794ba922" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">msg_process_t</ref></type>
+        <definition>msg_process_t MSG_process_create_with_environment</definition>
+        <argsstring>(const char *name, xbt_main_func_t code, void *data, msg_host_t host, int argc, char **argv, xbt_dict_t properties)</argsstring>
+        <name>MSG_process_create_with_environment</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>xbt_main_func_t</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">msg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>xbt_dict_t</type>
+          <declname>properties</declname>
+        </param>
+        <briefdescription>
+<para>Creates and runs a new msg_process_t. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A constructor for msg_process_t taking four arguments and returning the corresponding object. The structure (and the corresponding thread) is created, and put in the list of ready process. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a name for the object. It is for user-level information and can be nullptr. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a function describing the behavior of the process. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to any data one may want to attach to the new object. It is for user-level information and can be nullptr. It can be retrieved with the function MSG_process_get_data(). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the location where the new process is executed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>first argument passed to <emphasis>code</emphasis> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>second argument passed to <emphasis>code</emphasis>. WARNING, these strings are freed by the SimGrid kernel when the process exits, so they cannot be static nor shared between several processes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>properties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list a properties defined for this process </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>msg_process_t </para>
+</simplesect>
+<simplesect kind="return"><para>The new corresponding object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_process.cpp" line="58" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_process.cpp" bodystart="58" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__process_8cpp_1a2c75b91ef5b61cad66a7fa3a72d122d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MSG_process_set_data_cleanup</definition>
+        <argsstring>(void_f_pvoid_t data_cleanup)</argsstring>
+        <name>MSG_process_set_data_cleanup</name>
+        <param>
+          <type>void_f_pvoid_t</type>
+          <declname>data_cleanup</declname>
+        </param>
+        <briefdescription>
+<para>Sets a cleanup function to be called to free the userdata of a process when a process is destroyed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data_cleanup</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a cleanup function for the userdata of a process, or nullptr to call no function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_process.cpp" line="90" column="7" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_process.cpp" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__process_8cpp_1aa0bba05fe64ae01aab2dff95e58fff7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>xbt_dynar_t</type>
+        <definition>xbt_dynar_t MSG_processes_as_dynar</definition>
+        <argsstring>()</argsstring>
+        <name>MSG_processes_as_dynar</name>
+        <briefdescription>
+<para>returns a list of all currently existing processes </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_process.cpp" line="96" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_process.cpp" bodystart="96" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__process_8cpp_1aeb5b26b5415d470ea5ecbd32f28b1400" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MSG_process_on_exit</definition>
+        <argsstring>(int_f_int_pvoid_t fun, void *data)</argsstring>
+        <name>MSG_process_on_exit</name>
+        <param>
+          <type>int_f_int_pvoid_t</type>
+          <declname>fun</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Add a function to the list of &quot;on_exit&quot; functions for the current process. The on_exit functions are the functions executed when your process is killed. You should use them to free the data used by your process. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_process.cpp" line="109" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_process.cpp" bodystart="109" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_process.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1plugin_1_1_link_energy" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::plugin::LinkEnergy</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1_link_energy_1a16099b0a86a5c65212fe098653fc3dd8" prot="public" static="yes" mutable="no">
+        <type>simgrid::xbt::Extension&lt; <ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">simgrid::s4u::Link</ref>, <ref refid="classsimgrid_1_1plugin_1_1_link_energy" kindref="compound">LinkEnergy</ref> &gt;</type>
+        <definition>xbt::Extension&lt; s4u::Link, LinkEnergy &gt; simgrid::plugin::LinkEnergy::EXTENSION_ID</definition>
+        <argsstring></argsstring>
+        <name>EXTENSION_ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" line="48" column="34" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1_link_energy_1ab25eb3d8393c6b31d2b72d68e30ecb28" prot="private" static="no" mutable="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">s4u::Link</ref> *</type>
+        <definition>s4u::Link* simgrid::plugin::LinkEnergy::link_</definition>
+        <argsstring></argsstring>
+        <name>link_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" line="60" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1_link_energy_1a9b4a869da39c0184ac48c5279fa8d2bc" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool simgrid::plugin::LinkEnergy::inited_</definition>
+        <argsstring></argsstring>
+        <name>inited_</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" line="62" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1_link_energy_1a9806b237a9761daaa34e8fbbed9fcfd8" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::plugin::LinkEnergy::idle_</definition>
+        <argsstring></argsstring>
+        <name>idle_</name>
+        <initializer>{0.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" line="63" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1_link_energy_1a1ff71ab401cad7134d03c724ba13a0c6" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::plugin::LinkEnergy::busy_</definition>
+        <argsstring></argsstring>
+        <name>busy_</name>
+        <initializer>{0.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" line="64" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1_link_energy_1ad4cea1b99f1999cdf9c3e8c777ebc170" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::plugin::LinkEnergy::total_energy_</definition>
+        <argsstring></argsstring>
+        <name>total_energy_</name>
+        <initializer>{0.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" line="66" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1_link_energy_1a8ad2b5d6bd0442058c2b100d98b8204d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::plugin::LinkEnergy::last_updated_</definition>
+        <argsstring></argsstring>
+        <name>last_updated_</name>
+        <initializer>{0.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" line="67" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1_link_energy_1a83addde8774d75b8ecc7a7f8fd43eb57" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::plugin::LinkEnergy::LinkEnergy</definition>
+        <argsstring>(simgrid::s4u::Link *ptr)</argsstring>
+        <name>LinkEnergy</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">simgrid::s4u::Link</ref> *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" line="50" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1_link_energy_1a43882ef95b6df2ec7830b5860c40e21f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::plugin::LinkEnergy::~LinkEnergy</definition>
+        <argsstring>()=default</argsstring>
+        <name>~LinkEnergy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" line="51" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1_link_energy_1a1e12d406e0652e82991935b852e22500" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::plugin::LinkEnergy::init_watts_range_list</definition>
+        <argsstring>()</argsstring>
+        <name>init_watts_range_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" line="53" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" bodystart="83" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1_link_energy_1a99909ecfbec09e94ad4058c5ae4d3737" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::plugin::LinkEnergy::get_consumed_energy</definition>
+        <argsstring>()</argsstring>
+        <name>get_consumed_energy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" line="54" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" bodystart="139" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1_link_energy_1a3ae35c5471c9bfe1ec1dc39614b6d767" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::plugin::LinkEnergy::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" line="55" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" bodystart="72" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1_link_energy_1a9366a113e954ddddd7a31b02621b96da" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::plugin::LinkEnergy::get_power</definition>
+        <argsstring>()</argsstring>
+        <name>get_power</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" line="58" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" bodystart="126" bodyend="137"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" line="46" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" bodystart="46" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1plugin_1_1_link_energy_1a1ff71ab401cad7134d03c724ba13a0c6" prot="private" virt="non-virtual"><scope>simgrid::plugin::LinkEnergy</scope><name>busy_</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_link_energy_1a16099b0a86a5c65212fe098653fc3dd8" prot="public" virt="non-virtual"><scope>simgrid::plugin::LinkEnergy</scope><name>EXTENSION_ID</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_link_energy_1a99909ecfbec09e94ad4058c5ae4d3737" prot="public" virt="non-virtual"><scope>simgrid::plugin::LinkEnergy</scope><name>get_consumed_energy</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_link_energy_1a9366a113e954ddddd7a31b02621b96da" prot="private" virt="non-virtual"><scope>simgrid::plugin::LinkEnergy</scope><name>get_power</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_link_energy_1a9806b237a9761daaa34e8fbbed9fcfd8" prot="private" virt="non-virtual"><scope>simgrid::plugin::LinkEnergy</scope><name>idle_</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_link_energy_1a1e12d406e0652e82991935b852e22500" prot="public" virt="non-virtual"><scope>simgrid::plugin::LinkEnergy</scope><name>init_watts_range_list</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_link_energy_1a9b4a869da39c0184ac48c5279fa8d2bc" prot="private" virt="non-virtual"><scope>simgrid::plugin::LinkEnergy</scope><name>inited_</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_link_energy_1a8ad2b5d6bd0442058c2b100d98b8204d" prot="private" virt="non-virtual"><scope>simgrid::plugin::LinkEnergy</scope><name>last_updated_</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_link_energy_1ab25eb3d8393c6b31d2b72d68e30ecb28" prot="private" virt="non-virtual"><scope>simgrid::plugin::LinkEnergy</scope><name>link_</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_link_energy_1a83addde8774d75b8ecc7a7f8fd43eb57" prot="public" virt="non-virtual"><scope>simgrid::plugin::LinkEnergy</scope><name>LinkEnergy</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_link_energy_1ad4cea1b99f1999cdf9c3e8c777ebc170" prot="private" virt="non-virtual"><scope>simgrid::plugin::LinkEnergy</scope><name>total_energy_</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_link_energy_1a3ae35c5471c9bfe1ec1dc39614b6d767" prot="public" virt="non-virtual"><scope>simgrid::plugin::LinkEnergy</scope><name>update</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1_link_energy_1a43882ef95b6df2ec7830b5860c40e21f" prot="public" virt="non-virtual"><scope>simgrid::plugin::LinkEnergy</scope><name>~LinkEnergy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

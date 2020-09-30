@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="host__dvfs_8cpp" kind="file" language="C++">
+    <compoundname>host_dvfs.cpp</compoundname>
+    <includes local="yes">simgrid/plugins/dvfs.h</includes>
+    <includes local="yes">simgrid/plugins/load.h</includes>
+    <includes refid="_engine_8hpp" local="yes">simgrid/s4u/Engine.hpp</includes>
+    <includes local="yes">src/internal_config.h</includes>
+    <includes local="yes">src/kernel/activity/ExecImpl.hpp</includes>
+    <includes refid="_virtual_machine_impl_8hpp" local="yes">src/plugins/vm/VirtualMachineImpl.hpp</includes>
+    <includes local="no">xbt/config.hpp</includes>
+    <includes local="no">boost/algorithm/string.hpp</includes>
+    <incdepgraph>
+      <node id="29">
+        <label>boost/algorithm/string.hpp</label>
+      </node>
+      <node id="28">
+        <label>xbt/config.hpp</label>
+      </node>
+      <node id="19">
+        <label>simgrid/s4u/VirtualMachine.hpp</label>
+        <link refid="_virtual_machine_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="6">
+        <label>xbt/functional.hpp</label>
+      </node>
+      <node id="24">
+        <label>src/kernel/actor/ActorImpl.hpp</label>
+      </node>
+      <node id="5">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="4">
+        <label>simgrid/s4u/Engine.hpp</label>
+        <link refid="_engine_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>string</label>
+      </node>
+      <node id="23">
+        <label>map</label>
+      </node>
+      <node id="3">
+        <label>simgrid/plugins/load.h</label>
+      </node>
+      <node id="25">
+        <label>src/surf/HostImpl.hpp</label>
+      </node>
+      <node id="7">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>xbt/string.hpp</label>
+      </node>
+      <node id="2">
+        <label>simgrid/plugins/dvfs.h</label>
+      </node>
+      <node id="16">
+        <label>src/internal_config.h</label>
+      </node>
+      <node id="11">
+        <label>xbt/signal.hpp</label>
+      </node>
+      <node id="20">
+        <label>simgrid/s4u/Host.hpp</label>
+        <link refid="_host_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>host_dvfs.cpp</label>
+        <link refid="host__dvfs_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>src/plugins/vm/VirtualMachineImpl.hpp</label>
+        <link refid="_virtual_machine_impl_8hpp_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>vector</label>
+      </node>
+      <node id="14">
+        <label>utility</label>
+      </node>
+      <node id="9">
+        <label>simgrid/simix.hpp</label>
+      </node>
+      <node id="27">
+        <label>deque</label>
+      </node>
+      <node id="13">
+        <label>unordered_map</label>
+      </node>
+      <node id="21">
+        <label>xbt/Extendable.hpp</label>
+      </node>
+      <node id="17">
+        <label>src/kernel/activity/ExecImpl.hpp</label>
+      </node>
+      <node id="26">
+        <label>algorithm</label>
+      </node>
+      <node id="10">
+        <label>simgrid/s4u/NetZone.hpp</label>
+        <link refid="_net_zone_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classsimgrid_1_1plugin_1_1dvfs_1_1_governor" prot="public">simgrid::plugin::dvfs::Governor</innerclass>
+    <innerclass refid="classsimgrid_1_1plugin_1_1dvfs_1_1_performance" prot="public">simgrid::plugin::dvfs::Performance</innerclass>
+    <innerclass refid="classsimgrid_1_1plugin_1_1dvfs_1_1_powersave" prot="public">simgrid::plugin::dvfs::Powersave</innerclass>
+    <innerclass refid="classsimgrid_1_1plugin_1_1dvfs_1_1_on_demand" prot="public">simgrid::plugin::dvfs::OnDemand</innerclass>
+    <innerclass refid="classsimgrid_1_1plugin_1_1dvfs_1_1_conservative" prot="public">simgrid::plugin::dvfs::Conservative</innerclass>
+    <innernamespace refid="namespacesimgrid">simgrid</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1plugin">simgrid::plugin</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1plugin_1_1dvfs">simgrid::plugin::dvfs</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="host__dvfs_8cpp_1a296df892d0d20c8d46e84e2b8deba2a8" prot="public" static="yes" mutable="no">
+        <type>SIMGRID_REGISTER_PLUGIN(host_dvfs, &quot;Dvfs support&quot;, &amp;sg_host_dvfs_plugin_init) static simgrid <ref refid="classsimgrid_1_1config_1_1_flag" kindref="compound">simgrid::config::Flag</ref>&lt; std::string &gt;</type>
+        <definition>SIMGRID_REGISTER_PLUGIN (host_dvfs, &quot;Dvfs support&quot;, &amp;sg_host_dvfs_plugin_init) static simgrid simgrid::config::Flag&lt;std::string&gt; cfg_governor(&quot;plugin/dvfs/governor&quot;, &quot;Which Governor should be used that adapts the CPU frequency?&quot;, &quot;performance&quot;, std::map&lt; std::string, std::string &gt;({ {&quot;conservative&quot;, &quot;TODO: Doc&quot;}, {&quot;ondemand&quot;, &quot;TODO: Doc&quot;}, {&quot;performance&quot;, &quot;TODO: Doc&quot;}, {&quot;powersave&quot;, &quot;TODO: Doc&quot;}, }),[](const std::string &amp;val) { if(val !=&quot;performance&quot;) sg_host_dvfs_plugin_init();})</definition>
+        <argsstring>(&quot;plugin/dvfs/governor&quot;, &quot;Which Governor should be used that adapts the CPU frequency?&quot;, &quot;performance&quot;, std::map&lt; std::string, std::string &gt;({ {&quot;conservative&quot;, &quot;TODO: Doc&quot;}, {&quot;ondemand&quot;, &quot;TODO: Doc&quot;}, {&quot;performance&quot;, &quot;TODO: Doc&quot;}, {&quot;powersave&quot;, &quot;TODO: Doc&quot;}, }), [](const std::string &amp;val) { if(val !=&quot;performance&quot;) sg_host_dvfs_plugin_init();})</argsstring>
+        <name>cfg_governor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" line="28" column="30" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="host__dvfs_8cpp_1a7249d2ddbb2754c5b17bb28e9ba9a2ee" prot="public" static="yes" mutable="no">
+        <type><ref refid="classsimgrid_1_1config_1_1_flag" kindref="compound">simgrid::config::Flag</ref>&lt; int &gt;</type>
+        <definition>simgrid::config::Flag&lt;int&gt; cfg_min_pstate(&quot;plugin/dvfs/min-pstate&quot;, {&quot;plugin/dvfs/min_pstate&quot;}, &quot;Which pstate is the minimum (and hence fastest) pstate for this governor?&quot;, 0)</definition>
+        <argsstring>(&quot;plugin/dvfs/min-pstate&quot;, {&quot;plugin/dvfs/min_pstate&quot;}, &quot;Which pstate is the minimum (and hence fastest) pstate for this governor?&quot;, 0)</argsstring>
+        <name>cfg_min_pstate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" line="46" column="5"/>
+      </memberdef>
+      <memberdef kind="variable" id="host__dvfs_8cpp_1acffbe3226b96f8b61fce1623048d8c01" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int max_pstate_not_limited</definition>
+        <argsstring></argsstring>
+        <name>max_pstate_not_limited</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" line="49" column="18" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="host__dvfs_8cpp_1a8b5a6d54cadea87a71d133033d952392" prot="public" static="yes" mutable="no">
+        <type><ref refid="classsimgrid_1_1config_1_1_flag" kindref="compound">simgrid::config::Flag</ref>&lt; int &gt;</type>
+        <definition>simgrid::config::Flag&lt;int&gt; cfg_max_pstate(&quot;plugin/dvfs/max-pstate&quot;, {&quot;plugin/dvfs/max_pstate&quot;}, &quot;Which pstate is the maximum (and hence slowest) pstate for this governor?&quot;, max_pstate_not_limited)</definition>
+        <argsstring>(&quot;plugin/dvfs/max-pstate&quot;, {&quot;plugin/dvfs/max_pstate&quot;}, &quot;Which pstate is the maximum (and hence slowest) pstate for this governor?&quot;, max_pstate_not_limited)</argsstring>
+        <name>cfg_max_pstate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" line="51" column="5"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="host__dvfs_8cpp_1a6dac3546503705977487936891502dfb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void on_host_added</definition>
+        <argsstring>(simgrid::s4u::Host &amp;host)</argsstring>
+        <name>on_host_added</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">simgrid::s4u::Host</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>This lambda function is the function the actor (daemon) will execute all the time - in the case of the dvfs plugin, this controls when to lower/raise the frequency.</para>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" line="364" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" bodystart="364" bodyend="434"/>
+      </memberdef>
+      <memberdef kind="function" id="host__dvfs_8cpp_1a8e609fc6797ef180796259bf5a723800" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_host_dvfs_plugin_init</definition>
+        <argsstring>()</argsstring>
+        <name>sg_host_dvfs_plugin_init</name>
+        <briefdescription>
+<para>Initializes the HostDvfs plugin. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The HostDvfs plugin provides an API to get the current load of each host. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" line="442" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" bodystart="442" bodyend="452"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp"/>
+  </compounddef>
+</doxygen>

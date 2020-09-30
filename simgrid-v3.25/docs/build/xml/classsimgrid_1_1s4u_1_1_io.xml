@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1s4u_1_1_io" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::s4u::Io</compoundname>
+    <basecompoundref refid="classsimgrid_1_1s4u_1_1_activity___t" prot="public" virt="non-virtual">simgrid::s4u::Activity_T&lt; Io &gt;</basecompoundref>
+    <includes refid="_io_8hpp" local="no">Io.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classsimgrid_1_1s4u_1_1_io_1ac4f4e2a2b662e3012066994e1c0ce27c" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>OpType</name>
+        <enumvalue id="classsimgrid_1_1s4u_1_1_io_1ac4f4e2a2b662e3012066994e1c0ce27ca3466fab4975481651940ed328aa990e4" prot="public">
+          <name>READ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsimgrid_1_1s4u_1_1_io_1ac4f4e2a2b662e3012066994e1c0ce27cad4b9e47f65b6e79b010582f15785867e" prot="public">
+          <name>WRITE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" line="24" column="3" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" bodystart="24" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_io_1a57f68b504645a4b527cd0eb3126ed868" prot="private" static="no" mutable="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_storage" kindref="compound">Storage</ref> *</type>
+        <definition>Storage* simgrid::s4u::Io::storage_</definition>
+        <argsstring></argsstring>
+        <name>storage_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" line="27" column="11" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_io_1a0fe163fe0d2c0d60cfcf1a7e72efdd87" prot="private" static="no" mutable="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_disk" kindref="compound">Disk</ref> *</type>
+        <definition>Disk* simgrid::s4u::Io::disk_</definition>
+        <argsstring></argsstring>
+        <name>disk_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" line="28" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_io_1af354022365b4a376891e1116c1984bfc" prot="private" static="no" mutable="no">
+        <type>sg_size_t</type>
+        <definition>sg_size_t simgrid::s4u::Io::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" line="29" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_io_1a5366e15394ba0fa9b0fbabd2496cf905" prot="private" static="no" mutable="no">
+        <type>OpType</type>
+        <definition>OpType simgrid::s4u::Io::type_</definition>
+        <argsstring></argsstring>
+        <name>type_</name>
+        <initializer>= OpType::READ</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" line="30" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_io_1ac33ee01f1dfa99ae4fe976933791f4ff" prot="private" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::s4u::Io::Io</definition>
+        <argsstring>(sg_storage_t storage, sg_size_t size, OpType type)</argsstring>
+        <name>Io</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_storage" kindref="compound">sg_storage_t</ref></type>
+          <declname>storage</declname>
+        </param>
+        <param>
+          <type>sg_size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>OpType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" line="32" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_io_1a19b19905f0d8f02a088a2d863e7debd3" prot="private" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::s4u::Io::Io</definition>
+        <argsstring>(sg_disk_t disk, sg_size_t size, OpType type)</argsstring>
+        <name>Io</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_disk" kindref="compound">sg_disk_t</ref></type>
+          <declname>disk</declname>
+        </param>
+        <param>
+          <type>sg_size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>OpType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" line="33" column="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_io_1a653321922000bbd5fb4a9d452fb4066b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::s4u::Io::~Io</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Io</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" line="41" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_io_1aed211eb85e0e13e2927ebead0e811f23" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_io" kindref="compound">Io</ref> *</type>
+        <definition>Io* simgrid::s4u::Io::start</definition>
+        <argsstring>() override</argsstring>
+        <name>start</name>
+        <reimplements refid="classsimgrid_1_1s4u_1_1_activity_1aec81cccb77612d00990e287640609640">start</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Starts a previously created activity.</para>
+<para>This function is optional: you can call wait() even if you didn&apos;t call start() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" line="43" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_io_1ad238d132e0b0a240fbf19ac75e755998" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_io" kindref="compound">Io</ref> *</type>
+        <definition>Io* simgrid::s4u::Io::wait</definition>
+        <argsstring>() override</argsstring>
+        <name>wait</name>
+        <reimplements refid="classsimgrid_1_1s4u_1_1_activity_1a58b0dc13c2ee8c68376f2a2a714fc3bf">wait</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blocks until the activity is terminated </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" line="44" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_io_1a200e0cc8b3f9222298609c64738b7d82" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_io" kindref="compound">Io</ref> *</type>
+        <definition>Io* simgrid::s4u::Io::wait_for</definition>
+        <argsstring>(double timeout) override</argsstring>
+        <name>wait_for</name>
+        <reimplements refid="classsimgrid_1_1s4u_1_1_activity_1a86c386ac35303cd1f3b90d0202c83e6d">wait_for</reimplements>
+        <param>
+          <type>double</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blocks until the activity is terminated, or until the timeout is elapsed Raises: timeout exception. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" line="45" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_io_1a9d3a032c2adb178685eb5a3406e7c34d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_io" kindref="compound">Io</ref> *</type>
+        <definition>Io* simgrid::s4u::Io::cancel</definition>
+        <argsstring>() override</argsstring>
+        <name>cancel</name>
+        <reimplements refid="classsimgrid_1_1s4u_1_1_activity_1ac470ea7781f009a8d085aa16fa373d44">cancel</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cancel that activity </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" line="46" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_io_1adbb2e3500cc6310147ca81e31bde5387" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool simgrid::s4u::Io::test</definition>
+        <argsstring>() override</argsstring>
+        <name>test</name>
+        <reimplements refid="classsimgrid_1_1s4u_1_1_activity_1a2e5de7a6fa5aac5a6cb68eae64ea1822">test</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tests whether the given activity is terminated yet. This is a pure function. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" line="47" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_io_1acc633b259698769bf1eedfb692925df1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double simgrid::s4u::Io::get_remaining</definition>
+        <argsstring>() override</argsstring>
+        <name>get_remaining</name>
+        <reimplements refid="classsimgrid_1_1s4u_1_1_activity_1ac2d222f4995e7882b809a1cd201b916b">get_remaining</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the remaining amount of work that this Activity entails. When it&apos;s 0, it&apos;s done. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" line="49" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_io_1ae6f8e714bedbaafe068cefeba489083f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>sg_size_t</type>
+        <definition>sg_size_t simgrid::s4u::Io::get_performed_ioops</definition>
+        <argsstring>() const</argsstring>
+        <name>get_performed_ioops</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" line="50" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>I/O Activity, representing the asynchronous disk access.</para>
+<para>They are generated from Disk::io_init(), Disk::read() Disk::read_async(), Disk::write() and Disk::write_async(). </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>simgrid::s4u::Activity</label>
+        <link refid="classsimgrid_1_1s4u_1_1_activity"/>
+      </node>
+      <node id="1">
+        <label>simgrid::s4u::Io</label>
+        <link refid="classsimgrid_1_1s4u_1_1_io"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>simgrid::s4u::Activity_T&lt; Io &gt;</label>
+        <link refid="classsimgrid_1_1s4u_1_1_activity___t"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>simgrid::s4u::Activity</label>
+        <link refid="classsimgrid_1_1s4u_1_1_activity"/>
+      </node>
+      <node id="1">
+        <label>simgrid::s4u::Io</label>
+        <link refid="classsimgrid_1_1s4u_1_1_io"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>simgrid::s4u::Activity_T&lt; Io &gt;</label>
+        <link refid="classsimgrid_1_1s4u_1_1_activity___t"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" line="22" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Io.hpp" bodystart="22" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1ab74d690b9177c75204199b671e84baee" prot="protected" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>Activity</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity___t_1aae31b96e797bdad3047c7228c598cec0" prot="public" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>add_successor</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_io_1a9d3a032c2adb178685eb5a3406e7c34d" prot="public" virt="virtual"><scope>simgrid::s4u::Io</scope><name>cancel</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_io_1a0fe163fe0d2c0d60cfcf1a7e72efdd87" prot="private" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>disk_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity___t_1ad4c017392a1f1c12d370f9901034edee" prot="public" virt="virtual"><scope>simgrid::s4u::Io</scope><name>get_cname</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a84a59b0755885ca1872d159ac6136dbf" prot="public" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>get_impl</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity___t_1a93f2ec165abf66d48fee44ac2fb33db3" prot="public" virt="virtual"><scope>simgrid::s4u::Io</scope><name>get_name</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_io_1ae6f8e714bedbaafe068cefeba489083f" prot="public" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>get_performed_ioops</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_io_1acc633b259698769bf1eedfb692925df1" prot="public" virt="virtual"><scope>simgrid::s4u::Io</scope><name>get_remaining</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a598a46faf0103871ad4f7f971cf3717e" prot="public" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>get_state</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity___t_1a224236130c457487bb8e36c32f5f2cb3" prot="public" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>get_tracing_category</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity___t_1a0bacceb6565d0291b656c174a70f6e14" prot="public" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>get_user_data</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_io_1ac33ee01f1dfa99ae4fe976933791f4ff" prot="private" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>Io</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_io_1a19b19905f0d8f02a088a2d863e7debd3" prot="private" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>Io</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_io_1ac4f4e2a2b662e3012066994e1c0ce27c" prot="public" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>OpType</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1aac8ef492e90f999367cfa74d1d19e8c6" prot="protected" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>release_dependencies</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity___t_1a1c00a54c348209990ad45f5ec25c65f1" prot="public" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>set_name</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1aa0718f864e7de86ac46e4a73a76653af" prot="public" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>set_remaining</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a6e28ee9ccc94500a50d93db735cf5b88" prot="public" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>set_state</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity___t_1a70919b1d2683f69fca784e111cbdf5ff" prot="public" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>set_tracing_category</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity___t_1add5d2eed1bc2834d94bea0a6022d9395" prot="public" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>set_user_data</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_io_1af354022365b4a376891e1116c1984bfc" prot="private" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>size_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_io_1aed211eb85e0e13e2927ebead0e811f23" prot="public" virt="virtual"><scope>simgrid::s4u::Io</scope><name>start</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a963055035b495361760860374bd669b5" prot="public" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>State</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_io_1a57f68b504645a4b527cd0eb3126ed868" prot="private" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>storage_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_io_1adbb2e3500cc6310147ca81e31bde5387" prot="public" virt="virtual"><scope>simgrid::s4u::Io</scope><name>test</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_io_1a5366e15394ba0fa9b0fbabd2496cf905" prot="private" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>type_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a7ab9c2b429bf203f18a4228079e804b3" prot="public" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>vetoable_start</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_io_1ad238d132e0b0a240fbf19ac75e755998" prot="public" virt="virtual"><scope>simgrid::s4u::Io</scope><name>wait</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_io_1a200e0cc8b3f9222298609c64738b7d82" prot="public" virt="virtual"><scope>simgrid::s4u::Io</scope><name>wait_for</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a215a4305bef1bc337f62440abe3f7e38" prot="public" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>wait_until</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1abff2c86ef9ca12addc45c5b2c1a76fd0" prot="protected" virt="virtual"><scope>simgrid::s4u::Io</scope><name>~Activity</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_io_1a653321922000bbd5fb4a9d452fb4066b" prot="public" virt="non-virtual"><scope>simgrid::s4u::Io</scope><name>~Io</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

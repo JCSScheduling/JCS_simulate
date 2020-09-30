@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="semaphore_8h" kind="file" language="C++">
+    <compoundname>semaphore.h</compoundname>
+    <includes refid="forward_8h" local="no">simgrid/forward.h</includes>
+    <includedby refid="msg_8h" local="no">msg.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="3">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="2">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>semaphore.h</label>
+        <link refid="semaphore_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>msg.h</label>
+        <link refid="msg_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>msg_private.hpp</label>
+        <link refid="msg__private_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>semaphore.h</label>
+        <link refid="semaphore_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="semaphore_8h_1a87e14e2952b36e4fba4ba6fe2787a577" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_semaphore" kindref="compound">sg_sem_t</ref></type>
+        <definition>sg_sem_t sg_sem_init</definition>
+        <argsstring>(int initial_value)</argsstring>
+        <name>sg_sem_init</name>
+        <param>
+          <type>int</type>
+          <declname>initial_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/semaphore.h" line="15" column="11" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/semaphore.h" declline="15" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="semaphore_8h_1a1701cf7f47377bdc287f6062411cc7a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_sem_acquire</definition>
+        <argsstring>(sg_sem_t sem)</argsstring>
+        <name>sg_sem_acquire</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_semaphore" kindref="compound">sg_sem_t</ref></type>
+          <declname>sem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/semaphore.h" line="16" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/semaphore.h" declline="16" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="semaphore_8h_1a0fa2b1fa5063c1aee49c62cfdb4a7c78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sg_sem_acquire_timeout</definition>
+        <argsstring>(sg_sem_t sem, double timeout)</argsstring>
+        <name>sg_sem_acquire_timeout</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_semaphore" kindref="compound">sg_sem_t</ref></type>
+          <declname>sem</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/semaphore.h" line="17" column="6" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/semaphore.h" declline="17" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="semaphore_8h_1abf019ee0ffe35391bf40fa58db5ef167" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_sem_release</definition>
+        <argsstring>(sg_sem_t sem)</argsstring>
+        <name>sg_sem_release</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_semaphore" kindref="compound">sg_sem_t</ref></type>
+          <declname>sem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/semaphore.h" line="18" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/semaphore.h" declline="18" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="semaphore_8h_1ac30cf2b626245d87519f10f0a0cba4a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sg_sem_get_capacity</definition>
+        <argsstring>(sg_sem_t sem)</argsstring>
+        <name>sg_sem_get_capacity</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_semaphore" kindref="compound">sg_sem_t</ref></type>
+          <declname>sem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/semaphore.h" line="19" column="6" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/semaphore.h" declline="19" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="semaphore_8h_1a545578d9fa723090a1b23082447710cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_sem_destroy</definition>
+        <argsstring>(const_sg_sem_t sem)</argsstring>
+        <name>sg_sem_destroy</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_semaphore" kindref="compound">const_sg_sem_t</ref></type>
+          <declname>sem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/semaphore.h" line="20" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/semaphore.h" declline="20" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="semaphore_8h_1aa7934e4ef2a435ad65228f3955bb9b1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sg_sem_would_block</definition>
+        <argsstring>(sg_sem_t sem)</argsstring>
+        <name>sg_sem_would_block</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_semaphore" kindref="compound">sg_sem_t</ref></type>
+          <declname>sem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/semaphore.h" line="21" column="6" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/semaphore.h" declline="21" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/semaphore.h"/>
+  </compounddef>
+</doxygen>

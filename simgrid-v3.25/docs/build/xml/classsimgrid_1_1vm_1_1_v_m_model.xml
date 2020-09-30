@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1vm_1_1_v_m_model" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::vm::VMModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">HostModel</basecompoundref>
+    <includes refid="_virtual_machine_impl_8hpp" local="no">VirtualMachineImpl.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_v_m_model_1a54dfb0bd69c07164f808f555e70bcece" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::vm::VMModel::VMModel</definition>
+        <argsstring>()</argsstring>
+        <name>VMModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.hpp" line="95" column="3" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.cpp" bodystart="104" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_v_m_model_1a8c1b2e033835f738405c27397f8b839a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::vm::VMModel::next_occurring_event</definition>
+        <argsstring>(double now) override</argsstring>
+        <name>next_occurring_event</name>
+        <param>
+          <type>double</type>
+          <declname>now</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.hpp" line="97" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.cpp" bodystart="114" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_v_m_model_1a5607e80be2d472ab103b264a9181b8f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::vm::VMModel::update_actions_state</definition>
+        <argsstring>(double, double) override</argsstring>
+        <name>update_actions_state</name>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.hpp" line="98" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.hpp" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_v_m_model_1a81eed91903810a73bf6159417c07ae25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>kernel::resource::Action *</type>
+        <definition>kernel::resource::Action* simgrid::vm::VMModel::execute_parallel</definition>
+        <argsstring>(const std::vector&lt; s4u::Host * &gt; &amp;host_list, const double *flops_amount, const double *bytes_amount, double rate) override</argsstring>
+        <name>execute_parallel</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">s4u::Host</ref> * &gt; &amp;</type>
+          <declname>host_list</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>flops_amount</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>bytes_amount</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.hpp" line="99" column="28" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.hpp" bodystart="99" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SURF VM model interface class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A model is an object which handle the interactions between its Resources and its Actions </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>surf::HostModel</label>
+      </node>
+      <node id="1">
+        <label>simgrid::vm::VMModel</label>
+        <link refid="classsimgrid_1_1vm_1_1_v_m_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>surf::HostModel</label>
+      </node>
+      <node id="1">
+        <label>simgrid::vm::VMModel</label>
+        <link refid="classsimgrid_1_1vm_1_1_v_m_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.hpp" line="91" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VirtualMachineImpl.hpp" bodystart="91" bodyend="102"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1vm_1_1_v_m_model_1a81eed91903810a73bf6159417c07ae25" prot="public" virt="non-virtual"><scope>simgrid::vm::VMModel</scope><name>execute_parallel</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_v_m_model_1a8c1b2e033835f738405c27397f8b839a" prot="public" virt="non-virtual"><scope>simgrid::vm::VMModel</scope><name>next_occurring_event</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_v_m_model_1a5607e80be2d472ab103b264a9181b8f7" prot="public" virt="non-virtual"><scope>simgrid::vm::VMModel</scope><name>update_actions_state</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_v_m_model_1a54dfb0bd69c07164f808f555e70bcece" prot="public" virt="non-virtual"><scope>simgrid::vm::VMModel</scope><name>VMModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

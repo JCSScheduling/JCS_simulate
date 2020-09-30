@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="namespacesimgrid_1_1plugin_1_1dvfs" kind="namespace" language="C++">
+    <compoundname>simgrid::plugin::dvfs</compoundname>
+    <innerclass refid="classsimgrid_1_1plugin_1_1dvfs_1_1_conservative" prot="public">simgrid::plugin::dvfs::Conservative</innerclass>
+    <innerclass refid="classsimgrid_1_1plugin_1_1dvfs_1_1_governor" prot="public">simgrid::plugin::dvfs::Governor</innerclass>
+    <innerclass refid="classsimgrid_1_1plugin_1_1dvfs_1_1_on_demand" prot="public">simgrid::plugin::dvfs::OnDemand</innerclass>
+    <innerclass refid="classsimgrid_1_1plugin_1_1dvfs_1_1_performance" prot="public">simgrid::plugin::dvfs::Performance</innerclass>
+    <innerclass refid="classsimgrid_1_1plugin_1_1dvfs_1_1_powersave" prot="public">simgrid::plugin::dvfs::Powersave</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" line="65" column="1"/>
+  </compounddef>
+</doxygen>

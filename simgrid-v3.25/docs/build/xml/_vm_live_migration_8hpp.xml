@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="_vm_live_migration_8hpp" kind="file" language="C++">
+    <compoundname>VmLiveMigration.hpp</compoundname>
+    <includes refid="_comm_8hpp" local="yes">simgrid/s4u/Comm.hpp</includes>
+    <includes refid="_engine_8hpp" local="yes">simgrid/s4u/Engine.hpp</includes>
+    <includes refid="_mailbox_8hpp" local="yes">simgrid/s4u/Mailbox.hpp</includes>
+    <includes refid="_virtual_machine_8hpp" local="yes">simgrid/s4u/VirtualMachine.hpp</includes>
+    <includedby refid="_vm_live_migration_8cpp" local="yes">VmLiveMigration.cpp</includedby>
+    <incdepgraph>
+      <node id="8">
+        <label>atomic</label>
+      </node>
+      <node id="24">
+        <label>functional</label>
+      </node>
+      <node id="27">
+        <label>simgrid/s4u/VirtualMachine.hpp</label>
+        <link refid="_virtual_machine_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="14">
+        <label>xbt/functional.hpp</label>
+      </node>
+      <node id="4">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="1">
+        <label>VmLiveMigration.hpp</label>
+        <link refid="_vm_live_migration_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>simgrid/s4u/Engine.hpp</label>
+        <link refid="_engine_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>string</label>
+      </node>
+      <node id="25">
+        <label>map</label>
+      </node>
+      <node id="21">
+        <label>simgrid/chrono.hpp</label>
+      </node>
+      <node id="3">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>xbt/string.hpp</label>
+      </node>
+      <node id="19">
+        <label>simgrid/s4u/Mailbox.hpp</label>
+        <link refid="_mailbox_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>xbt/signal.hpp</label>
+      </node>
+      <node id="2">
+        <label>simgrid/s4u/Comm.hpp</label>
+        <link refid="_comm_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>simgrid/s4u/Host.hpp</label>
+        <link refid="_host_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+      <node id="18">
+        <label>utility</label>
+      </node>
+      <node id="15">
+        <label>simgrid/simix.hpp</label>
+      </node>
+      <node id="6">
+        <label>simgrid/s4u/Activity.hpp</label>
+        <link refid="_activity_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>unordered_map</label>
+      </node>
+      <node id="22">
+        <label>xbt/Extendable.hpp</label>
+      </node>
+      <node id="26">
+        <label>smpi/forward.hpp</label>
+      </node>
+      <node id="20">
+        <label>simgrid/s4u/Actor.hpp</label>
+        <link refid="_actor_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>set</label>
+      </node>
+      <node id="7">
+        <label>xbt/asserts.h</label>
+      </node>
+      <node id="16">
+        <label>simgrid/s4u/NetZone.hpp</label>
+        <link refid="_net_zone_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classsimgrid_1_1vm_1_1_vm_migration_ext" prot="public">simgrid::vm::VmMigrationExt</innerclass>
+    <innerclass refid="classsimgrid_1_1vm_1_1_migration_rx" prot="public">simgrid::vm::MigrationRx</innerclass>
+    <innerclass refid="classsimgrid_1_1vm_1_1_migration_tx" prot="public">simgrid::vm::MigrationTx</innerclass>
+    <innernamespace refid="namespacesimgrid">simgrid</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1vm">simgrid::vm</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmLiveMigration.hpp"/>
+  </compounddef>
+</doxygen>

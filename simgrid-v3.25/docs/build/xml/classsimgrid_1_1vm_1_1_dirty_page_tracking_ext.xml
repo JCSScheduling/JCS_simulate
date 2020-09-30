@@ -1,0 +1,407 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::vm::DirtyPageTrackingExt</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1a8696b94c45b1ba10b42c453173a1f455" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool simgrid::vm::DirtyPageTrackingExt::dp_tracking_</definition>
+        <argsstring></argsstring>
+        <name>dp_tracking_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="14" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1acf0849f5906428499b21a7beb0ffb03a" prot="private" static="no" mutable="no">
+        <type>std::map&lt; kernel::activity::ExecImpl const  *, double &gt;</type>
+        <definition>std::map&lt;kernel::activity::ExecImpl const*, double&gt; simgrid::vm::DirtyPageTrackingExt::dp_objs_</definition>
+        <argsstring></argsstring>
+        <name>dp_objs_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="15" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ad85e03373214b9d5605d87aa6a67fd23" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::vm::DirtyPageTrackingExt::dp_updated_by_deleted_tasks_</definition>
+        <argsstring></argsstring>
+        <name>dp_updated_by_deleted_tasks_</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="16" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ade53dc9d01c4685aef9f4af7aa095b1d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::vm::DirtyPageTrackingExt::dp_intensity_</definition>
+        <argsstring></argsstring>
+        <name>dp_intensity_</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="18" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1a8b7da4701d2d6097680bcf5a3d52f941" prot="private" static="no" mutable="no">
+        <type>sg_size_t</type>
+        <definition>sg_size_t simgrid::vm::DirtyPageTrackingExt::working_set_memory_</definition>
+        <argsstring></argsstring>
+        <name>working_set_memory_</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="19" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1abb0b56e6df2321c64b06aada8c9d7d11" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::vm::DirtyPageTrackingExt::max_downtime_</definition>
+        <argsstring></argsstring>
+        <name>max_downtime_</name>
+        <initializer>= 0.03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="20" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1afb815a4c4dd3c0646d697edc98bde8db" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::vm::DirtyPageTrackingExt::mig_speed_</definition>
+        <argsstring></argsstring>
+        <name>mig_speed_</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="21" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1a25fe10dbd7fdac02050940b51ef4591b" prot="public" static="yes" mutable="no">
+        <type>simgrid::xbt::Extension&lt; <ref refid="classsimgrid_1_1vm_1_1_virtual_machine_impl" kindref="compound">VirtualMachineImpl</ref>, <ref refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext" kindref="compound">DirtyPageTrackingExt</ref> &gt;</type>
+        <definition>simgrid::xbt::Extension&lt; VirtualMachineImpl, DirtyPageTrackingExt &gt; simgrid::vm::DirtyPageTrackingExt::EXTENSION_ID</definition>
+        <argsstring></argsstring>
+        <name>EXTENSION_ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="40" column="34" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1a3f97640052a7033cc9500512e20020d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::vm::DirtyPageTrackingExt::start_tracking</definition>
+        <argsstring>()</argsstring>
+        <name>start_tracking</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="24" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="47" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ac60650d03245e24f6d0e4c0e5de6ccea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::vm::DirtyPageTrackingExt::stop_tracking</definition>
+        <argsstring>()</argsstring>
+        <name>stop_tracking</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="25" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1a4b8878461fbcc9ba0a3ba23d91fecbb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool simgrid::vm::DirtyPageTrackingExt::is_tracking</definition>
+        <argsstring>()</argsstring>
+        <name>is_tracking</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="26" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1aa92242b9aae5030fbec608ab1e2e2e66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::vm::DirtyPageTrackingExt::track</definition>
+        <argsstring>(kernel::activity::ExecImpl const *exec, double amount)</argsstring>
+        <name>track</name>
+        <param>
+          <type>kernel::activity::ExecImpl const *</type>
+          <declname>exec</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="27" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1a9f3919f8c0b88a6ab59e4f8288a68d1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::vm::DirtyPageTrackingExt::untrack</definition>
+        <argsstring>(kernel::activity::ExecImpl const *exec)</argsstring>
+        <name>untrack</name>
+        <param>
+          <type>kernel::activity::ExecImpl const *</type>
+          <declname>exec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="28" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ab01e484897e21a2501c7d737e925cba4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::vm::DirtyPageTrackingExt::get_stored_remains</definition>
+        <argsstring>(kernel::activity::ExecImpl const *exec)</argsstring>
+        <name>get_stored_remains</name>
+        <param>
+          <type>kernel::activity::ExecImpl const *</type>
+          <declname>exec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="29" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ab7201880bfbe12da113d36b812b3f098" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::vm::DirtyPageTrackingExt::update_dirty_page_count</definition>
+        <argsstring>(double delta)</argsstring>
+        <name>update_dirty_page_count</name>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="30" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1aad1adb328bcbec8baa65c11eb74cf453" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::vm::DirtyPageTrackingExt::computed_flops_lookup</definition>
+        <argsstring>()</argsstring>
+        <name>computed_flops_lookup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="31" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="54" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ab8548a480b424e2a87401f8a243751b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::vm::DirtyPageTrackingExt::get_intensity</definition>
+        <argsstring>()</argsstring>
+        <name>get_intensity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="32" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1a3a387c02ba1c867c70c58ee234de0695" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::vm::DirtyPageTrackingExt::set_intensity</definition>
+        <argsstring>(double intensity)</argsstring>
+        <name>set_intensity</name>
+        <param>
+          <type>double</type>
+          <declname>intensity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="33" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1a313d917b6f8f5cb589dbcdf0fe32e6d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::vm::DirtyPageTrackingExt::get_working_set_memory</definition>
+        <argsstring>()</argsstring>
+        <name>get_working_set_memory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="34" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ad7d3e5282fe2822c3faa5aa924c7a342" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::vm::DirtyPageTrackingExt::set_working_set_memory</definition>
+        <argsstring>(sg_size_t size)</argsstring>
+        <name>set_working_set_memory</name>
+        <param>
+          <type>sg_size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="35" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ad97f4304611d28f81822b39390a9796a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::vm::DirtyPageTrackingExt::set_migration_speed</definition>
+        <argsstring>(double speed)</argsstring>
+        <name>set_migration_speed</name>
+        <param>
+          <type>double</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="36" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ad803fc3567bfbb7ed682f8e6a9450caa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::vm::DirtyPageTrackingExt::get_migration_speed</definition>
+        <argsstring>()</argsstring>
+        <name>get_migration_speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="37" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ae16ef5a1da3e1a435ecf4fabe8e9fbb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::vm::DirtyPageTrackingExt::get_max_downtime</definition>
+        <argsstring>()</argsstring>
+        <name>get_max_downtime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="38" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ab9c6b379f09d4b4dc212daddf5d083a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual simgrid::vm::DirtyPageTrackingExt::~DirtyPageTrackingExt</definition>
+        <argsstring>()=default</argsstring>
+        <name>~DirtyPageTrackingExt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="41" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1a427b2886e247aeac68a6a60a528c9362" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::vm::DirtyPageTrackingExt::DirtyPageTrackingExt</definition>
+        <argsstring>()=default</argsstring>
+        <name>DirtyPageTrackingExt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="42" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" line="13" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/dirty_page_tracking.cpp" bodystart="13" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1aad1adb328bcbec8baa65c11eb74cf453" prot="public" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>computed_flops_lookup</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1a427b2886e247aeac68a6a60a528c9362" prot="public" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>DirtyPageTrackingExt</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ade53dc9d01c4685aef9f4af7aa095b1d" prot="private" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>dp_intensity_</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1acf0849f5906428499b21a7beb0ffb03a" prot="private" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>dp_objs_</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1a8696b94c45b1ba10b42c453173a1f455" prot="private" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>dp_tracking_</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ad85e03373214b9d5605d87aa6a67fd23" prot="private" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>dp_updated_by_deleted_tasks_</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1a25fe10dbd7fdac02050940b51ef4591b" prot="public" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>EXTENSION_ID</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ab8548a480b424e2a87401f8a243751b2" prot="public" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>get_intensity</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ae16ef5a1da3e1a435ecf4fabe8e9fbb3" prot="public" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>get_max_downtime</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ad803fc3567bfbb7ed682f8e6a9450caa" prot="public" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>get_migration_speed</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ab01e484897e21a2501c7d737e925cba4" prot="public" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>get_stored_remains</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1a313d917b6f8f5cb589dbcdf0fe32e6d7" prot="public" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>get_working_set_memory</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1a4b8878461fbcc9ba0a3ba23d91fecbb9" prot="public" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>is_tracking</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1abb0b56e6df2321c64b06aada8c9d7d11" prot="private" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>max_downtime_</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1afb815a4c4dd3c0646d697edc98bde8db" prot="private" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>mig_speed_</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1a3a387c02ba1c867c70c58ee234de0695" prot="public" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>set_intensity</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ad97f4304611d28f81822b39390a9796a" prot="public" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>set_migration_speed</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ad7d3e5282fe2822c3faa5aa924c7a342" prot="public" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>set_working_set_memory</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1a3f97640052a7033cc9500512e20020d9" prot="public" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>start_tracking</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ac60650d03245e24f6d0e4c0e5de6ccea" prot="public" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>stop_tracking</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1aa92242b9aae5030fbec608ab1e2e2e66" prot="public" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>track</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1a9f3919f8c0b88a6ab59e4f8288a68d1f" prot="public" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>untrack</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ab7201880bfbe12da113d36b812b3f098" prot="public" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>update_dirty_page_count</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1a8b7da4701d2d6097680bcf5a3d52f941" prot="private" virt="non-virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>working_set_memory_</name></member>
+      <member refid="classsimgrid_1_1vm_1_1_dirty_page_tracking_ext_1ab9c6b379f09d4b4dc212daddf5d083a5" prot="public" virt="virtual"><scope>simgrid::vm::DirtyPageTrackingExt</scope><name>~DirtyPageTrackingExt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="namespacesimgrid_1_1kernel" kind="namespace" language="C++">
+    <compoundname>simgrid::kernel</compoundname>
+    <innernamespace refid="namespacesimgrid_1_1kernel_1_1activity">simgrid::kernel::activity</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1kernel_1_1actor">simgrid::kernel::actor</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1kernel_1_1context">simgrid::kernel::context</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1kernel_1_1lmm">simgrid::kernel::lmm</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1kernel_1_1profile">simgrid::kernel::profile</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1kernel_1_1resource">simgrid::kernel::resource</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1kernel_1_1routing">simgrid::kernel::routing</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="103" column="1"/>
+  </compounddef>
+</doxygen>

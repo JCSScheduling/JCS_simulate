@@ -1,0 +1,450 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1s4u_1_1_mailbox" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::s4u::Mailbox</compoundname>
+    <includes refid="_mailbox_8hpp" local="no">Mailbox.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_mailbox_1ae6674e287ab8bd60c9629bebff8c8433" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend simgrid::s4u::Mailbox::Comm</definition>
+        <argsstring></argsstring>
+        <name>Comm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="21" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_mailbox_1a70c8d7fcf2e42d689d774b4fa936e7ff" prot="private" static="no" mutable="no">
+        <type>kernel::activity::MailboxImpl *const</type>
+        <definition>kernel::activity::MailboxImpl* const simgrid::s4u::Mailbox::pimpl_</definition>
+        <argsstring></argsstring>
+        <name>pimpl_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="25" column="39" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1a8e54c6c735a221073f102ac59abbf0ed" prot="private" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::s4u::Mailbox::Mailbox</definition>
+        <argsstring>(kernel::activity::MailboxImpl *mbox)</argsstring>
+        <name>Mailbox</name>
+        <param>
+          <type>kernel::activity::MailboxImpl *</type>
+          <declname>mbox</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="27" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1a8b03d32b25442be77fcfeb310279e110" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::s4u::Mailbox::~Mailbox</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Mailbox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="28" column="3"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1a3955fa5bb116ffbc597122431a9558a3" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>kernel::activity::MailboxImpl *</type>
+        <definition>kernel::activity::MailboxImpl* simgrid::s4u::Mailbox::get_impl</definition>
+        <argsstring>() const</argsstring>
+        <name>get_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="31" column="33" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1a5ea2946508b12d8ff5bcab903f8da8d8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const xbt::string &amp;</type>
+        <definition>const xbt::string&amp; simgrid::s4u::Mailbox::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+<para>Retrieves the name of that mailbox as a C++ string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="35" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1a0a978921b3b47d274708ab4b88b52016" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* simgrid::s4u::Mailbox::get_cname</definition>
+        <argsstring>() const</argsstring>
+        <name>get_cname</name>
+        <briefdescription>
+<para>Retrieves the name of that mailbox as a C string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="37" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1ad7ffde900682feeffeccb7d5bd14620f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool simgrid::s4u::Mailbox::empty</definition>
+        <argsstring>()</argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns whether the mailbox contains queued communications </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="43" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1a5d1f792772aa4e36bcd331c43d65af51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool simgrid::s4u::Mailbox::listen</definition>
+        <argsstring>()</argsstring>
+        <name>listen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if there is a communication going on in a mailbox. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="46" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1a279add6b0e10c8471b285a5a28793ca3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool simgrid::s4u::Mailbox::ready</definition>
+        <argsstring>()</argsstring>
+        <name>ready</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if there is a communication ready to be consumed from a mailbox. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="49" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1a2e90934a084beb7c8601d1c7d37e33c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>kernel::activity::CommImplPtr</type>
+        <definition>kernel::activity::CommImplPtr simgrid::s4u::Mailbox::front</definition>
+        <argsstring>()</argsstring>
+        <name>front</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the first element in the queue (without dequeuing it), or nullptr if none is there </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="52" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1a8fa303843cb3f9033c083bb3f9fa88f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Mailbox::set_receiver</definition>
+        <argsstring>(ActorPtr actor)</argsstring>
+        <name>set_receiver</name>
+        <param>
+          <type>ActorPtr</type>
+          <declname>actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Declare that the specified actor is a permanent receiver on that mailbox</para>
+<para>It means that the communications sent to this mailbox will start flowing to its host even before it does a get(). This models the real behavior of TCP and MPI communications, amongst other. It will improve the accuracy of predictions, in particular if your application exhibits swarms of small messages.</para>
+<para>SimGrid does not enforces any kind of ownership over the mailbox. Even if a receiver was declared, any other actors can still get() data from the mailbox. The timings will then probably be off tracks, so you should strive on your side to not get data from someone else&apos;s mailbox.</para>
+<para>Note that being permanent receivers of a mailbox prevents actors to be garbage-collected. If your simulation creates many short-lived actors that marked as permanent receiver, you should call mailbox-&gt;set_receiver(nullptr) by the end of the actors so that their memory gets properly reclaimed. This call should be at the end of the actor&apos;s function, not in a on_exit callback. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="72" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1a42b3507b2d9ff32fa2072efe75fc2238" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ActorPtr</type>
+        <definition>ActorPtr simgrid::s4u::Mailbox::get_receiver</definition>
+        <argsstring>()</argsstring>
+        <name>get_receiver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the actor declared as permanent receiver, or nullptr if none </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="75" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1a95a8a36daee23f34a8007ef9fd59e2c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CommPtr</type>
+        <definition>CommPtr simgrid::s4u::Mailbox::put_init</definition>
+        <argsstring>()</argsstring>
+        <name>put_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates (but don&apos;t start) a data transmission to that mailbox </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="78" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1ad6e6d462be4943bd75639f010f5c5cc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CommPtr</type>
+        <definition>CommPtr simgrid::s4u::Mailbox::put_init</definition>
+        <argsstring>(void *data, uint64_t simulated_size_in_bytes)</argsstring>
+        <name>put_init</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>simulated_size_in_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates (but don&apos;t start) a data transmission to that mailbox </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="80" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1ab81473354ee4bcf0a5ddc6aa7a108f2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CommPtr</type>
+        <definition>CommPtr simgrid::s4u::Mailbox::put_async</definition>
+        <argsstring>(void *data, uint64_t simulated_size_in_bytes)</argsstring>
+        <name>put_async</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>simulated_size_in_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates and start a data transmission to that mailbox </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="82" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1a1db3a8fc67bac977ffb6891eb76d2b7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>smx_activity_t</type>
+        <definition>smx_activity_t simgrid::s4u::Mailbox::iprobe</definition>
+        <argsstring>(int type, bool(*match_fun)(void *, void *, kernel::activity::CommImpl *), void *data)</argsstring>
+        <name>iprobe</name>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>bool(*)(void *, void *, kernel::activity::CommImpl *)</type>
+          <declname>match_fun</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="84" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1afb5463539c95d3ed6f22489f30e380e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Mailbox::put</definition>
+        <argsstring>(void *payload, uint64_t simulated_size_in_bytes)</argsstring>
+        <name>put</name>
+        <param>
+          <type>void *</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>simulated_size_in_bytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blocking data transmission </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="86" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1a43f194a35b078e33f690d71905a51cb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Mailbox::put</definition>
+        <argsstring>(void *payload, uint64_t simulated_size_in_bytes, double timeout)</argsstring>
+        <name>put</name>
+        <param>
+          <type>void *</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>simulated_size_in_bytes</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blocking data transmission with timeout </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="88" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1a2b12b4b6860127fd1a7fa1d74c989a02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CommPtr</type>
+        <definition>CommPtr simgrid::s4u::Mailbox::get_init</definition>
+        <argsstring>()</argsstring>
+        <name>get_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates (but don&apos;t start) a data reception onto that mailbox </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="91" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1acd6bb169c6cfc4737e169788aeea0c58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CommPtr</type>
+        <definition>CommPtr simgrid::s4u::Mailbox::get_async</definition>
+        <argsstring>(void **data)</argsstring>
+        <name>get_async</name>
+        <param>
+          <type>void **</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates and start an async data reception to that mailbox </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="93" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1a9e9691a77344e64246881597e5bdf48f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* simgrid::s4u::Mailbox::get</definition>
+        <argsstring>()</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blocking data reception </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="96" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1acb3ecbe83a0bcaccd040f9018694d773" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* simgrid::s4u::Mailbox::get</definition>
+        <argsstring>(double timeout)</argsstring>
+        <name>get</name>
+        <param>
+          <type>double</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blocking data reception with timeout </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="98" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mailbox_1a3dfce9ba7528541ffe8fc940afebe993" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_mailbox" kindref="compound">Mailbox</ref> *</type>
+        <definition>static Mailbox* simgrid::s4u::Mailbox::by_name</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>by_name</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve the mailbox associated to the given name. Mailboxes are created on demand. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="40" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Mailboxes: Network rendez-vous points. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" line="20" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mailbox.hpp" bodystart="20" bodyend="99"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1a3dfce9ba7528541ffe8fc940afebe993" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>by_name</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1ae6674e287ab8bd60c9629bebff8c8433" prot="private" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>Comm</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1ad7ffde900682feeffeccb7d5bd14620f" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>empty</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1a2e90934a084beb7c8601d1c7d37e33c0" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>front</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1a9e9691a77344e64246881597e5bdf48f" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>get</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1acb3ecbe83a0bcaccd040f9018694d773" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>get</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1acd6bb169c6cfc4737e169788aeea0c58" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>get_async</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1a0a978921b3b47d274708ab4b88b52016" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>get_cname</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1a3955fa5bb116ffbc597122431a9558a3" prot="protected" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>get_impl</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1a2b12b4b6860127fd1a7fa1d74c989a02" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>get_init</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1a5ea2946508b12d8ff5bcab903f8da8d8" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>get_name</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1a42b3507b2d9ff32fa2072efe75fc2238" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>get_receiver</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1a1db3a8fc67bac977ffb6891eb76d2b7c" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>iprobe</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1a5d1f792772aa4e36bcd331c43d65af51" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>listen</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1a8e54c6c735a221073f102ac59abbf0ed" prot="private" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>Mailbox</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1a70c8d7fcf2e42d689d774b4fa936e7ff" prot="private" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>pimpl_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1afb5463539c95d3ed6f22489f30e380e7" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>put</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1a43f194a35b078e33f690d71905a51cb2" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>put</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1ab81473354ee4bcf0a5ddc6aa7a108f2a" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>put_async</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1a95a8a36daee23f34a8007ef9fd59e2c6" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>put_init</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1ad6e6d462be4943bd75639f010f5c5cc4" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>put_init</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1a279add6b0e10c8471b285a5a28793ca3" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>ready</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1a8fa303843cb3f9033c083bb3f9fa88f4" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>set_receiver</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mailbox_1a8b03d32b25442be77fcfeb310279e110" prot="private" virt="non-virtual"><scope>simgrid::s4u::Mailbox</scope><name>~Mailbox</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

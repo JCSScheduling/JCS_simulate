@@ -1,0 +1,1 @@
+/usr/bin/g++-7    -std=c++11 -g   CMakeFiles/linktest.dir/linktest.cpp.o  -o linktest -rdynamic /opt/simgrid/lib/libsimgrid.so -Wl,-rpath,/opt/simgrid/lib 

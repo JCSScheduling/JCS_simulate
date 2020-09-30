@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="group__plugin__host__energy" kind="group">
+    <compoundname>plugin_host_energy</compoundname>
+    <title>plugin_host_energy Plugin Host Energy</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__plugin__host__energy_1ga9f6ea89437ff1c73f0fea3460e2c32af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_host_energy_plugin_init</definition>
+        <argsstring>()</argsstring>
+        <name>sg_host_energy_plugin_init</name>
+        <briefdescription>
+<para>Enable host energy plugin. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable energy plugin to get joules consumption of each cpu. Call this function before loading your platform. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="537" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="537" bodyend="566"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__energy_1gacd80921546311ea410b909eb13350585" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_host_energy_update_all</definition>
+        <argsstring>()</argsstring>
+        <name>sg_host_energy_update_all</name>
+        <briefdescription>
+<para>updates the consumption of all hosts </para>
+        </briefdescription>
+        <detaileddescription>
+<para>After this call, sg_host_get_consumed_energy() will not interrupt your process (until after the next clock update). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="574" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="574" bodyend="584"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__energy_1gaa31034c51ec8205d3eec4c29290cfb6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_get_consumed_energy</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_get_consumed_energy</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Returns the total energy consumed by the host so far (in Joules) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Please note that since the consumption is lazily updated, it may require a simcall to update it. The result is that the actor requesting this value will be interrupted, the value will be updated in kernel mode before returning the control to the requesting actor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="600" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="600" bodyend="604"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__energy_1gaa4d0d01377fcf46f45eefd666f1a5418" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_get_idle_consumption</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_get_idle_consumption</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Get the amount of watt dissipated when the host is idling. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="609" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="609" bodyend="613"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__energy_1gae3b93cc798df3f5a1c4be88e501e1b8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_get_idle_consumption_at</definition>
+        <argsstring>(const_sg_host_t host, int pstate)</argsstring>
+        <name>sg_host_get_idle_consumption_at</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pstate</declname>
+        </param>
+        <briefdescription>
+<para>Get the amount of watt dissipated at the given pstate when the host is idling. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="618" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="618" bodyend="622"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__energy_1ga6aa67d91f58de9a878e5b863fd4632de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_get_wattmin_at</definition>
+        <argsstring>(const_sg_host_t host, int pstate)</argsstring>
+        <name>sg_host_get_wattmin_at</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pstate</declname>
+        </param>
+        <briefdescription>
+<para>Get the amount of watt dissipated at the given pstate when the host is at 0 or epsilon% CPU usage. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="627" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="627" bodyend="631"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__energy_1gad0c8414cf230d10ad875eeaa3202f140" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_get_wattmax_at</definition>
+        <argsstring>(const_sg_host_t host, int pstate)</argsstring>
+        <name>sg_host_get_wattmax_at</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pstate</declname>
+        </param>
+        <briefdescription>
+<para>Returns the amount of watt dissipated at the given pstate when the host burns CPU at 100%. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="635" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="635" bodyend="639"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__energy_1gabdac53747dc815cae2b466b7699dace3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_get_power_range_slope_at</definition>
+        <argsstring>(const_sg_host_t host, int pstate)</argsstring>
+        <name>sg_host_get_power_range_slope_at</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pstate</declname>
+        </param>
+        <briefdescription>
+<para>Returns the power slope at the given pstate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="643" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="643" bodyend="647"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__energy_1ga95df58dff85d8af769e8a70bc051b05f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_get_current_consumption</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_get_current_consumption</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Returns the current consumption of the host. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="651" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="651" bodyend="655"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>embed:rst:leading-asterisk
+
+This is the energy plugin, enabling to account not only for computation time, but also for the dissipated energy in the
+simulated platform.
+To activate this plugin, first call :cpp:func:`sg_host_energy_plugin_init()` before your loading your platform, and
+then use :cpp:func:`sg_host_get_consumed_energy()` to retrieve the consumption of a given host.
+
+When the host is on, this energy consumption naturally depends on both the current CPU load and the host energy profile.
+According to our measurements, the consumption is somehow linear in the amount of cores at full speed, with an
+abnormality when all the cores are idle. The full details are in `our scientific paper
+&lt;https://hal.inria.fr/hal-01523608&gt;`_ on that topic.
+
+As a result, our energy model takes 4 parameters:
+
+  - ``Idle`` wattage (i.e., instantaneous consumption in Watt) when your host is up and running, but without anything to
+    do.
+  - ``Epsilon`` wattage when all cores are at 0 or epsilon%, but not in Idle state.
+  - ``AllCores`` wattage when all cores of the host are at 100%.
+  - ``Off`` wattage when the host is turned off.
+
+Here is an example of XML declaration:
+
+.. code-block:: xml
+
+   &lt;host id=&quot;HostA&quot; speed=&quot;100.0Mf&quot; core=&quot;4&quot;&gt;
+       &lt;prop id=&quot;wattage_per_state&quot; value=&quot;100.0:120.0:200.0&quot; /&gt;
+       &lt;prop id=&quot;wattage_off&quot; value=&quot;10&quot; /&gt;
+   &lt;/host&gt;
+
+If only two values are given, ``Idle`` is used for the missing ``Epsilon`` value.
+
+This example gives the following parameters: ``Off`` is 10 Watts; ``Idle`` is 100 Watts; ``Epsilon`` is 120 Watts and
+``AllCores`` is 200 Watts.
+This is enough to compute the wattage as a function of the amount of loaded cores:
+
+.. raw:: html
+
+   &lt;table border=&quot;1&quot;&gt;
+   &lt;tr&gt;&lt;th&gt;#Cores loaded&lt;/th&gt;&lt;th&gt;Wattage&lt;/th&gt;&lt;th&gt;Explanation&lt;/th&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;0 (idle)&lt;/td&gt;&lt;td&gt; 100 Watts&amp;nbsp;&lt;/td&gt;&lt;td&gt; Idle value&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;0 (not idle)&lt;/td&gt;&lt;td&gt; 120 Watts&lt;/td&gt;&lt;td&gt; Epsilon value&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt; 140 Watts&lt;/td&gt;&lt;td&gt; Linear extrapolation between Epsilon and AllCores&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt; 160 Watts&lt;/td&gt;&lt;td&gt; Linear extrapolation between Epsilon and AllCores&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt; 180 Watts&lt;/td&gt;&lt;td&gt; Linear extrapolation between Epsilon and AllCores&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt; 200 Watts&lt;/td&gt;&lt;td&gt; AllCores value&lt;/td&gt;&lt;/tr&gt;
+   &lt;/table&gt;
+
+
+.. raw:: html
+
+   &lt;h4&gt;How does DVFS interact with the host energy model?&lt;/h4&gt;
+
+If your host has several DVFS levels (several pstates), then you should give the energetic profile of each pstate level:
+
+.. code-block:: xml
+
+   &lt;host id=&quot;HostC&quot; speed=&quot;100.0Mf,50.0Mf,20.0Mf&quot; core=&quot;4&quot;&gt;
+       &lt;prop id=&quot;wattage_per_state&quot;
+             value=&quot;95.0:120.0:200.0, 93.0:115.0:170.0, 90.0:110.0:150.0&quot; /&gt;
+       &lt;prop id=&quot;wattage_off&quot; value=&quot;10&quot; /&gt;
+   &lt;/host&gt;
+
+This encodes the following values:
+
+.. raw:: html
+
+   &lt;table border=&quot;1&quot;&gt;
+   &lt;tr&gt;&lt;th&gt;pstate&lt;/th&gt;&lt;th&gt;Performance&lt;/th&gt;&lt;th&gt;Idle&lt;/th&gt;&lt;th&gt;Epsilon&lt;/th&gt;&lt;th&gt;AllCores&lt;/th&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;100 Mflop/s&lt;/td&gt;&lt;td&gt;95 Watts&lt;/td&gt;&lt;td&gt;120 Watts&lt;/td&gt;&lt;td&gt;200 Watts&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;50 Mflop/s&lt;/td&gt;&lt;td&gt;93 Watts&lt;/td&gt;&lt;td&gt;115 Watts&lt;/td&gt;&lt;td&gt;170 Watts&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;20 Mflop/s&lt;/td&gt;&lt;td&gt;90 Watts&lt;/td&gt;&lt;td&gt;110 Watts&lt;/td&gt;&lt;td&gt;150 Watts&lt;/td&gt;&lt;/tr&gt;
+   &lt;/table&gt;
+
+To change the pstate of a given CPU, use the following functions:
+:cpp:func:`MSG_host_get_nb_pstates()`, :cpp:func:`simgrid::s4u::Host::set_pstate()`,
+:cpp:func:`MSG_host_get_power_peak_at()`.
+
+.. raw:: html
+
+   &lt;h4&gt;How accurate are these models?&lt;/h4&gt;
+
+This model cannot be more accurate than your instantiation: with the default values, your result will not be accurate at
+all. You can still get accurate energy prediction, provided that you carefully instantiate the model.
+The first step is to ensure that your timing prediction match perfectly. But this is only the first step of the path,
+and you really want to read `this paper &lt;https://hal.inria.fr/hal-01523608&gt;`_ to see all what you need to do
+before you can get accurate energy predictions.</verbatim> </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

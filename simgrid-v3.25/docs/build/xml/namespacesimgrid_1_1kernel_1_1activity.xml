@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="namespacesimgrid_1_1kernel_1_1activity" kind="namespace" language="C++">
+    <compoundname>simgrid::kernel::activity</compoundname>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="forward_8h_1ac65fb2c916b5857b7bc998a4bd38826e" prot="public" static="no">
+        <type>boost::intrusive_ptr&lt; ActivityImpl &gt;</type>
+        <definition>typedef boost::intrusive_ptr&lt;ActivityImpl&gt; simgrid::kernel::activity::ActivityImplPtr</definition>
+        <argsstring></argsstring>
+        <name>ActivityImplPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="113" column="32" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1ae8bcf08437256fca472103c226664253" prot="public" static="no">
+        <type>boost::intrusive_ptr&lt; CommImpl &gt;</type>
+        <definition>typedef boost::intrusive_ptr&lt;CommImpl&gt; simgrid::kernel::activity::CommImplPtr</definition>
+        <argsstring></argsstring>
+        <name>CommImplPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="120" column="32" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1ad8cf443ea93d761a55704096cfab9abe" prot="public" static="no">
+        <type>boost::intrusive_ptr&lt; ExecImpl &gt;</type>
+        <definition>typedef boost::intrusive_ptr&lt;ExecImpl&gt; simgrid::kernel::activity::ExecImplPtr</definition>
+        <argsstring></argsstring>
+        <name>ExecImplPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="122" column="32" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1ae90e2d4089bbd77e7c414a8f3fe63f37" prot="public" static="no">
+        <type>boost::intrusive_ptr&lt; IoImpl &gt;</type>
+        <definition>typedef boost::intrusive_ptr&lt;IoImpl&gt; simgrid::kernel::activity::IoImplPtr</definition>
+        <argsstring></argsstring>
+        <name>IoImplPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="124" column="32" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a085267445de52d076883a8c78d49684c" prot="public" static="no">
+        <type>boost::intrusive_ptr&lt; MutexImpl &gt;</type>
+        <definition>typedef boost::intrusive_ptr&lt;MutexImpl&gt; simgrid::kernel::activity::MutexImplPtr</definition>
+        <argsstring></argsstring>
+        <name>MutexImplPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="126" column="32" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a75ec3ef8a4ecc516061c74b4a3e2e80c" prot="public" static="no">
+        <type>boost::intrusive_ptr&lt; RawImpl &gt;</type>
+        <definition>typedef boost::intrusive_ptr&lt;RawImpl&gt; simgrid::kernel::activity::RawImplPtr</definition>
+        <argsstring></argsstring>
+        <name>RawImplPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="128" column="32" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1aad76ac92305e022ab4335faa26cfc539" prot="public" static="no">
+        <type>boost::intrusive_ptr&lt; SemaphoreImpl &gt;</type>
+        <definition>typedef boost::intrusive_ptr&lt;SemaphoreImpl&gt; simgrid::kernel::activity::SemaphoreImplPtr</definition>
+        <argsstring></argsstring>
+        <name>SemaphoreImplPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="130" column="32" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a0d8ebad3fdbc1405c94ee9a7dd00823c" prot="public" static="no">
+        <type>boost::intrusive_ptr&lt; SleepImpl &gt;</type>
+        <definition>typedef boost::intrusive_ptr&lt;SleepImpl&gt; simgrid::kernel::activity::SleepImplPtr</definition>
+        <argsstring></argsstring>
+        <name>SleepImplPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="132" column="32" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="forward_8h_1add9785db554e7673f70ff1b6f2441b2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::kernel::activity::intrusive_ptr_add_ref</definition>
+        <argsstring>(ActivityImpl *activity)</argsstring>
+        <name>intrusive_ptr_add_ref</name>
+        <param>
+          <type>ActivityImpl *</type>
+          <declname>activity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="114" column="9" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" declline="114" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="forward_8h_1acbb602030b5ea22c064cfa43a0071326" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::kernel::activity::intrusive_ptr_release</definition>
+        <argsstring>(ActivityImpl *activity)</argsstring>
+        <name>intrusive_ptr_release</name>
+        <param>
+          <type>ActivityImpl *</type>
+          <declname>activity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="115" column="9" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" declline="115" declcolumn="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="110" column="1"/>
+  </compounddef>
+</doxygen>

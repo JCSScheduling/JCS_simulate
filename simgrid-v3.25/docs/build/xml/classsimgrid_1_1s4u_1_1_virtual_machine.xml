@@ -1,0 +1,519 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1s4u_1_1_virtual_machine" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::s4u::VirtualMachine</compoundname>
+    <basecompoundref refid="classsimgrid_1_1s4u_1_1_host" prot="public" virt="non-virtual">simgrid::s4u::Host</basecompoundref>
+    <includes refid="_virtual_machine_8hpp" local="no">VirtualMachine.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classsimgrid_1_1s4u_1_1_virtual_machine_1a57ee1860aa4e559b9099d9bbb38d4de7" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>state</name>
+        <enumvalue id="classsimgrid_1_1s4u_1_1_virtual_machine_1a57ee1860aa4e559b9099d9bbb38d4de7a98690bf632c29c17c9e4c5a64069903c" prot="public">
+          <name>CREATED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>created, but not yet started </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsimgrid_1_1s4u_1_1_virtual_machine_1a57ee1860aa4e559b9099d9bbb38d4de7a43491564ebcfd38568918efbd6e840fd" prot="public">
+          <name>RUNNING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsimgrid_1_1s4u_1_1_virtual_machine_1a57ee1860aa4e559b9099d9bbb38d4de7a0cb707127aebaa0023eb38363993843a" prot="public">
+          <name>SUSPENDED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Suspend/resume does not involve disk I/O, so we assume there is no transition states. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsimgrid_1_1s4u_1_1_virtual_machine_1a57ee1860aa4e559b9099d9bbb38d4de7a5d7e41d3ac0abca5974598807df874ea" prot="public">
+          <name>DESTROYED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="37" column="3" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" bodystart="37" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_virtual_machine_1a70c7765f800ea41ec3371e3eea74d22b" prot="private" static="no" mutable="no">
+        <type><ref refid="classsimgrid_1_1vm_1_1_virtual_machine_impl" kindref="compound">vm::VirtualMachineImpl</ref> *const</type>
+        <definition>vm::VirtualMachineImpl* const simgrid::s4u::VirtualMachine::pimpl_vm_</definition>
+        <argsstring></argsstring>
+        <name>pimpl_vm_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="24" column="32" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_virtual_machine_1adf57542d22ff8d9777cdedaad326ea0c" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">VirtualMachine</ref> const  &amp;)&gt;</type>
+        <definition>simgrid::xbt::signal&lt; void(VirtualMachine const  &amp;)&gt; simgrid::s4u::VirtualMachine::on_start</definition>
+        <argsstring></argsstring>
+        <name>on_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="58" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_virtual_machine_1af3ee2a83392e77386a3e432502664ad8" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">VirtualMachine</ref> const  &amp;)&gt;</type>
+        <definition>simgrid::xbt::signal&lt; void(VirtualMachine const  &amp;)&gt; simgrid::s4u::VirtualMachine::on_started</definition>
+        <argsstring></argsstring>
+        <name>on_started</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="59" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_virtual_machine_1a1ab42038f01b33bcd494e27614aaa14d" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">VirtualMachine</ref> const  &amp;)&gt;</type>
+        <definition>simgrid::xbt::signal&lt; void(VirtualMachine const  &amp;)&gt; simgrid::s4u::VirtualMachine::on_shutdown</definition>
+        <argsstring></argsstring>
+        <name>on_shutdown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="60" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_virtual_machine_1abf38d7e4251433bcdc0c18c6d270b124" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">VirtualMachine</ref> const  &amp;)&gt;</type>
+        <definition>simgrid::xbt::signal&lt; void(VirtualMachine const  &amp;)&gt; simgrid::s4u::VirtualMachine::on_suspend</definition>
+        <argsstring></argsstring>
+        <name>on_suspend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="61" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_virtual_machine_1a083e166526876d26df3d3857b197f596" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">VirtualMachine</ref> const  &amp;)&gt;</type>
+        <definition>simgrid::xbt::signal&lt; void(VirtualMachine const  &amp;)&gt; simgrid::s4u::VirtualMachine::on_resume</definition>
+        <argsstring></argsstring>
+        <name>on_resume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="62" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_virtual_machine_1a6618d9c6553015ca39174a5cba639242" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">VirtualMachine</ref> const  &amp;)&gt;</type>
+        <definition>simgrid::xbt::signal&lt; void(VirtualMachine const  &amp;)&gt; simgrid::s4u::VirtualMachine::on_migration_start</definition>
+        <argsstring></argsstring>
+        <name>on_migration_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="63" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_virtual_machine_1a80a8015b87d5d286af0e3febbb2daef8" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_virtual_machine" kindref="compound">VirtualMachine</ref> const  &amp;)&gt;</type>
+        <definition>simgrid::xbt::signal&lt; void(VirtualMachine const  &amp;)&gt; simgrid::s4u::VirtualMachine::on_migration_end</definition>
+        <argsstring></argsstring>
+        <name>on_migration_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="64" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_virtual_machine_1afb3acdf5c961b50053199cb5d5b4bd56" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>simgrid::s4u::VirtualMachine::~VirtualMachine</definition>
+        <argsstring>()</argsstring>
+        <name>~VirtualMachine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="25" column="11" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="49" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_virtual_machine_1a410e3360ed00ffdcb65c4815bb61f5e4" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::s4u::VirtualMachine::VirtualMachine</definition>
+        <argsstring>(const std::string &amp;name, Host *physical_host, int core_amount)</argsstring>
+        <name>VirtualMachine</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> *</type>
+          <declname>physical_host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>core_amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="28" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_virtual_machine_1ad4b0ddb8891cc40720fd7c35cf53f702" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::s4u::VirtualMachine::VirtualMachine</definition>
+        <argsstring>(const std::string &amp;name, Host *physical_host, int core_amount, size_t ramsize)</argsstring>
+        <name>VirtualMachine</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> *</type>
+          <declname>physical_host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>core_amount</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>ramsize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="29" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="31" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_virtual_machine_1a9a1346f6d079678d96dd10ca5d5f090b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1vm_1_1_virtual_machine_impl" kindref="compound">vm::VirtualMachineImpl</ref> *</type>
+        <definition>vm::VirtualMachineImpl* simgrid::s4u::VirtualMachine::get_impl</definition>
+        <argsstring>() const</argsstring>
+        <name>get_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="44" column="26" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_virtual_machine_1aa36f85f1ec94ac359eb3e91a60c15ade" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::VirtualMachine::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="45" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="59" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_virtual_machine_1ac219a411b9fa20801893d9f325a710c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::VirtualMachine::suspend</definition>
+        <argsstring>()</argsstring>
+        <name>suspend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="46" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="96" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_virtual_machine_1ad25f7e6a8f7777d5b59b4d8966615229" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::VirtualMachine::resume</definition>
+        <argsstring>()</argsstring>
+        <name>resume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="47" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="103" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_virtual_machine_1ac644193b97d5d919250ab386017b74d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::VirtualMachine::shutdown</definition>
+        <argsstring>()</argsstring>
+        <name>shutdown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="48" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="109" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_virtual_machine_1afd744e3d1bd7729d1d8b24a59a2635e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::VirtualMachine::destroy</definition>
+        <argsstring>() override</argsstring>
+        <name>destroy</name>
+        <reimplements refid="classsimgrid_1_1s4u_1_1_host_1a286cf4498a98bd240bd78e685127f7aa">destroy</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="49" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="116" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_virtual_machine_1a2c6ff34451edd6ccc54a079ac9abe749" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> *</type>
+        <definition>simgrid::s4u::Host * simgrid::s4u::VirtualMachine::get_pm</definition>
+        <argsstring>() const</argsstring>
+        <name>get_pm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="51" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="125" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_virtual_machine_1aea3f497c7b74cef31d0ab4778266ef87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::VirtualMachine::set_pm</definition>
+        <argsstring>(Host *pm)</argsstring>
+        <name>set_pm</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> *</type>
+          <declname>pm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="52" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_virtual_machine_1a028b41febfb0c1ead36a47f502b630f6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t simgrid::s4u::VirtualMachine::get_ramsize</definition>
+        <argsstring>() const</argsstring>
+        <name>get_ramsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="53" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_virtual_machine_1a68d0252bb0a4b9efa634742df7919147" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::VirtualMachine::set_ramsize</definition>
+        <argsstring>(size_t ramsize)</argsstring>
+        <name>set_ramsize</name>
+        <param>
+          <type>size_t</type>
+          <declname>ramsize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="54" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_virtual_machine_1a898249303cdde4a3fb05a7de2749a675" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::VirtualMachine::set_bound</definition>
+        <argsstring>(double bound)</argsstring>
+        <name>set_bound</name>
+        <param>
+          <type>double</type>
+          <declname>bound</declname>
+        </param>
+        <briefdescription>
+<para>Set a CPU bound for a given VM. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><orderedlist>
+<listitem><para>Note that in some cases MSG_task_set_bound() may not intuitively work for VMs.</para>
+</listitem></orderedlist>
+</para>
+<para>For example, On PM0, there are Task1 and VM0. On VM0, there is Task2. Now we bound 75% to Task1@PM0 and bound 25% to Task2@VM0. Then, Task1@PM0 gets 50%. Task2@VM0 gets 25%. This is NOT 75% for Task1@PM0 and 25% for Task2@VM0, respectively.</para>
+<para>This is because a VM has the dummy CPU action in the PM layer. Putting a task on the VM does not affect the bound of the dummy CPU action. The bound of the dummy CPU action is unlimited.</para>
+<para>There are some solutions for this problem. One option is to update the bound of the dummy CPU action automatically. It should be the sum of all tasks on the VM. But, this solution might be costly, because we have to scan all tasks on the VM in share_resource() or we have to trap both the start and end of task execution.</para>
+<para>The current solution is to use setBound(), which allows us to directly set the bound of the dummy CPU action.</para>
+<para><orderedlist>
+<listitem><para>Note that bound == 0 means no bound (i.e., unlimited). But, if a host has multiple CPU cores, the CPU share of a computation task (or a VM) never exceeds the capacity of a CPU core. </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="55" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_virtual_machine_1add3075ee9a8d71e7f0dd54e9775312ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_virtual_machine_1a57ee1860aa4e559b9099d9bbb38d4de7" kindref="member">VirtualMachine::state</ref></type>
+        <definition>VirtualMachine::state simgrid::s4u::VirtualMachine::get_state</definition>
+        <argsstring>()</argsstring>
+        <name>get_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="57" column="25" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/s4u_VirtualMachine.cpp" bodystart="135" bodyend="138"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A VM represents a virtual machine (or a container) that hosts actors. The total computing power that the contained actors can get is constrained to the virtual machine size. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>simgrid::xbt::Extendable&lt; Host &gt;</label>
+      </node>
+      <node id="1">
+        <label>simgrid::s4u::VirtualMachine</label>
+        <link refid="classsimgrid_1_1s4u_1_1_virtual_machine"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>simgrid::s4u::Host</label>
+        <link refid="classsimgrid_1_1s4u_1_1_host"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>simgrid::xbt::Extendable&lt; Host &gt;</label>
+      </node>
+      <node id="1">
+        <label>simgrid::s4u::VirtualMachine</label>
+        <link refid="classsimgrid_1_1s4u_1_1_virtual_machine"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>simgrid::s4u::Host</label>
+        <link refid="classsimgrid_1_1s4u_1_1_host"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" line="23" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/VirtualMachine.hpp" bodystart="23" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a4623239398debf7afab68f3943c8b6d7" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>add_disk</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a59a11b97b4c994957dc43c74cdce53b5" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>by_name</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1aac2aab076432e55c3457e9b1c9d8342c" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>by_name_or_null</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a11f0d94753e2c094d92b0b96f4384fb7" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>current</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1afd744e3d1bd7729d1d8b24a59a2635e2" prot="public" virt="virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>destroy</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a32d25d1d4f211590c8f97d71dc1a28a1" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>exec_async</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a5afeb5a797c324f633938f37644b95ed" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>execute</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1ae1d74fc65a6a213b2d70acb2413fa032" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>execute</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a98a8ee417c9057181323a75da8bd91b3" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_actor_count</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a4875359ef58816bd29b3dacf07f04da3" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_all_actors</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a79d1c7ad8eb1362c13291720117fb880" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_attached_storages</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1ab3e2c13042d23edd14ab382ad3c8b2c8" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_available_speed</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1acab01d42b674b968b79f21e7834175f8" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_cname</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1ab526bd7c7e179add334c3c719e34182b" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_core_count</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1aacd1d82f9af7e0dd7a6c95dbd4300264" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_disks</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1af72499b20211d8b0f79a7cc8549b95e7" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_englobing_zone</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1a9a1346f6d079678d96dd10ca5d5f090b" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_impl</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a14522ef4f318053342c3a395fe536b08" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_load</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a16975d22c83cd20749ceebf6cbef1021" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_mounted_storages</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1ae41cf8b5030183545152142388226c13" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_name</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a3a560508d3a287e440d1774b50bb88b9" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_netpoint</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1a2c6ff34451edd6ccc54a079ac9abe749" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_pm</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a3faf866ed7a5a708a736c5d8d2eb9726" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_properties</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a0b0a26c1866b200e63c775818f25c592" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_property</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a77e9e523dd5bb71ec24ee10ccb03a830" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_pstate</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a09a0ae735c07c1206a86a1c1eab11285" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_pstate_count</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a9fb7e31517ed9ea856dd25721cd1c2d1" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_pstate_speed</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1a028b41febfb0c1ead36a47f502b630f6" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_ramsize</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a2a538a19f5dbcb7b187bf41029ad2fc0" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_speed</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1add3075ee9a8d71e7f0dd54e9775312ab" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>get_state</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1aebdf2c2d8d03ec208326cd9d6847c68e" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>is_on</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1ad268215318281bbafe907fe6f8f814c5" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>on_creation</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a70439d109fec042ca5c7197e07683087" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>on_destruction</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1a80a8015b87d5d286af0e3febbb2daef8" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>on_migration_end</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1a6618d9c6553015ca39174a5cba639242" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>on_migration_start</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1a083e166526876d26df3d3857b197f596" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>on_resume</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1a1ab42038f01b33bcd494e27614aaa14d" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>on_shutdown</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a0219136a9d605cd6671c7c7578ef799a" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>on_speed_change</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1adf57542d22ff8d9777cdedaad326ea0c" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>on_start</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1af3ee2a83392e77386a3e432502664ad8" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>on_started</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1aa2063e4d21e70723a391b8e001dc7762" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>on_state_change</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1abf38d7e4251433bcdc0c18c6d270b124" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>on_suspend</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1a70c7765f800ea41ec3371e3eea74d22b" prot="private" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>pimpl_vm_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a4215e36f66d9b2332d81d73c5aae6c96" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>remove_disk</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1ad25f7e6a8f7777d5b59b4d8966615229" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>resume</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a88d64f322c059e6385d9abaee8d60a82" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>route_to</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1abf8a9df2a49f3f9641d3e3aa9e3cff50" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>route_to</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a492ddcf3813beb59a6f5ee8d61549931" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>send_to</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1a898249303cdde4a3fb05a7de2749a675" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>set_bound</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1aea3f497c7b74cef31d0ab4778266ef87" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>set_pm</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a060148a5023ef96473f52a7f6a024918" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>set_properties</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a0e292ce84997a0a765e042e1cfb9fad4" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>set_property</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a2aece4a9600c171d4e1a4266b0b5c877" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>set_pstate</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1a68d0252bb0a4b9efa634742df7919147" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>set_ramsize</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a1018e57167fce958897156afe0d22805" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>set_speed_profile</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a9c3673aee47a472d78f04848b1613807" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>set_state_profile</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1ac644193b97d5d919250ab386017b74d2" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>shutdown</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1aa36f85f1ec94ac359eb3e91a60c15ade" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>start</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1a57ee1860aa4e559b9099d9bbb38d4de7" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>state</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1ac219a411b9fa20801893d9f325a710c4" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>suspend</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a95a3efa4abe152248b2d5678b6f24fbe" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>turn_off</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_host_1a22408918d79156e96eed03dcfd3d381a" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>turn_on</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1a410e3360ed00ffdcb65c4815bb61f5e4" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>VirtualMachine</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1ad4b0ddb8891cc40720fd7c35cf53f702" prot="public" virt="non-virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>VirtualMachine</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_virtual_machine_1afb3acdf5c961b50053199cb5d5b4bd56" prot="private" virt="virtual"><scope>simgrid::s4u::VirtualMachine</scope><name>~VirtualMachine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

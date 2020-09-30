@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_6a74bcf2fcf62215754778ceca10f2c7" kind="dir">
+    <compoundname>simgrid</compoundname>
+    <innerdir refid="dir_10d7eaabf057d723f8e5433daaf68255">s4u</innerdir>
+    <innerfile refid="actor_8h">actor.h</innerfile>
+    <innerfile refid="barrier_8h">barrier.h</innerfile>
+    <innerfile refid="cond_8h">cond.h</innerfile>
+    <innerfile refid="engine_8h">engine.h</innerfile>
+    <innerfile refid="forward_8h">forward.h</innerfile>
+    <innerfile refid="host_8h">host.h</innerfile>
+    <innerfile refid="link_8h">link.h</innerfile>
+    <innerfile refid="mailbox_8h">mailbox.h</innerfile>
+    <innerfile refid="msg_8h">msg.h</innerfile>
+    <innerfile refid="mutex_8h">mutex.h</innerfile>
+    <innerfile refid="semaphore_8h">semaphore.h</innerfile>
+    <innerfile refid="vm_8h">vm.h</innerfile>
+    <innerfile refid="zone_8h">zone.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,736 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1s4u_1_1_comm" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::s4u::Comm</compoundname>
+    <basecompoundref refid="classsimgrid_1_1s4u_1_1_activity___t" prot="public" virt="non-virtual">simgrid::s4u::Activity_T&lt; Comm &gt;</basecompoundref>
+    <includes refid="_comm_8hpp" local="no">Comm.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_comm_1a5ee1428ed718e02b0e91bb7e42ae826c" prot="private" static="no" mutable="no">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_mailbox" kindref="compound">Mailbox</ref> *</type>
+        <definition>Mailbox* simgrid::s4u::Comm::mailbox_</definition>
+        <argsstring></argsstring>
+        <name>mailbox_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="22" column="11" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_comm_1a283cf70d2540a951e40c0d14adbb58c7" prot="private" static="no" mutable="no">
+        <type>kernel::actor::ActorImpl *</type>
+        <definition>kernel::actor::ActorImpl* simgrid::s4u::Comm::sender_</definition>
+        <argsstring></argsstring>
+        <name>sender_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="23" column="28" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_comm_1aaabb3702e34e5538a7ff24b8328c79c1" prot="private" static="no" mutable="no">
+        <type>kernel::actor::ActorImpl *</type>
+        <definition>kernel::actor::ActorImpl* simgrid::s4u::Comm::receiver_</definition>
+        <argsstring></argsstring>
+        <name>receiver_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="24" column="28" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_comm_1a1b64dced187153bb2ff996af36caf156" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::s4u::Comm::rate_</definition>
+        <argsstring></argsstring>
+        <name>rate_</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="25" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_comm_1a521d6de22761caa13f58d6242ca77c88" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* simgrid::s4u::Comm::dst_buff_</definition>
+        <argsstring></argsstring>
+        <name>dst_buff_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="26" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_comm_1a38d3737d4dbcaf91e47e88db5aca1aa4" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t simgrid::s4u::Comm::dst_buff_size_</definition>
+        <argsstring></argsstring>
+        <name>dst_buff_size_</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="27" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_comm_1ab8a29a02d255d3843c7da7234767f6c2" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* simgrid::s4u::Comm::src_buff_</definition>
+        <argsstring></argsstring>
+        <name>src_buff_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="28" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_comm_1a37d2d42046a5c76145ddb402ddfacde5" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t simgrid::s4u::Comm::src_buff_size_</definition>
+        <argsstring></argsstring>
+        <name>src_buff_size_</name>
+        <initializer>= sizeof(void*)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="29" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_comm_1ac245983809998880e0190cce64050308" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string simgrid::s4u::Comm::tracing_category_</definition>
+        <argsstring></argsstring>
+        <name>tracing_category_</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="30" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_comm_1a9c06768a24bdbedc85512678ea02dcf1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool simgrid::s4u::Comm::detached_</definition>
+        <argsstring></argsstring>
+        <name>detached_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="32" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_comm_1a7b18117d2c602db9b04e061c328f1258" prot="private" static="no" mutable="no">
+        <type>bool(*</type>
+        <definition>bool(* simgrid::s4u::Comm::match_fun_) (void *, void *, kernel::activity::CommImpl *)</definition>
+        <argsstring>)(void *, void *, kernel::activity::CommImpl *)</argsstring>
+        <name>match_fun_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="33" column="3" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_comm_1aa2441c0d2e64b10782ef0c4139f0dab9" prot="private" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* simgrid::s4u::Comm::clean_fun_) (void *)</definition>
+        <argsstring>)(void *)</argsstring>
+        <name>clean_fun_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="34" column="3" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_comm_1ae95393ff01b4ab4bcef3c443dd8d616f" prot="private" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* simgrid::s4u::Comm::copy_data_function_) (kernel::activity::CommImpl *, void *, size_t)</definition>
+        <argsstring>)(kernel::activity::CommImpl *, void *, size_t)</argsstring>
+        <name>copy_data_function_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="35" column="3" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_comm_1a9c8aed86a3bc56b585ffe15c37803038" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">Actor</ref> const  &amp;)&gt;</type>
+        <definition>xbt::signal&lt;void(Actor const&amp;)&gt; simgrid::s4u::Comm::on_sender_start</definition>
+        <argsstring></argsstring>
+        <name>on_sender_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="46" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_comm_1a22216a1bf49f350f1be4616471bbf4e5" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">Actor</ref> const  &amp;)&gt;</type>
+        <definition>xbt::signal&lt;void(Actor const&amp;)&gt; simgrid::s4u::Comm::on_receiver_start</definition>
+        <argsstring></argsstring>
+        <name>on_receiver_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="47" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_comm_1a5b14c272ad60ae3bd9629b5f1e821ec9" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">Actor</ref> const  &amp;)&gt;</type>
+        <definition>xbt::signal&lt;void(Actor const&amp;)&gt; simgrid::s4u::Comm::on_completion</definition>
+        <argsstring></argsstring>
+        <name>on_completion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="48" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1a85c06ef819745a5966b76417c04ebd31" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::s4u::Comm::Comm</definition>
+        <argsstring>()=default</argsstring>
+        <name>Comm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="37" column="3"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1a9f2d718125e41b59cf0b79c63fe4d65d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual simgrid::s4u::Comm::~Comm</definition>
+        <argsstring>()</argsstring>
+        <name>~Comm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="44" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1aa59d895d70f81d1c382e4d1db635b935" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_comm" kindref="compound">Comm</ref> *</type>
+        <definition>Comm* simgrid::s4u::Comm::start</definition>
+        <argsstring>() override</argsstring>
+        <name>start</name>
+        <reimplements refid="classsimgrid_1_1s4u_1_1_activity_1aec81cccb77612d00990e287640609640">start</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Starts a previously created activity.</para>
+<para>This function is optional: you can call wait() even if you didn&apos;t call start() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="61" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1a120b2b8082434d218722d57cef4b71d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_comm" kindref="compound">Comm</ref> *</type>
+        <definition>Comm* simgrid::s4u::Comm::wait</definition>
+        <argsstring>() override</argsstring>
+        <name>wait</name>
+        <reimplements refid="classsimgrid_1_1s4u_1_1_activity_1a58b0dc13c2ee8c68376f2a2a714fc3bf">wait</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blocks until the activity is terminated </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="62" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1a2e0575b0ef0005dabce80429c37e209c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_comm" kindref="compound">Comm</ref> *</type>
+        <definition>Comm* simgrid::s4u::Comm::wait_for</definition>
+        <argsstring>(double timeout) override</argsstring>
+        <name>wait_for</name>
+        <reimplements refid="classsimgrid_1_1s4u_1_1_activity_1a86c386ac35303cd1f3b90d0202c83e6d">wait_for</reimplements>
+        <param>
+          <type>double</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blocks until the activity is terminated, or until the timeout is elapsed Raises: timeout exception. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="63" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1afce13db740045bda7c8b6e42cc467787" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_comm" kindref="compound">Comm</ref> *</type>
+        <definition>Comm* simgrid::s4u::Comm::cancel</definition>
+        <argsstring>() override</argsstring>
+        <name>cancel</name>
+        <reimplements refid="classsimgrid_1_1s4u_1_1_activity_1ac470ea7781f009a8d085aa16fa373d44">cancel</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cancel that activity </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="64" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1af61561c96ed70d7684263aaf1e68b7f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool simgrid::s4u::Comm::test</definition>
+        <argsstring>() override</argsstring>
+        <name>test</name>
+        <reimplements refid="classsimgrid_1_1s4u_1_1_activity_1a2e5de7a6fa5aac5a6cb68eae64ea1822">test</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tests whether the given activity is terminated yet. This is a pure function. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="65" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1a97ca0081ea89d820f62c7d9e940b02af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_comm" kindref="compound">Comm</ref> *</type>
+        <definition>Comm* simgrid::s4u::Comm::detach</definition>
+        <argsstring>()</argsstring>
+        <name>detach</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start the comm, and ignore its result. It can be completely forgotten after that. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="68" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1af0569ba2e7bfb1b77a584bd7263fd086" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_comm" kindref="compound">Comm</ref> *</type>
+        <definition>Comm* simgrid::s4u::Comm::detach</definition>
+        <argsstring>(void(*clean_function)(void *))</argsstring>
+        <name>detach</name>
+        <param>
+          <type>void(*)(void *)</type>
+          <declname>clean_function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start the comm, and ignore its result. It can be completely forgotten after that. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="70" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" bodystart="70" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1a4bb7951d8a0d3fc0497cc81df3bc3aec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CommPtr</type>
+        <definition>CommPtr simgrid::s4u::Comm::set_rate</definition>
+        <argsstring>(double rate)</argsstring>
+        <name>set_rate</name>
+        <param>
+          <type>double</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the maximal communication rate (in byte/sec). Must be done before start </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="77" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1a2b44cbefed4eef75e6e5e36e18a9ea37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CommPtr</type>
+        <definition>CommPtr simgrid::s4u::Comm::set_src_data</definition>
+        <argsstring>(void *buff)</argsstring>
+        <name>set_src_data</name>
+        <param>
+          <type>void *</type>
+          <declname>buff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specify the data to send.</para>
+<para>This is way will get actually copied over to the receiver. That&apos;s completely unrelated from the simulated size (given with <ref refid="classsimgrid_1_1s4u_1_1_activity_1aa0718f864e7de86ac46e4a73a76653af" kindref="member">Activity::set_remaining()</ref>): you can send a short buffer in your simulator, that represents a very large message in the simulated world, or the opposite. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="86" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1ad7f52fef8131da52b22745dd25366184" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CommPtr</type>
+        <definition>CommPtr simgrid::s4u::Comm::set_src_data_size</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>set_src_data_size</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specify the size of the data to send. Not to be mixed with <ref refid="classsimgrid_1_1s4u_1_1_activity_1aa0718f864e7de86ac46e4a73a76653af" kindref="member">Activity::set_remaining()</ref></para>
+<para>That&apos;s the size of the data to actually copy in the simulator (ie, the data passed with Activity::set_src_data()). That&apos;s completely unrelated from the simulated size (given with <ref refid="classsimgrid_1_1s4u_1_1_activity_1aa0718f864e7de86ac46e4a73a76653af" kindref="member">Activity::set_remaining()</ref>): you can send a short buffer in your simulator, that represents a very large message in the simulated world, or the opposite. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="94" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1aa953f01471c7dbb065991207dd509907" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CommPtr</type>
+        <definition>CommPtr simgrid::s4u::Comm::set_src_data</definition>
+        <argsstring>(void *buff, size_t size)</argsstring>
+        <name>set_src_data</name>
+        <param>
+          <type>void *</type>
+          <declname>buff</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specify the data to send and its size. Don&apos;t mix the size with <ref refid="classsimgrid_1_1s4u_1_1_activity_1aa0718f864e7de86ac46e4a73a76653af" kindref="member">Activity::set_remaining()</ref></para>
+<para>This is way will get actually copied over to the receiver. That&apos;s completely unrelated from the simulated size (given with <ref refid="classsimgrid_1_1s4u_1_1_activity_1aa0718f864e7de86ac46e4a73a76653af" kindref="member">Activity::set_remaining()</ref>): you can send a short buffer in your simulator, that represents a very large message in the simulated world, or the opposite. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="102" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1ab9c2d1e06a393d8e49c1a01461d8e2ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CommPtr</type>
+        <definition>CommPtr simgrid::s4u::Comm::set_dst_data</definition>
+        <argsstring>(void **buff)</argsstring>
+        <name>set_dst_data</name>
+        <param>
+          <type>void **</type>
+          <declname>buff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specify where to receive the data.</para>
+<para>That&apos;s a buffer where the sent data will be copied </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="107" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1acc1bf379c8e21af7621fa02745bcc8ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CommPtr</type>
+        <definition>CommPtr simgrid::s4u::Comm::set_dst_data</definition>
+        <argsstring>(void **buff, size_t size)</argsstring>
+        <name>set_dst_data</name>
+        <param>
+          <type>void **</type>
+          <declname>buff</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specify the buffer in which the data should be received</para>
+<para>That&apos;s a buffer where the sent data will be copied <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="111" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1afc3e138bfde6ebb64f9c74b0c1b319c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CommPtr</type>
+        <definition>CommPtr simgrid::s4u::Comm::set_tracing_category</definition>
+        <argsstring>(const std::string &amp;category)</argsstring>
+        <name>set_tracing_category</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>category</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="113" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1a5726242ba20838a96abfcf84e42254de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_mailbox" kindref="compound">Mailbox</ref> *</type>
+        <definition>Mailbox* simgrid::s4u::Comm::get_mailbox</definition>
+        <argsstring>()</argsstring>
+        <name>get_mailbox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve the mailbox on which this comm acts </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="116" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1ae5e02cf5037314ebf5d577e750488780" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t simgrid::s4u::Comm::get_dst_data_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_dst_data_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve the size of the received data. Not to be mixed with <ref refid="classsimgrid_1_1s4u_1_1_activity_1aa0718f864e7de86ac46e4a73a76653af" kindref="member">Activity::set_remaining()</ref> <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="118" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1aaa9a412b0f190eeb95e6928254d1d9aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">Actor</ref> *</type>
+        <definition>Actor* simgrid::s4u::Comm::get_sender</definition>
+        <argsstring>()</argsstring>
+        <name>get_sender</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="120" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1a945351d78b73fef7cf686bf39a238b49" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int simgrid::s4u::Comm::wait_any</definition>
+        <argsstring>(const std::vector&lt; CommPtr &gt; *comms)</argsstring>
+        <name>wait_any</name>
+        <param>
+          <type>const std::vector&lt; CommPtr &gt; *</type>
+          <declname>comms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>take a vector s4u::CommPtr and return when one of them is finished. The return value is the rank of the first finished CommPtr. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="52" column="14" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1ac6d60511984a02b1dc4bfbc8de86f352" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int simgrid::s4u::Comm::wait_any_for</definition>
+        <argsstring>(const std::vector&lt; CommPtr &gt; *comms_in, double timeout)</argsstring>
+        <name>wait_any_for</name>
+        <param>
+          <type>const std::vector&lt; CommPtr &gt; *</type>
+          <declname>comms_in</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as wait_any, but with a timeout. If the timeout occurs, parameter last is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="54" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1a50256e5d3dec2735c2bd4a3ef37369ef" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void simgrid::s4u::Comm::wait_all</definition>
+        <argsstring>(const std::vector&lt; CommPtr &gt; *comms)</argsstring>
+        <name>wait_all</name>
+        <param>
+          <type>const std::vector&lt; CommPtr &gt; *</type>
+          <declname>comms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>take a vector s4u::CommPtr and return when all of them is finished. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="57" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_comm_1a38b5b57d4161714f856e40d4d91acfe7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int simgrid::s4u::Comm::test_any</definition>
+        <argsstring>(const std::vector&lt; CommPtr &gt; *comms)</argsstring>
+        <name>test_any</name>
+        <param>
+          <type>const std::vector&lt; CommPtr &gt; *</type>
+          <declname>comms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>take a vector s4u::CommPtr and return the rank of the first finished one (or -1 if none is done). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="59" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Communication async. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Represents all asynchronous communications, that you can test or wait onto. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>simgrid::s4u::Comm</label>
+        <link refid="classsimgrid_1_1s4u_1_1_comm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>simgrid::s4u::Activity</label>
+        <link refid="classsimgrid_1_1s4u_1_1_activity"/>
+      </node>
+      <node id="2">
+        <label>simgrid::s4u::Activity_T&lt; Comm &gt;</label>
+        <link refid="classsimgrid_1_1s4u_1_1_activity___t"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>simgrid::s4u::Comm</label>
+        <link refid="classsimgrid_1_1s4u_1_1_comm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>simgrid::s4u::Activity</label>
+        <link refid="classsimgrid_1_1s4u_1_1_activity"/>
+      </node>
+      <node id="2">
+        <label>simgrid::s4u::Activity_T&lt; Comm &gt;</label>
+        <link refid="classsimgrid_1_1s4u_1_1_activity___t"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" line="21" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Comm.hpp" bodystart="21" bodyend="121"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1ab74d690b9177c75204199b671e84baee" prot="protected" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>Activity</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity___t_1aae31b96e797bdad3047c7228c598cec0" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>add_successor</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1afce13db740045bda7c8b6e42cc467787" prot="public" virt="virtual"><scope>simgrid::s4u::Comm</scope><name>cancel</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1aa2441c0d2e64b10782ef0c4139f0dab9" prot="private" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>clean_fun_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a85c06ef819745a5966b76417c04ebd31" prot="private" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>Comm</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1ae95393ff01b4ab4bcef3c443dd8d616f" prot="private" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>copy_data_function_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a97ca0081ea89d820f62c7d9e940b02af" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>detach</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1af0569ba2e7bfb1b77a584bd7263fd086" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>detach</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a9c06768a24bdbedc85512678ea02dcf1" prot="private" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>detached_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a521d6de22761caa13f58d6242ca77c88" prot="private" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>dst_buff_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a38d3737d4dbcaf91e47e88db5aca1aa4" prot="private" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>dst_buff_size_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity___t_1ad4c017392a1f1c12d370f9901034edee" prot="public" virt="virtual"><scope>simgrid::s4u::Comm</scope><name>get_cname</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1ae5e02cf5037314ebf5d577e750488780" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>get_dst_data_size</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a84a59b0755885ca1872d159ac6136dbf" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>get_impl</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a5726242ba20838a96abfcf84e42254de" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>get_mailbox</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity___t_1a93f2ec165abf66d48fee44ac2fb33db3" prot="public" virt="virtual"><scope>simgrid::s4u::Comm</scope><name>get_name</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1ac2d222f4995e7882b809a1cd201b916b" prot="public" virt="virtual"><scope>simgrid::s4u::Comm</scope><name>get_remaining</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1aaa9a412b0f190eeb95e6928254d1d9aa" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>get_sender</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a598a46faf0103871ad4f7f971cf3717e" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>get_state</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity___t_1a224236130c457487bb8e36c32f5f2cb3" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>get_tracing_category</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity___t_1a0bacceb6565d0291b656c174a70f6e14" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>get_user_data</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a5ee1428ed718e02b0e91bb7e42ae826c" prot="private" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>mailbox_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a7b18117d2c602db9b04e061c328f1258" prot="private" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>match_fun_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a5b14c272ad60ae3bd9629b5f1e821ec9" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>on_completion</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a22216a1bf49f350f1be4616471bbf4e5" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>on_receiver_start</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a9c8aed86a3bc56b585ffe15c37803038" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>on_sender_start</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a1b64dced187153bb2ff996af36caf156" prot="private" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>rate_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1aaabb3702e34e5538a7ff24b8328c79c1" prot="private" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>receiver_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1aac8ef492e90f999367cfa74d1d19e8c6" prot="protected" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>release_dependencies</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a283cf70d2540a951e40c0d14adbb58c7" prot="private" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>sender_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1ab9c2d1e06a393d8e49c1a01461d8e2ec" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>set_dst_data</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1acc1bf379c8e21af7621fa02745bcc8ce" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>set_dst_data</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity___t_1a1c00a54c348209990ad45f5ec25c65f1" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>set_name</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a4bb7951d8a0d3fc0497cc81df3bc3aec" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>set_rate</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1aa0718f864e7de86ac46e4a73a76653af" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>set_remaining</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a2b44cbefed4eef75e6e5e36e18a9ea37" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>set_src_data</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1aa953f01471c7dbb065991207dd509907" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>set_src_data</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1ad7f52fef8131da52b22745dd25366184" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>set_src_data_size</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a6e28ee9ccc94500a50d93db735cf5b88" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>set_state</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1afc3e138bfde6ebb64f9c74b0c1b319c3" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>set_tracing_category</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity___t_1add5d2eed1bc2834d94bea0a6022d9395" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>set_user_data</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1ab8a29a02d255d3843c7da7234767f6c2" prot="private" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>src_buff_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a37d2d42046a5c76145ddb402ddfacde5" prot="private" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>src_buff_size_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1aa59d895d70f81d1c382e4d1db635b935" prot="public" virt="virtual"><scope>simgrid::s4u::Comm</scope><name>start</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a963055035b495361760860374bd669b5" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>State</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1af61561c96ed70d7684263aaf1e68b7f9" prot="public" virt="virtual"><scope>simgrid::s4u::Comm</scope><name>test</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a38b5b57d4161714f856e40d4d91acfe7" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>test_any</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1ac245983809998880e0190cce64050308" prot="private" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>tracing_category_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a7ab9c2b429bf203f18a4228079e804b3" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>vetoable_start</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a120b2b8082434d218722d57cef4b71d1" prot="public" virt="virtual"><scope>simgrid::s4u::Comm</scope><name>wait</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a50256e5d3dec2735c2bd4a3ef37369ef" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>wait_all</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a945351d78b73fef7cf686bf39a238b49" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>wait_any</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1ac6d60511984a02b1dc4bfbc8de86f352" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>wait_any_for</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a2e0575b0ef0005dabce80429c37e209c" prot="public" virt="virtual"><scope>simgrid::s4u::Comm</scope><name>wait_for</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a215a4305bef1bc337f62440abe3f7e38" prot="public" virt="non-virtual"><scope>simgrid::s4u::Comm</scope><name>wait_until</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1abff2c86ef9ca12addc45c5b2c1a76fd0" prot="protected" virt="virtual"><scope>simgrid::s4u::Comm</scope><name>~Activity</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_comm_1a9f2d718125e41b59cf0b79c63fe4d65d" prot="public" virt="virtual"><scope>simgrid::s4u::Comm</scope><name>~Comm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

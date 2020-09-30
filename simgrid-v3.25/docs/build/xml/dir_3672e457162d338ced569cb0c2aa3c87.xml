@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_3672e457162d338ced569cb0c2aa3c87" kind="dir">
+    <compoundname>file_system</compoundname>
+    <innerfile refid="s4u___file_system_8cpp">s4u_FileSystem.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/file_system/"/>
+  </compounddef>
+</doxygen>

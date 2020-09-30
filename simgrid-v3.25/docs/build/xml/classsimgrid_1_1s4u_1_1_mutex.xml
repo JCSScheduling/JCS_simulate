@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1s4u_1_1_mutex" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::s4u::Mutex</compoundname>
+    <includes refid="_mutex_8hpp" local="no">Mutex.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_mutex_1a7a8ae5a41b8fa8896b242931bc12885c" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend simgrid::s4u::Mutex::ConditionVariable</definition>
+        <argsstring></argsstring>
+        <name>ConditionVariable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mutex.hpp" line="32" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mutex.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_mutex_1a38b1fe368441664767f6c1c718401672" prot="private" static="no" mutable="no">
+        <type>kernel::activity::MutexImpl *const</type>
+        <definition>kernel::activity::MutexImpl* const simgrid::s4u::Mutex::pimpl_</definition>
+        <argsstring></argsstring>
+        <name>pimpl_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mutex.hpp" line="35" column="37" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mutex.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classsimgrid_1_1s4u_1_1_mutex_1ac9b891ff3529f4074091cf40f9c93643" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend void</type>
+        <definition>void intrusive_ptr_add_ref</definition>
+        <argsstring>(const Mutex *mutex)</argsstring>
+        <name>intrusive_ptr_add_ref</name>
+        <param>
+          <type>const <ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">Mutex</ref> *</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mutex.hpp" line="37" column="16"/>
+      </memberdef>
+      <memberdef kind="friend" id="classsimgrid_1_1s4u_1_1_mutex_1a24f7a42e4d012090463d7f7d823c03c0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend void</type>
+        <definition>void intrusive_ptr_release</definition>
+        <argsstring>(const Mutex *mutex)</argsstring>
+        <name>intrusive_ptr_release</name>
+        <param>
+          <type>const <ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">Mutex</ref> *</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mutex.hpp" line="38" column="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mutex_1a7007725a192e2fe8f15b459edecca101" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::s4u::Mutex::Mutex</definition>
+        <argsstring>(kernel::activity::MutexImpl *mutex)</argsstring>
+        <name>Mutex</name>
+        <param>
+          <type>kernel::activity::MutexImpl *</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mutex.hpp" line="41" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mutex.hpp" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mutex_1aa2c4c4478c9fb9086eb747df51021541" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::s4u::Mutex::~Mutex</definition>
+        <argsstring>()</argsstring>
+        <name>~Mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mutex.hpp" line="42" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mutex_1ac127c30030c3d553bfc61d899f1c0b3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Mutex::lock</definition>
+        <argsstring>()</argsstring>
+        <name>lock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mutex.hpp" line="50" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mutex_1afce301032e8f906310f6f57878b2303b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Mutex::unlock</definition>
+        <argsstring>()</argsstring>
+        <name>unlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mutex.hpp" line="51" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mutex_1ab254639340a82297a60e32fed34ba607" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool simgrid::s4u::Mutex::try_lock</definition>
+        <argsstring>()</argsstring>
+        <name>try_lock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mutex.hpp" line="52" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_mutex_1a322d9c3d83050916c898dfa99ddcdf4f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MutexPtr</type>
+        <definition>static MutexPtr simgrid::s4u::Mutex::create</definition>
+        <argsstring>()</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs a new mutex </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mutex.hpp" line="49" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A classical mutex, but blocking in the simulation world. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>* It is strictly impossible to use a real mutex, such as
+* `std::mutex &lt;http://en.cppreference.com/w/cpp/thread/mutex&gt;`_
+* or `pthread_mutex_t &lt;http://pubs.opengroup.org/onlinepubs/007908775/xsh/pthread_mutex_lock.html&gt;`_,
+* because it would block the whole simulation.
+* Instead, you should use the present class, that is a drop-in replacement of these mechanisms.
+*
+* An example is available in Section :ref:`s4u_ex_IPC`.
+*
+* As for any S4U object, you can use the :ref:`RAII idiom &lt;s4u_raii&gt;` for memory management of Mutexes.
+* Use :cpp:func:`create() &lt;simgrid::s4u::Mutex::create()&gt;` to get a :cpp:type:`simgrid::s4u::MutexPtr` to a newly
+* created mutex, and only manipulate :cpp:type:`simgrid::s4u::MutexPtr`.
+* </verbatim> </para>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mutex.hpp" line="31" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Mutex.hpp" bodystart="31" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1s4u_1_1_mutex_1a7a8ae5a41b8fa8896b242931bc12885c" prot="private" virt="non-virtual"><scope>simgrid::s4u::Mutex</scope><name>ConditionVariable</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mutex_1a322d9c3d83050916c898dfa99ddcdf4f" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mutex</scope><name>create</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mutex_1ac9b891ff3529f4074091cf40f9c93643" prot="private" virt="non-virtual"><scope>simgrid::s4u::Mutex</scope><name>intrusive_ptr_add_ref</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mutex_1a24f7a42e4d012090463d7f7d823c03c0" prot="private" virt="non-virtual"><scope>simgrid::s4u::Mutex</scope><name>intrusive_ptr_release</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mutex_1ac127c30030c3d553bfc61d899f1c0b3b" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mutex</scope><name>lock</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mutex_1a7007725a192e2fe8f15b459edecca101" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mutex</scope><name>Mutex</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mutex_1a38b1fe368441664767f6c1c718401672" prot="private" virt="non-virtual"><scope>simgrid::s4u::Mutex</scope><name>pimpl_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mutex_1ab254639340a82297a60e32fed34ba607" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mutex</scope><name>try_lock</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mutex_1afce301032e8f906310f6f57878b2303b" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mutex</scope><name>unlock</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_mutex_1aa2c4c4478c9fb9086eb747df51021541" prot="public" virt="non-virtual"><scope>simgrid::s4u::Mutex</scope><name>~Mutex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

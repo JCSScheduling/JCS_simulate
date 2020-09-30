@@ -1,0 +1,607 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="msg__comm_8cpp" kind="file" language="C++">
+    <compoundname>msg_comm.cpp</compoundname>
+    <includes local="no">cmath</includes>
+    <includes local="yes">simgrid/Exception.hpp</includes>
+    <includes refid="_actor_8hpp" local="yes">simgrid/s4u/Actor.hpp</includes>
+    <includes refid="_comm_8hpp" local="yes">simgrid/s4u/Comm.hpp</includes>
+    <includes refid="_exec_8hpp" local="yes">simgrid/s4u/Exec.hpp</includes>
+    <includes refid="_mailbox_8hpp" local="yes">simgrid/s4u/Mailbox.hpp</includes>
+    <includes local="yes">src/instr/instr_private.hpp</includes>
+    <includes refid="msg__private_8hpp" local="yes">src/msg/msg_private.hpp</includes>
+    <incdepgraph>
+      <node id="19">
+        <label>atomic</label>
+      </node>
+      <node id="38">
+        <label>simgrid/mutex.h</label>
+        <link refid="mutex_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>xbt/dict.h</label>
+      </node>
+      <node id="42">
+        <label>simgrid/version.h</label>
+      </node>
+      <node id="13">
+        <label>functional</label>
+      </node>
+      <node id="7">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="46">
+        <label>simgrid/simix.h</label>
+      </node>
+      <node id="10">
+        <label>xbt/functional.hpp</label>
+      </node>
+      <node id="32">
+        <label>simgrid/barrier.h</label>
+        <link refid="barrier_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="1">
+        <label>msg_comm.cpp</label>
+        <link refid="msg__comm_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>simgrid/zone.h</label>
+        <link refid="zone_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cmath</label>
+      </node>
+      <node id="45">
+        <label>xbt.h</label>
+      </node>
+      <node id="39">
+        <label>simgrid/plugins/live_migration.h</label>
+      </node>
+      <node id="21">
+        <label>string</label>
+      </node>
+      <node id="47">
+        <label>src/kernel/activity/CommImpl.hpp</label>
+      </node>
+      <node id="3">
+        <label>simgrid/Exception.hpp</label>
+      </node>
+      <node id="29">
+        <label>simgrid/msg.h</label>
+        <link refid="msg_8h_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>map</label>
+      </node>
+      <node id="37">
+        <label>simgrid/mailbox.h</label>
+        <link refid="mailbox_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>simgrid/chrono.hpp</label>
+      </node>
+      <node id="5">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>xbt/string.hpp</label>
+      </node>
+      <node id="36">
+        <label>simgrid/instr.h</label>
+      </node>
+      <node id="25">
+        <label>simgrid/s4u/Mailbox.hpp</label>
+        <link refid="_mailbox_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>xbt/signal.hpp</label>
+      </node>
+      <node id="16">
+        <label>simgrid/s4u/Comm.hpp</label>
+        <link refid="_comm_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>vector</label>
+      </node>
+      <node id="28">
+        <label>src/msg/msg_private.hpp</label>
+        <link refid="msg__private_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>simgrid/semaphore.h</label>
+        <link refid="semaphore_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>simgrid/s4u/Exec.hpp</label>
+        <link refid="_exec_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>simgrid/engine.h</label>
+        <link refid="engine_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>simgrid/host.h</label>
+        <link refid="host_8h_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>simgrid/s4u/Activity.hpp</label>
+        <link refid="_activity_8hpp_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>unordered_map</label>
+      </node>
+      <node id="9">
+        <label>xbt/Extendable.hpp</label>
+      </node>
+      <node id="26">
+        <label>smpi/forward.hpp</label>
+      </node>
+      <node id="4">
+        <label>simgrid/s4u/Actor.hpp</label>
+        <link refid="_actor_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>simgrid/modelchecker.h</label>
+      </node>
+      <node id="24">
+        <label>xbt/ex.h</label>
+      </node>
+      <node id="35">
+        <label>xbt/dynar.h</label>
+      </node>
+      <node id="20">
+        <label>set</label>
+      </node>
+      <node id="30">
+        <label>simgrid/actor.h</label>
+        <link refid="actor_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>src/instr/instr_private.hpp</label>
+      </node>
+      <node id="18">
+        <label>xbt/asserts.h</label>
+      </node>
+      <node id="43">
+        <label>simgrid/vm.h</label>
+        <link refid="vm_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>simgrid/storage.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacesimgrid">simgrid</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1msg">simgrid::msg</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="msg__comm_8cpp_1afd22dad001b95804f5e93aa146c84fd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MSG_comm_test</definition>
+        <argsstring>(msg_comm_t comm)</argsstring>
+        <name>MSG_comm_test</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_comm" kindref="compound">msg_comm_t</ref></type>
+          <declname>comm</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether a communication is done, and if yes, finalizes it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>comm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the communication to test </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&apos;true&apos; if the communication is finished (but it may have failed, use MSG_comm_get_status() to know its status) or &apos;false&apos; if the communication is not finished yet If the status is &apos;false&apos;, don&apos;t forget to use MSG_process_sleep() after the test. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_comm.cpp" line="74" column="5" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_comm.cpp" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__comm_8cpp_1aafaee80367658116437f9b43f00f9005" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MSG_comm_testany</definition>
+        <argsstring>(const_xbt_dynar_t comms)</argsstring>
+        <name>MSG_comm_testany</name>
+        <param>
+          <type>const_xbt_dynar_t</type>
+          <declname>comms</declname>
+        </param>
+        <briefdescription>
+<para>This function checks if a communication is finished. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>comms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a vector of communications </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the position of the finished communication if any (but it may have failed, use MSG_comm_get_status() to know its status), or -1 if none is finished </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_comm.cpp" line="85" column="5" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_comm.cpp" bodystart="85" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__comm_8cpp_1a12e546615e508872ca59b81fd586f431" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MSG_comm_destroy</definition>
+        <argsstring>(const_msg_comm_t comm)</argsstring>
+        <name>MSG_comm_destroy</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_comm" kindref="compound">const_msg_comm_t</ref></type>
+          <declname>comm</declname>
+        </param>
+        <briefdescription>
+<para>Destroys the provided communication. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_comm.cpp" line="127" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_comm.cpp" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__comm_8cpp_1a2ae956f1e7a1014652d85b5f8db42aa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>msg_error_t</type>
+        <definition>msg_error_t MSG_comm_wait</definition>
+        <argsstring>(msg_comm_t comm, double timeout)</argsstring>
+        <name>MSG_comm_wait</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_comm" kindref="compound">msg_comm_t</ref></type>
+          <declname>comm</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+<para>Wait for the completion of a communication. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It takes two parameters. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>comm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the communication to wait. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Wait until the communication terminates or the timeout occurs. You can provide a -1 timeout to obtain an infinite timeout. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>msg_error_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_comm.cpp" line="140" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_comm.cpp" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__comm_8cpp_1a01ce9097c976b96664e6785f6ab5d4b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MSG_comm_waitall</definition>
+        <argsstring>(msg_comm_t *comm, int nb_elem, double timeout)</argsstring>
+        <name>MSG_comm_waitall</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_comm" kindref="compound">msg_comm_t</ref> *</type>
+          <declname>comm</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_elem</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+<para>This function is called by a sender and permits waiting for each communication. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>comm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a vector of communication </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_elem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the size of the comm vector </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>for each call of MSG_comm_wait </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_comm.cpp" line="151" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_comm.cpp" bodystart="151" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__comm_8cpp_1a73c220aa95cded08fbfdc86bc9363d30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MSG_comm_waitany</definition>
+        <argsstring>(const_xbt_dynar_t comms)</argsstring>
+        <name>MSG_comm_waitany</name>
+        <param>
+          <type>const_xbt_dynar_t</type>
+          <declname>comms</declname>
+        </param>
+        <briefdescription>
+<para>This function waits for the first communication finished in a list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>comms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a vector of communications </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the position of the first finished communication (but it may have failed, use MSG_comm_get_status() to know its status) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_comm.cpp" line="162" column="5" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_comm.cpp" bodystart="162" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__comm_8cpp_1a21906fef43ad47c151c45d9d1be078c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>msg_error_t</type>
+        <definition>msg_error_t MSG_comm_get_status</definition>
+        <argsstring>(const_msg_comm_t comm)</argsstring>
+        <name>MSG_comm_get_status</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_comm" kindref="compound">const_msg_comm_t</ref></type>
+          <declname>comm</declname>
+        </param>
+        <briefdescription>
+<para>Returns the error (if any) that occurred during a finished communication. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>comm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a finished communication </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the status of the communication, or MSG_OK if no error occurred during the communication </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_comm.cpp" line="208" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_comm.cpp" bodystart="208" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="msg__comm_8cpp_1addb6587539bbb0d575e26180c9f779ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1msg_1_1_task" kindref="compound">msg_task_t</ref></type>
+        <definition>msg_task_t MSG_comm_get_task</definition>
+        <argsstring>(const_msg_comm_t comm)</argsstring>
+        <name>MSG_comm_get_task</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1msg_1_1_comm" kindref="compound">const_msg_comm_t</ref></type>
+          <declname>comm</declname>
+        </param>
+        <briefdescription>
+<para>Get a task (msg_task_t) from a communication. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>comm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the communication where to get the task </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the task from the communication </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_comm.cpp" line="218" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_comm.cpp" bodystart="218" bodyend="223"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_comm.cpp"/>
+  </compounddef>
+</doxygen>

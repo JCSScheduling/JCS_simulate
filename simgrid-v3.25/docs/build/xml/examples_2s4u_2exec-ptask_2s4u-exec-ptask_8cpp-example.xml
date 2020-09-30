@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="examples_2s4u_2exec-ptask_2s4u-exec-ptask_8cpp-example" kind="example">
+    <compoundname>examples/s4u/exec-ptask/s4u-exec-ptask.cpp</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><programlisting filename="examples/s4u/exec-ptask/s4u-exec-ptask.cpp"><codeline><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2017-2020.<sp/>The<sp/>SimGrid<sp/>Team.<sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>license<sp/>(GNU<sp/>LGPL)<sp/>which<sp/>comes<sp/>with<sp/>this<sp/>package.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Parallel<sp/>tasks<sp/>are<sp/>convenient<sp/>abstractions<sp/>of<sp/>parallel<sp/>computational<sp/>kernels<sp/>that<sp/>span<sp/>over<sp/>several<sp/>machines.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>To<sp/>create<sp/>a<sp/>new<sp/>one,<sp/>you<sp/>have<sp/>to<sp/>provide<sp/>several<sp/>things:</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/><sp/>-<sp/>a<sp/>vector<sp/>of<sp/>hosts<sp/>on<sp/>which<sp/>the<sp/>task<sp/>will<sp/>execute</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/><sp/>-<sp/>a<sp/>vector<sp/>of<sp/>values,<sp/>the<sp/>amount<sp/>of<sp/>computation<sp/>for<sp/>each<sp/>of<sp/>the<sp/>hosts<sp/>(in<sp/>flops)</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/><sp/><sp/>-<sp/>a<sp/>matrix<sp/>of<sp/>values,<sp/>the<sp/>amount<sp/>of<sp/>communication<sp/>between<sp/>each<sp/>pair<sp/>of<sp/>hosts<sp/>(in<sp/>bytes)</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>Each<sp/>of<sp/>these<sp/>operation<sp/>will<sp/>be<sp/>processed<sp/>at<sp/>the<sp/>same<sp/>relative<sp/>speed.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>This<sp/>means<sp/>that<sp/>at<sp/>some<sp/>point<sp/>in<sp/>time,<sp/>all<sp/>sub-executions<sp/>and<sp/>all<sp/>sub-communications<sp/>will<sp/>be<sp/>at<sp/>20%<sp/>of<sp/>completion.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>Also,<sp/>they<sp/>will<sp/>all<sp/>complete<sp/>at<sp/>the<sp/>exact<sp/>same<sp/>time.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>This<sp/>is<sp/>obviously<sp/>a<sp/>simplistic<sp/>abstraction,<sp/>but<sp/>this<sp/>is<sp/>very<sp/>handful<sp/>in<sp/>a<sp/>large<sp/>amount<sp/>of<sp/>situations.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*<sp/>Please<sp/>note<sp/>that<sp/>you<sp/>must<sp/>have<sp/>the<sp/>LV07<sp/>platform<sp/>model<sp/>enabled<sp/>to<sp/>use<sp/>such<sp/>constructs.</highlight></codeline>
+<codeline><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;simgrid/s4u.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">XBT_LOG_NEW_DEFAULT_CATEGORY(s4u_ptask,<sp/></highlight><highlight class="stringliteral">&quot;Messages<sp/>specific<sp/>for<sp/>this<sp/>s4u<sp/>example&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>runner()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Retrieve<sp/>the<sp/>list<sp/>of<sp/>all<sp/>hosts<sp/>as<sp/>an<sp/>array<sp/>of<sp/>hosts<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>hosts<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="classsimgrid_1_1s4u_1_1_engine_1af0312f8bfa015319a729b4e4456bab54" kindref="member">simgrid::s4u::Engine::get_instance</ref>()-&gt;<ref refid="classsimgrid_1_1s4u_1_1_engine_1a74dee5bae9ec1bbd6fd4f79a6217862c" kindref="member">get_all_hosts</ref>();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>hosts_count<sp/>=<sp/>hosts.size();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>XBT_INFO(</highlight><highlight class="stringliteral">&quot;First,<sp/>build<sp/>a<sp/>classical<sp/>parallel<sp/>task,<sp/>with<sp/>1<sp/>Gflop<sp/>to<sp/>execute<sp/>on<sp/>each<sp/>node,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;and<sp/>10MB<sp/>to<sp/>exchange<sp/>between<sp/>each<sp/>pair&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>std::vector&lt;double&gt;<sp/>computation_amounts;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>std::vector&lt;double&gt;<sp/>communication_amounts;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>------[<sp/>test<sp/>1<sp/>]-----------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>computation_amounts.assign(hosts_count,<sp/>1e9<sp/></highlight><highlight class="comment">/*1Gflop*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>communication_amounts.assign(hosts_count<sp/>*<sp/>hosts_count,<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>hosts_count;<sp/>i++)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>i<sp/>+<sp/>1;<sp/>j<sp/>&lt;<sp/>hosts_count;<sp/>j++)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>communication_amounts[i<sp/>*<sp/>hosts_count<sp/>+<sp/>j]<sp/>=<sp/>1e7;<sp/></highlight><highlight class="comment">//<sp/>10<sp/>MB</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="namespacesimgrid_1_1s4u_1_1this__actor_1a77300d81b535aef4b1524184c8a89367" kindref="member">simgrid::s4u::this_actor::parallel_execute</ref>(hosts,<sp/>computation_amounts,<sp/>communication_amounts);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>------[<sp/>test<sp/>2<sp/>]-----------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>XBT_INFO(</highlight><highlight class="stringliteral">&quot;We<sp/>can<sp/>do<sp/>the<sp/>same<sp/>with<sp/>a<sp/>timeout<sp/>of<sp/>10<sp/>seconds<sp/>enabled.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>computation_amounts.assign(hosts_count,<sp/>1e9<sp/></highlight><highlight class="comment">/*1Gflop*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>communication_amounts.assign(hosts_count<sp/>*<sp/>hosts_count,<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>hosts_count;<sp/>i++)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>i<sp/>+<sp/>1;<sp/>j<sp/>&lt;<sp/>hosts_count;<sp/>j++)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>communication_amounts[i<sp/>*<sp/>hosts_count<sp/>+<sp/>j]<sp/>=<sp/>1e7;<sp/></highlight><highlight class="comment">//<sp/>10<sp/>MB</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacesimgrid_1_1s4u_1_1this__actor_1a1885c8cd2813193f2bd97376b8d45bda" kindref="member">simgrid::s4u::this_actor::exec_init</ref>(hosts,<sp/>computation_amounts,<sp/>communication_amounts)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-&gt;wait_for(10.0<sp/></highlight><highlight class="comment">/*<sp/>timeout<sp/>(in<sp/>seconds)*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>xbt_die(</highlight><highlight class="stringliteral">&quot;Woops,<sp/>this<sp/>did<sp/>not<sp/>timeout<sp/>as<sp/>expected...<sp/>Please<sp/>report<sp/>that<sp/>bug.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>simgrid::TimeoutException&amp;)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>XBT_INFO(</highlight><highlight class="stringliteral">&quot;Caught<sp/>the<sp/>expected<sp/>timeout<sp/>exception.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>------[<sp/>test<sp/>3<sp/>]-----------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>XBT_INFO(</highlight><highlight class="stringliteral">&quot;Then,<sp/>build<sp/>a<sp/>parallel<sp/>task<sp/>involving<sp/>only<sp/>computations<sp/>(of<sp/>different<sp/>amounts)<sp/>and<sp/>no<sp/>communication&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>computation_amounts<sp/>=<sp/>{3e8,<sp/>6e8,<sp/>1e9};<sp/></highlight><highlight class="comment">//<sp/>300Mflop,<sp/>600Mflop,<sp/>1Gflop</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>communication_amounts.clear();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>no<sp/>comm</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="namespacesimgrid_1_1s4u_1_1this__actor_1a77300d81b535aef4b1524184c8a89367" kindref="member">simgrid::s4u::this_actor::parallel_execute</ref>(hosts,<sp/>computation_amounts,<sp/>communication_amounts);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>------[<sp/>test<sp/>4<sp/>]-----------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>XBT_INFO(</highlight><highlight class="stringliteral">&quot;Then,<sp/>build<sp/>a<sp/>parallel<sp/>task<sp/>with<sp/>no<sp/>computation<sp/>nor<sp/>communication<sp/>(synchro<sp/>only)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>computation_amounts.clear();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>communication_amounts.clear();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="namespacesimgrid_1_1s4u_1_1this__actor_1a77300d81b535aef4b1524184c8a89367" kindref="member">simgrid::s4u::this_actor::parallel_execute</ref>(hosts,<sp/>computation_amounts,<sp/>communication_amounts);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>------[<sp/>test<sp/>5<sp/>]-----------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>XBT_INFO(</highlight><highlight class="stringliteral">&quot;Then,<sp/>Monitor<sp/>the<sp/>execution<sp/>of<sp/>a<sp/>parallel<sp/>task&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>computation_amounts.assign(hosts_count,<sp/>1e6<sp/></highlight><highlight class="comment">/*1Mflop*/</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>communication_amounts<sp/>=<sp/>{0,<sp/>1e6,<sp/>0,<sp/>0,<sp/>0,<sp/>1e6,<sp/>1e6,<sp/>0,<sp/>0};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>simgrid::s4u::ExecPtr<sp/>activity<sp/>=</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacesimgrid_1_1s4u_1_1this__actor_1a1885c8cd2813193f2bd97376b8d45bda" kindref="member">simgrid::s4u::this_actor::exec_init</ref>(hosts,<sp/>computation_amounts,<sp/>communication_amounts);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>activity-&gt;start();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(not<sp/>activity-&gt;test())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>XBT_INFO(</highlight><highlight class="stringliteral">&quot;Remaining<sp/>flop<sp/>ratio:<sp/>%.0f%%&quot;</highlight><highlight class="normal">,<sp/>100<sp/>*<sp/>activity-&gt;get_remaining_ratio());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacesimgrid_1_1s4u_1_1this__actor_1a7bfe4d98c3230dc93f5f7905431e7a65" kindref="member">simgrid::s4u::this_actor::sleep_for</ref>(5);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>activity-&gt;wait();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>XBT_INFO(</highlight><highlight class="stringliteral">&quot;Goodbye<sp/>now!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[])</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classsimgrid_1_1s4u_1_1_engine" kindref="compound">simgrid::s4u::Engine</ref><sp/>e(&amp;argc,<sp/>argv);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>xbt_assert(argc<sp/>==<sp/>2,<sp/></highlight><highlight class="stringliteral">&quot;Usage:<sp/>%s<sp/>&lt;platform<sp/>file&gt;&quot;</highlight><highlight class="normal">,<sp/>argv[0]);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>e.load_platform(argv[1]);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="classsimgrid_1_1s4u_1_1_actor_1a8a0df5c49ec0c6f35d2aa2dcf8b39537" kindref="member">simgrid::s4u::Actor::create</ref>(</highlight><highlight class="stringliteral">&quot;test&quot;</highlight><highlight class="normal">,<sp/><ref refid="classsimgrid_1_1s4u_1_1_host_1a59a11b97b4c994957dc43c74cdce53b5" kindref="member">simgrid::s4u::Host::by_name</ref>(</highlight><highlight class="stringliteral">&quot;MyHost1&quot;</highlight><highlight class="normal">),<sp/>runner);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>e.run();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>XBT_INFO(</highlight><highlight class="stringliteral">&quot;Simulation<sp/>done.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

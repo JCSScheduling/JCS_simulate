@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1s4u_1_1_semaphore" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::s4u::Semaphore</compoundname>
+    <includes refid="_semaphore_8hpp" local="no">Semaphore.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_semaphore_1a9647ba33cca95cb416a34fa978b8d873" prot="private" static="no" mutable="no">
+        <type>smx_sem_t</type>
+        <definition>smx_sem_t simgrid::s4u::Semaphore::sem_</definition>
+        <argsstring></argsstring>
+        <name>sem_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Semaphore.hpp" line="32" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Semaphore.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_semaphore_1a03f1d1bffc711c108953518498275dba" prot="private" static="no" mutable="no">
+        <type>std::atomic_int_fast32_t</type>
+        <definition>std::atomic_int_fast32_t simgrid::s4u::Semaphore::refcount_</definition>
+        <argsstring></argsstring>
+        <name>refcount_</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Semaphore.hpp" line="33" column="28" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Semaphore.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classsimgrid_1_1s4u_1_1_semaphore_1a31e6cf84ce2064ce5fc5a60a28ae3d49" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend void</type>
+        <definition>void intrusive_ptr_add_ref</definition>
+        <argsstring>(Semaphore *sem)</argsstring>
+        <name>intrusive_ptr_add_ref</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_semaphore" kindref="compound">Semaphore</ref> *</type>
+          <declname>sem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Semaphore.hpp" line="35" column="15"/>
+      </memberdef>
+      <memberdef kind="friend" id="classsimgrid_1_1s4u_1_1_semaphore_1aa45703a728a439ac00072ff40b925573" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend void</type>
+        <definition>void intrusive_ptr_release</definition>
+        <argsstring>(Semaphore *sem)</argsstring>
+        <name>intrusive_ptr_release</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_semaphore" kindref="compound">Semaphore</ref> *</type>
+          <declname>sem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Semaphore.hpp" line="36" column="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_semaphore_1aba5464c97c5f2e645e47282595c765df" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::s4u::Semaphore::Semaphore</definition>
+        <argsstring>(unsigned int initial_capacity)</argsstring>
+        <name>Semaphore</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>initial_capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Semaphore.hpp" line="39" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_semaphore_1ab8330b73b1a1c5c04cb568bfd42fdf80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::s4u::Semaphore::~Semaphore</definition>
+        <argsstring>()</argsstring>
+        <name>~Semaphore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Semaphore.hpp" line="40" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_semaphore_1a2e69d2d012f25f887b0206d8fc67a5fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Semaphore::acquire</definition>
+        <argsstring>()</argsstring>
+        <name>acquire</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Semaphore.hpp" line="50" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_semaphore_1ab66c99dc34e79163f27120340e048466" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int simgrid::s4u::Semaphore::acquire_timeout</definition>
+        <argsstring>(double timeout)</argsstring>
+        <name>acquire_timeout</name>
+        <param>
+          <type>double</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Semaphore.hpp" line="51" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_semaphore_1a68d8d9db718cd7ab30866a76771daf7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Semaphore::release</definition>
+        <argsstring>()</argsstring>
+        <name>release</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Semaphore.hpp" line="52" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_semaphore_1a40bf030d0f62ceef46564a9b30cc8566" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int simgrid::s4u::Semaphore::get_capacity</definition>
+        <argsstring>()</argsstring>
+        <name>get_capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Semaphore.hpp" line="53" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_semaphore_1ae8e81d17bb518bbeba7a95c68085cda4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int simgrid::s4u::Semaphore::would_block</definition>
+        <argsstring>()</argsstring>
+        <name>would_block</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Semaphore.hpp" line="54" column="7"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_semaphore_1a8db9ac455141398f88a1b182e6edade5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SemaphorePtr</type>
+        <definition>static SemaphorePtr simgrid::s4u::Semaphore::create</definition>
+        <argsstring>(unsigned int initial_capacity)</argsstring>
+        <name>create</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>initial_capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs a new semaphore </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Semaphore.hpp" line="48" column="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A classical semaphore, but blocking in the simulation world. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>* It is strictly impossible to use a real semaphore, such as
+* `sem_init &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/sem_init.html&gt;`_,
+* because it would block the whole simulation.
+* Instead, you should use the present class, that offers a very similar interface.
+*
+* An example is available in Section :ref:`s4u_ex_IPC`.
+*
+* As for any S4U object, you can use the :ref:`RAII idiom &lt;s4u_raii&gt;` for memory management of semaphores.
+* Use :cpp:func:`create() &lt;simgrid::s4u::Mutex::create()&gt;` to get a :cpp:type:`simgrid::s4u::SemaphorePtr` to a newly
+* created semaphore, that will get automatically freed when the variable goes out of scope.
+* </verbatim> </para>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Semaphore.hpp" line="31" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Semaphore.hpp" bodystart="31" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1s4u_1_1_semaphore_1a2e69d2d012f25f887b0206d8fc67a5fc" prot="public" virt="non-virtual"><scope>simgrid::s4u::Semaphore</scope><name>acquire</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_semaphore_1ab66c99dc34e79163f27120340e048466" prot="public" virt="non-virtual"><scope>simgrid::s4u::Semaphore</scope><name>acquire_timeout</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_semaphore_1a8db9ac455141398f88a1b182e6edade5" prot="public" virt="non-virtual"><scope>simgrid::s4u::Semaphore</scope><name>create</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_semaphore_1a40bf030d0f62ceef46564a9b30cc8566" prot="public" virt="non-virtual"><scope>simgrid::s4u::Semaphore</scope><name>get_capacity</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_semaphore_1a31e6cf84ce2064ce5fc5a60a28ae3d49" prot="private" virt="non-virtual"><scope>simgrid::s4u::Semaphore</scope><name>intrusive_ptr_add_ref</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_semaphore_1aa45703a728a439ac00072ff40b925573" prot="private" virt="non-virtual"><scope>simgrid::s4u::Semaphore</scope><name>intrusive_ptr_release</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_semaphore_1a03f1d1bffc711c108953518498275dba" prot="private" virt="non-virtual"><scope>simgrid::s4u::Semaphore</scope><name>refcount_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_semaphore_1a68d8d9db718cd7ab30866a76771daf7a" prot="public" virt="non-virtual"><scope>simgrid::s4u::Semaphore</scope><name>release</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_semaphore_1a9647ba33cca95cb416a34fa978b8d873" prot="private" virt="non-virtual"><scope>simgrid::s4u::Semaphore</scope><name>sem_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_semaphore_1aba5464c97c5f2e645e47282595c765df" prot="public" virt="non-virtual"><scope>simgrid::s4u::Semaphore</scope><name>Semaphore</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_semaphore_1ae8e81d17bb518bbeba7a95c68085cda4" prot="public" virt="non-virtual"><scope>simgrid::s4u::Semaphore</scope><name>would_block</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_semaphore_1ab8330b73b1a1c5c04cb568bfd42fdf80" prot="public" virt="non-virtual"><scope>simgrid::s4u::Semaphore</scope><name>~Semaphore</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1s4u_1_1_condition_variable" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::s4u::ConditionVariable</compoundname>
+    <includes refid="_condition_variable_8hpp" local="no">ConditionVariable.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_condition_variable_1a4ef278fb9d0ae79500602df975313731" prot="private" static="no" mutable="no">
+        <type>kernel::activity::ConditionVariableImpl *const</type>
+        <definition>kernel::activity::ConditionVariableImpl* const simgrid::s4u::ConditionVariable::cond_</definition>
+        <argsstring></argsstring>
+        <name>cond_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" line="29" column="49" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_condition_variable_1adda7ad7f614babc97e9fa960ed72b128" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ConditionVariablePtr</type>
+        <definition>static ConditionVariablePtr simgrid::s4u::ConditionVariable::create</definition>
+        <argsstring>()</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new condition variable and return a smart pointer</para>
+<para><verbatim>* You should only manipulate :cpp:type:`simgrid::s4u::ConditionVariablePtr`, as created by this function (see also :ref:`s4u_raii`).
+* </verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" line="48" column="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_condition_variable_1aa5afe7e2c4ee361fce0b66ffb353ca28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::ConditionVariable::wait</definition>
+        <argsstring>(s4u::MutexPtr lock)</argsstring>
+        <name>wait</name>
+        <param>
+          <type>s4u::MutexPtr</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+<para>Wait until notification, with no timeout. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" line="51" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_condition_variable_1a307fdf1f0cced323d19fc0cb9e3a87de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::ConditionVariable::wait</definition>
+        <argsstring>(const std::unique_lock&lt; s4u::Mutex &gt; &amp;lock)</argsstring>
+        <name>wait</name>
+        <param>
+          <type>const std::unique_lock&lt; <ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">s4u::Mutex</ref> &gt; &amp;</type>
+          <declname>lock</declname>
+        </param>
+        <briefdescription>
+<para>Wait until notification, with no timeout. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" line="53" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_condition_variable_1a81fde22637149029cd54c1edf78a0c90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class P</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void simgrid::s4u::ConditionVariable::wait</definition>
+        <argsstring>(const std::unique_lock&lt; Mutex &gt; &amp;lock, P pred)</argsstring>
+        <name>wait</name>
+        <param>
+          <type>const std::unique_lock&lt; <ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">Mutex</ref> &gt; &amp;</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type>P</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" line="54" column="20" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" bodystart="54" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_condition_variable_1acb1e1ff8ea25e5ebe0a9176c55381e18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::cv_status</type>
+        <definition>std::cv_status simgrid::s4u::ConditionVariable::wait_until</definition>
+        <argsstring>(const std::unique_lock&lt; s4u::Mutex &gt; &amp;lock, double timeout_time)</argsstring>
+        <name>wait_until</name>
+        <param>
+          <type>const std::unique_lock&lt; <ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">s4u::Mutex</ref> &gt; &amp;</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>timeout_time</declname>
+        </param>
+        <briefdescription>
+<para>Wait until the given instant (specified as a plain double) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" line="61" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_condition_variable_1ae9fa1cd9adceb365723165e33e55f390" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::cv_status</type>
+        <definition>std::cv_status simgrid::s4u::ConditionVariable::wait_for</definition>
+        <argsstring>(const std::unique_lock&lt; s4u::Mutex &gt; &amp;lock, double duration)</argsstring>
+        <name>wait_for</name>
+        <param>
+          <type>const std::unique_lock&lt; <ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">s4u::Mutex</ref> &gt; &amp;</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+<para>Wait for the given amount of seconds (specified as a plain double) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" line="63" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_condition_variable_1a56fd2bd3251501a343ad40d1e39813e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class P</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool simgrid::s4u::ConditionVariable::wait_until</definition>
+        <argsstring>(const std::unique_lock&lt; s4u::Mutex &gt; &amp;lock, double timeout_time, P pred)</argsstring>
+        <name>wait_until</name>
+        <param>
+          <type>const std::unique_lock&lt; <ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">s4u::Mutex</ref> &gt; &amp;</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>timeout_time</declname>
+        </param>
+        <param>
+          <type>P</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+<para>Wait until predicate is true, or the given instant (specified as a plain double) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" line="65" column="20" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" bodystart="65" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_condition_variable_1aa0e22a3808f7705d78fb05416283e538" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class P</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool simgrid::s4u::ConditionVariable::wait_for</definition>
+        <argsstring>(const std::unique_lock&lt; s4u::Mutex &gt; &amp;lock, double duration, P pred)</argsstring>
+        <name>wait_for</name>
+        <param>
+          <type>const std::unique_lock&lt; <ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">s4u::Mutex</ref> &gt; &amp;</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>P</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+<para>As long as the predicate is false, wait for the given amount of seconds (specified as a plain double) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" line="73" column="20" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_condition_variable_1ada8b4ef1f51cef184ba223504fa7fac7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Rep</type>
+          </param>
+          <param>
+            <type>class Period</type>
+          </param>
+          <param>
+            <type>class P</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool simgrid::s4u::ConditionVariable::wait_for</definition>
+        <argsstring>(const std::unique_lock&lt; s4u::Mutex &gt; &amp;lock, std::chrono::duration&lt; Rep, Period &gt; duration, P pred)</argsstring>
+        <name>wait_for</name>
+        <param>
+          <type>const std::unique_lock&lt; <ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">s4u::Mutex</ref> &gt; &amp;</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type>std::chrono::duration&lt; Rep, Period &gt;</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>P</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+<para>As long as the predicate is false, wait for the given amount of seconds (specified in C++ style) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" line="82" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" bodystart="82" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_condition_variable_1a0d3bd5801280d09f9e4fb59a433c2a56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Rep</type>
+          </param>
+          <param>
+            <type>class Period</type>
+          </param>
+        </templateparamlist>
+        <type>std::cv_status</type>
+        <definition>std::cv_status simgrid::s4u::ConditionVariable::wait_for</definition>
+        <argsstring>(const std::unique_lock&lt; s4u::Mutex &gt; &amp;lock, std::chrono::duration&lt; Rep, Period &gt; duration)</argsstring>
+        <name>wait_for</name>
+        <param>
+          <type>const std::unique_lock&lt; <ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">s4u::Mutex</ref> &gt; &amp;</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type>std::chrono::duration&lt; Rep, Period &gt;</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+<para>Wait for the given amount of seconds (specified in C++ style) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" line="89" column="18" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" bodystart="89" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_condition_variable_1a8d657e204660683613395d80c4e42eb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Duration</type>
+          </param>
+        </templateparamlist>
+        <type>std::cv_status</type>
+        <definition>std::cv_status simgrid::s4u::ConditionVariable::wait_until</definition>
+        <argsstring>(const std::unique_lock&lt; s4u::Mutex &gt; &amp;lock, const SimulationTimePoint&lt; Duration &gt; &amp;timeout_time)</argsstring>
+        <name>wait_until</name>
+        <param>
+          <type>const std::unique_lock&lt; <ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">s4u::Mutex</ref> &gt; &amp;</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type>const SimulationTimePoint&lt; Duration &gt; &amp;</type>
+          <declname>timeout_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wait until the given instant (specified in C++ style) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" line="96" column="18" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" bodystart="96" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_condition_variable_1a404a05efda3137ede1b005f10e9bfcb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Duration</type>
+          </param>
+          <param>
+            <type>class P</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool simgrid::s4u::ConditionVariable::wait_until</definition>
+        <argsstring>(const std::unique_lock&lt; s4u::Mutex &gt; &amp;lock, const SimulationTimePoint&lt; Duration &gt; &amp;timeout_time, P pred)</argsstring>
+        <name>wait_until</name>
+        <param>
+          <type>const std::unique_lock&lt; <ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">s4u::Mutex</ref> &gt; &amp;</type>
+          <declname>lock</declname>
+        </param>
+        <param>
+          <type>const SimulationTimePoint&lt; Duration &gt; &amp;</type>
+          <declname>timeout_time</declname>
+        </param>
+        <param>
+          <type>P</type>
+          <declname>pred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wait until predicate is true, or the given instant (specified in C++ style) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" line="103" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" bodystart="103" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_condition_variable_1a1e4cd740c324484fd2a9fdc0be7229d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::ConditionVariable::notify_one</definition>
+        <argsstring>()</argsstring>
+        <name>notify_one</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unblock one actor blocked on that condition variable. If none was blocked, nothing happens. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" line="110" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_condition_variable_1ad2cb542eec661cb53c5362ba764d5e24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::ConditionVariable::notify_all</definition>
+        <argsstring>()</argsstring>
+        <name>notify_all</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unblock all actors blocked on that condition variable. If none was blocked, nothing happens. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" line="112" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>* SimGrid&apos;s condition variables are meant to be drop-in replacements of ``std::condition_variable``.
+* Please refer to the `documentation of standard C++ &lt;https://en.cppreference.com/w/cpp/thread/condition_variable&gt;`_
+* for more information on condition variables. A SimGrid example is available in Section :ref:`s4u_ex_IPC`.
+* </verbatim> </para>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" line="26" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/ConditionVariable.hpp" bodystart="26" bodyend="113"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1s4u_1_1_condition_variable_1a4ef278fb9d0ae79500602df975313731" prot="private" virt="non-virtual"><scope>simgrid::s4u::ConditionVariable</scope><name>cond_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_condition_variable_1adda7ad7f614babc97e9fa960ed72b128" prot="public" virt="non-virtual"><scope>simgrid::s4u::ConditionVariable</scope><name>create</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_condition_variable_1ad2cb542eec661cb53c5362ba764d5e24" prot="public" virt="non-virtual"><scope>simgrid::s4u::ConditionVariable</scope><name>notify_all</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_condition_variable_1a1e4cd740c324484fd2a9fdc0be7229d3" prot="public" virt="non-virtual"><scope>simgrid::s4u::ConditionVariable</scope><name>notify_one</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_condition_variable_1aa5afe7e2c4ee361fce0b66ffb353ca28" prot="public" virt="non-virtual"><scope>simgrid::s4u::ConditionVariable</scope><name>wait</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_condition_variable_1a307fdf1f0cced323d19fc0cb9e3a87de" prot="public" virt="non-virtual"><scope>simgrid::s4u::ConditionVariable</scope><name>wait</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_condition_variable_1a81fde22637149029cd54c1edf78a0c90" prot="public" virt="non-virtual"><scope>simgrid::s4u::ConditionVariable</scope><name>wait</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_condition_variable_1ae9fa1cd9adceb365723165e33e55f390" prot="public" virt="non-virtual"><scope>simgrid::s4u::ConditionVariable</scope><name>wait_for</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_condition_variable_1aa0e22a3808f7705d78fb05416283e538" prot="public" virt="non-virtual"><scope>simgrid::s4u::ConditionVariable</scope><name>wait_for</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_condition_variable_1ada8b4ef1f51cef184ba223504fa7fac7" prot="public" virt="non-virtual"><scope>simgrid::s4u::ConditionVariable</scope><name>wait_for</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_condition_variable_1a0d3bd5801280d09f9e4fb59a433c2a56" prot="public" virt="non-virtual"><scope>simgrid::s4u::ConditionVariable</scope><name>wait_for</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_condition_variable_1acb1e1ff8ea25e5ebe0a9176c55381e18" prot="public" virt="non-virtual"><scope>simgrid::s4u::ConditionVariable</scope><name>wait_until</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_condition_variable_1a56fd2bd3251501a343ad40d1e39813e9" prot="public" virt="non-virtual"><scope>simgrid::s4u::ConditionVariable</scope><name>wait_until</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_condition_variable_1a8d657e204660683613395d80c4e42eb1" prot="public" virt="non-virtual"><scope>simgrid::s4u::ConditionVariable</scope><name>wait_until</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_condition_variable_1a404a05efda3137ede1b005f10e9bfcb1" prot="public" virt="non-virtual"><scope>simgrid::s4u::ConditionVariable</scope><name>wait_until</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

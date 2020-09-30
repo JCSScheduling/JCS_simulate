@@ -1,0 +1,613 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1s4u_1_1_activity" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>simgrid::s4u::Activity</compoundname>
+    <derivedcompoundref refid="classsimgrid_1_1s4u_1_1_activity___t" prot="public" virt="non-virtual">simgrid::s4u::Activity_T&lt; Comm &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classsimgrid_1_1s4u_1_1_activity___t" prot="public" virt="non-virtual">simgrid::s4u::Activity_T&lt; Exec &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classsimgrid_1_1s4u_1_1_activity___t" prot="public" virt="non-virtual">simgrid::s4u::Activity_T&lt; Io &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classsimgrid_1_1s4u_1_1_activity___t" prot="public" virt="non-virtual">simgrid::s4u::Activity_T&lt; AnyActivity &gt;</derivedcompoundref>
+    <includes refid="_activity_8hpp" local="no">Activity.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classsimgrid_1_1s4u_1_1_activity_1a963055035b495361760860374bd669b5" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>State</name>
+        <enumvalue id="classsimgrid_1_1s4u_1_1_activity_1a963055035b495361760860374bd669b5accd1aeeaaed7bb5815ceda3ee632cc58" prot="public">
+          <name>INITED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsimgrid_1_1s4u_1_1_activity_1a963055035b495361760860374bd669b5a034312d8adc8099c1c6f53aaff745e26" prot="public">
+          <name>STARTING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsimgrid_1_1s4u_1_1_activity_1a963055035b495361760860374bd669b5a17130e6c806885e23770df1519b18eb7" prot="public">
+          <name>STARTED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsimgrid_1_1s4u_1_1_activity_1a963055035b495361760860374bd669b5ad4539bffb6062bdcbd7e7cc1b1228926" prot="public">
+          <name>CANCELED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsimgrid_1_1s4u_1_1_activity_1a963055035b495361760860374bd669b5add0f1fac7b1452a7c98db1c15fa9b7bb" prot="public">
+          <name>ERRORED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsimgrid_1_1s4u_1_1_activity_1a963055035b495361760860374bd669b5a2c616b2713e2e0aed04b4c4752c88133" prot="public">
+          <name>FINISHED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="72" column="3" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" bodystart="72" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_activity_1a2a8d1ce5ed3cb8c14115f0975bdc2714" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend simgrid::s4u::Activity::Comm</definition>
+        <argsstring></argsstring>
+        <name>Comm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="28" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_activity_1a3054dab0900aa228bf0f17e98f5b3dfc" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend simgrid::s4u::Activity::Exec</definition>
+        <argsstring></argsstring>
+        <name>Exec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="29" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_activity_1ac9cb432caa91cd537a4e7091c51a2977" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend simgrid::s4u::Activity::ExecSeq</definition>
+        <argsstring></argsstring>
+        <name>ExecSeq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="30" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_activity_1a84cb14c06c722c3d429eb25df6d9cb79" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend simgrid::s4u::Activity::ExecPar</definition>
+        <argsstring></argsstring>
+        <name>ExecPar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="31" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_activity_1a51e7e1f52fa0d00846c6c9758d9dfd59" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend simgrid::s4u::Activity::Io</definition>
+        <argsstring></argsstring>
+        <name>Io</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="32" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_activity_1a950cedff9f56480746b609e756d92489" prot="private" static="no" mutable="no">
+        <type>kernel::activity::ActivityImplPtr</type>
+        <definition>kernel::activity::ActivityImplPtr simgrid::s4u::Activity::pimpl_</definition>
+        <argsstring></argsstring>
+        <name>pimpl_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="120" column="37" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_activity_1af0dc49da94fabbfb3b48143a57d96fd9" prot="private" static="no" mutable="no">
+        <type>Activity::State</type>
+        <definition>Activity::State simgrid::s4u::Activity::state_</definition>
+        <argsstring></argsstring>
+        <name>state_</name>
+        <initializer>= Activity::State::INITED</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="121" column="19" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_activity_1a040bae033931e4e514461c71286938af" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::s4u::Activity::remains_</definition>
+        <argsstring></argsstring>
+        <name>remains_</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="122" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_activity_1af41103b4d57702b5f03e2314dd996a4c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; ActivityPtr &gt;</type>
+        <definition>std::vector&lt;ActivityPtr&gt; simgrid::s4u::Activity::successors_</definition>
+        <argsstring></argsstring>
+        <name>successors_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="123" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_activity_1abe193c3fc52ce48b0b9f41be837af7ce" prot="private" static="no" mutable="no">
+        <type>std::set&lt; ActivityPtr &gt;</type>
+        <definition>std::set&lt;ActivityPtr&gt; simgrid::s4u::Activity::dependencies_</definition>
+        <argsstring></argsstring>
+        <name>dependencies_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="124" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_activity_1af01ffc6e5ac6f33c5325d86acb8d3289" prot="private" static="no" mutable="no">
+        <type>std::atomic_int_fast32_t</type>
+        <definition>std::atomic_int_fast32_t simgrid::s4u::Activity::refcount_</definition>
+        <argsstring></argsstring>
+        <name>refcount_</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="125" column="28" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_activity_1ab74d690b9177c75204199b671e84baee" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::s4u::Activity::Activity</definition>
+        <argsstring>()=default</argsstring>
+        <name>Activity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="35" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_activity_1abff2c86ef9ca12addc45c5b2c1a76fd0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual simgrid::s4u::Activity::~Activity</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Activity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="36" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_activity_1aac8ef492e90f999367cfa74d1d19e8c6" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Activity::release_dependencies</definition>
+        <argsstring>()</argsstring>
+        <name>release_dependencies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="38" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" bodystart="38" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_activity_1a69157ce5680598b1b096f41561440644" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Activity::add_successor</definition>
+        <argsstring>(ActivityPtr a)</argsstring>
+        <name>add_successor</name>
+        <param>
+          <type>ActivityPtr</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="51" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" bodystart="51" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_activity_1a7ab9c2b429bf203f18a4228079e804b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Activity::vetoable_start</definition>
+        <argsstring>()</argsstring>
+        <name>vetoable_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="58" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" bodystart="58" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_activity_1aec81cccb77612d00990e287640609640" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_activity" kindref="compound">Activity</ref> *</type>
+        <definition>virtual Activity* simgrid::s4u::Activity::start</definition>
+        <argsstring>()=0</argsstring>
+        <name>start</name>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_io_1aed211eb85e0e13e2927ebead0e811f23">start</reimplementedby>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_comm_1aa59d895d70f81d1c382e4d1db635b935">start</reimplementedby>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_exec_seq_1aa338aa145000acbfe8eb6bcec8a7b235">start</reimplementedby>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_exec_par_1ab9a5114ebb668aca1f2052a680e1d9a8">start</reimplementedby>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_exec_1a5b41b24f53eabb80b8a8e3c3e0556ed2">start</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Starts a previously created activity.</para>
+<para>This function is optional: you can call wait() even if you didn&apos;t call start() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="78" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_activity_1a58b0dc13c2ee8c68376f2a2a714fc3bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_activity" kindref="compound">Activity</ref> *</type>
+        <definition>virtual Activity* simgrid::s4u::Activity::wait</definition>
+        <argsstring>()=0</argsstring>
+        <name>wait</name>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_io_1ad238d132e0b0a240fbf19ac75e755998">wait</reimplementedby>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_exec_1afb62374d66600b742c55e4d4ba303b96">wait</reimplementedby>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_comm_1a120b2b8082434d218722d57cef4b71d1">wait</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blocks until the activity is terminated </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="80" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_activity_1a86c386ac35303cd1f3b90d0202c83e6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_activity" kindref="compound">Activity</ref> *</type>
+        <definition>virtual Activity* simgrid::s4u::Activity::wait_for</definition>
+        <argsstring>(double timeout)=0</argsstring>
+        <name>wait_for</name>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_io_1a200e0cc8b3f9222298609c64738b7d82">wait_for</reimplementedby>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_exec_1a5d3452b0b4e02884ff2750c670a6f9a6">wait_for</reimplementedby>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_comm_1a2e0575b0ef0005dabce80429c37e209c">wait_for</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blocks until the activity is terminated, or until the timeout is elapsed Raises: timeout exception. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="83" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_activity_1a215a4305bef1bc337f62440abe3f7e38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Activity::wait_until</definition>
+        <argsstring>(double time_limit)</argsstring>
+        <name>wait_until</name>
+        <param>
+          <type>double</type>
+          <declname>time_limit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blocks until the activity is terminated, or until the time limit is reached Raises: timeout exception. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="86" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_activity_1ac470ea7781f009a8d085aa16fa373d44" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_activity" kindref="compound">Activity</ref> *</type>
+        <definition>virtual Activity* simgrid::s4u::Activity::cancel</definition>
+        <argsstring>()=0</argsstring>
+        <name>cancel</name>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_io_1a9d3a032c2adb178685eb5a3406e7c34d">cancel</reimplementedby>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_comm_1afce13db740045bda7c8b6e42cc467787">cancel</reimplementedby>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_exec_1a130c44c226e90bbb974f38da89f3e268">cancel</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cancel that activity </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="89" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_activity_1a598a46faf0103871ad4f7f971cf3717e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Activity::State</type>
+        <definition>Activity::State simgrid::s4u::Activity::get_state</definition>
+        <argsstring>()</argsstring>
+        <name>get_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve the current state of the activity </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="91" column="19" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" bodystart="91" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_activity_1a6e28ee9ccc94500a50d93db735cf5b88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Activity::set_state</definition>
+        <argsstring>(Activity::State state)</argsstring>
+        <name>set_state</name>
+        <param>
+          <type>Activity::State</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="92" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_activity_1a2e5de7a6fa5aac5a6cb68eae64ea1822" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool simgrid::s4u::Activity::test</definition>
+        <argsstring>()=0</argsstring>
+        <name>test</name>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_io_1adbb2e3500cc6310147ca81e31bde5387">test</reimplementedby>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_comm_1af61561c96ed70d7684263aaf1e68b7f9">test</reimplementedby>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_exec_1a4a4747f6def1a43c5c9c67d7b951dcd8">test</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tests whether the given activity is terminated yet. This is a pure function. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="94" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_activity_1a19dd64f1b5d8a9035d0d2502e54672eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>const char *</type>
+        <definition>virtual const char* simgrid::s4u::Activity::get_cname</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_cname</name>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_activity___t_1ad4c017392a1f1c12d370f9901034edee">get_cname</reimplementedby>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_activity___t_1ad4c017392a1f1c12d370f9901034edee">get_cname</reimplementedby>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_activity___t_1ad4c017392a1f1c12d370f9901034edee">get_cname</reimplementedby>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_activity___t_1ad4c017392a1f1c12d370f9901034edee">get_cname</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="95" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_activity_1a36594cb037a97c92a0024e0b93606128" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>const std::string &amp;</type>
+        <definition>virtual const std::string&amp; simgrid::s4u::Activity::get_name</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_name</name>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_activity___t_1a93f2ec165abf66d48fee44ac2fb33db3">get_name</reimplementedby>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_activity___t_1a93f2ec165abf66d48fee44ac2fb33db3">get_name</reimplementedby>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_activity___t_1a93f2ec165abf66d48fee44ac2fb33db3">get_name</reimplementedby>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_activity___t_1a93f2ec165abf66d48fee44ac2fb33db3">get_name</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="96" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_activity_1ac2d222f4995e7882b809a1cd201b916b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double simgrid::s4u::Activity::get_remaining</definition>
+        <argsstring>()</argsstring>
+        <name>get_remaining</name>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_io_1acc633b259698769bf1eedfb692925df1">get_remaining</reimplementedby>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_exec_seq_1ac5933587ee5994cf0d9feb3171539772">get_remaining</reimplementedby>
+        <reimplementedby refid="classsimgrid_1_1s4u_1_1_exec_par_1aa3a13a2f87bb54922245407441b71997">get_remaining</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the remaining amount of work that this Activity entails. When it&apos;s 0, it&apos;s done. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="99" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_activity_1aa0718f864e7de86ac46e4a73a76653af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_activity" kindref="compound">Activity</ref> *</type>
+        <definition>Activity* simgrid::s4u::Activity::set_remaining</definition>
+        <argsstring>(double remains)</argsstring>
+        <name>set_remaining</name>
+        <param>
+          <type>double</type>
+          <declname>remains</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the [remaining] amount of work that this Activity will entail</para>
+<para>It is forbidden to change the amount of work once the Activity is started </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="103" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_activity_1a84a59b0755885ca1872d159ac6136dbf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>kernel::activity::ActivityImpl *</type>
+        <definition>kernel::activity::ActivityImpl* simgrid::s4u::Activity::get_impl</definition>
+        <argsstring>() const</argsstring>
+        <name>get_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the internal implementation of this Activity </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="106" column="34" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" bodystart="106" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Activities. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is the ancestor of every activities that an actor can undertake. That is, activities are all the things that do take time to the actor in the simulated world. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="10">
+        <label>simgrid::s4u::Activity_T&lt; AnyActivity &gt;</label>
+        <link refid="classsimgrid_1_1s4u_1_1_activity___t"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>simgrid::s4u::ExecPar</label>
+        <link refid="classsimgrid_1_1s4u_1_1_exec_par"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>simgrid::s4u::Comm</label>
+        <link refid="classsimgrid_1_1s4u_1_1_comm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>simgrid::s4u::Activity</label>
+        <link refid="classsimgrid_1_1s4u_1_1_activity"/>
+      </node>
+      <node id="4">
+        <label>simgrid::s4u::Activity_T&lt; Exec &gt;</label>
+        <link refid="classsimgrid_1_1s4u_1_1_activity___t"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>simgrid::s4u::Io</label>
+        <link refid="classsimgrid_1_1s4u_1_1_io"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>simgrid::s4u::Activity_T&lt; Comm &gt;</label>
+        <link refid="classsimgrid_1_1s4u_1_1_activity___t"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>simgrid::s4u::Exec</label>
+        <link refid="classsimgrid_1_1s4u_1_1_exec"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>simgrid::s4u::Activity_T&lt; Io &gt;</label>
+        <link refid="classsimgrid_1_1s4u_1_1_activity___t"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>simgrid::s4u::ExecSeq</label>
+        <link refid="classsimgrid_1_1s4u_1_1_exec_seq"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" line="27" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Activity.hpp" bodystart="27" bodyend="126"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1ab74d690b9177c75204199b671e84baee" prot="protected" virt="non-virtual"><scope>simgrid::s4u::Activity</scope><name>Activity</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a69157ce5680598b1b096f41561440644" prot="protected" virt="non-virtual"><scope>simgrid::s4u::Activity</scope><name>add_successor</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1ac470ea7781f009a8d085aa16fa373d44" prot="public" virt="pure-virtual"><scope>simgrid::s4u::Activity</scope><name>cancel</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a2a8d1ce5ed3cb8c14115f0975bdc2714" prot="private" virt="non-virtual"><scope>simgrid::s4u::Activity</scope><name>Comm</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1abe193c3fc52ce48b0b9f41be837af7ce" prot="private" virt="non-virtual"><scope>simgrid::s4u::Activity</scope><name>dependencies_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a3054dab0900aa228bf0f17e98f5b3dfc" prot="private" virt="non-virtual"><scope>simgrid::s4u::Activity</scope><name>Exec</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a84cb14c06c722c3d429eb25df6d9cb79" prot="private" virt="non-virtual"><scope>simgrid::s4u::Activity</scope><name>ExecPar</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1ac9cb432caa91cd537a4e7091c51a2977" prot="private" virt="non-virtual"><scope>simgrid::s4u::Activity</scope><name>ExecSeq</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a19dd64f1b5d8a9035d0d2502e54672eb" prot="public" virt="pure-virtual"><scope>simgrid::s4u::Activity</scope><name>get_cname</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a84a59b0755885ca1872d159ac6136dbf" prot="public" virt="non-virtual"><scope>simgrid::s4u::Activity</scope><name>get_impl</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a36594cb037a97c92a0024e0b93606128" prot="public" virt="pure-virtual"><scope>simgrid::s4u::Activity</scope><name>get_name</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1ac2d222f4995e7882b809a1cd201b916b" prot="public" virt="virtual"><scope>simgrid::s4u::Activity</scope><name>get_remaining</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a598a46faf0103871ad4f7f971cf3717e" prot="public" virt="non-virtual"><scope>simgrid::s4u::Activity</scope><name>get_state</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a51e7e1f52fa0d00846c6c9758d9dfd59" prot="private" virt="non-virtual"><scope>simgrid::s4u::Activity</scope><name>Io</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a950cedff9f56480746b609e756d92489" prot="private" virt="non-virtual"><scope>simgrid::s4u::Activity</scope><name>pimpl_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1af01ffc6e5ac6f33c5325d86acb8d3289" prot="private" virt="non-virtual"><scope>simgrid::s4u::Activity</scope><name>refcount_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1aac8ef492e90f999367cfa74d1d19e8c6" prot="protected" virt="non-virtual"><scope>simgrid::s4u::Activity</scope><name>release_dependencies</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a040bae033931e4e514461c71286938af" prot="private" virt="non-virtual"><scope>simgrid::s4u::Activity</scope><name>remains_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1aa0718f864e7de86ac46e4a73a76653af" prot="public" virt="non-virtual"><scope>simgrid::s4u::Activity</scope><name>set_remaining</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a6e28ee9ccc94500a50d93db735cf5b88" prot="public" virt="non-virtual"><scope>simgrid::s4u::Activity</scope><name>set_state</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1aec81cccb77612d00990e287640609640" prot="public" virt="pure-virtual"><scope>simgrid::s4u::Activity</scope><name>start</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a963055035b495361760860374bd669b5" prot="public" virt="non-virtual"><scope>simgrid::s4u::Activity</scope><name>State</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1af0dc49da94fabbfb3b48143a57d96fd9" prot="private" virt="non-virtual"><scope>simgrid::s4u::Activity</scope><name>state_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1af41103b4d57702b5f03e2314dd996a4c" prot="private" virt="non-virtual"><scope>simgrid::s4u::Activity</scope><name>successors_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a2e5de7a6fa5aac5a6cb68eae64ea1822" prot="public" virt="pure-virtual"><scope>simgrid::s4u::Activity</scope><name>test</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a7ab9c2b429bf203f18a4228079e804b3" prot="public" virt="non-virtual"><scope>simgrid::s4u::Activity</scope><name>vetoable_start</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a58b0dc13c2ee8c68376f2a2a714fc3bf" prot="public" virt="pure-virtual"><scope>simgrid::s4u::Activity</scope><name>wait</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a86c386ac35303cd1f3b90d0202c83e6d" prot="public" virt="pure-virtual"><scope>simgrid::s4u::Activity</scope><name>wait_for</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1a215a4305bef1bc337f62440abe3f7e38" prot="public" virt="non-virtual"><scope>simgrid::s4u::Activity</scope><name>wait_until</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_activity_1abff2c86ef9ca12addc45c5b2c1a76fd0" prot="protected" virt="virtual"><scope>simgrid::s4u::Activity</scope><name>~Activity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

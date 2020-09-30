@@ -1,0 +1,464 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="namespacesimgrid_1_1s4u_1_1this__actor" kind="namespace" language="C++">
+    <compoundname>simgrid::s4u::this_actor</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1ad0add112072c4bcb17fa593bf79ac986" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool simgrid::s4u::this_actor::is_maestro</definition>
+        <argsstring>()</argsstring>
+        <name>is_maestro</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="239" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" declline="239" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1a7bfe4d98c3230dc93f5f7905431e7a65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::this_actor::sleep_for</definition>
+        <argsstring>(double duration)</argsstring>
+        <name>sleep_for</name>
+        <param>
+          <type>double</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Block the current actor sleeping for that amount of seconds </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="242" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" declline="242" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1a9de1f9280c7909d99f9f0f3c0a28eeb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::this_actor::sleep_until</definition>
+        <argsstring>(double wakeup_time)</argsstring>
+        <name>sleep_until</name>
+        <param>
+          <type>double</type>
+          <declname>wakeup_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Block the current actor sleeping until the specified timestamp </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="244" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" declline="244" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1ab1c265a03eb78c8b246ae78e4170bfca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Rep</type>
+          </param>
+          <param>
+            <type>class Period</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void simgrid::s4u::this_actor::sleep_for</definition>
+        <argsstring>(std::chrono::duration&lt; Rep, Period &gt; duration)</argsstring>
+        <name>sleep_for</name>
+        <param>
+          <type>std::chrono::duration&lt; Rep, Period &gt;</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="246" column="27" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" bodystart="246" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1a119ece720bb3bbd7d48dc05d7ee96bf6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Duration</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void simgrid::s4u::this_actor::sleep_until</definition>
+        <argsstring>(const SimulationTimePoint&lt; Duration &gt; &amp;wakeup_time)</argsstring>
+        <name>sleep_until</name>
+        <param>
+          <type>const SimulationTimePoint&lt; Duration &gt; &amp;</type>
+          <declname>wakeup_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="252" column="25" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" bodystart="252" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1ab0bbbb19402381d1e7e977adf2dff064" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::this_actor::execute</definition>
+        <argsstring>(double flop)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>double</type>
+          <declname>flop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Block the current actor, computing the given amount of flops </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="259" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" declline="259" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1af38c8a178e01f7a3100c3577d310db07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::this_actor::execute</definition>
+        <argsstring>(double flop, double priority)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>double</type>
+          <declname>flop</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Block the current actor, computing the given amount of flops at the given priority. An execution of priority 2 computes twice as fast as an execution at priority 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="263" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" declline="263" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1a77300d81b535aef4b1524184c8a89367" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::this_actor::parallel_execute</definition>
+        <argsstring>(const std::vector&lt; s4u::Host * &gt; &amp;hosts, const std::vector&lt; double &gt; &amp;flops_amounts, const std::vector&lt; double &gt; &amp;bytes_amounts)</argsstring>
+        <name>parallel_execute</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">s4u::Host</ref> * &gt; &amp;</type>
+          <declname>hosts</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>flops_amounts</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>bytes_amounts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Block the current actor until the built parallel execution terminates</para>
+<para><verbatim>* .. _API_s4u_parallel_execute:
+*
+* **Example of use:** `examples/s4u/exec-ptask/s4u-exec-ptask.cpp
+* &lt;https://framagit.org/simgrid/simgrid/tree/master/examples/s4u/exec-ptask/s4u-exec-ptask.cpp&gt;`_
+*
+* Parallel executions convenient abstractions of parallel computational kernels that span over several machines,
+* such as a PDGEM and the other ScaLAPACK routines. If you are interested in the effects of such parallel kernel
+* on the platform (e.g. to schedule them wisely), there is no need to model them in all details of their internal
+* execution and communications. It is much more convenient to model them as a single execution activity that spans
+* over several hosts. This is exactly what s4u&apos;s Parallel Executions are.
+*
+* To build such an object, you need to provide a list of hosts that are involved in the parallel kernel (the
+* actor&apos;s own host may or may not be in this list) and specify the amount of computations that should be done by
+* each host, using a vector of flops amount. Then, you should specify the amount of data exchanged between each
+* hosts during the parallel kernel. For that, a matrix of values is expected.
+*
+* It is OK to build a parallel execution without any computation and/or without any communication.
+* Just pass an empty vector to the corresponding parameter.
+*
+* For example, if your list of hosts is ``[host0, host1]``, passing a vector ``[1000, 2000]`` as a `flops_amount`
+* vector means that `host0` should compute 1000 flops while `host1` will compute 2000 flops. A matrix of
+* communications&apos; sizes of ``[0, 1, 2, 3]`` specifies the following data exchanges:
+*
+* - from host0: [ to host0:  0 bytes; to host1: 1 byte ]
+*
+* - from host1: [ to host0: 2 bytes; to host1: 3 bytes ]
+*
+* Or, in other words:
+*
+* - From host0 to host0: 0 bytes are exchanged
+*
+* - From host0 to host1: 1 byte is exchanged
+*
+* - From host1 to host0: 2 bytes are exchanged
+*
+* - From host1 to host1: 3 bytes are exchanged
+*
+* In a parallel execution, all parts (all executions on each hosts, all communications) progress exactly at the
+* same pace, so they all terminate at the exact same pace. If one part is slow because of a slow resource or
+* because of contention, this slows down the parallel execution as a whole.
+*
+* These objects are somewhat surprising from a modeling point of view. For example, the unit of their speed is
+* somewhere between flop/sec and byte/sec. Arbitrary parallel executions will simply not work with the usual platform
+* models, and you must :ref:`use the ptask_L07 host model &lt;options_model_select&gt;` for that. Note that you can mix
+* regular executions and communications with parallel executions, provided that the host model is ptask_L07.
+*
+* </verbatim> Block the current actor until the built parallel execution completes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="321" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" declline="321" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1aa19d4ba6a098a57722e1ca3f87b93107" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::this_actor::parallel_execute</definition>
+        <argsstring>(const std::vector&lt; s4u::Host * &gt; &amp;hosts, const std::vector&lt; double &gt; &amp;flops_amounts, const std::vector&lt; double &gt; &amp;bytes_amounts, double timeout)</argsstring>
+        <name>parallel_execute</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">s4u::Host</ref> * &gt; &amp;</type>
+          <declname>hosts</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>flops_amounts</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>bytes_amounts</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="325" column="10" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" declline="325" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1a1885c8cd2813193f2bd97376b8d45bda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ExecPtr</type>
+        <definition>ExecPtr simgrid::s4u::this_actor::exec_init</definition>
+        <argsstring>(double flops_amounts)</argsstring>
+        <name>exec_init</name>
+        <param>
+          <type>double</type>
+          <declname>flops_amounts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize a sequential execution that must then be started manually </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="329" column="10" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" declline="329" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1a248505d3fe357cf141f606706164b7a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ExecPtr</type>
+        <definition>ExecPtr simgrid::s4u::this_actor::exec_init</definition>
+        <argsstring>(const std::vector&lt; s4u::Host * &gt; &amp;hosts, const std::vector&lt; double &gt; &amp;flops_amounts, const std::vector&lt; double &gt; &amp;bytes_amounts)</argsstring>
+        <name>exec_init</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">s4u::Host</ref> * &gt; &amp;</type>
+          <declname>hosts</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>flops_amounts</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>bytes_amounts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize a parallel execution that must then be started manually </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="331" column="10" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" declline="331" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1a098e3d89d6db0c6a43f9defad5d64197" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ExecPtr</type>
+        <definition>ExecPtr simgrid::s4u::this_actor::exec_async</definition>
+        <argsstring>(double flops_amounts)</argsstring>
+        <name>exec_async</name>
+        <param>
+          <type>double</type>
+          <declname>flops_amounts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="334" column="10" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" declline="334" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1a0ddac7bc6c410166354b330422caeaeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>aid_t</type>
+        <definition>aid_t simgrid::s4u::this_actor::get_pid</definition>
+        <argsstring>()</argsstring>
+        <name>get_pid</name>
+        <briefdescription>
+<para>Returns the actor ID of the current actor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="337" column="8" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" declline="337" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1a17907121984e36922382c814ed6279bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>aid_t</type>
+        <definition>aid_t simgrid::s4u::this_actor::get_ppid</definition>
+        <argsstring>()</argsstring>
+        <name>get_ppid</name>
+        <briefdescription>
+<para>Returns the ancestor&apos;s actor ID of the current actor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="340" column="8" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" declline="340" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1aa586604eab8ab4f4b147da46be800f5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string simgrid::s4u::this_actor::get_name</definition>
+        <argsstring>()</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+<para>Returns the name of the current actor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="343" column="14" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" declline="343" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1a9b09046f4268c28ed66166bcd469b372" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* simgrid::s4u::this_actor::get_cname</definition>
+        <argsstring>()</argsstring>
+        <name>get_cname</name>
+        <briefdescription>
+<para>Returns the name of the current actor as a C string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="345" column="13" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" declline="345" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1a72cec8a36caf8ded8d094552da102f25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> *</type>
+        <definition>Host* simgrid::s4u::this_actor::get_host</definition>
+        <argsstring>()</argsstring>
+        <name>get_host</name>
+        <briefdescription>
+<para>Returns the name of the host on which the current actor is running. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="348" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" declline="348" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1a160716aa7e4655dc0f0a467ba4c6d0dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::this_actor::suspend</definition>
+        <argsstring>()</argsstring>
+        <name>suspend</name>
+        <briefdescription>
+<para>Suspend the current actor, that is blocked until resume()ed by another actor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="351" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" declline="351" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1a01bd63fae4e1e908172b8179ecff990c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::this_actor::yield</definition>
+        <argsstring>()</argsstring>
+        <name>yield</name>
+        <briefdescription>
+<para>Yield the current actor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="354" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" declline="354" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1a41df15dcf218f2c04d33a05548800af9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::this_actor::exit</definition>
+        <argsstring>()</argsstring>
+        <name>exit</name>
+        <briefdescription>
+<para>kill the current actor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="357" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" declline="357" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1ad7e808242e8c77002881f40bb932e974" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::this_actor::on_exit</definition>
+        <argsstring>(const std::function&lt; void(bool)&gt; &amp;fun)</argsstring>
+        <name>on_exit</name>
+        <param>
+          <type>const std::function&lt; void(bool)&gt; &amp;</type>
+          <declname>fun</declname>
+        </param>
+        <briefdescription>
+<para>Add a function to the list of &quot;on_exit&quot; functions of the current actor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The on_exit functions are the functions executed when your actor is killed. You should use them to free the data used by your actor.</para>
+<para>Please note that functions registered in this signal cannot do any simcall themselves. It means that they cannot send or receive messages, acquire or release mutexes, nor even modify a host property or something. Not only are blocking functions forbidden in this setting, but also modifications to the global state.</para>
+<para>The parameter of on_exit&apos;s callbacks denotes whether or not the actor&apos;s execution failed. It will be set to true if the actor was killed or failed because of an exception, while it will remain to false if the actor terminated gracefully. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="373" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" declline="373" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesimgrid_1_1s4u_1_1this__actor_1a1a5e42c0731d3320d834b7d30ff110ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::this_actor::set_host</definition>
+        <argsstring>(Host *new_host)</argsstring>
+        <name>set_host</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> *</type>
+          <declname>new_host</declname>
+        </param>
+        <briefdescription>
+<para>Migrate the current actor to a new host. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="376" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" declline="376" declcolumn="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Static methods working on the current actor (see <ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">s4u::Actor</ref>) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Actor.hpp" line="237" column="1"/>
+  </compounddef>
+</doxygen>

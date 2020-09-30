@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="engine_8h" kind="file" language="C++">
+    <compoundname>engine.h</compoundname>
+    <includes refid="forward_8h" local="no">simgrid/forward.h</includes>
+    <includedby refid="msg_8h" local="no">msg.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="3">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="2">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>engine.h</label>
+        <link refid="engine_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>msg.h</label>
+        <link refid="msg_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>msg_private.hpp</label>
+        <link refid="msg__private_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>engine.h</label>
+        <link refid="engine_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="engine_8h_1a3b493ce2427ba98dc4f5d8e7d57de0c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid_init</definition>
+        <argsstring>(int *argc, char **argv)</argsstring>
+        <name>simgrid_init</name>
+        <param>
+          <type>int *</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the SimGrid engine, taking the command line parameters of your main function. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/engine.h" line="13" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/engine.h" declline="13" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="engine_8h_1a5960b8756d4b37687641df92ef388dc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid_load_platform</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>simgrid_load_platform</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a new platform, including hosts, links, and the routing table.</para>
+<para><verbatim>embed:rst:leading-asterisk
+* See also: :ref:`platform`.
+* </verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/engine.h" line="21" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/engine.h" declline="21" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="engine_8h_1a1cc3be6c0aad7ae56d8c4473edf37fcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid_load_deployment</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>simgrid_load_deployment</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load a deployment file and launch the actors that it contains</para>
+<para><verbatim>embed:rst:leading-asterisk
+* See also: :ref:`deploy`.
+* </verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/engine.h" line="28" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/engine.h" declline="28" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="engine_8h_1a1270eab3347092992ab85ab86570b4ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid_run</definition>
+        <argsstring>()</argsstring>
+        <name>simgrid_run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Run the simulation after initialization </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/engine.h" line="30" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/engine.h" declline="30" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="engine_8h_1a0966a03030acd4a8ae52394b016ef457" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid_register_function</definition>
+        <argsstring>(const char *name, int(*code)(int, char **))</argsstring>
+        <name>simgrid_register_function</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int(*)(int, char **)</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Registers the main function of an actor that will be launched from the deployment file </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/engine.h" line="32" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/engine.h" declline="32" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="engine_8h_1ab958dc611df9e6c73e9e64b5b0e8d351" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid_register_default</definition>
+        <argsstring>(int(*code)(int, char **))</argsstring>
+        <name>simgrid_register_default</name>
+        <param>
+          <type>int(*)(int, char **)</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Registers a function as the default main function of actors</para>
+<para>It will be used as fallback when the function requested from the deployment file was not registered. It is used for trace-based simulations (see examples/s4u/replay-comms and similar). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/engine.h" line="38" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/engine.h" declline="38" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="engine_8h_1a137250d980b278a5428b3d61432ffbfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid_get_clock</definition>
+        <argsstring>()</argsstring>
+        <name>simgrid_get_clock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve the simulation time (in seconds) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/engine.h" line="40" column="9" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/engine.h" declline="40" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="engine_8h_1a9ca735f05559a69cc97ac2c54abb19d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int simgrid_get_actor_count</definition>
+        <argsstring>()</argsstring>
+        <name>simgrid_get_actor_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve the number of actors in the simulation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/engine.h" line="42" column="6" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/engine.h" declline="42" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="engine_8h_1a90a988b17951ed935e7a728a7488121c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_config_continue_after_help</definition>
+        <argsstring>()</argsstring>
+        <name>sg_config_continue_after_help</name>
+        <briefdescription>
+<para>Allow other libraries to react to the <ndash/>help flag, too. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When finding <ndash/>help on the command line, simgrid usually stops right after displaying its help message. If you are writing a library using simgrid, you may want to display your own help message before everything stops. If so, just call this function before having simgrid parsing the command line, and you will be given the control even if the user is asking for help. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/engine.h" line="51" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/engine.h" declline="51" declcolumn="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/engine.h"/>
+  </compounddef>
+</doxygen>

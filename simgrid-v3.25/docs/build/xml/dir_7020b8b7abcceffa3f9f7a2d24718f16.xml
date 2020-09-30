@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_7020b8b7abcceffa3f9f7a2d24718f16" kind="dir">
+    <compoundname>plugins</compoundname>
+    <innerdir refid="dir_3672e457162d338ced569cb0c2aa3c87">file_system</innerdir>
+    <innerdir refid="dir_3abd154c0bd59897d9598c2801cb6687">vm</innerdir>
+    <innerfile refid="dirty__page__tracking_8cpp">dirty_page_tracking.cpp</innerfile>
+    <innerfile refid="host__dvfs_8cpp">host_dvfs.cpp</innerfile>
+    <innerfile refid="host__energy_8cpp">host_energy.cpp</innerfile>
+    <innerfile refid="host__load_8cpp">host_load.cpp</innerfile>
+    <innerfile refid="link__energy_8cpp">link_energy.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/"/>
+  </compounddef>
+</doxygen>

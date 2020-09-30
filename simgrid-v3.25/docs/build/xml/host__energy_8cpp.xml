@@ -1,0 +1,546 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="host__energy_8cpp" kind="file" language="C++">
+    <compoundname>host_energy.cpp</compoundname>
+    <includes local="yes">simgrid/Exception.hpp</includes>
+    <includes local="yes">simgrid/plugins/energy.h</includes>
+    <includes refid="_engine_8hpp" local="yes">simgrid/s4u/Engine.hpp</includes>
+    <includes refid="_exec_8hpp" local="yes">simgrid/s4u/Exec.hpp</includes>
+    <includes local="yes">src/include/surf/surf.hpp</includes>
+    <includes local="yes">src/kernel/activity/ExecImpl.hpp</includes>
+    <includes refid="_virtual_machine_impl_8hpp" local="yes">src/plugins/vm/VirtualMachineImpl.hpp</includes>
+    <includes local="yes">src/surf/cpu_interface.hpp</includes>
+    <includes local="no">boost/algorithm/string/classification.hpp</includes>
+    <includes local="no">boost/algorithm/string/split.hpp</includes>
+    <incdepgraph>
+      <node id="19">
+        <label>atomic</label>
+      </node>
+      <node id="25">
+        <label>functional</label>
+      </node>
+      <node id="31">
+        <label>simgrid/s4u/VirtualMachine.hpp</label>
+        <link refid="_virtual_machine_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="6">
+        <label>xbt/functional.hpp</label>
+      </node>
+      <node id="33">
+        <label>src/kernel/actor/ActorImpl.hpp</label>
+      </node>
+      <node id="5">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="38">
+        <label>boost/algorithm/string/classification.hpp</label>
+      </node>
+      <node id="3">
+        <label>simgrid/plugins/energy.h</label>
+      </node>
+      <node id="4">
+        <label>simgrid/s4u/Engine.hpp</label>
+        <link refid="_engine_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>src/include/surf/surf.hpp</label>
+      </node>
+      <node id="12">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>simgrid/Exception.hpp</label>
+      </node>
+      <node id="26">
+        <label>map</label>
+      </node>
+      <node id="22">
+        <label>simgrid/chrono.hpp</label>
+      </node>
+      <node id="34">
+        <label>src/surf/HostImpl.hpp</label>
+      </node>
+      <node id="7">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>xbt/string.hpp</label>
+      </node>
+      <node id="39">
+        <label>boost/algorithm/string/split.hpp</label>
+      </node>
+      <node id="1">
+        <label>host_energy.cpp</label>
+        <link refid="host__energy_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>xbt/signal.hpp</label>
+      </node>
+      <node id="37">
+        <label>src/surf/cpu_interface.hpp</label>
+      </node>
+      <node id="32">
+        <label>simgrid/s4u/Host.hpp</label>
+        <link refid="_host_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>src/plugins/vm/VirtualMachineImpl.hpp</label>
+        <link refid="_virtual_machine_impl_8hpp_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>vector</label>
+      </node>
+      <node id="14">
+        <label>utility</label>
+      </node>
+      <node id="9">
+        <label>simgrid/simix.hpp</label>
+      </node>
+      <node id="16">
+        <label>simgrid/s4u/Exec.hpp</label>
+        <link refid="_exec_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>deque</label>
+      </node>
+      <node id="17">
+        <label>simgrid/s4u/Activity.hpp</label>
+        <link refid="_activity_8hpp_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>unordered_map</label>
+      </node>
+      <node id="23">
+        <label>xbt/Extendable.hpp</label>
+      </node>
+      <node id="21">
+        <label>simgrid/s4u/Actor.hpp</label>
+        <link refid="_actor_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>src/kernel/activity/ExecImpl.hpp</label>
+      </node>
+      <node id="27">
+        <label>xbt/ex.h</label>
+      </node>
+      <node id="20">
+        <label>set</label>
+      </node>
+      <node id="35">
+        <label>algorithm</label>
+      </node>
+      <node id="18">
+        <label>xbt/asserts.h</label>
+      </node>
+      <node id="10">
+        <label>simgrid/s4u/NetZone.hpp</label>
+        <link refid="_net_zone_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classsimgrid_1_1plugin_1_1_power_range" prot="public">simgrid::plugin::PowerRange</innerclass>
+    <innerclass refid="classsimgrid_1_1plugin_1_1_host_energy" prot="public">simgrid::plugin::HostEnergy</innerclass>
+    <innernamespace refid="namespacesimgrid">simgrid</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1plugin">simgrid::plugin</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="host__energy_8cpp_1ac5db9c5a131ceafa5842b7efc0b49fba" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void on_simulation_end</definition>
+        <argsstring>()</argsstring>
+        <name>on_simulation_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="513" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="513" bodyend="529" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" declline="115" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="host__energy_8cpp_1a1cd4b0cd0a71b41ce0876e277d1e7ce6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void on_creation</definition>
+        <argsstring>(simgrid::s4u::Host &amp;host)</argsstring>
+        <name>on_creation</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">simgrid::s4u::Host</ref> &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="462" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="462" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="host__energy_8cpp_1af41b01209734a93dbf0b1164a5606f9f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void on_action_state_change</definition>
+        <argsstring>(simgrid::kernel::resource::CpuAction const &amp;action, simgrid::kernel::resource::Action::State)</argsstring>
+        <name>on_action_state_change</name>
+        <param>
+          <type>simgrid::kernel::resource::CpuAction const &amp;</type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type>simgrid::kernel::resource::Action::State</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="472" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="472" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="host__energy_8cpp_1a8e81f0535a52ee4a95b542f532fe150f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void on_host_change</definition>
+        <argsstring>(simgrid::s4u::Host const &amp;host)</argsstring>
+        <name>on_host_change</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">simgrid::s4u::Host</ref> const &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="494" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="494" bodyend="502"/>
+      </memberdef>
+      <memberdef kind="function" id="host__energy_8cpp_1a580f27074cac0d5645d3ac0eca759c93" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void on_host_destruction</definition>
+        <argsstring>(simgrid::s4u::Host const &amp;host)</argsstring>
+        <name>on_host_destruction</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">simgrid::s4u::Host</ref> const &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="504" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="504" bodyend="511"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__energy_1ga9f6ea89437ff1c73f0fea3460e2c32af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_host_energy_plugin_init</definition>
+        <argsstring>()</argsstring>
+        <name>sg_host_energy_plugin_init</name>
+        <briefdescription>
+<para>Enable host energy plugin. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable energy plugin to get joules consumption of each cpu. Call this function before loading your platform. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="537" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="537" bodyend="566"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__energy_1gacd80921546311ea410b909eb13350585" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_host_energy_update_all</definition>
+        <argsstring>()</argsstring>
+        <name>sg_host_energy_update_all</name>
+        <briefdescription>
+<para>updates the consumption of all hosts </para>
+        </briefdescription>
+        <detaileddescription>
+<para>After this call, sg_host_get_consumed_energy() will not interrupt your process (until after the next clock update). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="574" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="574" bodyend="584"/>
+      </memberdef>
+      <memberdef kind="function" id="host__energy_8cpp_1a102dd55eda3f9937bd3661fefc0365fb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ensure_plugin_inited</definition>
+        <argsstring>()</argsstring>
+        <name>ensure_plugin_inited</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="586" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="586" bodyend="591"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__energy_1gaa31034c51ec8205d3eec4c29290cfb6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_get_consumed_energy</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_get_consumed_energy</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Returns the total energy consumed by the host so far (in Joules) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Please note that since the consumption is lazily updated, it may require a simcall to update it. The result is that the actor requesting this value will be interrupted, the value will be updated in kernel mode before returning the control to the requesting actor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="600" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="600" bodyend="604"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__energy_1gaa4d0d01377fcf46f45eefd666f1a5418" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_get_idle_consumption</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_get_idle_consumption</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Get the amount of watt dissipated when the host is idling. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="609" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="609" bodyend="613"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__energy_1gae3b93cc798df3f5a1c4be88e501e1b8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_get_idle_consumption_at</definition>
+        <argsstring>(const_sg_host_t host, int pstate)</argsstring>
+        <name>sg_host_get_idle_consumption_at</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pstate</declname>
+        </param>
+        <briefdescription>
+<para>Get the amount of watt dissipated at the given pstate when the host is idling. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="618" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="618" bodyend="622"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__energy_1ga6aa67d91f58de9a878e5b863fd4632de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_get_wattmin_at</definition>
+        <argsstring>(const_sg_host_t host, int pstate)</argsstring>
+        <name>sg_host_get_wattmin_at</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pstate</declname>
+        </param>
+        <briefdescription>
+<para>Get the amount of watt dissipated at the given pstate when the host is at 0 or epsilon% CPU usage. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="627" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="627" bodyend="631"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__energy_1gad0c8414cf230d10ad875eeaa3202f140" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_get_wattmax_at</definition>
+        <argsstring>(const_sg_host_t host, int pstate)</argsstring>
+        <name>sg_host_get_wattmax_at</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pstate</declname>
+        </param>
+        <briefdescription>
+<para>Returns the amount of watt dissipated at the given pstate when the host burns CPU at 100%. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="635" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="635" bodyend="639"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__energy_1gabdac53747dc815cae2b466b7699dace3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_get_power_range_slope_at</definition>
+        <argsstring>(const_sg_host_t host, int pstate)</argsstring>
+        <name>sg_host_get_power_range_slope_at</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pstate</declname>
+        </param>
+        <briefdescription>
+<para>Returns the power slope at the given pstate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="643" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="643" bodyend="647"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__energy_1ga95df58dff85d8af769e8a70bc051b05f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_get_current_consumption</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_get_current_consumption</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Returns the current consumption of the host. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" line="651" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp" bodystart="651" bodyend="655"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_energy.cpp"/>
+  </compounddef>
+</doxygen>

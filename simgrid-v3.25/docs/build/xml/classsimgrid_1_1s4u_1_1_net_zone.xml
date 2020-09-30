@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1s4u_1_1_net_zone" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::s4u::NetZone</compoundname>
+    <includes refid="_net_zone_8hpp" local="no">NetZone.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_net_zone_1acee007aa7b5a317e4fd5cb170b2567de" prot="private" static="no" mutable="no">
+        <type>kernel::routing::NetZoneImpl *const</type>
+        <definition>kernel::routing::NetZoneImpl* const simgrid::s4u::NetZone::pimpl_</definition>
+        <argsstring></argsstring>
+        <name>pimpl_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" line="46" column="38" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_net_zone_1ae1c5256358e94dbd055d9736056e9899" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(bool symmetrical, kernel::routing::NetPoint *src, kernel::routing::NetPoint *dst, kernel::routing::NetPoint *gw_src, kernel::routing::NetPoint *gw_dst, std::vector&lt; kernel::resource::LinkImpl * &gt; const  &amp;link_list)&gt;</type>
+        <definition>xbt::signal&lt;void(bool symmetrical, kernel::routing::NetPoint* src, kernel::routing::NetPoint* dst, kernel::routing::NetPoint* gw_src, kernel::routing::NetPoint* gw_dst, std::vector&lt;kernel::resource::LinkImpl*&gt; const&amp; link_list)&gt; simgrid::s4u::NetZone::on_route_creation</definition>
+        <argsstring></argsstring>
+        <name>on_route_creation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" line="70" column="7" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_net_zone_1ad90b9ce7a975690685fd9588723e56ad" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_net_zone" kindref="compound">NetZone</ref> const  &amp;)&gt;</type>
+        <definition>xbt::signal&lt;void(NetZone const&amp;)&gt; simgrid::s4u::NetZone::on_creation</definition>
+        <argsstring></argsstring>
+        <name>on_creation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" line="71" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_net_zone_1a3e6a715cb6b4929d0073cfd25c04c17f" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_net_zone" kindref="compound">NetZone</ref> const  &amp;)&gt;</type>
+        <definition>xbt::signal&lt;void(NetZone const&amp;)&gt; simgrid::s4u::NetZone::on_seal</definition>
+        <argsstring></argsstring>
+        <name>on_seal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" line="72" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_net_zone_1a42a97d12066df3759b38842db2df7a79" prot="protected" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::s4u::NetZone::NetZone</definition>
+        <argsstring>(kernel::routing::NetZoneImpl *impl)</argsstring>
+        <name>NetZone</name>
+        <param>
+          <type>kernel::routing::NetZoneImpl *</type>
+          <declname>impl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" line="30" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_net_zone_1a6166db4f9ac7799d72d5e0c6573b535d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; simgrid::s4u::NetZone::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+<para>Retrieves the name of that netzone as a C++ string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" line="34" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_net_zone_1a98b0375fa47f4e6b36c8f0f10651f8a6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* simgrid::s4u::NetZone::get_cname</definition>
+        <argsstring>() const</argsstring>
+        <name>get_cname</name>
+        <briefdescription>
+<para>Retrieves the name of that netzone as a C string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" line="36" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_net_zone_1ad0d4358c2cbf6ed1485fe89145232a08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_net_zone" kindref="compound">NetZone</ref> *</type>
+        <definition>NetZone* simgrid::s4u::NetZone::get_father</definition>
+        <argsstring>()</argsstring>
+        <name>get_father</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" line="38" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_net_zone_1a92ee9453102de8db7fbd306cc2bd9523" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> * &gt;</type>
+        <definition>std::vector&lt;Host*&gt; simgrid::s4u::NetZone::get_all_hosts</definition>
+        <argsstring>() const</argsstring>
+        <name>get_all_hosts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" line="40" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_net_zone_1a4e1058be6d39d78ae2ddebad082bbdfc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int simgrid::s4u::NetZone::get_host_count</definition>
+        <argsstring>() const</argsstring>
+        <name>get_host_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" line="41" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_net_zone_1a72eb13e2305ccc9bc5c2cb41394b7383" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>kernel::routing::NetZoneImpl *</type>
+        <definition>kernel::routing::NetZoneImpl* simgrid::s4u::NetZone::get_impl</definition>
+        <argsstring>() const</argsstring>
+        <name>get_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" line="43" column="32" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_net_zone_1a2eaa07115375f8d7b17e2953c1a8bb85" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::unordered_map&lt; std::string, std::string &gt; *</type>
+        <definition>const std::unordered_map&lt;std::string, std::string&gt;* simgrid::s4u::NetZone::get_properties</definition>
+        <argsstring>() const</argsstring>
+        <name>get_properties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the properties assigned to a netzone </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" line="50" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_net_zone_1a0ec215a2fc0710223254d00a7dd23dc4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* simgrid::s4u::NetZone::get_property</definition>
+        <argsstring>(const std::string &amp;key) const</argsstring>
+        <name>get_property</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve the property value (or nullptr if not set) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" line="52" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_net_zone_1a31b93259835ffc4d8324cfaa64d9eac4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::NetZone::set_property</definition>
+        <argsstring>(const std::string &amp;key, const std::string &amp;value)</argsstring>
+        <name>set_property</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" line="53" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_net_zone_1a49f3bf1dbff04225029da0f88af00850" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classsimgrid_1_1s4u_1_1_net_zone" kindref="compound">NetZone</ref> * &gt;</type>
+        <definition>std::vector&lt;NetZone*&gt; simgrid::s4u::NetZone::get_children</definition>
+        <argsstring>() const</argsstring>
+        <name>get_children</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" line="55" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_net_zone_1ad1492c9dfcbe58f4e80689e0d16adfb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int simgrid::s4u::NetZone::add_component</definition>
+        <argsstring>(kernel::routing::NetPoint *elm)</argsstring>
+        <name>add_component</name>
+        <param>
+          <type>kernel::routing::NetPoint *</type>
+          <declname>elm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" line="58" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_net_zone_1abf707e36de6b026e0bb04946906ce6ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::NetZone::add_route</definition>
+        <argsstring>(kernel::routing::NetPoint *src, kernel::routing::NetPoint *dst, kernel::routing::NetPoint *gw_src, kernel::routing::NetPoint *gw_dst, std::vector&lt; kernel::resource::LinkImpl * &gt; &amp;link_list, bool symmetrical)</argsstring>
+        <name>add_route</name>
+        <param>
+          <type>kernel::routing::NetPoint *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>kernel::routing::NetPoint *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>kernel::routing::NetPoint *</type>
+          <declname>gw_src</declname>
+        </param>
+        <param>
+          <type>kernel::routing::NetPoint *</type>
+          <declname>gw_dst</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; kernel::resource::LinkImpl * &gt; &amp;</type>
+          <declname>link_list</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>symmetrical</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" line="59" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_net_zone_1a8ba6d3be77d40964805f0627ef7eebaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::NetZone::add_bypass_route</definition>
+        <argsstring>(kernel::routing::NetPoint *src, kernel::routing::NetPoint *dst, kernel::routing::NetPoint *gw_src, kernel::routing::NetPoint *gw_dst, std::vector&lt; kernel::resource::LinkImpl * &gt; &amp;link_list, bool symmetrical)</argsstring>
+        <name>add_bypass_route</name>
+        <param>
+          <type>kernel::routing::NetPoint *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>kernel::routing::NetPoint *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>kernel::routing::NetPoint *</type>
+          <declname>gw_src</declname>
+        </param>
+        <param>
+          <type>kernel::routing::NetPoint *</type>
+          <declname>gw_dst</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; kernel::resource::LinkImpl * &gt; &amp;</type>
+          <declname>link_list</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>symmetrical</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" line="62" column="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Networking Zones. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A netzone is a network container, in charge of routing information between elements (hosts) and to the nearby netzones. In SimGrid, there is a hierarchy of netzones, with a unique root zone (that you can retrieve from the s4u::Engine). </para>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" line="26" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/NetZone.hpp" bodystart="26" bodyend="73"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1s4u_1_1_net_zone_1a8ba6d3be77d40964805f0627ef7eebaf" prot="public" virt="non-virtual"><scope>simgrid::s4u::NetZone</scope><name>add_bypass_route</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_net_zone_1ad1492c9dfcbe58f4e80689e0d16adfb6" prot="public" virt="non-virtual"><scope>simgrid::s4u::NetZone</scope><name>add_component</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_net_zone_1abf707e36de6b026e0bb04946906ce6ed" prot="public" virt="non-virtual"><scope>simgrid::s4u::NetZone</scope><name>add_route</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_net_zone_1a92ee9453102de8db7fbd306cc2bd9523" prot="public" virt="non-virtual"><scope>simgrid::s4u::NetZone</scope><name>get_all_hosts</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_net_zone_1a49f3bf1dbff04225029da0f88af00850" prot="public" virt="non-virtual"><scope>simgrid::s4u::NetZone</scope><name>get_children</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_net_zone_1a98b0375fa47f4e6b36c8f0f10651f8a6" prot="public" virt="non-virtual"><scope>simgrid::s4u::NetZone</scope><name>get_cname</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_net_zone_1ad0d4358c2cbf6ed1485fe89145232a08" prot="public" virt="non-virtual"><scope>simgrid::s4u::NetZone</scope><name>get_father</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_net_zone_1a4e1058be6d39d78ae2ddebad082bbdfc" prot="public" virt="non-virtual"><scope>simgrid::s4u::NetZone</scope><name>get_host_count</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_net_zone_1a72eb13e2305ccc9bc5c2cb41394b7383" prot="public" virt="non-virtual"><scope>simgrid::s4u::NetZone</scope><name>get_impl</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_net_zone_1a6166db4f9ac7799d72d5e0c6573b535d" prot="public" virt="non-virtual"><scope>simgrid::s4u::NetZone</scope><name>get_name</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_net_zone_1a2eaa07115375f8d7b17e2953c1a8bb85" prot="public" virt="non-virtual"><scope>simgrid::s4u::NetZone</scope><name>get_properties</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_net_zone_1a0ec215a2fc0710223254d00a7dd23dc4" prot="public" virt="non-virtual"><scope>simgrid::s4u::NetZone</scope><name>get_property</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_net_zone_1a42a97d12066df3759b38842db2df7a79" prot="protected" virt="non-virtual"><scope>simgrid::s4u::NetZone</scope><name>NetZone</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_net_zone_1ad90b9ce7a975690685fd9588723e56ad" prot="public" virt="non-virtual"><scope>simgrid::s4u::NetZone</scope><name>on_creation</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_net_zone_1ae1c5256358e94dbd055d9736056e9899" prot="public" virt="non-virtual"><scope>simgrid::s4u::NetZone</scope><name>on_route_creation</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_net_zone_1a3e6a715cb6b4929d0073cfd25c04c17f" prot="public" virt="non-virtual"><scope>simgrid::s4u::NetZone</scope><name>on_seal</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_net_zone_1acee007aa7b5a317e4fd5cb170b2567de" prot="private" virt="non-virtual"><scope>simgrid::s4u::NetZone</scope><name>pimpl_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_net_zone_1a31b93259835ffc4d8324cfaa64d9eac4" prot="public" virt="non-virtual"><scope>simgrid::s4u::NetZone</scope><name>set_property</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

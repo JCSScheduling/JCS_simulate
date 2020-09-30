@@ -1,0 +1,751 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="host_8h" kind="file" language="C++">
+    <compoundname>host.h</compoundname>
+    <includes local="no">xbt/dict.h</includes>
+    <includes local="no">xbt/dynar.h</includes>
+    <includes refid="forward_8h" local="no">simgrid/forward.h</includes>
+    <includedby refid="msg_8h" local="no">msg.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>xbt/dict.h</label>
+      </node>
+      <node id="6">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="5">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="4">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>host.h</label>
+        <link refid="host_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>xbt/dynar.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>msg.h</label>
+        <link refid="msg_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>msg_private.hpp</label>
+        <link refid="msg__private_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>host.h</label>
+        <link refid="host_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="host_8h_1a7049915247aaa364e261d4731c07f2c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">sg_host_t</ref> *</type>
+        <definition>sg_host_t* sg_host_list</definition>
+        <argsstring>()</argsstring>
+        <name>sg_host_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns an array of all existing hosts (use sg_host_count() to know the array size).</para>
+<para><simplesect kind="remark"><para>The host order in this array is generally different from the creation/declaration order in the XML platform (we use a hash table internally). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="20" column="12" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="20" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1a60d38b49076cb9e25d0ae506f9fed3c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t sg_host_count</definition>
+        <argsstring>()</argsstring>
+        <name>sg_host_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the amount of hosts existing in the platform. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="23" column="9" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="23" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1a3f68a9d82da3115ea6ef89ee7f24998c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>xbt_dynar_t</type>
+        <definition>xbt_dynar_t sg_hosts_as_dynar</definition>
+        <argsstring>()</argsstring>
+        <name>sg_hosts_as_dynar</name>
+        <briefdescription>
+<para>Return a dynar containing all the hosts declared at a given point of time (including VMs) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>The host order in the returned array is generally different from the host creation/declaration order in the XML platform (we use a hash table internally) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="30" column="14" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="30" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1aefdf7c7c0b492976acf4e90296557b38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t sg_host_extension_create</definition>
+        <argsstring>(void(*deleter)(void *))</argsstring>
+        <name>sg_host_extension_create</name>
+        <param>
+          <type>void(*)(void *)</type>
+          <declname>deleter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="32" column="9" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="32" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1a4e1567a3c850c6db24779018c92b59fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* sg_host_extension_get</definition>
+        <argsstring>(const_sg_host_t host, size_t rank)</argsstring>
+        <name>sg_host_extension_get</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>rank</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="33" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="33" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1a458302b5da85b6afb47c96c6f268d7a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">sg_host_t</ref></type>
+        <definition>sg_host_t sg_host_by_name</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>sg_host_by_name</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Finds an host from its name </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="36" column="12" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="36" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1ad35d50a3b730d9b78c3e42e10ab9a8eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* sg_host_get_name</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_get_name</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Return the name of the sg_host_t. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="39" column="13" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="39" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1a64935897562c68f3d6ab954cad3f098d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>xbt_dict_t</type>
+        <definition>xbt_dict_t sg_host_get_mounted_storage_list</definition>
+        <argsstring>(sg_host_t host)</argsstring>
+        <name>sg_host_get_mounted_storage_list</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Return the list of mount point names on an host. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a host </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a dict containing all mount point on the host (mount_name =&gt; sg_storage_t) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="64" column="13" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="64" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1ac4dbbcd5cf673afd261100093846501c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>xbt_dynar_t</type>
+        <definition>xbt_dynar_t sg_host_get_attached_storage_list</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_get_attached_storage_list</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Return the list of storages attached to an host. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a host </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a dynar containing all storages (name) attached to the host </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="70" column="14" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="70" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1ac7d1e2d9273d2fadb7fcb05f818bb3e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_speed</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_speed</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Return the speed of the processor (in flop/s), regardless of the current load on the machine. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="74" column="9" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="74" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1a366f5dc9ccd22dd0c2ad6a44832377ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_get_pstate_speed</definition>
+        <argsstring>(const_sg_host_t host, int pstate_index)</argsstring>
+        <name>sg_host_get_pstate_speed</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pstate_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="75" column="9" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="75" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1a96ba491f19f39c785ae4eea59211493f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_get_available_speed</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_get_available_speed</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="77" column="9" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="77" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1a57e1aefbd557d9ae9673cdc3a62703d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sg_host_core_count</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_core_count</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="79" column="6" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="79" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1a1688ed41fe9803cd9c7efda85c6f0e75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_load</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_load</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Returns the current computation load (in flops per second). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a host </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="84" column="9" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="84" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1aa4cc1c64d2913693eac56364c3240846" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">sg_host_t</ref></type>
+        <definition>sg_host_t sg_host_self</definition>
+        <argsstring>()</argsstring>
+        <name>sg_host_self</name>
+        <briefdescription>
+<para>Return the location on which the current process is running. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="87" column="12" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="87" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1a0f2e0216e33ca487ad9c53c4eca66726" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* sg_host_self_get_name</definition>
+        <argsstring>()</argsstring>
+        <name>sg_host_self_get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="89" column="13" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="89" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1aa3187c36fa26b4362cc25c30dda2786e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sg_host_get_nb_pstates</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_get_nb_pstates</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Return the total count of pstates defined for a host. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>embed:rst:leading-asterisk
+* See also :ref:`plugin_host_energy`.
+* </verbatim></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>host to test </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="99" column="6" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="99" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1a336849781762f19d9fa2fe052fa54006" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sg_host_get_pstate</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_get_pstate</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="101" column="6" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="101" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1aed576f8ad1651bf1ac2a2a7681b85ac1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_host_set_pstate</definition>
+        <argsstring>(sg_host_t host, int pstate)</argsstring>
+        <name>sg_host_set_pstate</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pstate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="102" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="102" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1adf8fdf3049c7768c0e759e3edf62b85e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_host_turn_on</definition>
+        <argsstring>(sg_host_t host)</argsstring>
+        <name>sg_host_turn_on</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="104" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="104" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1a447c0f2aab0c88538856033d780fbca8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_host_turn_off</definition>
+        <argsstring>(sg_host_t host)</argsstring>
+        <name>sg_host_turn_off</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="105" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="105" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1a6c727e9801bc5b38a38741e168b34652" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sg_host_is_on</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_is_on</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="106" column="6" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="106" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1a93ffacc2f1ec948f5bcda4fa98ce7938" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>xbt_dict_t</type>
+        <definition>xbt_dict_t sg_host_get_properties</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_get_properties</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Returns a xbt_dict_t consisting of the list of properties assigned to this host. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a host </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a dict containing the properties </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="114" column="13" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="114" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1a2c1c711e5e779384071c83f987f5d080" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* sg_host_get_property_value</definition>
+        <argsstring>(const_sg_host_t host, const char *name)</argsstring>
+        <name>sg_host_get_property_value</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Returns the value of a given host property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a host </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a property name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value of a property (or nullptr if property not set) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="123" column="13" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="123" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1aa58f2cb3f181c5ba5fc5e8f53bec4cd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_host_set_property_value</definition>
+        <argsstring>(sg_host_t host, const char *name, const char *value)</argsstring>
+        <name>sg_host_set_property_value</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Change the value of a given host property. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a host </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a property name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>what to change the property to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="132" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="132" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1a7a0c6baf47555cd7525e312c28a61cef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_host_route</definition>
+        <argsstring>(const_sg_host_t from, const_sg_host_t to, xbt_dynar_t links)</argsstring>
+        <name>sg_host_route</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>xbt_dynar_t</type>
+          <declname>links</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="134" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="134" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1a85519f4bfc29faa834225d15aa80f062" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_route_latency</definition>
+        <argsstring>(const_sg_host_t from, const_sg_host_t to)</argsstring>
+        <name>sg_host_route_latency</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="135" column="9" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="135" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1a0ceb54f2ddf7c900248e6ca4838f2e7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_route_bandwidth</definition>
+        <argsstring>(const_sg_host_t from, const_sg_host_t to)</argsstring>
+        <name>sg_host_route_bandwidth</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="136" column="9" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="136" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1a2a1b3739f948fa6e61df1acfecfac9b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_host_send_to</definition>
+        <argsstring>(sg_host_t from, sg_host_t to, double byte_amount)</argsstring>
+        <name>sg_host_send_to</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">sg_host_t</ref></type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">sg_host_t</ref></type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>byte_amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="137" column="6" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="137" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1a029bff320da740c3b780d8379f94502e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_host_dump</definition>
+        <argsstring>(const_sg_host_t ws)</argsstring>
+        <name>sg_host_dump</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>ws</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="139" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="139" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="host_8h_1a632438bb136ade72de7d338bf8dc6f82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_host_get_actor_list</definition>
+        <argsstring>(const_sg_host_t host, xbt_dynar_t whereto)</argsstring>
+        <name>sg_host_get_actor_list</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>xbt_dynar_t</type>
+          <declname>whereto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" line="141" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h" declline="141" declcolumn="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/host.h"/>
+  </compounddef>
+</doxygen>

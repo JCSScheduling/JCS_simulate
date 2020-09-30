@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1s4u_1_1_barrier" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::s4u::Barrier</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_barrier_1a16a68d421eac51d2ab372766d6bc258e" prot="private" static="no" mutable="no">
+        <type>MutexPtr</type>
+        <definition>MutexPtr simgrid::s4u::Barrier::mutex_</definition>
+        <argsstring></argsstring>
+        <name>mutex_</name>
+        <initializer>= <ref refid="classsimgrid_1_1s4u_1_1_mutex_1a322d9c3d83050916c898dfa99ddcdf4f" kindref="member">Mutex::create</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Barrier.hpp" line="23" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Barrier.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_barrier_1aafc1fdbd0bb1c39e68c1be2ab7db1076" prot="private" static="no" mutable="no">
+        <type>ConditionVariablePtr</type>
+        <definition>ConditionVariablePtr simgrid::s4u::Barrier::cond_</definition>
+        <argsstring></argsstring>
+        <name>cond_</name>
+        <initializer>= <ref refid="classsimgrid_1_1s4u_1_1_condition_variable_1adda7ad7f614babc97e9fa960ed72b128" kindref="member">ConditionVariable::create</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Barrier.hpp" line="24" column="24" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Barrier.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_barrier_1a88c7096f7495d5e2a451abe66822fb36" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int simgrid::s4u::Barrier::expected_actors_</definition>
+        <argsstring></argsstring>
+        <name>expected_actors_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Barrier.hpp" line="25" column="16" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Barrier.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_barrier_1a347a5e1db8d2478be3583d8ab02f34bc" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int simgrid::s4u::Barrier::arrived_actors_</definition>
+        <argsstring></argsstring>
+        <name>arrived_actors_</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Barrier.hpp" line="26" column="16" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Barrier.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_barrier_1a8aeb70940387f37774204fee5f85f819" prot="private" static="no" mutable="no">
+        <type>std::atomic_int_fast32_t</type>
+        <definition>std::atomic_int_fast32_t simgrid::s4u::Barrier::refcount_</definition>
+        <argsstring></argsstring>
+        <name>refcount_</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Barrier.hpp" line="29" column="28" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Barrier.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_barrier_1af3a1d43ea2786e3e5505835298d67a66" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::s4u::Barrier::Barrier</definition>
+        <argsstring>(unsigned int expected_actors)</argsstring>
+        <name>Barrier</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>expected_actors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a barrier for the given amount of actors </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Barrier.hpp" line="33" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Barrier.hpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_barrier_1a1dbc476146e68d5b9b3ed42d0df3bcd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int simgrid::s4u::Barrier::wait</definition>
+        <argsstring>()</argsstring>
+        <name>wait</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blocks into the barrier. Every waiting actors will be unlocked once the expected amount of actors reaches the barrier </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Barrier.hpp" line="43" column="7"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_barrier_1a165846316f99e18469f4cdd146f7de5c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BarrierPtr</type>
+        <definition>static BarrierPtr simgrid::s4u::Barrier::create</definition>
+        <argsstring>(unsigned int expected_actors)</argsstring>
+        <name>create</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>expected_actors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a barrier for the given amount of actors </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Barrier.hpp" line="41" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Barrier.hpp" line="21" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Barrier.hpp" bodystart="21" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1s4u_1_1_barrier_1a347a5e1db8d2478be3583d8ab02f34bc" prot="private" virt="non-virtual"><scope>simgrid::s4u::Barrier</scope><name>arrived_actors_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_barrier_1af3a1d43ea2786e3e5505835298d67a66" prot="public" virt="non-virtual"><scope>simgrid::s4u::Barrier</scope><name>Barrier</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_barrier_1aafc1fdbd0bb1c39e68c1be2ab7db1076" prot="private" virt="non-virtual"><scope>simgrid::s4u::Barrier</scope><name>cond_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_barrier_1a165846316f99e18469f4cdd146f7de5c" prot="public" virt="non-virtual"><scope>simgrid::s4u::Barrier</scope><name>create</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_barrier_1a88c7096f7495d5e2a451abe66822fb36" prot="private" virt="non-virtual"><scope>simgrid::s4u::Barrier</scope><name>expected_actors_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_barrier_1a16a68d421eac51d2ab372766d6bc258e" prot="private" virt="non-virtual"><scope>simgrid::s4u::Barrier</scope><name>mutex_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_barrier_1a8aeb70940387f37774204fee5f85f819" prot="private" virt="non-virtual"><scope>simgrid::s4u::Barrier</scope><name>refcount_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_barrier_1a1dbc476146e68d5b9b3ed42d0df3bcd6" prot="public" virt="non-virtual"><scope>simgrid::s4u::Barrier</scope><name>wait</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

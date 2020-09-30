@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1plugin_1_1dvfs_1_1_conservative" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::plugin::dvfs::Conservative</compoundname>
+    <basecompoundref refid="classsimgrid_1_1plugin_1_1dvfs_1_1_governor" prot="public" virt="non-virtual">simgrid::plugin::dvfs::Governor</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1dvfs_1_1_conservative_1a98801f1689fa94a1317e3d1156ec06d2" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::plugin::dvfs::Conservative::freq_up_threshold_</definition>
+        <argsstring></argsstring>
+        <name>freq_up_threshold_</name>
+        <initializer>= .8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" line="228" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1plugin_1_1dvfs_1_1_conservative_1ada5fe75713237e489c156f6f36c78811" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double simgrid::plugin::dvfs::Conservative::freq_down_threshold_</definition>
+        <argsstring></argsstring>
+        <name>freq_down_threshold_</name>
+        <initializer>= .2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" line="229" column="10" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1dvfs_1_1_conservative_1aecd230c8835e950b3d197c90efa8f256" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::plugin::dvfs::Conservative::Conservative</definition>
+        <argsstring>(simgrid::s4u::Host *ptr)</argsstring>
+        <name>Conservative</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">simgrid::s4u::Host</ref> *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" line="232" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" bodystart="232" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1dvfs_1_1_conservative_1aa2fab231b35c0b87c3da7896b853d497" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string simgrid::plugin::dvfs::Conservative::get_name</definition>
+        <argsstring>() const override</argsstring>
+        <name>get_name</name>
+        <reimplements refid="classsimgrid_1_1plugin_1_1dvfs_1_1_governor_1ae9728843bcf91e3423fc5b5d5899624d">get_name</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" line="233" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" bodystart="233" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1plugin_1_1dvfs_1_1_conservative_1a5bdb923b2f9a887c827836ee85330605" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void simgrid::plugin::dvfs::Conservative::update</definition>
+        <argsstring>() override</argsstring>
+        <name>update</name>
+        <reimplements refid="classsimgrid_1_1plugin_1_1dvfs_1_1_governor_1a00cd8d42b11814c5e53ae97b502f3268">update</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" line="235" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" bodystart="235" bodyend="259"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the conservative governor, which is very similar to the OnDemand governor. The Linux Kernel Documentation describes it very well, see <ulink url="https://www.kernel.org/doc/Documentation/cpu-freq/governors.txt:">https://www.kernel.org/doc/Documentation/cpu-freq/governors.txt:</ulink></para>
+<para><blockquote><para>The CPUfreq governor &quot;conservative&quot;, much like the &quot;ondemand&quot; governor, sets the CPU frequency depending on the current usage. It differs in behavior in that it gracefully increases and decreases the CPU speed rather than jumping to max speed the moment there is any load on the CPU. This behavior is more suitable in a battery powered environment. </para>
+</blockquote></para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>simgrid::plugin::dvfs::Conservative</label>
+        <link refid="classsimgrid_1_1plugin_1_1dvfs_1_1_conservative"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>simgrid::plugin::dvfs::Governor</label>
+        <link refid="classsimgrid_1_1plugin_1_1dvfs_1_1_governor"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>simgrid::plugin::dvfs::Conservative</label>
+        <link refid="classsimgrid_1_1plugin_1_1dvfs_1_1_conservative"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>simgrid::plugin::dvfs::Governor</label>
+        <link refid="classsimgrid_1_1plugin_1_1dvfs_1_1_governor"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" line="227" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_dvfs.cpp" bodystart="227" bodyend="260"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1plugin_1_1dvfs_1_1_conservative_1aecd230c8835e950b3d197c90efa8f256" prot="public" virt="non-virtual"><scope>simgrid::plugin::dvfs::Conservative</scope><name>Conservative</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1dvfs_1_1_conservative_1ada5fe75713237e489c156f6f36c78811" prot="private" virt="non-virtual"><scope>simgrid::plugin::dvfs::Conservative</scope><name>freq_down_threshold_</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1dvfs_1_1_conservative_1a98801f1689fa94a1317e3d1156ec06d2" prot="private" virt="non-virtual"><scope>simgrid::plugin::dvfs::Conservative</scope><name>freq_up_threshold_</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1dvfs_1_1_governor_1a8b081c71b1020702a0427f05cad50dc6" prot="public" virt="non-virtual"><scope>simgrid::plugin::dvfs::Conservative</scope><name>get_host</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1dvfs_1_1_governor_1a86a7668e190e2204cf8381132aa38a5d" prot="public" virt="non-virtual"><scope>simgrid::plugin::dvfs::Conservative</scope><name>get_max_pstate</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1dvfs_1_1_governor_1a49b4624cb91686daa65d35b49dc00701" prot="public" virt="non-virtual"><scope>simgrid::plugin::dvfs::Conservative</scope><name>get_min_pstate</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1dvfs_1_1_conservative_1aa2fab231b35c0b87c3da7896b853d497" prot="public" virt="virtual"><scope>simgrid::plugin::dvfs::Conservative</scope><name>get_name</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1dvfs_1_1_governor_1a4354cc3e988de92a9556b40997d8247d" prot="public" virt="non-virtual"><scope>simgrid::plugin::dvfs::Conservative</scope><name>get_sampling_rate</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1dvfs_1_1_governor_1ab23972b9f74a95b460fe398426a841c9" prot="public" virt="non-virtual"><scope>simgrid::plugin::dvfs::Conservative</scope><name>Governor</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1dvfs_1_1_governor_1ac05fb207315441b06817ea34f4f720b0" prot="public" virt="non-virtual"><scope>simgrid::plugin::dvfs::Conservative</scope><name>init</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1dvfs_1_1_conservative_1a5bdb923b2f9a887c827836ee85330605" prot="public" virt="virtual"><scope>simgrid::plugin::dvfs::Conservative</scope><name>update</name></member>
+      <member refid="classsimgrid_1_1plugin_1_1dvfs_1_1_governor_1ab849a6f1c3056c8c9bce76ff26abdaa9" prot="public" virt="virtual"><scope>simgrid::plugin::dvfs::Conservative</scope><name>~Governor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

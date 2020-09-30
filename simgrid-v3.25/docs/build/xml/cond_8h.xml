@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="cond_8h" kind="file" language="C++">
+    <compoundname>cond.h</compoundname>
+    <includes refid="forward_8h" local="no">simgrid/forward.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="3">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="1">
+        <label>cond.h</label>
+        <link refid="cond_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="cond_8h_1a286e6991074bb5748e41763df55db913" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_condition_variable" kindref="compound">sg_cond_t</ref></type>
+        <definition>sg_cond_t sg_cond_init</definition>
+        <argsstring>()</argsstring>
+        <name>sg_cond_init</name>
+        <briefdescription>
+<para>Creates a condition variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/cond.h" line="14" column="12" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/cond.h" declline="14" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="cond_8h_1a5aabb7641bff836696e993788ead66fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_cond_wait</definition>
+        <argsstring>(sg_cond_t cond, sg_mutex_t mutex)</argsstring>
+        <name>sg_cond_wait</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_condition_variable" kindref="compound">sg_cond_t</ref></type>
+          <declname>cond</declname>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">sg_mutex_t</ref></type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+<para>Blocks onto the given condition variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/cond.h" line="17" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/cond.h" declline="17" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="cond_8h_1a47bf1c3f4cc91ab80c24533c722a1c8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sg_cond_wait_for</definition>
+        <argsstring>(sg_cond_t cond, sg_mutex_t mutex, double delay)</argsstring>
+        <name>sg_cond_wait_for</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_condition_variable" kindref="compound">sg_cond_t</ref></type>
+          <declname>cond</declname>
+        </param>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">sg_mutex_t</ref></type>
+          <declname>mutex</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+<para>Blocks onto the given condition variable, but only for the given amount of time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>0 on success, 1 on timeout </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/cond.h" line="20" column="6" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/cond.h" declline="20" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="cond_8h_1a692fc4712c48cac5d0c89e36481ab5e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_cond_notify_one</definition>
+        <argsstring>(sg_cond_t cond)</argsstring>
+        <name>sg_cond_notify_one</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_condition_variable" kindref="compound">sg_cond_t</ref></type>
+          <declname>cond</declname>
+        </param>
+        <briefdescription>
+<para>Signals the given condition variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/cond.h" line="22" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/cond.h" declline="22" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="cond_8h_1a3e37265776ecc5b734ddcbf49f43cfad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_cond_notify_all</definition>
+        <argsstring>(sg_cond_t cond)</argsstring>
+        <name>sg_cond_notify_all</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_condition_variable" kindref="compound">sg_cond_t</ref></type>
+          <declname>cond</declname>
+        </param>
+        <briefdescription>
+<para>Broadcasts the given condition variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/cond.h" line="24" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/cond.h" declline="24" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="cond_8h_1a028fc699f0eb1e0ca0f6b87c51277c27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_cond_destroy</definition>
+        <argsstring>(const_sg_cond_t cond)</argsstring>
+        <name>sg_cond_destroy</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_condition_variable" kindref="compound">const_sg_cond_t</ref></type>
+          <declname>cond</declname>
+        </param>
+        <briefdescription>
+<para>Destroys the given condition variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/cond.h" line="26" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/cond.h" declline="26" declcolumn="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/cond.h"/>
+  </compounddef>
+</doxygen>

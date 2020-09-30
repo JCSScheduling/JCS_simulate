@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="namespacesimgrid_1_1s4u" kind="namespace" language="C++">
+    <compoundname>simgrid::s4u</compoundname>
+    <innerclass refid="classsimgrid_1_1s4u_1_1_activity" prot="public">simgrid::s4u::Activity</innerclass>
+    <innerclass refid="classsimgrid_1_1s4u_1_1_activity___t" prot="public">simgrid::s4u::Activity_T</innerclass>
+    <innerclass refid="classsimgrid_1_1s4u_1_1_actor" prot="public">simgrid::s4u::Actor</innerclass>
+    <innerclass refid="classsimgrid_1_1s4u_1_1_barrier" prot="public">simgrid::s4u::Barrier</innerclass>
+    <innerclass refid="classsimgrid_1_1s4u_1_1_comm" prot="public">simgrid::s4u::Comm</innerclass>
+    <innerclass refid="classsimgrid_1_1s4u_1_1_condition_variable" prot="public">simgrid::s4u::ConditionVariable</innerclass>
+    <innerclass refid="classsimgrid_1_1s4u_1_1_disk" prot="public">simgrid::s4u::Disk</innerclass>
+    <innerclass refid="classsimgrid_1_1s4u_1_1_engine" prot="public">simgrid::s4u::Engine</innerclass>
+    <innerclass refid="classsimgrid_1_1s4u_1_1_exec" prot="public">simgrid::s4u::Exec</innerclass>
+    <innerclass refid="classsimgrid_1_1s4u_1_1_exec_par" prot="public">simgrid::s4u::ExecPar</innerclass>
+    <innerclass refid="classsimgrid_1_1s4u_1_1_exec_seq" prot="public">simgrid::s4u::ExecSeq</innerclass>
+    <innerclass refid="classsimgrid_1_1s4u_1_1_host" prot="public">simgrid::s4u::Host</innerclass>
+    <innerclass refid="classsimgrid_1_1s4u_1_1_io" prot="public">simgrid::s4u::Io</innerclass>
+    <innerclass refid="classsimgrid_1_1s4u_1_1_link" prot="public">simgrid::s4u::Link</innerclass>
+    <innerclass refid="classsimgrid_1_1s4u_1_1_mailbox" prot="public">simgrid::s4u::Mailbox</innerclass>
+    <innerclass refid="classsimgrid_1_1s4u_1_1_mutex" prot="public">simgrid::s4u::Mutex</innerclass>
+    <innerclass refid="classsimgrid_1_1s4u_1_1_net_zone" prot="public">simgrid::s4u::NetZone</innerclass>
+    <innerclass refid="classsimgrid_1_1s4u_1_1_semaphore" prot="public">simgrid::s4u::Semaphore</innerclass>
+    <innerclass refid="classsimgrid_1_1s4u_1_1_storage" prot="public">simgrid::s4u::Storage</innerclass>
+    <innerclass refid="classsimgrid_1_1s4u_1_1_virtual_machine" prot="public">simgrid::s4u::VirtualMachine</innerclass>
+    <innernamespace refid="namespacesimgrid_1_1s4u_1_1this__actor">simgrid::s4u::this_actor</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="forward_8h_1aaa87ee765c8962a685a786fdb522dfc6" prot="public" static="no">
+        <type>boost::intrusive_ptr&lt; <ref refid="classsimgrid_1_1s4u_1_1_activity" kindref="compound">Activity</ref> &gt;</type>
+        <definition>typedef boost::intrusive_ptr&lt;Activity&gt; simgrid::s4u::ActivityPtr</definition>
+        <argsstring></argsstring>
+        <name>ActivityPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Smart pointer to a simgrid::s4u::Actor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="20" column="30" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1afdbccc877c1abb3aa11413f632db4eee" prot="public" static="no">
+        <type>boost::intrusive_ptr&lt; <ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">Actor</ref> &gt;</type>
+        <definition>typedef boost::intrusive_ptr&lt;Actor&gt; simgrid::s4u::ActorPtr</definition>
+        <argsstring></argsstring>
+        <name>ActorPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Smart pointer to a simgrid::s4u::Actor </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="26" column="30" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1ae6061a9ee179631120abd776d197dc84" prot="public" static="no">
+        <type>boost::intrusive_ptr&lt; <ref refid="classsimgrid_1_1s4u_1_1_barrier" kindref="compound">Barrier</ref> &gt;</type>
+        <definition>typedef boost::intrusive_ptr&lt;Barrier&gt; simgrid::s4u::BarrierPtr</definition>
+        <argsstring></argsstring>
+        <name>BarrierPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Smart pointer to a simgrid::s4u::Barrier </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="32" column="30" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a822b18f1726aa812ca0ca1a50b690bc3" prot="public" static="no">
+        <type>boost::intrusive_ptr&lt; <ref refid="classsimgrid_1_1s4u_1_1_comm" kindref="compound">Comm</ref> &gt;</type>
+        <definition>typedef boost::intrusive_ptr&lt;Comm&gt; simgrid::s4u::CommPtr</definition>
+        <argsstring></argsstring>
+        <name>CommPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Smart pointer to a simgrid::s4u::Comm </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="38" column="30" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1afb7e4d39fca2ac16f1d89ee04c772892" prot="public" static="no">
+        <type>boost::intrusive_ptr&lt; <ref refid="classsimgrid_1_1s4u_1_1_condition_variable" kindref="compound">ConditionVariable</ref> &gt;</type>
+        <definition>typedef boost::intrusive_ptr&lt;ConditionVariable&gt; simgrid::s4u::ConditionVariablePtr</definition>
+        <argsstring></argsstring>
+        <name>ConditionVariablePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>embed:rst:leading-asterisk
+* Smart pointer to a :cpp:type:`simgrid::s4u::ConditionVariable`
+* </verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="47" column="30" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1abed06146a1a68f18f0d531bbd831c389" prot="public" static="no">
+        <type>boost::intrusive_ptr&lt; <ref refid="classsimgrid_1_1s4u_1_1_exec" kindref="compound">Exec</ref> &gt;</type>
+        <definition>typedef boost::intrusive_ptr&lt;Exec&gt; simgrid::s4u::ExecPtr</definition>
+        <argsstring></argsstring>
+        <name>ExecPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Smart pointer to a simgrid::s4u::Exec </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="55" column="30" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1af04edfd722130e346625997eff5069a1" prot="public" static="no">
+        <type>boost::intrusive_ptr&lt; <ref refid="classsimgrid_1_1s4u_1_1_exec_seq" kindref="compound">ExecSeq</ref> &gt;</type>
+        <definition>typedef boost::intrusive_ptr&lt;ExecSeq&gt; simgrid::s4u::ExecSeqPtr</definition>
+        <argsstring></argsstring>
+        <name>ExecSeqPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="59" column="30" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a055eb6b5c8b0ebc74bcbe02de1458d3a" prot="public" static="no">
+        <type>boost::intrusive_ptr&lt; <ref refid="classsimgrid_1_1s4u_1_1_exec_par" kindref="compound">ExecPar</ref> &gt;</type>
+        <definition>typedef boost::intrusive_ptr&lt;ExecPar&gt; simgrid::s4u::ExecParPtr</definition>
+        <argsstring></argsstring>
+        <name>ExecParPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="61" column="30" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a0e101e5b6c0d9230efa975efb6069736" prot="public" static="no">
+        <type>boost::intrusive_ptr&lt; <ref refid="classsimgrid_1_1s4u_1_1_io" kindref="compound">Io</ref> &gt;</type>
+        <definition>typedef boost::intrusive_ptr&lt;Io&gt; simgrid::s4u::IoPtr</definition>
+        <argsstring></argsstring>
+        <name>IoPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Smart pointer to a simgrid::s4u::Io </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="67" column="30" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1a95ad9e2d04f895cd75136c201c2fe6fc" prot="public" static="no">
+        <type>boost::intrusive_ptr&lt; <ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">Mutex</ref> &gt;</type>
+        <definition>typedef boost::intrusive_ptr&lt;Mutex&gt; simgrid::s4u::MutexPtr</definition>
+        <argsstring></argsstring>
+        <name>MutexPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>embed:rst:leading-asterisk
+* Smart pointer to a :cpp:type:`simgrid::s4u::Mutex`
+* </verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="83" column="30" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="forward_8h_1af577e41e108b3617f0e42f22bd745cb1" prot="public" static="no">
+        <type>boost::intrusive_ptr&lt; <ref refid="classsimgrid_1_1s4u_1_1_semaphore" kindref="compound">Semaphore</ref> &gt;</type>
+        <definition>typedef boost::intrusive_ptr&lt;Semaphore&gt; simgrid::s4u::SemaphorePtr</definition>
+        <argsstring></argsstring>
+        <name>SemaphorePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Smart pointer to a simgrid::s4u::Semaphore </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="91" column="30" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="forward_8h_1a6251dd16310a72c8674cd6a2c789cadb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::intrusive_ptr_release</definition>
+        <argsstring>(const Activity *actor)</argsstring>
+        <name>intrusive_ptr_release</name>
+        <param>
+          <type>const <ref refid="classsimgrid_1_1s4u_1_1_activity" kindref="compound">Activity</ref> *</type>
+          <declname>actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="21" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" declline="21" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="forward_8h_1a1049e4eeaa97c09c172098f6a2560606" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::intrusive_ptr_add_ref</definition>
+        <argsstring>(const Activity *actor)</argsstring>
+        <name>intrusive_ptr_add_ref</name>
+        <param>
+          <type>const <ref refid="classsimgrid_1_1s4u_1_1_activity" kindref="compound">Activity</ref> *</type>
+          <declname>actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="22" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" declline="22" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="forward_8h_1af345b7ef7c175d2841e298bf647008e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::intrusive_ptr_release</definition>
+        <argsstring>(const Actor *actor)</argsstring>
+        <name>intrusive_ptr_release</name>
+        <param>
+          <type>const <ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">Actor</ref> *</type>
+          <declname>actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="27" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" declline="27" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="forward_8h_1a40865c17a27efcddc85819a256eafcba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::intrusive_ptr_add_ref</definition>
+        <argsstring>(const Actor *actor)</argsstring>
+        <name>intrusive_ptr_add_ref</name>
+        <param>
+          <type>const <ref refid="classsimgrid_1_1s4u_1_1_actor" kindref="compound">Actor</ref> *</type>
+          <declname>actor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="28" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" declline="28" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="forward_8h_1ab6a55daea5c403f0ef8a76cf3dcae6d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::intrusive_ptr_release</definition>
+        <argsstring>(Barrier *m)</argsstring>
+        <name>intrusive_ptr_release</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_barrier" kindref="compound">Barrier</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="33" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" declline="33" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="forward_8h_1a690fe33b08bffa0d88a531cdc15ca908" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::intrusive_ptr_add_ref</definition>
+        <argsstring>(Barrier *m)</argsstring>
+        <name>intrusive_ptr_add_ref</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_barrier" kindref="compound">Barrier</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="34" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" declline="34" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="forward_8h_1ab805d0f4271d5192fd566ba165e9244c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::intrusive_ptr_release</definition>
+        <argsstring>(Comm *c)</argsstring>
+        <name>intrusive_ptr_release</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_comm" kindref="compound">Comm</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="39" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" declline="39" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="forward_8h_1a9585a3663465bca53745f0b967f42b76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::intrusive_ptr_add_ref</definition>
+        <argsstring>(Comm *c)</argsstring>
+        <name>intrusive_ptr_add_ref</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_comm" kindref="compound">Comm</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="40" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" declline="40" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="forward_8h_1a4d199ccc0d0d46d3cb6b8ad84565dc65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::intrusive_ptr_release</definition>
+        <argsstring>(const ConditionVariable *c)</argsstring>
+        <name>intrusive_ptr_release</name>
+        <param>
+          <type>const <ref refid="classsimgrid_1_1s4u_1_1_condition_variable" kindref="compound">ConditionVariable</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="48" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" declline="48" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="forward_8h_1a2056a857225e0ecabb1a8e6f22c2c919" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::intrusive_ptr_add_ref</definition>
+        <argsstring>(const ConditionVariable *c)</argsstring>
+        <name>intrusive_ptr_add_ref</name>
+        <param>
+          <type>const <ref refid="classsimgrid_1_1s4u_1_1_condition_variable" kindref="compound">ConditionVariable</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="49" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" declline="49" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="forward_8h_1a231ad107e402a6eb873e1c4e226cd823" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::intrusive_ptr_release</definition>
+        <argsstring>(Exec *e)</argsstring>
+        <name>intrusive_ptr_release</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_exec" kindref="compound">Exec</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="56" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" declline="56" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="forward_8h_1a0b6a74f79a0a6e80b62b2cb805b6f74d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::intrusive_ptr_add_ref</definition>
+        <argsstring>(Exec *e)</argsstring>
+        <name>intrusive_ptr_add_ref</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_exec" kindref="compound">Exec</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="57" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" declline="57" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="forward_8h_1a30ea5478dce38bfe67a4dca0f6379dfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::intrusive_ptr_release</definition>
+        <argsstring>(Io *i)</argsstring>
+        <name>intrusive_ptr_release</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_io" kindref="compound">Io</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="68" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" declline="68" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="forward_8h_1a8ebcb5448810b93d21b980e27a12f628" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::intrusive_ptr_add_ref</definition>
+        <argsstring>(Io *i)</argsstring>
+        <name>intrusive_ptr_add_ref</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_io" kindref="compound">Io</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="69" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" declline="69" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="forward_8h_1ad6087130f5ab8c9f0a9a0453754859d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::intrusive_ptr_release</definition>
+        <argsstring>(const Mutex *m)</argsstring>
+        <name>intrusive_ptr_release</name>
+        <param>
+          <type>const <ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">Mutex</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="76" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" declline="76" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="forward_8h_1aa6b366e62b1a28299b3ea6383d2b8e58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::intrusive_ptr_add_ref</definition>
+        <argsstring>(const Mutex *m)</argsstring>
+        <name>intrusive_ptr_add_ref</name>
+        <param>
+          <type>const <ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">Mutex</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="77" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" declline="77" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="forward_8h_1ace79c5b25c4beae986fb3472d8be75c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::intrusive_ptr_release</definition>
+        <argsstring>(Semaphore *m)</argsstring>
+        <name>intrusive_ptr_release</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_semaphore" kindref="compound">Semaphore</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="92" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" declline="92" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="forward_8h_1a6478d06cbda1dfa9d9b4fb2a242dd354" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::intrusive_ptr_add_ref</definition>
+        <argsstring>(Semaphore *m)</argsstring>
+        <name>intrusive_ptr_add_ref</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_semaphore" kindref="compound">Semaphore</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="93" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" declline="93" declcolumn="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/forward.h" line="17" column="1"/>
+  </compounddef>
+</doxygen>

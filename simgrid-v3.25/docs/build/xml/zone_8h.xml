@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="zone_8h" kind="file" language="C++">
+    <compoundname>zone.h</compoundname>
+    <includes refid="forward_8h" local="no">simgrid/forward.h</includes>
+    <includes local="no">xbt/base.h</includes>
+    <includes local="no">xbt/dict.h</includes>
+    <includedby refid="msg_8h" local="no">msg.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>xbt/dict.h</label>
+      </node>
+      <node id="4">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="3">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="1">
+        <label>zone.h</label>
+        <link refid="zone_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>zone.h</label>
+        <link refid="zone_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>msg.h</label>
+        <link refid="msg_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>msg_private.hpp</label>
+        <link refid="msg__private_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="zone_8h_1a0b667a6f2ce0b62b7a4748dbe0d4c03a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_net_zone" kindref="compound">sg_netzone_t</ref></type>
+        <definition>sg_netzone_t sg_zone_get_root</definition>
+        <argsstring>()</argsstring>
+        <name>sg_zone_get_root</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/zone.h" line="18" column="15" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/zone.h" declline="18" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="zone_8h_1a36821529270307962b64bf53da539b98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* sg_zone_get_name</definition>
+        <argsstring>(const_sg_netzone_t zone)</argsstring>
+        <name>sg_zone_get_name</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_net_zone" kindref="compound">const_sg_netzone_t</ref></type>
+          <declname>zone</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/zone.h" line="19" column="13" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/zone.h" declline="19" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="zone_8h_1abff59ead06ce26baf7af3e0547ebda05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_net_zone" kindref="compound">sg_netzone_t</ref></type>
+        <definition>sg_netzone_t sg_zone_get_by_name</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>sg_zone_get_by_name</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/zone.h" line="20" column="15" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/zone.h" declline="20" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="zone_8h_1a93652826f2696894cd00c91578cd32c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_zone_get_sons</definition>
+        <argsstring>(const_sg_netzone_t zone, xbt_dict_t whereto)</argsstring>
+        <name>sg_zone_get_sons</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_net_zone" kindref="compound">const_sg_netzone_t</ref></type>
+          <declname>zone</declname>
+        </param>
+        <param>
+          <type>xbt_dict_t</type>
+          <declname>whereto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/zone.h" line="21" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/zone.h" declline="21" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="zone_8h_1a04146a91a6552abb262439dec7c39e98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* sg_zone_get_property_value</definition>
+        <argsstring>(const_sg_netzone_t as, const char *name)</argsstring>
+        <name>sg_zone_get_property_value</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_net_zone" kindref="compound">const_sg_netzone_t</ref></type>
+          <declname>as</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/zone.h" line="22" column="13" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/zone.h" declline="22" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="zone_8h_1a25e5607835f0556dfe39e0f2cef330d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_zone_set_property_value</definition>
+        <argsstring>(sg_netzone_t netzone, const char *name, const char *value)</argsstring>
+        <name>sg_zone_set_property_value</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_net_zone" kindref="compound">sg_netzone_t</ref></type>
+          <declname>netzone</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/zone.h" line="23" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/zone.h" declline="23" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="zone_8h_1a9279b07ffecea2e904e65c86a9315c53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_zone_get_hosts</definition>
+        <argsstring>(const_sg_netzone_t zone, xbt_dynar_t whereto)</argsstring>
+        <name>sg_zone_get_hosts</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_net_zone" kindref="compound">const_sg_netzone_t</ref></type>
+          <declname>zone</declname>
+        </param>
+        <param>
+          <type>xbt_dynar_t</type>
+          <declname>whereto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/zone.h" line="24" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/zone.h" declline="24" declcolumn="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/zone.h"/>
+  </compounddef>
+</doxygen>

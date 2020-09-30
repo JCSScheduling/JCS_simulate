@@ -1,0 +1,526 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classsimgrid_1_1s4u_1_1_link" kind="class" language="C++" prot="public">
+    <compoundname>simgrid::s4u::Link</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">simgrid::xbt::Extendable&lt; Link &gt;</basecompoundref>
+    <includes refid="_link_8hpp" local="no">Link.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classsimgrid_1_1s4u_1_1_link_1af7efa79df365357173a33487fdbd60ce" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>SharingPolicy</name>
+        <enumvalue id="classsimgrid_1_1s4u_1_1_link_1af7efa79df365357173a33487fdbd60cea2f0b4d2c0c3d64bbb2cd525dbba8b0d0" prot="public">
+          <name>WIFI</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsimgrid_1_1s4u_1_1_link_1af7efa79df365357173a33487fdbd60ceabb62350bc89f6920babadb841b333ba6" prot="public">
+          <name>SPLITDUPLEX</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsimgrid_1_1s4u_1_1_link_1af7efa79df365357173a33487fdbd60cea049518eb4dc1859c7cebbe15876cfd63" prot="public">
+          <name>SHARED</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classsimgrid_1_1s4u_1_1_link_1af7efa79df365357173a33487fdbd60cea1a86e32a45dd7344f69ef21c52858173" prot="public">
+          <name>FATPIPE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="44" column="3" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" bodystart="44" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_link_1a347824f3a81306237dc9defaa6de3141" prot="private" static="no" mutable="no">
+        <type>kernel::resource::LinkImpl *const</type>
+        <definition>kernel::resource::LinkImpl* const simgrid::s4u::Link::pimpl_</definition>
+        <argsstring></argsstring>
+        <name>pimpl_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="41" column="36" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_link_1a39cefc3e284adc870d5e7a57360a4740" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">Link</ref> &amp;)&gt;</type>
+        <definition>xbt::signal&lt;void(Link&amp;)&gt; simgrid::s4u::Link::on_creation</definition>
+        <argsstring></argsstring>
+        <name>on_creation</name>
+        <briefdescription>
+<para>Callback signal fired when a new Link is created. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="90" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_link_1a14dba0081a9263d18003309728bf7c67" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">Link</ref> const  &amp;)&gt;</type>
+        <definition>xbt::signal&lt;void(Link const&amp;)&gt; simgrid::s4u::Link::on_destruction</definition>
+        <argsstring></argsstring>
+        <name>on_destruction</name>
+        <briefdescription>
+<para>Callback signal fired when a Link is destroyed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="93" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_link_1aed729a3663542c5487ae77b27dbc534c" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">Link</ref> const  &amp;)&gt;</type>
+        <definition>xbt::signal&lt;void(Link const&amp;)&gt; simgrid::s4u::Link::on_state_change</definition>
+        <argsstring></argsstring>
+        <name>on_state_change</name>
+        <briefdescription>
+<para>Callback signal fired when the state of a Link changes (when it is turned on or off) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="96" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_link_1afcd839b5efc2d64d06ac9db3358d3866" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(<ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">Link</ref> const  &amp;)&gt;</type>
+        <definition>xbt::signal&lt;void(Link const&amp;)&gt; simgrid::s4u::Link::on_bandwidth_change</definition>
+        <argsstring></argsstring>
+        <name>on_bandwidth_change</name>
+        <briefdescription>
+<para>Callback signal fired when the bandwidth of a Link changes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="99" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_link_1aa6e3dc8a07cd099ab8c1a0b1feb58e93" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(kernel::resource::NetworkAction &amp;, <ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> *src, <ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">Host</ref> *dst)&gt;</type>
+        <definition>xbt::signal&lt;void(kernel::resource::NetworkAction&amp;, Host* src, Host* dst)&gt; simgrid::s4u::Link::on_communicate</definition>
+        <argsstring></argsstring>
+        <name>on_communicate</name>
+        <briefdescription>
+<para>Callback signal fired when a communication starts. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="102" column="22" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsimgrid_1_1s4u_1_1_link_1acf4da36269a52288a2e2202d74bdd7c0" prot="public" static="yes" mutable="no">
+        <type>xbt::signal&lt; void(kernel::resource::NetworkAction &amp;, kernel::resource::Action::State)&gt;</type>
+        <definition>xbt::signal&lt;void(kernel::resource::NetworkAction&amp;, kernel::resource::Action::State)&gt; simgrid::s4u::Link::on_communication_state_change</definition>
+        <argsstring></argsstring>
+        <name>on_communication_state_change</name>
+        <briefdescription>
+<para>Callback signal fired when a communication changes it state (ready/done/cancel) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="106" column="7" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_link_1a8cc9079da6b49b00ed29c4ce2ab25f3f" prot="private" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>simgrid::s4u::Link::Link</definition>
+        <argsstring>(kernel::resource::LinkImpl *pimpl)</argsstring>
+        <name>Link</name>
+        <param>
+          <type>kernel::resource::LinkImpl *</type>
+          <declname>pimpl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="38" column="12" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_link_1a00186f26070cc8a14ebb3da9da3005fd" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual simgrid::s4u::Link::~Link</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="39" column="11"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_link_1a9ffd3ffb016daeaf619454309698ae6a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>kernel::resource::LinkImpl *</type>
+        <definition>kernel::resource::LinkImpl* simgrid::s4u::Link::get_impl</definition>
+        <argsstring>() const</argsstring>
+        <name>get_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="46" column="30" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_link_1a9318e474c491152428349066cd59442b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; simgrid::s4u::Link::get_name</definition>
+        <argsstring>() const</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+<para>Retrieves the name of that link as a C++ string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="53" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_link_1a9cd2eb5f53b780854ace6afcb81aa29a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* simgrid::s4u::Link::get_cname</definition>
+        <argsstring>() const</argsstring>
+        <name>get_cname</name>
+        <briefdescription>
+<para>Retrieves the name of that link as a C string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="55" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_link_1a3002aed31f8b92a1ec690d8ae32e92c7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::s4u::Link::get_bandwidth</definition>
+        <argsstring>() const</argsstring>
+        <name>get_bandwidth</name>
+        <briefdescription>
+<para>Get the bandwidth in bytes per second of current Link. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="58" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_link_1afa02b767d72ea676890c591c58ba5e13" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::s4u::Link::get_latency</definition>
+        <argsstring>() const</argsstring>
+        <name>get_latency</name>
+        <briefdescription>
+<para>Get the latency in seconds of current Link. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="61" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_link_1aa4f8726e25863b35e82bc846ee615439" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>SharingPolicy</type>
+        <definition>SharingPolicy simgrid::s4u::Link::get_sharing_policy</definition>
+        <argsstring>() const</argsstring>
+        <name>get_sharing_policy</name>
+        <briefdescription>
+<para>Describes how the link is shared between flows. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="64" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_link_1ae1485987feb14b82828f7e6c851bd313" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double simgrid::s4u::Link::get_usage</definition>
+        <argsstring>() const</argsstring>
+        <name>get_usage</name>
+        <briefdescription>
+<para>Returns the current load (in flops per second) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="67" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_link_1a4ff78a24b4329114fd27b65ffa7eee72" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool simgrid::s4u::Link::is_used</definition>
+        <argsstring>() const</argsstring>
+        <name>is_used</name>
+        <briefdescription>
+<para>Check if the Link is used (at least one flow uses the link) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="70" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_link_1a2ccf9d399a090d2cd5318884e4f43a06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Link::turn_on</definition>
+        <argsstring>()</argsstring>
+        <name>turn_on</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="72" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_link_1af8cccb6d531021849bd4a466fbde4b2d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool simgrid::s4u::Link::is_on</definition>
+        <argsstring>() const</argsstring>
+        <name>is_on</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="73" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_link_1aa3b2a468ae79a2c97c0eb7443c5980c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Link::turn_off</definition>
+        <argsstring>()</argsstring>
+        <name>turn_off</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="74" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_link_1a28fb6cbe4ce8f22ceb8af1c5851f28a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Link::set_state_profile</definition>
+        <argsstring>(kernel::profile::Profile *profile)</argsstring>
+        <name>set_state_profile</name>
+        <param>
+          <type>kernel::profile::Profile *</type>
+          <declname>profile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup the profile with states events (ON or OFF). The profile must contain boolean values. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="77" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_link_1a02015349d76b5defd56216d87120dec0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Link::set_bandwidth_profile</definition>
+        <argsstring>(kernel::profile::Profile *profile)</argsstring>
+        <name>set_bandwidth_profile</name>
+        <param>
+          <type>kernel::profile::Profile *</type>
+          <declname>profile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup the profile with bandwidth events (peak speed changes due to external load). The profile must contain percentages (value between 0 and 1). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="80" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_link_1ade6c764e46a6832f5804982e3b0434d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Link::set_latency_profile</definition>
+        <argsstring>(kernel::profile::Profile *profile)</argsstring>
+        <name>set_latency_profile</name>
+        <param>
+          <type>kernel::profile::Profile *</type>
+          <declname>profile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setup the profile file with latency events (peak latency changes due to external load). The profile must contain absolute values </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="83" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_link_1a3219f17467083cf83ee99506daa8c2a6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* simgrid::s4u::Link::get_property</definition>
+        <argsstring>(const std::string &amp;key) const</argsstring>
+        <name>get_property</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="85" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_link_1a7058ab80787b703e04148d2e3ff543ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void simgrid::s4u::Link::set_property</definition>
+        <argsstring>(const std::string &amp;key, const std::string &amp;value)</argsstring>
+        <name>set_property</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="86" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_link_1a0d1dc49b5f720f9a66b2f9a5ba702771" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">Link</ref> *</type>
+        <definition>static Link* simgrid::s4u::Link::by_name</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>by_name</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve a link from its name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="49" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsimgrid_1_1s4u_1_1_link_1a0fdf5796c4cee820fde996caa2adda4d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">Link</ref> *</type>
+        <definition>static Link* simgrid::s4u::Link::by_name_or_null</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>by_name_or_null</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="50" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>* A Link represents the network facilities between :cpp:class:`hosts &lt;simgrid::s4u::Host&gt;`.
+* </verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>simgrid::s4u::Link</label>
+        <link refid="classsimgrid_1_1s4u_1_1_link"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>simgrid::xbt::Extendable&lt; Link &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>simgrid::s4u::Link</label>
+        <link refid="classsimgrid_1_1s4u_1_1_link"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>simgrid::xbt::Extendable&lt; Link &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" line="34" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/s4u/Link.hpp" bodystart="34" bodyend="107"/>
+    <listofallmembers>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1a0d1dc49b5f720f9a66b2f9a5ba702771" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>by_name</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1a0fdf5796c4cee820fde996caa2adda4d" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>by_name_or_null</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1a3002aed31f8b92a1ec690d8ae32e92c7" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>get_bandwidth</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1a9cd2eb5f53b780854ace6afcb81aa29a" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>get_cname</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1a9ffd3ffb016daeaf619454309698ae6a" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>get_impl</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1afa02b767d72ea676890c591c58ba5e13" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>get_latency</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1a9318e474c491152428349066cd59442b" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>get_name</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1a3219f17467083cf83ee99506daa8c2a6" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>get_property</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1aa4f8726e25863b35e82bc846ee615439" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>get_sharing_policy</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1ae1485987feb14b82828f7e6c851bd313" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>get_usage</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1af8cccb6d531021849bd4a466fbde4b2d" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>is_on</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1a4ff78a24b4329114fd27b65ffa7eee72" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>is_used</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1a8cc9079da6b49b00ed29c4ce2ab25f3f" prot="private" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>Link</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1afcd839b5efc2d64d06ac9db3358d3866" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>on_bandwidth_change</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1aa6e3dc8a07cd099ab8c1a0b1feb58e93" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>on_communicate</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1acf4da36269a52288a2e2202d74bdd7c0" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>on_communication_state_change</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1a39cefc3e284adc870d5e7a57360a4740" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>on_creation</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1a14dba0081a9263d18003309728bf7c67" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>on_destruction</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1aed729a3663542c5487ae77b27dbc534c" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>on_state_change</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1a347824f3a81306237dc9defaa6de3141" prot="private" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>pimpl_</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1a02015349d76b5defd56216d87120dec0" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>set_bandwidth_profile</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1ade6c764e46a6832f5804982e3b0434d6" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>set_latency_profile</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1a7058ab80787b703e04148d2e3ff543ee" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>set_property</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1a28fb6cbe4ce8f22ceb8af1c5851f28a1" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>set_state_profile</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1af7efa79df365357173a33487fdbd60ce" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>SharingPolicy</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1aa3b2a468ae79a2c97c0eb7443c5980c7" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>turn_off</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1a2ccf9d399a090d2cd5318884e4f43a06" prot="public" virt="non-virtual"><scope>simgrid::s4u::Link</scope><name>turn_on</name></member>
+      <member refid="classsimgrid_1_1s4u_1_1_link_1a00186f26070cc8a14ebb3da9da3005fd" prot="private" virt="virtual"><scope>simgrid::s4u::Link</scope><name>~Link</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

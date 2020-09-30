@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="group__plugin__link__energy" kind="group">
+    <compoundname>plugin_link_energy</compoundname>
+    <title>Plugin Link Energy</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__plugin__link__energy_1ga485120e38318eeb616a3391118ee1a2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_link_energy_plugin_init</definition>
+        <argsstring>()</argsstring>
+        <name>sg_link_energy_plugin_init</name>
+        <briefdescription>
+<para>Enable energy plugin. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable energy plugin to get joules consumption of each cpu. You should call this function before loading your platform. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" line="189" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" bodystart="189" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__link__energy_1ga150c5facace2c31ec1cb64830716eb5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_link_get_consumed_energy</definition>
+        <argsstring>(const_sg_link_t link)</argsstring>
+        <name>sg_link_get_consumed_energy</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">const_sg_link_t</ref></type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+<para>Returns the total energy consumed by the link so far (in Joules) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Please note that since the consumption is lazily updated, it may require a simcall to update it. The result is that the actor requesting this value will be interrupted, the value will be updated in kernel mode before returning the control to the requesting actor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" line="227" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" bodystart="227" bodyend="233"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is the link energy plugin, accounting for the dissipated energy in the simulated platform. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The energy consumption of a link depends directly on its current traffic load. Specify that consumption in your platform file as follows:</para>
+<para><verbatim>&lt;link id=&quot;SWITCH1&quot; bandwidth=&quot;125Mbps&quot; latency=&quot;5us&quot; sharing_policy=&quot;SHARED&quot; &gt;
+&lt;prop id=&quot;wattage_range&quot; value=&quot;100.0:200.0&quot; /&gt;
+&lt;prop id=&quot;wattage_off&quot; value=&quot;10&quot; /&gt;
+&lt;/link&gt;
+</verbatim></para>
+<para>The first property means that when your link is switched on, but without anything to do, it will dissipate 100 Watts. If it&apos;s fully loaded, it will dissipate 200 Watts. If its load is at 50%, then it will dissipate 150 Watts. The second property means that when your host is turned off, it will dissipate only 10 Watts (please note that these values are arbitrary).</para>
+<para>To simulate the energy-related elements, first call the sg_link_energy_plugin_init() before loading the platform and then use the following function to retrieve the consumption of a given link: sg_link_get_consumed_energy(). </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

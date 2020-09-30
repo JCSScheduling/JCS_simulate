@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="host__load_8cpp" kind="file" language="C++">
+    <compoundname>host_load.cpp</compoundname>
+    <includes local="yes">simgrid/plugins/load.h</includes>
+    <includes local="yes">src/include/surf/surf.hpp</includes>
+    <includes local="yes">src/kernel/activity/ExecImpl.hpp</includes>
+    <includes refid="_virtual_machine_impl_8hpp" local="yes">src/plugins/vm/VirtualMachineImpl.hpp</includes>
+    <includes local="no">simgrid/s4u.hpp</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="6">
+        <label>simgrid/s4u/VirtualMachine.hpp</label>
+        <link refid="_virtual_machine_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>src/kernel/actor/ActorImpl.hpp</label>
+      </node>
+      <node id="8">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="3">
+        <label>src/include/surf/surf.hpp</label>
+      </node>
+      <node id="14">
+        <label>map</label>
+      </node>
+      <node id="2">
+        <label>simgrid/plugins/load.h</label>
+      </node>
+      <node id="20">
+        <label>simgrid/s4u.hpp</label>
+      </node>
+      <node id="17">
+        <label>src/surf/HostImpl.hpp</label>
+      </node>
+      <node id="7">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>xbt/string.hpp</label>
+      </node>
+      <node id="12">
+        <label>xbt/signal.hpp</label>
+      </node>
+      <node id="10">
+        <label>simgrid/s4u/Host.hpp</label>
+        <link refid="_host_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/plugins/vm/VirtualMachineImpl.hpp</label>
+        <link refid="_virtual_machine_impl_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>host_load.cpp</label>
+        <link refid="host__load_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>deque</label>
+      </node>
+      <node id="15">
+        <label>unordered_map</label>
+      </node>
+      <node id="11">
+        <label>xbt/Extendable.hpp</label>
+      </node>
+      <node id="4">
+        <label>src/kernel/activity/ExecImpl.hpp</label>
+      </node>
+      <node id="18">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classsimgrid_1_1plugin_1_1_host_load" prot="public">simgrid::plugin::HostLoad</innerclass>
+    <innernamespace refid="namespacesimgrid">simgrid</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1plugin">simgrid::plugin</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="host__load_8cpp_1a8e81f0535a52ee4a95b542f532fe150f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void on_host_change</definition>
+        <argsstring>(simgrid::s4u::Host const &amp;host)</argsstring>
+        <name>on_host_change</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">simgrid::s4u::Host</ref> const &amp;</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_load.cpp" line="198" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_load.cpp" bodystart="198" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__load_1ga57678bbcb2ab8934569631772859ec5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_host_load_plugin_init</definition>
+        <argsstring>()</argsstring>
+        <name>sg_host_load_plugin_init</name>
+        <briefdescription>
+<para>Initializes the HostLoad plugin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_load.cpp" line="211" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_load.cpp" bodystart="211" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__load_1ga249d27751e58b0135630b98d93173eb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_get_current_load</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_get_current_load</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Returns the current load of that host, as a ratio = achieved_flops / (core_current_speed * core_amount) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_load.cpp" line="270" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_load.cpp" bodystart="270" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__load_1ga4ce8876aa626c1cb9ee36456c220b86f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_get_avg_load</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_get_avg_load</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Returns the current load of that host. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_load.cpp" line="280" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_load.cpp" bodystart="280" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__load_1ga279c3cba588ff304ebd6886d897f5cf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_get_idle_time</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_get_idle_time</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Returns the time this host was idle since the last reset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_load.cpp" line="290" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_load.cpp" bodystart="290" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__load_1gad981921a9beb61aeb6b137995751399c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_get_total_idle_time</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_get_total_idle_time</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Returns the time this host was idle since the beginning of the simulation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_load.cpp" line="300" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_load.cpp" bodystart="300" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__load_1ga5f77f8f0c7e8c09ea475f9d156d8c1ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_host_get_computed_flops</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_get_computed_flops</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Returns the amount of flops computed by that host since the last reset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_load.cpp" line="310" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_load.cpp" bodystart="310" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__host__load_1ga763ca29519a9c26123017b396a67383c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_host_load_reset</definition>
+        <argsstring>(const_sg_host_t host)</argsstring>
+        <name>sg_host_load_reset</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">const_sg_host_t</ref></type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Resets the idle time and flops amount of that host. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_load.cpp" line="320" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_load.cpp" bodystart="320" bodyend="325"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/host_load.cpp"/>
+  </compounddef>
+</doxygen>

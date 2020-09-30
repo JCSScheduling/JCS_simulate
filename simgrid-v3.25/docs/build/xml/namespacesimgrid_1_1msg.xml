@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="namespacesimgrid_1_1msg" kind="namespace" language="C++">
+    <compoundname>simgrid::msg</compoundname>
+    <innerclass refid="classsimgrid_1_1msg_1_1_comm" prot="public">simgrid::msg::Comm</innerclass>
+    <innerclass refid="classsimgrid_1_1msg_1_1_task" prot="public">simgrid::msg::Task</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/msg.h" line="36" column="1"/>
+  </compounddef>
+</doxygen>

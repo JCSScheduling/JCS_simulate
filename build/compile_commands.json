@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/chenbin/codes/schedule_simulate/build",
+  "command": "/usr/bin/g++-7    -I/opt/simgrid/include   -std=c++11 -g   -std=gnu++11 -o CMakeFiles/simulate_sjf.dir/simulate_sjf.cpp.o -c /home/chenbin/codes/schedule_simulate/src/simulate_sjf.cpp",
+  "file": "/home/chenbin/codes/schedule_simulate/src/simulate_sjf.cpp"
+}
+]

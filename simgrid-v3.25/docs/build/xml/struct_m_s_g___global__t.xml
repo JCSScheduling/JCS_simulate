@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="struct_m_s_g___global__t" kind="struct" language="C++" prot="public">
+    <compoundname>MSG_Global_t</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="struct_m_s_g___global__t_1aa0dd47121b35cabdd277f56fb8d09fe9" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool MSG_Global_t::debug_multiple_use</definition>
+        <argsstring></argsstring>
+        <name>debug_multiple_use</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="112" column="15" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_m_s_g___global__t_1a07e2ede5cab0c8879572f6d6cc656fb4" prot="public" static="no" mutable="no">
+        <type>std::atomic_int_fast32_t</type>
+        <definition>std::atomic_int_fast32_t MSG_Global_t::sent_msg</definition>
+        <argsstring></argsstring>
+        <name>sent_msg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="113" column="28" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_g___global__t_1a38615da25286b4b91e3082a702ddac8b" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* MSG_Global_t::task_copy_callback) (msg_task_t task, msg_process_t src, msg_process_t dst)</definition>
+        <argsstring>)(msg_task_t task, msg_process_t src, msg_process_t dst)</argsstring>
+        <name>task_copy_callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="114" column="3" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_m_s_g___global__t_1a54a3de59cf42eca90040f9d4c9ec1f62" prot="public" static="no" mutable="no">
+        <type>void_f_pvoid_t</type>
+        <definition>void_f_pvoid_t MSG_Global_t::process_data_cleanup</definition>
+        <argsstring></argsstring>
+        <name>process_data_cleanup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="115" column="18" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" line="111" column="1" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/msg/msg_private.hpp" bodystart="111" bodyend="116"/>
+    <listofallmembers>
+      <member refid="struct_m_s_g___global__t_1aa0dd47121b35cabdd277f56fb8d09fe9" prot="public" virt="non-virtual"><scope>MSG_Global_t</scope><name>debug_multiple_use</name></member>
+      <member refid="struct_m_s_g___global__t_1a54a3de59cf42eca90040f9d4c9ec1f62" prot="public" virt="non-virtual"><scope>MSG_Global_t</scope><name>process_data_cleanup</name></member>
+      <member refid="struct_m_s_g___global__t_1a07e2ede5cab0c8879572f6d6cc656fb4" prot="public" virt="non-virtual"><scope>MSG_Global_t</scope><name>sent_msg</name></member>
+      <member refid="struct_m_s_g___global__t_1a38615da25286b4b91e3082a702ddac8b" prot="public" virt="non-virtual"><scope>MSG_Global_t</scope><name>task_copy_callback</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

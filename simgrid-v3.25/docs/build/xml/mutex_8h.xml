@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="mutex_8h" kind="file" language="C++">
+    <compoundname>mutex.h</compoundname>
+    <includes refid="forward_8h" local="no">simgrid/forward.h</includes>
+    <includedby refid="msg_8h" local="no">msg.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>mutex.h</label>
+        <link refid="mutex_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="3">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="2">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>mutex.h</label>
+        <link refid="mutex_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>msg.h</label>
+        <link refid="msg_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>msg_private.hpp</label>
+        <link refid="msg__private_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="mutex_8h_1a6b738d4806f17977210e1433fcdf7b0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">sg_mutex_t</ref></type>
+        <definition>sg_mutex_t sg_mutex_init</definition>
+        <argsstring>()</argsstring>
+        <name>sg_mutex_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/mutex.h" line="13" column="13" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/mutex.h" declline="13" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="mutex_8h_1a934695b78deeadb742acfba10878d0b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_mutex_lock</definition>
+        <argsstring>(sg_mutex_t mutex)</argsstring>
+        <name>sg_mutex_lock</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">sg_mutex_t</ref></type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/mutex.h" line="14" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/mutex.h" declline="14" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="mutex_8h_1a866edc5d6cffaa547e8f65d64bf402fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_mutex_unlock</definition>
+        <argsstring>(sg_mutex_t mutex)</argsstring>
+        <name>sg_mutex_unlock</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">sg_mutex_t</ref></type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/mutex.h" line="15" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/mutex.h" declline="15" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="mutex_8h_1a1c371714c2b4e5369bf59b2ed060e21d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sg_mutex_try_lock</definition>
+        <argsstring>(sg_mutex_t mutex)</argsstring>
+        <name>sg_mutex_try_lock</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">sg_mutex_t</ref></type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/mutex.h" line="16" column="6" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/mutex.h" declline="16" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="mutex_8h_1a59b016aac759f5fad832819d68009475" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_mutex_destroy</definition>
+        <argsstring>(const_sg_mutex_t mutex)</argsstring>
+        <name>sg_mutex_destroy</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_mutex" kindref="compound">const_sg_mutex_t</ref></type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/mutex.h" line="17" column="7" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/mutex.h" declline="17" declcolumn="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/include/simgrid/mutex.h"/>
+  </compounddef>
+</doxygen>

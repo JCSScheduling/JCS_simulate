@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="_vm_host_ext_8cpp" kind="file" language="C++">
+    <compoundname>VmHostExt.cpp</compoundname>
+    <includes refid="_vm_host_ext_8hpp" local="yes">src/plugins/vm/VmHostExt.hpp</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>src/surf/HostImpl.hpp</label>
+      </node>
+      <node id="2">
+        <label>src/plugins/vm/VmHostExt.hpp</label>
+        <link refid="_vm_host_ext_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>VmHostExt.cpp</label>
+        <link refid="_vm_host_ext_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacesimgrid">simgrid</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1vm">simgrid::vm</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_vm_host_ext_8cpp_1a649d17deffe204067ab1eef69b764592" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>XBT_LOG_EXTERNAL_DEFAULT_CATEGORY</definition>
+        <argsstring>(surf_vm)</argsstring>
+        <name>XBT_LOG_EXTERNAL_DEFAULT_CATEGORY</name>
+        <param>
+          <type>surf_vm</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmHostExt.cpp" line="8" column="1" declfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmHostExt.cpp" declline="8" declcolumn="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/vm/VmHostExt.cpp"/>
+  </compounddef>
+</doxygen>

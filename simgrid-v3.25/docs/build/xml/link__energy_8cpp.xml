@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="link__energy_8cpp" kind="file" language="C++">
+    <compoundname>link_energy.cpp</compoundname>
+    <includes local="yes">simgrid/Exception.hpp</includes>
+    <includes local="yes">simgrid/plugins/energy.h</includes>
+    <includes refid="_engine_8hpp" local="yes">simgrid/s4u/Engine.hpp</includes>
+    <includes local="yes">src/surf/network_interface.hpp</includes>
+    <includes local="yes">src/surf/surf_interface.hpp</includes>
+    <includes local="yes">surf/surf.hpp</includes>
+    <includes local="no">boost/algorithm/string/classification.hpp</includes>
+    <includes local="no">boost/algorithm/string/split.hpp</includes>
+    <incdepgraph>
+      <node id="8">
+        <label>boost/intrusive_ptr.hpp</label>
+      </node>
+      <node id="6">
+        <label>xbt/functional.hpp</label>
+      </node>
+      <node id="16">
+        <label>src/surf/network_interface.hpp</label>
+      </node>
+      <node id="5">
+        <label>xbt/base.h</label>
+      </node>
+      <node id="19">
+        <label>boost/algorithm/string/classification.hpp</label>
+      </node>
+      <node id="3">
+        <label>simgrid/plugins/energy.h</label>
+      </node>
+      <node id="1">
+        <label>link_energy.cpp</label>
+        <link refid="link__energy_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>simgrid/s4u/Engine.hpp</label>
+        <link refid="_engine_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>simgrid/Exception.hpp</label>
+      </node>
+      <node id="18">
+        <label>surf/surf.hpp</label>
+      </node>
+      <node id="7">
+        <label>simgrid/forward.h</label>
+        <link refid="forward_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>boost/algorithm/string/split.hpp</label>
+      </node>
+      <node id="11">
+        <label>xbt/signal.hpp</label>
+      </node>
+      <node id="17">
+        <label>src/surf/surf_interface.hpp</label>
+      </node>
+      <node id="15">
+        <label>vector</label>
+      </node>
+      <node id="14">
+        <label>utility</label>
+      </node>
+      <node id="9">
+        <label>simgrid/simix.hpp</label>
+      </node>
+      <node id="13">
+        <label>unordered_map</label>
+      </node>
+      <node id="10">
+        <label>simgrid/s4u/NetZone.hpp</label>
+        <link refid="_net_zone_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classsimgrid_1_1plugin_1_1_link_energy" prot="public">simgrid::plugin::LinkEnergy</innerclass>
+    <innernamespace refid="namespacesimgrid">simgrid</innernamespace>
+    <innernamespace refid="namespacesimgrid_1_1plugin">simgrid::plugin</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="link__energy_8cpp_1aca7642300be13ce3fd24553a0c220773" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void on_communicate</definition>
+        <argsstring>(const simgrid::kernel::resource::NetworkAction &amp;action, const simgrid::s4u::Host *, const simgrid::s4u::Host *)</argsstring>
+        <name>on_communicate</name>
+        <param>
+          <type>const simgrid::kernel::resource::NetworkAction &amp;</type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">simgrid::s4u::Host</ref> *</type>
+        </param>
+        <param>
+          <type>const <ref refid="classsimgrid_1_1s4u_1_1_host" kindref="compound">simgrid::s4u::Host</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" line="151" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" bodystart="151" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="link__energy_8cpp_1ac5db9c5a131ceafa5842b7efc0b49fba" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void on_simulation_end</definition>
+        <argsstring>()</argsstring>
+        <name>on_simulation_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" line="166" column="13" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" bodystart="166" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="link__energy_8cpp_1a4255962c03067a56d3f642ef01a3b29d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sg_link_energy_is_inited</definition>
+        <argsstring>()</argsstring>
+        <name>sg_link_energy_is_inited</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" line="180" column="5" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" bodystart="180" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__link__energy_1ga485120e38318eeb616a3391118ee1a2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sg_link_energy_plugin_init</definition>
+        <argsstring>()</argsstring>
+        <name>sg_link_energy_plugin_init</name>
+        <briefdescription>
+<para>Enable energy plugin. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable energy plugin to get joules consumption of each cpu. You should call this function before loading your platform. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" line="189" column="6" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" bodystart="189" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="group__plugin__link__energy_1ga150c5facace2c31ec1cb64830716eb5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sg_link_get_consumed_energy</definition>
+        <argsstring>(const_sg_link_t link)</argsstring>
+        <name>sg_link_get_consumed_energy</name>
+        <param>
+          <type><ref refid="classsimgrid_1_1s4u_1_1_link" kindref="compound">const_sg_link_t</ref></type>
+          <declname>link</declname>
+        </param>
+        <briefdescription>
+<para>Returns the total energy consumed by the link so far (in Joules) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Please note that since the consumption is lazily updated, it may require a simcall to update it. The result is that the actor requesting this value will be interrupted, the value will be updated in kernel mode before returning the control to the requesting actor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" line="227" column="8" bodyfile="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp" bodystart="227" bodyend="233"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bytedance/codes/schedule_simulate/simgrid-v3.25/src/plugins/link_energy.cpp"/>
+  </compounddef>
+</doxygen>
